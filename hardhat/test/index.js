@@ -1,7 +1,7 @@
-const {ERC721A_Test} = require('./ERC721A_Test.test');
+const {cantomon_Test} = require('./cantomon.test');
 
 module.exports = {
-    ERC721A_Test,
+    cantomon_Test,
 };
 
 var currentdate = new Date(); 
@@ -13,8 +13,8 @@ var datetime =  currentdate.getDate() + "/"
                 + currentdate.getSeconds();
 
 describe('Aggregate Testing on: ' + datetime, function () {
-    describe('NFT Mint Test for ERC721A Template', function () {
-        ERC721A_Test();
+    describe('NFT Mint Test for cantmon_Test', function () {
+        cantomon_Test();
     });
 });
 
