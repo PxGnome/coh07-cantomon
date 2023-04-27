@@ -1,0 +1,963 @@
+{
+  "abi": [
+    {
+      "inputs": [],
+      "name": "Ownable__NotOwner",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "Ownable__NotTransitiveOwner",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "SafeOwnable__NotNomineeOwner",
+      "type": "error"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "previousOwner",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "OwnershipTransferred",
+      "type": "event"
+    },
+    {
+      "inputs": [],
+      "name": "acceptOwnership",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "nomineeOwner",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "account",
+          "type": "address"
+        }
+      ],
+      "name": "transferOwnership",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "acceptOwnership()": "79ba5097",
+    "nomineeOwner()": "8ab5150a",
+    "owner()": "8da5cb5b",
+    "transferOwnership(address)": "f2fde38b"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.19+commit.7dd6d404\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"Ownable__NotOwner\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"Ownable__NotTransitiveOwner\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"SafeOwnable__NotNomineeOwner\",\"type\":\"error\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"previousOwner\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"OwnershipTransferred\",\"type\":\"event\"},{\"inputs\":[],\"name\":\"acceptOwnership\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"nomineeOwner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"}],\"name\":\"transferOwnership\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"owner()\":{\"returns\":{\"_0\":\"contract owner\"}},\"transferOwnership(address)\":{\"params\":{\"account\":\"address of new owner\"}}},\"title\":\"Ownership access control based on ERC173 with ownership transfer safety check\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"acceptOwnership()\":{\"notice\":\"accept transfer of contract ownership\"},\"nomineeOwner()\":{\"notice\":\"get the nominated owner who has permission to call acceptOwnership\"},\"owner()\":{\"notice\":\"get the ERC173 contract owner\"},\"transferOwnership(address)\":{\"notice\":\"transfer contract ownership to new account\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"node_modules/@solidstate/contracts/access/ownable/SafeOwnable.sol\":\"SafeOwnable\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@hyperlane-xyz/=node_modules/@hyperlane-xyz/\",\":@openzeppelin/=node_modules/@openzeppelin/\",\":@solidstate/=node_modules/@solidstate/\",\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":erc721a/=node_modules/erc721a/\",\":eth-gas-reporter/=node_modules/eth-gas-reporter/\",\":forge-std/=lib/forge-std/src/\",\":hardhat/=node_modules/hardhat/\"]},\"sources\":{\"node_modules/@solidstate/contracts/access/ownable/IOwnable.sol\":{\"keccak256\":\"0xee77272fcf35108e2103ebb4f5d68d46844c447d9d2e411f8f9136298ae1bc2c\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://fef49f85af45dbadb55c259528e33fb91ecd74942305c101ee33120211b6dc0d\",\"dweb:/ipfs/QmVRVH7aWFQrSqWvku3E9LQAEar9L7bmxXrPoXLCpZDkLb\"]},\"node_modules/@solidstate/contracts/access/ownable/IOwnableInternal.sol\":{\"keccak256\":\"0x6237a634712261bd82d5c7753780d35f77af215406d1e59512052f743f8f1c60\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://8e54ac6cd1b376224b8d148c704693ff3f7ac9f69954fd30ee3d949fa17210c3\",\"dweb:/ipfs/QmWjq37K3gg29XhFbepg5GbmmFYoyXb81sh2K1MnVZqG6y\"]},\"node_modules/@solidstate/contracts/access/ownable/ISafeOwnable.sol\":{\"keccak256\":\"0xfb9a7920498ab2bb3d493c292c40223eb3a6631431ea381ca39274b165c60102\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://d720242e56f4aedf2975f4deba5ff4a177668d3b8c9c40c1a240a17a2f8a7c38\",\"dweb:/ipfs/QmfCcZ4ACMDULUjmPcrUNUY88i17pHYEkDFpxyKCcHsUP3\"]},\"node_modules/@solidstate/contracts/access/ownable/ISafeOwnableInternal.sol\":{\"keccak256\":\"0xd5d44576a2f82b4ffdcf29feec6043e82436011784d92567a968609aa49a0f6b\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://43961ad59d89c044a403ebb3fdd8c9be9b01a59d5e549ef205423725dcfb9889\",\"dweb:/ipfs/QmeatkxGznGMCHXAz2CHTTSbk5HjUXzrjEtMc8CppNxnTZ\"]},\"node_modules/@solidstate/contracts/access/ownable/Ownable.sol\":{\"keccak256\":\"0xe16b09090c1251f8cc97fb2cc10c86675e0d0d9f0fc0032b417c37c8dba2db5f\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://8482effd630de3e3eb3c66ce6bc5ddd12838381e6e585df42116b4fd7764e4bc\",\"dweb:/ipfs/Qma9ga6QS2SooCYKyB7J5EHE8uUGiAv49kosEyjHt9Zg79\"]},\"node_modules/@solidstate/contracts/access/ownable/OwnableInternal.sol\":{\"keccak256\":\"0x0185d24250a5e6fbafce443b9ba19bba761803e3e5d91ba423bfb1f5f0bbdbf9\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://547fadeaec559ee824f4dd37b2ef972a061ca59576f5733cf643e00d88a4db52\",\"dweb:/ipfs/QmYx6rmRmZZQkoS8TykMVsz9ZvfQ8MfSPt6UzWJ8pyj8qF\"]},\"node_modules/@solidstate/contracts/access/ownable/OwnableStorage.sol\":{\"keccak256\":\"0x7385e2020de914f75cabdc83c6adf88ed21e9de14669a89b3832b80f4f8c7b73\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://a367c512bf29fb4923ed5d2454783e3dae88e5e03dec216e65c3986f3c3a8995\",\"dweb:/ipfs/QmfYkD6osr6SQzod6wc7WPae6YvVnYbn2BjJuHrYL3ERXM\"]},\"node_modules/@solidstate/contracts/access/ownable/SafeOwnable.sol\":{\"keccak256\":\"0x84d5694ad1f6cc77170ec667b02080dca1ccdde26eddaf46960d95971df1a5f1\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://cd6b07d586dd3365884d48fb0dde9a46d03b4d5ee7508b1c817e261820bf29b9\",\"dweb:/ipfs/QmUwnEW2oK91S54MosgKk4YA44qhruMSFeGB6yLP58xByZ\"]},\"node_modules/@solidstate/contracts/access/ownable/SafeOwnableInternal.sol\":{\"keccak256\":\"0x1ab5cbb63b897d2bef48d4437ef9519fc15cd49ed976539c1d0fd262f087786f\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://e348b34065e6297fc7485f52d4671add3abc4c4329c9c907c30f315d91c80dd0\",\"dweb:/ipfs/Qmc7dvy2roTkJyi6G51Aoay8Mai7hGxBSBWHeXWSDwA9dL\"]},\"node_modules/@solidstate/contracts/access/ownable/SafeOwnableStorage.sol\":{\"keccak256\":\"0x4818afb0b39e0770f881cbeaea1b1c77fba0daaa64bd8c1361d6e3a197628e93\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://db4cb17939eb9bf2d1ae1d8aec3c95495991a75b760a3ff211fb485ac4aeb1cb\",\"dweb:/ipfs/Qme93NCwDTb7B6MYCxLedZreEAjpEe9NCQFpPLsaT823jq\"]},\"node_modules/@solidstate/contracts/interfaces/IERC173.sol\":{\"keccak256\":\"0xf1c1fbf0ec82110c29d549db1fbd8ec728ba0b995dc5f087e0a5464243135dce\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://16c7f3eba0547576833d0c1fddb7ec34aeba4f28b4ce9e878c3bd3ebc9c8d3d1\",\"dweb:/ipfs/Qme79eYLo7dinnhotgC4bvYnCg4doBDShHeCajrf5zpAUF\"]},\"node_modules/@solidstate/contracts/interfaces/IERC173Internal.sol\":{\"keccak256\":\"0x9644c3e56c9ecd1763f8aaa437d5d573a7f64a8d93ad7bea1a9c44beb5911b89\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://c32cfda38b44878ab196d32eeb72823a9f9904e8193286c787caccfb2e5bfa75\",\"dweb:/ipfs/QmfBNKWUSKaJtYL3JJ3YFioXCVFeeakqQ4cR5XzAxxZkCx\"]},\"node_modules/@solidstate/contracts/utils/AddressUtils.sol\":{\"keccak256\":\"0x7d924db4dbd9210923ab08db77db3c77438014c255fd49fa208ebce283d991bf\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://5189eebdf91899224a14b4cd5184fa9e67a9b8904e6d88ff9610944d06c63929\",\"dweb:/ipfs/QmRwNhfcp98pPgbzK4i9hbypHLTWPGYpuRCtEJRCTNASRm\"]},\"node_modules/@solidstate/contracts/utils/UintUtils.sol\":{\"keccak256\":\"0x5aaeaea22a0800402c6f2d8ce6185293bc64f74f6c390c1b1c53b624b43972f8\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://8b1c95c745da8ca4de7b68e65ef9122dab4e748c3ae3c9f5fd5aa7c65887c9d2\",\"dweb:/ipfs/QmX2KURY4JbM4NVFp5KPYsNxoJGA8n8w6SdAFdD5Pasgza\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.19+commit.7dd6d404"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "Ownable__NotOwner"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "Ownable__NotTransitiveOwner"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "SafeOwnable__NotNomineeOwner"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "previousOwner",
+              "type": "address",
+              "indexed": true
+            },
+            {
+              "internalType": "address",
+              "name": "newOwner",
+              "type": "address",
+              "indexed": true
+            }
+          ],
+          "type": "event",
+          "name": "OwnershipTransferred",
+          "anonymous": false
+        },
+        {
+          "inputs": [],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "acceptOwnership"
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "nomineeOwner",
+          "outputs": [
+            {
+              "internalType": "address",
+              "name": "",
+              "type": "address"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "owner",
+          "outputs": [
+            {
+              "internalType": "address",
+              "name": "",
+              "type": "address"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "account",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "transferOwnership"
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {
+          "owner()": {
+            "returns": {
+              "_0": "contract owner"
+            }
+          },
+          "transferOwnership(address)": {
+            "params": {
+              "account": "address of new owner"
+            }
+          }
+        },
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {
+          "acceptOwnership()": {
+            "notice": "accept transfer of contract ownership"
+          },
+          "nomineeOwner()": {
+            "notice": "get the nominated owner who has permission to call acceptOwnership"
+          },
+          "owner()": {
+            "notice": "get the ERC173 contract owner"
+          },
+          "transferOwnership(address)": {
+            "notice": "transfer contract ownership to new account"
+          }
+        },
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":@hyperlane-xyz/=node_modules/@hyperlane-xyz/",
+        ":@openzeppelin/=node_modules/@openzeppelin/",
+        ":@solidstate/=node_modules/@solidstate/",
+        ":ds-test/=lib/forge-std/lib/ds-test/src/",
+        ":erc721a/=node_modules/erc721a/",
+        ":eth-gas-reporter/=node_modules/eth-gas-reporter/",
+        ":forge-std/=lib/forge-std/src/",
+        ":hardhat/=node_modules/hardhat/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "node_modules/@solidstate/contracts/access/ownable/SafeOwnable.sol": "SafeOwnable"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "node_modules/@solidstate/contracts/access/ownable/IOwnable.sol": {
+        "keccak256": "0xee77272fcf35108e2103ebb4f5d68d46844c447d9d2e411f8f9136298ae1bc2c",
+        "urls": [
+          "bzz-raw://fef49f85af45dbadb55c259528e33fb91ecd74942305c101ee33120211b6dc0d",
+          "dweb:/ipfs/QmVRVH7aWFQrSqWvku3E9LQAEar9L7bmxXrPoXLCpZDkLb"
+        ],
+        "license": "MIT"
+      },
+      "node_modules/@solidstate/contracts/access/ownable/IOwnableInternal.sol": {
+        "keccak256": "0x6237a634712261bd82d5c7753780d35f77af215406d1e59512052f743f8f1c60",
+        "urls": [
+          "bzz-raw://8e54ac6cd1b376224b8d148c704693ff3f7ac9f69954fd30ee3d949fa17210c3",
+          "dweb:/ipfs/QmWjq37K3gg29XhFbepg5GbmmFYoyXb81sh2K1MnVZqG6y"
+        ],
+        "license": "MIT"
+      },
+      "node_modules/@solidstate/contracts/access/ownable/ISafeOwnable.sol": {
+        "keccak256": "0xfb9a7920498ab2bb3d493c292c40223eb3a6631431ea381ca39274b165c60102",
+        "urls": [
+          "bzz-raw://d720242e56f4aedf2975f4deba5ff4a177668d3b8c9c40c1a240a17a2f8a7c38",
+          "dweb:/ipfs/QmfCcZ4ACMDULUjmPcrUNUY88i17pHYEkDFpxyKCcHsUP3"
+        ],
+        "license": "MIT"
+      },
+      "node_modules/@solidstate/contracts/access/ownable/ISafeOwnableInternal.sol": {
+        "keccak256": "0xd5d44576a2f82b4ffdcf29feec6043e82436011784d92567a968609aa49a0f6b",
+        "urls": [
+          "bzz-raw://43961ad59d89c044a403ebb3fdd8c9be9b01a59d5e549ef205423725dcfb9889",
+          "dweb:/ipfs/QmeatkxGznGMCHXAz2CHTTSbk5HjUXzrjEtMc8CppNxnTZ"
+        ],
+        "license": "MIT"
+      },
+      "node_modules/@solidstate/contracts/access/ownable/Ownable.sol": {
+        "keccak256": "0xe16b09090c1251f8cc97fb2cc10c86675e0d0d9f0fc0032b417c37c8dba2db5f",
+        "urls": [
+          "bzz-raw://8482effd630de3e3eb3c66ce6bc5ddd12838381e6e585df42116b4fd7764e4bc",
+          "dweb:/ipfs/Qma9ga6QS2SooCYKyB7J5EHE8uUGiAv49kosEyjHt9Zg79"
+        ],
+        "license": "MIT"
+      },
+      "node_modules/@solidstate/contracts/access/ownable/OwnableInternal.sol": {
+        "keccak256": "0x0185d24250a5e6fbafce443b9ba19bba761803e3e5d91ba423bfb1f5f0bbdbf9",
+        "urls": [
+          "bzz-raw://547fadeaec559ee824f4dd37b2ef972a061ca59576f5733cf643e00d88a4db52",
+          "dweb:/ipfs/QmYx6rmRmZZQkoS8TykMVsz9ZvfQ8MfSPt6UzWJ8pyj8qF"
+        ],
+        "license": "MIT"
+      },
+      "node_modules/@solidstate/contracts/access/ownable/OwnableStorage.sol": {
+        "keccak256": "0x7385e2020de914f75cabdc83c6adf88ed21e9de14669a89b3832b80f4f8c7b73",
+        "urls": [
+          "bzz-raw://a367c512bf29fb4923ed5d2454783e3dae88e5e03dec216e65c3986f3c3a8995",
+          "dweb:/ipfs/QmfYkD6osr6SQzod6wc7WPae6YvVnYbn2BjJuHrYL3ERXM"
+        ],
+        "license": "MIT"
+      },
+      "node_modules/@solidstate/contracts/access/ownable/SafeOwnable.sol": {
+        "keccak256": "0x84d5694ad1f6cc77170ec667b02080dca1ccdde26eddaf46960d95971df1a5f1",
+        "urls": [
+          "bzz-raw://cd6b07d586dd3365884d48fb0dde9a46d03b4d5ee7508b1c817e261820bf29b9",
+          "dweb:/ipfs/QmUwnEW2oK91S54MosgKk4YA44qhruMSFeGB6yLP58xByZ"
+        ],
+        "license": "MIT"
+      },
+      "node_modules/@solidstate/contracts/access/ownable/SafeOwnableInternal.sol": {
+        "keccak256": "0x1ab5cbb63b897d2bef48d4437ef9519fc15cd49ed976539c1d0fd262f087786f",
+        "urls": [
+          "bzz-raw://e348b34065e6297fc7485f52d4671add3abc4c4329c9c907c30f315d91c80dd0",
+          "dweb:/ipfs/Qmc7dvy2roTkJyi6G51Aoay8Mai7hGxBSBWHeXWSDwA9dL"
+        ],
+        "license": "MIT"
+      },
+      "node_modules/@solidstate/contracts/access/ownable/SafeOwnableStorage.sol": {
+        "keccak256": "0x4818afb0b39e0770f881cbeaea1b1c77fba0daaa64bd8c1361d6e3a197628e93",
+        "urls": [
+          "bzz-raw://db4cb17939eb9bf2d1ae1d8aec3c95495991a75b760a3ff211fb485ac4aeb1cb",
+          "dweb:/ipfs/Qme93NCwDTb7B6MYCxLedZreEAjpEe9NCQFpPLsaT823jq"
+        ],
+        "license": "MIT"
+      },
+      "node_modules/@solidstate/contracts/interfaces/IERC173.sol": {
+        "keccak256": "0xf1c1fbf0ec82110c29d549db1fbd8ec728ba0b995dc5f087e0a5464243135dce",
+        "urls": [
+          "bzz-raw://16c7f3eba0547576833d0c1fddb7ec34aeba4f28b4ce9e878c3bd3ebc9c8d3d1",
+          "dweb:/ipfs/Qme79eYLo7dinnhotgC4bvYnCg4doBDShHeCajrf5zpAUF"
+        ],
+        "license": "MIT"
+      },
+      "node_modules/@solidstate/contracts/interfaces/IERC173Internal.sol": {
+        "keccak256": "0x9644c3e56c9ecd1763f8aaa437d5d573a7f64a8d93ad7bea1a9c44beb5911b89",
+        "urls": [
+          "bzz-raw://c32cfda38b44878ab196d32eeb72823a9f9904e8193286c787caccfb2e5bfa75",
+          "dweb:/ipfs/QmfBNKWUSKaJtYL3JJ3YFioXCVFeeakqQ4cR5XzAxxZkCx"
+        ],
+        "license": "MIT"
+      },
+      "node_modules/@solidstate/contracts/utils/AddressUtils.sol": {
+        "keccak256": "0x7d924db4dbd9210923ab08db77db3c77438014c255fd49fa208ebce283d991bf",
+        "urls": [
+          "bzz-raw://5189eebdf91899224a14b4cd5184fa9e67a9b8904e6d88ff9610944d06c63929",
+          "dweb:/ipfs/QmRwNhfcp98pPgbzK4i9hbypHLTWPGYpuRCtEJRCTNASRm"
+        ],
+        "license": "MIT"
+      },
+      "node_modules/@solidstate/contracts/utils/UintUtils.sol": {
+        "keccak256": "0x5aaeaea22a0800402c6f2d8ce6185293bc64f74f6c390c1b1c53b624b43972f8",
+        "urls": [
+          "bzz-raw://8b1c95c745da8ca4de7b68e65ef9122dab4e748c3ae3c9f5fd5aa7c65887c9d2",
+          "dweb:/ipfs/QmX2KURY4JbM4NVFp5KPYsNxoJGA8n8w6SdAFdD5Pasgza"
+        ],
+        "license": "MIT"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "node_modules/@solidstate/contracts/access/ownable/SafeOwnable.sol",
+    "id": 3391,
+    "exportedSymbols": {
+      "ISafeOwnable": [
+        3144
+      ],
+      "Ownable": [
+        3190
+      ],
+      "OwnableInternal": [
+        3314
+      ],
+      "SafeOwnable": [
+        3390
+      ],
+      "SafeOwnableInternal": [
+        3471
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "33:897:30",
+    "nodes": [
+      {
+        "id": 3339,
+        "nodeType": "PragmaDirective",
+        "src": "33:23:30",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".8"
+        ]
+      },
+      {
+        "id": 3341,
+        "nodeType": "ImportDirective",
+        "src": "58:40:30",
+        "nodes": [],
+        "absolutePath": "node_modules/@solidstate/contracts/access/ownable/Ownable.sol",
+        "file": "./Ownable.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 3391,
+        "sourceUnit": 3191,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 3340,
+              "name": "Ownable",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 3190,
+              "src": "67:7:30",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 3343,
+        "nodeType": "ImportDirective",
+        "src": "99:50:30",
+        "nodes": [],
+        "absolutePath": "node_modules/@solidstate/contracts/access/ownable/ISafeOwnable.sol",
+        "file": "./ISafeOwnable.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 3391,
+        "sourceUnit": 3145,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 3342,
+              "name": "ISafeOwnable",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 3144,
+              "src": "108:12:30",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 3345,
+        "nodeType": "ImportDirective",
+        "src": "150:56:30",
+        "nodes": [],
+        "absolutePath": "node_modules/@solidstate/contracts/access/ownable/OwnableInternal.sol",
+        "file": "./OwnableInternal.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 3391,
+        "sourceUnit": 3315,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 3344,
+              "name": "OwnableInternal",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 3314,
+              "src": "159:15:30",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 3347,
+        "nodeType": "ImportDirective",
+        "src": "207:64:30",
+        "nodes": [],
+        "absolutePath": "node_modules/@solidstate/contracts/access/ownable/SafeOwnableInternal.sol",
+        "file": "./SafeOwnableInternal.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 3391,
+        "sourceUnit": 3472,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 3346,
+              "name": "SafeOwnableInternal",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 3471,
+              "src": "216:19:30",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 3390,
+        "nodeType": "ContractDefinition",
+        "src": "369:560:30",
+        "nodes": [
+          {
+            "id": 3364,
+            "nodeType": "FunctionDefinition",
+            "src": "499:101:30",
+            "nodes": [],
+            "body": {
+              "id": 3363,
+              "nodeType": "Block",
+              "src": "561:39:30",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "id": 3360,
+                      "name": "_nomineeOwner",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 3427,
+                      "src": "578:13:30",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_view$__$returns$_t_address_$",
+                        "typeString": "function () view returns (address)"
+                      }
+                    },
+                    "id": 3361,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "578:15:30",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "functionReturnParameters": 3359,
+                  "id": 3362,
+                  "nodeType": "Return",
+                  "src": "571:22:30"
+                }
+              ]
+            },
+            "baseFunctions": [
+              3139
+            ],
+            "documentation": {
+              "id": 3355,
+              "nodeType": "StructuredDocumentation",
+              "src": "451:43:30",
+              "text": " @inheritdoc ISafeOwnable"
+            },
+            "functionSelector": "8ab5150a",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "nomineeOwner",
+            "nameLocation": "508:12:30",
+            "parameters": {
+              "id": 3356,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "520:2:30"
+            },
+            "returnParameters": {
+              "id": 3359,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3358,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3364,
+                  "src": "552:7:30",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 3357,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "552:7:30",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "551:9:30"
+            },
+            "scope": 3390,
+            "stateMutability": "view",
+            "virtual": true,
+            "visibility": "public"
+          },
+          {
+            "id": 3374,
+            "nodeType": "FunctionDefinition",
+            "src": "654:94:30",
+            "nodes": [],
+            "body": {
+              "id": 3373,
+              "nodeType": "Block",
+              "src": "713:35:30",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "id": 3370,
+                      "name": "_acceptOwnership",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 3443,
+                      "src": "723:16:30",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$__$returns$__$",
+                        "typeString": "function ()"
+                      }
+                    },
+                    "id": 3371,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "723:18:30",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 3372,
+                  "nodeType": "ExpressionStatement",
+                  "src": "723:18:30"
+                }
+              ]
+            },
+            "baseFunctions": [
+              3143
+            ],
+            "documentation": {
+              "id": 3365,
+              "nodeType": "StructuredDocumentation",
+              "src": "606:43:30",
+              "text": " @inheritdoc ISafeOwnable"
+            },
+            "functionSelector": "79ba5097",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [
+              {
+                "id": 3368,
+                "kind": "modifierInvocation",
+                "modifierName": {
+                  "id": 3367,
+                  "name": "onlyNomineeOwner",
+                  "nameLocations": [
+                    "696:16:30"
+                  ],
+                  "nodeType": "IdentifierPath",
+                  "referencedDeclaration": 3415,
+                  "src": "696:16:30"
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "696:16:30"
+              }
+            ],
+            "name": "acceptOwnership",
+            "nameLocation": "663:15:30",
+            "parameters": {
+              "id": 3366,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "678:2:30"
+            },
+            "returnParameters": {
+              "id": 3369,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "713:0:30"
+            },
+            "scope": 3390,
+            "stateMutability": "nonpayable",
+            "virtual": true,
+            "visibility": "public"
+          },
+          {
+            "id": 3389,
+            "nodeType": "FunctionDefinition",
+            "src": "754:173:30",
+            "nodes": [],
+            "body": {
+              "id": 3388,
+              "nodeType": "Block",
+              "src": "877:50:30",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "id": 3385,
+                        "name": "account",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 3376,
+                        "src": "912:7:30",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "expression": {
+                        "id": 3382,
+                        "name": "super",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": -25,
+                        "src": "887:5:30",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_super$_SafeOwnable_$3390_$",
+                          "typeString": "type(contract super SafeOwnable)"
+                        }
+                      },
+                      "id": 3384,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberLocation": "893:18:30",
+                      "memberName": "_transferOwnership",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 3455,
+                      "src": "887:24:30",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_address_$returns$__$",
+                        "typeString": "function (address)"
+                      }
+                    },
+                    "id": 3386,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "887:33:30",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 3387,
+                  "nodeType": "ExpressionStatement",
+                  "src": "887:33:30"
+                }
+              ]
+            },
+            "baseFunctions": [
+              3286,
+              3455
+            ],
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "_transferOwnership",
+            "nameLocation": "763:18:30",
+            "overrides": {
+              "id": 3380,
+              "nodeType": "OverrideSpecifier",
+              "overrides": [
+                {
+                  "id": 3378,
+                  "name": "OwnableInternal",
+                  "nameLocations": [
+                    "839:15:30"
+                  ],
+                  "nodeType": "IdentifierPath",
+                  "referencedDeclaration": 3314,
+                  "src": "839:15:30"
+                },
+                {
+                  "id": 3379,
+                  "name": "SafeOwnableInternal",
+                  "nameLocations": [
+                    "856:19:30"
+                  ],
+                  "nodeType": "IdentifierPath",
+                  "referencedDeclaration": 3471,
+                  "src": "856:19:30"
+                }
+              ],
+              "src": "830:46:30"
+            },
+            "parameters": {
+              "id": 3377,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3376,
+                  "mutability": "mutable",
+                  "name": "account",
+                  "nameLocation": "799:7:30",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3389,
+                  "src": "791:15:30",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 3375,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "791:7:30",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "781:31:30"
+            },
+            "returnParameters": {
+              "id": 3381,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "877:0:30"
+            },
+            "scope": 3390,
+            "stateMutability": "nonpayable",
+            "virtual": true,
+            "visibility": "internal"
+          }
+        ],
+        "abstract": true,
+        "baseContracts": [
+          {
+            "baseName": {
+              "id": 3349,
+              "name": "ISafeOwnable",
+              "nameLocations": [
+                "402:12:30"
+              ],
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 3144,
+              "src": "402:12:30"
+            },
+            "id": 3350,
+            "nodeType": "InheritanceSpecifier",
+            "src": "402:12:30"
+          },
+          {
+            "baseName": {
+              "id": 3351,
+              "name": "Ownable",
+              "nameLocations": [
+                "416:7:30"
+              ],
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 3190,
+              "src": "416:7:30"
+            },
+            "id": 3352,
+            "nodeType": "InheritanceSpecifier",
+            "src": "416:7:30"
+          },
+          {
+            "baseName": {
+              "id": 3353,
+              "name": "SafeOwnableInternal",
+              "nameLocations": [
+                "425:19:30"
+              ],
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 3471,
+              "src": "425:19:30"
+            },
+            "id": 3354,
+            "nodeType": "InheritanceSpecifier",
+            "src": "425:19:30"
+          }
+        ],
+        "canonicalName": "SafeOwnable",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": {
+          "id": 3348,
+          "nodeType": "StructuredDocumentation",
+          "src": "273:95:30",
+          "text": " @title Ownership access control based on ERC173 with ownership transfer safety check"
+        },
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          3390,
+          3471,
+          3190,
+          3314,
+          3144,
+          3112,
+          5169,
+          3153,
+          3123,
+          5179
+        ],
+        "name": "SafeOwnable",
+        "nameLocation": "387:11:30",
+        "scope": 3391,
+        "usedErrors": [
+          3120,
+          3122,
+          3152
+        ]
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 30
+}

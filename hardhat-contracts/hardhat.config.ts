@@ -1,6 +1,7 @@
 import "./tasks/accounts"
 
 import "@nomicfoundation/hardhat-toolbox";
+import "@nomicfoundation/hardhat-foundry";
 
 import { resolve } from "path";
 

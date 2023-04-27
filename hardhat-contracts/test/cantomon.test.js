@@ -69,20 +69,31 @@ const cantomon_Test = function () {
     });
     it("setApprovedMessenger", async function() {
       const bytes32Value = ethers.utils.hexZeroPad(nftReader.address, 32);
-
-      console.log(bytes32Value);
       await proxyERC721Facet.setApprovedMessenger(bytes32Value);
     });
-    it("Should mint 1 NFT", async function () {
+    it("Should mint 1 SBT", async function () {
       nftOwnedId = 0;
       await nftReader.portNftTest(0, mockNft.address, nftOwnedId, diamondAddress, {value: 1});
         
       let eventFilter = proxyERC721Facet.filters.Transfer();
       let events = await proxyERC721Facet.queryFilter(eventFilter);
       let lastEvent = events.pop();
-      console.log(lastEvent.args);
-      console.log(lastEvent.args[4]);
-      expect(await proxyERC721Facet.ownerOf(nftOwnedId)).to.equal(owner.address);
+      expect(lastEvent.args.to.toString()).to.equal(owner.address);
+    });
+    it("Transfer SBT error", async function () {
+      await expect(proxyERC721Facet.transferFrom(owner.address, addr1.address, nftOwnedId)).to.be.revertedWith("ProxySbtFactory: This a Soulbound token. It cannot be transferred.");
+    });
+    it("switchUnbound & transfer", async function () {
+      await proxyERC721Facet.switchUnbound(nftOwnedId);
+      await proxyERC721Facet.transferFrom(owner.address, addr1.address, nftOwnedId);
+      let eventFilter = proxyERC721Facet.filters.Transfer();
+      let events = await proxyERC721Facet.queryFilter(eventFilter);
+      let lastEvent = events.pop();
+      expect(lastEvent.args.to.toString()).to.equal(addr1.address);
+      expect(await proxyERC721Facet.ownerOf(nftOwnedId)).to.equal(addr1.address);
+    });
+
+    it("Template", async function () {
     });
   });
 }
@@ -90,37 +101,3 @@ const cantomon_Test = function () {
 module.exports = {
   cantomon_Test
 };
-
-
-// '0x79ba5097',
-//   '0x1f931c1c',
-//   '0xcdffacc6',
-//   '0x52ef6b2c',
-//   '0xadfca15e',
-//   '0x7a0ed627',
-//   '0x2c408059',
-//   '0x8ab5150a',
-//   '0x8da5cb5b',
-//   '0x91423765',
-//   '0x01ffc9a7',
-//   '0xf2fde38b',
-
-//       '0x095ea7b3',
-//       '0x70a08231',
-//       '0x081812fc',
-//       '0x56d5d475',
-//       '0xe985e9c5',
-//       '0x06fdde03',
-//       '0x17d26dac',
-//       '0x6352211e',
-//       '0x42842e0e',
-//       '0xb88d4fde',
-//       '0xa22cb465',
-//       '0xa4b7d162',
-//       '0xc762dc0a',
-//       '0x95d89b41',
-//       '0x4f6ccce7',
-//       '0x2f745c59',
-//       '0xc87b56dd',
-//       '0x18160ddd',
-//       '0x23b872dd',

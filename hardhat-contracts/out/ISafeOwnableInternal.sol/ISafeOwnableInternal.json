@@ -1,0 +1,267 @@
+{
+  "abi": [
+    {
+      "inputs": [],
+      "name": "Ownable__NotOwner",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "Ownable__NotTransitiveOwner",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "SafeOwnable__NotNomineeOwner",
+      "type": "error"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "previousOwner",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "OwnershipTransferred",
+      "type": "event"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {},
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.19+commit.7dd6d404\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"Ownable__NotOwner\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"Ownable__NotTransitiveOwner\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"SafeOwnable__NotNomineeOwner\",\"type\":\"error\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"previousOwner\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"OwnershipTransferred\",\"type\":\"event\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"node_modules/@solidstate/contracts/access/ownable/ISafeOwnableInternal.sol\":\"ISafeOwnableInternal\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@hyperlane-xyz/=node_modules/@hyperlane-xyz/\",\":@openzeppelin/=node_modules/@openzeppelin/\",\":@solidstate/=node_modules/@solidstate/\",\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":erc721a/=node_modules/erc721a/\",\":eth-gas-reporter/=node_modules/eth-gas-reporter/\",\":forge-std/=lib/forge-std/src/\",\":hardhat/=node_modules/hardhat/\"]},\"sources\":{\"node_modules/@solidstate/contracts/access/ownable/IOwnableInternal.sol\":{\"keccak256\":\"0x6237a634712261bd82d5c7753780d35f77af215406d1e59512052f743f8f1c60\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://8e54ac6cd1b376224b8d148c704693ff3f7ac9f69954fd30ee3d949fa17210c3\",\"dweb:/ipfs/QmWjq37K3gg29XhFbepg5GbmmFYoyXb81sh2K1MnVZqG6y\"]},\"node_modules/@solidstate/contracts/access/ownable/ISafeOwnableInternal.sol\":{\"keccak256\":\"0xd5d44576a2f82b4ffdcf29feec6043e82436011784d92567a968609aa49a0f6b\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://43961ad59d89c044a403ebb3fdd8c9be9b01a59d5e549ef205423725dcfb9889\",\"dweb:/ipfs/QmeatkxGznGMCHXAz2CHTTSbk5HjUXzrjEtMc8CppNxnTZ\"]},\"node_modules/@solidstate/contracts/interfaces/IERC173Internal.sol\":{\"keccak256\":\"0x9644c3e56c9ecd1763f8aaa437d5d573a7f64a8d93ad7bea1a9c44beb5911b89\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://c32cfda38b44878ab196d32eeb72823a9f9904e8193286c787caccfb2e5bfa75\",\"dweb:/ipfs/QmfBNKWUSKaJtYL3JJ3YFioXCVFeeakqQ4cR5XzAxxZkCx\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.19+commit.7dd6d404"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "Ownable__NotOwner"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "Ownable__NotTransitiveOwner"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "SafeOwnable__NotNomineeOwner"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "previousOwner",
+              "type": "address",
+              "indexed": true
+            },
+            {
+              "internalType": "address",
+              "name": "newOwner",
+              "type": "address",
+              "indexed": true
+            }
+          ],
+          "type": "event",
+          "name": "OwnershipTransferred",
+          "anonymous": false
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":@hyperlane-xyz/=node_modules/@hyperlane-xyz/",
+        ":@openzeppelin/=node_modules/@openzeppelin/",
+        ":@solidstate/=node_modules/@solidstate/",
+        ":ds-test/=lib/forge-std/lib/ds-test/src/",
+        ":erc721a/=node_modules/erc721a/",
+        ":eth-gas-reporter/=node_modules/eth-gas-reporter/",
+        ":forge-std/=lib/forge-std/src/",
+        ":hardhat/=node_modules/hardhat/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "node_modules/@solidstate/contracts/access/ownable/ISafeOwnableInternal.sol": "ISafeOwnableInternal"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "node_modules/@solidstate/contracts/access/ownable/IOwnableInternal.sol": {
+        "keccak256": "0x6237a634712261bd82d5c7753780d35f77af215406d1e59512052f743f8f1c60",
+        "urls": [
+          "bzz-raw://8e54ac6cd1b376224b8d148c704693ff3f7ac9f69954fd30ee3d949fa17210c3",
+          "dweb:/ipfs/QmWjq37K3gg29XhFbepg5GbmmFYoyXb81sh2K1MnVZqG6y"
+        ],
+        "license": "MIT"
+      },
+      "node_modules/@solidstate/contracts/access/ownable/ISafeOwnableInternal.sol": {
+        "keccak256": "0xd5d44576a2f82b4ffdcf29feec6043e82436011784d92567a968609aa49a0f6b",
+        "urls": [
+          "bzz-raw://43961ad59d89c044a403ebb3fdd8c9be9b01a59d5e549ef205423725dcfb9889",
+          "dweb:/ipfs/QmeatkxGznGMCHXAz2CHTTSbk5HjUXzrjEtMc8CppNxnTZ"
+        ],
+        "license": "MIT"
+      },
+      "node_modules/@solidstate/contracts/interfaces/IERC173Internal.sol": {
+        "keccak256": "0x9644c3e56c9ecd1763f8aaa437d5d573a7f64a8d93ad7bea1a9c44beb5911b89",
+        "urls": [
+          "bzz-raw://c32cfda38b44878ab196d32eeb72823a9f9904e8193286c787caccfb2e5bfa75",
+          "dweb:/ipfs/QmfBNKWUSKaJtYL3JJ3YFioXCVFeeakqQ4cR5XzAxxZkCx"
+        ],
+        "license": "MIT"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "node_modules/@solidstate/contracts/access/ownable/ISafeOwnableInternal.sol",
+    "id": 3154,
+    "exportedSymbols": {
+      "IOwnableInternal": [
+        3123
+      ],
+      "ISafeOwnableInternal": [
+        3153
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "33:182:26",
+    "nodes": [
+      {
+        "id": 3146,
+        "nodeType": "PragmaDirective",
+        "src": "33:23:26",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".8"
+        ]
+      },
+      {
+        "id": 3148,
+        "nodeType": "ImportDirective",
+        "src": "58:58:26",
+        "nodes": [],
+        "absolutePath": "node_modules/@solidstate/contracts/access/ownable/IOwnableInternal.sol",
+        "file": "./IOwnableInternal.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 3154,
+        "sourceUnit": 3124,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 3147,
+              "name": "IOwnableInternal",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 3123,
+              "src": "67:16:26",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 3153,
+        "nodeType": "ContractDefinition",
+        "src": "118:96:26",
+        "nodes": [
+          {
+            "id": 3152,
+            "nodeType": "ErrorDefinition",
+            "src": "175:37:26",
+            "nodes": [],
+            "errorSelector": "efd1052d",
+            "name": "SafeOwnable__NotNomineeOwner",
+            "nameLocation": "181:28:26",
+            "parameters": {
+              "id": 3151,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "209:2:26"
+            }
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [
+          {
+            "baseName": {
+              "id": 3149,
+              "name": "IOwnableInternal",
+              "nameLocations": [
+                "152:16:26"
+              ],
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 3123,
+              "src": "152:16:26"
+            },
+            "id": 3150,
+            "nodeType": "InheritanceSpecifier",
+            "src": "152:16:26"
+          }
+        ],
+        "canonicalName": "ISafeOwnableInternal",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          3153,
+          3123,
+          5179
+        ],
+        "name": "ISafeOwnableInternal",
+        "nameLocation": "128:20:26",
+        "scope": 3154,
+        "usedErrors": [
+          3120,
+          3122,
+          3152
+        ]
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 26
+}

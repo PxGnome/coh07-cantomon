@@ -1,0 +1,578 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "_name",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "_symbol",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "_baseURI",
+          "type": "string"
+        }
+      ],
+      "name": "init",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x608060405234801561001057600080fd5b50610340806100206000396000f3fe608060405234801561001057600080fd5b506004361061002b5760003560e01c806341e461a014610030575b600080fd5b61004361003e366004610139565b610045565b005b7f99574a7094154bb123ae6ae102096f0bf9679b85a5cd1e727aaa0ae5f132e6b180610071858261024a565b5060018101610080848261024a565b506002810161008f838261024a565b5050505050565b634e487b7160e01b600052604160045260246000fd5b600082601f8301126100bd57600080fd5b813567ffffffffffffffff808211156100d8576100d8610096565b604051601f8301601f19908116603f0116810190828211818310171561010057610100610096565b8160405283815286602085880101111561011957600080fd5b836020870160208301376000602085830101528094505050505092915050565b60008060006060848603121561014e57600080fd5b833567ffffffffffffffff8082111561016657600080fd5b610172878388016100ac565b9450602086013591508082111561018857600080fd5b610194878388016100ac565b935060408601359150808211156101aa57600080fd5b506101b7868287016100ac565b9150509250925092565b600181811c908216806101d557607f821691505b6020821081036101f557634e487b7160e01b600052602260045260246000fd5b50919050565b601f82111561024557600081815260208120601f850160051c810160208610156102225750805b601f850160051c820191505b818110156102415782815560010161022e565b5050505b505050565b815167ffffffffffffffff81111561026457610264610096565b6102788161027284546101c1565b846101fb565b602080601f8311600181146102ad57600084156102955750858301515b600019600386901b1c1916600185901b178555610241565b600085815260208120601f198616915b828110156102dc578886015182559484019460019091019084016102bd565b50858210156102fa5787850151600019600388901b60f8161c191681555b5050505050600190811b0190555056fea26469706673582212207de495cd8918bfd6a33ddb689f27a8e984b2942dc53fb38807962080747864fd64736f6c63430008130033",
+    "sourceMap": "144:309:10:-:0;;;;;;;;;;;;;;;;;;;",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x608060405234801561001057600080fd5b506004361061002b5760003560e01c806341e461a014610030575b600080fd5b61004361003e366004610139565b610045565b005b7f99574a7094154bb123ae6ae102096f0bf9679b85a5cd1e727aaa0ae5f132e6b180610071858261024a565b5060018101610080848261024a565b506002810161008f838261024a565b5050505050565b634e487b7160e01b600052604160045260246000fd5b600082601f8301126100bd57600080fd5b813567ffffffffffffffff808211156100d8576100d8610096565b604051601f8301601f19908116603f0116810190828211818310171561010057610100610096565b8160405283815286602085880101111561011957600080fd5b836020870160208301376000602085830101528094505050505092915050565b60008060006060848603121561014e57600080fd5b833567ffffffffffffffff8082111561016657600080fd5b610172878388016100ac565b9450602086013591508082111561018857600080fd5b610194878388016100ac565b935060408601359150808211156101aa57600080fd5b506101b7868287016100ac565b9150509250925092565b600181811c908216806101d557607f821691505b6020821081036101f557634e487b7160e01b600052602260045260246000fd5b50919050565b601f82111561024557600081815260208120601f850160051c810160208610156102225750805b601f850160051c820191505b818110156102415782815560010161022e565b5050505b505050565b815167ffffffffffffffff81111561026457610264610096565b6102788161027284546101c1565b846101fb565b602080601f8311600181146102ad57600084156102955750858301515b600019600386901b1c1916600185901b178555610241565b600085815260208120601f198616915b828110156102dc578886015182559484019460019091019084016102bd565b50858210156102fa5787850151600019600388901b60f8161c191681555b5050505050600190811b0190555056fea26469706673582212207de495cd8918bfd6a33ddb689f27a8e984b2942dc53fb38807962080747864fd64736f6c63430008130033",
+    "sourceMap": "144:309:10:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;184:266;;;;;;:::i;:::-;;:::i;:::-;;;143:56:74;;368:14:10;377:5;143:56:74;368:14:10;:::i;:::-;-1:-1:-1;393:8:10;;;:18;404:7;393:8;:18;:::i;:::-;-1:-1:-1;422:9:10;;;:20;434:8;422:9;:20;:::i;:::-;;275:175;184:266;;;:::o;14:127:84:-;75:10;70:3;66:20;63:1;56:31;106:4;103:1;96:15;130:4;127:1;120:15;146:719;189:5;242:3;235:4;227:6;223:17;219:27;209:55;;260:1;257;250:12;209:55;296:6;283:20;322:18;359:2;355;352:10;349:36;;;365:18;;:::i;:::-;440:2;434:9;408:2;494:13;;-1:-1:-1;;490:22:84;;;514:2;486:31;482:40;470:53;;;538:18;;;558:22;;;535:46;532:72;;;584:18;;:::i;:::-;624:10;620:2;613:22;659:2;651:6;644:18;705:3;698:4;693:2;685:6;681:15;677:26;674:35;671:55;;;722:1;719;712:12;671:55;786:2;779:4;771:6;767:17;760:4;752:6;748:17;735:54;833:1;826:4;821:2;813:6;809:15;805:26;798:37;853:6;844:15;;;;;;146:719;;;;:::o;870:743::-;977:6;985;993;1046:2;1034:9;1025:7;1021:23;1017:32;1014:52;;;1062:1;1059;1052:12;1014:52;1102:9;1089:23;1131:18;1172:2;1164:6;1161:14;1158:34;;;1188:1;1185;1178:12;1158:34;1211:50;1253:7;1244:6;1233:9;1229:22;1211:50;:::i;:::-;1201:60;;1314:2;1303:9;1299:18;1286:32;1270:48;;1343:2;1333:8;1330:16;1327:36;;;1359:1;1356;1349:12;1327:36;1382:52;1426:7;1415:8;1404:9;1400:24;1382:52;:::i;:::-;1372:62;;1487:2;1476:9;1472:18;1459:32;1443:48;;1516:2;1506:8;1503:16;1500:36;;;1532:1;1529;1522:12;1500:36;;1555:52;1599:7;1588:8;1577:9;1573:24;1555:52;:::i;:::-;1545:62;;;870:743;;;;;:::o;1618:380::-;1697:1;1693:12;;;;1740;;;1761:61;;1815:4;1807:6;1803:17;1793:27;;1761:61;1868:2;1860:6;1857:14;1837:18;1834:38;1831:161;;1914:10;1909:3;1905:20;1902:1;1895:31;1949:4;1946:1;1939:15;1977:4;1974:1;1967:15;1831:161;;1618:380;;;:::o;2129:545::-;2231:2;2226:3;2223:11;2220:448;;;2267:1;2292:5;2288:2;2281:17;2337:4;2333:2;2323:19;2407:2;2395:10;2391:19;2388:1;2384:27;2378:4;2374:38;2443:4;2431:10;2428:20;2425:47;;;-1:-1:-1;2466:4:84;2425:47;2521:2;2516:3;2512:12;2509:1;2505:20;2499:4;2495:31;2485:41;;2576:82;2594:2;2587:5;2584:13;2576:82;;;2639:17;;;2620:1;2609:13;2576:82;;;2580:3;;;2220:448;2129:545;;;:::o;2850:1352::-;2976:3;2970:10;3003:18;2995:6;2992:30;2989:56;;;3025:18;;:::i;:::-;3054:97;3144:6;3104:38;3136:4;3130:11;3104:38;:::i;:::-;3098:4;3054:97;:::i;:::-;3206:4;;3270:2;3259:14;;3287:1;3282:663;;;;3989:1;4006:6;4003:89;;;-1:-1:-1;4058:19:84;;;4052:26;4003:89;-1:-1:-1;;2807:1:84;2803:11;;;2799:24;2795:29;2785:40;2831:1;2827:11;;;2782:57;4105:81;;3252:944;;3282:663;2076:1;2069:14;;;2113:4;2100:18;;-1:-1:-1;;3318:20:84;;;3436:236;3450:7;3447:1;3444:14;3436:236;;;3539:19;;;3533:26;3518:42;;3631:27;;;;3599:1;3587:14;;;;3466:19;;3436:236;;;3440:3;3700:6;3691:7;3688:19;3685:201;;;3761:19;;;3755:26;-1:-1:-1;;3844:1:84;3840:14;;;3856:3;3836:24;3832:37;3828:42;3813:58;3798:74;;3685:201;-1:-1:-1;;;;;3932:1:84;3916:14;;;3912:22;3899:36;;-1:-1:-1;2850:1352:84:o",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "init(string,string,string)": "41e461a0"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.19+commit.7dd6d404\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"string\",\"name\":\"_name\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"_symbol\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"_baseURI\",\"type\":\"string\"}],\"name\":\"init\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/upgradeInitializers/CantomonDiamondInit.sol\":\"CantomonDiamondInit\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@hyperlane-xyz/=node_modules/@hyperlane-xyz/\",\":@openzeppelin/=node_modules/@openzeppelin/\",\":@solidstate/=node_modules/@solidstate/\",\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":erc721a/=node_modules/erc721a/\",\":eth-gas-reporter/=node_modules/eth-gas-reporter/\",\":forge-std/=lib/forge-std/src/\",\":hardhat/=node_modules/hardhat/\"]},\"sources\":{\"contracts/upgradeInitializers/CantomonDiamondInit.sol\":{\"keccak256\":\"0xce21ea88b0667df059cd02fc2d311655ba78d9269dcb54708354873ee4de742b\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://490252d7540fb6744b257935f125731b77f23829ea4f0077659450fafc54a485\",\"dweb:/ipfs/QmNbFrPkVnbHQZiiYY91tH6Q43RnFvnPcjX8rG8ww3GnaV\"]},\"node_modules/@solidstate/contracts/token/ERC721/metadata/ERC721MetadataStorage.sol\":{\"keccak256\":\"0xe220a86657018b0d498708b7d8c728042d9a41e8ac230e22d1a09b6bf866332e\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://42cb0e72b54f092e9d88dff467f21c3fc754d862144c4316b2d2e4d96719ed95\",\"dweb:/ipfs/QmXMtfiGjAbXvAaZ4KquQpaa4gnSoZz7EQ9MFMnm5HrtYk\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.19+commit.7dd6d404"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "string",
+              "name": "_name",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "_symbol",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "_baseURI",
+              "type": "string"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "init"
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":@hyperlane-xyz/=node_modules/@hyperlane-xyz/",
+        ":@openzeppelin/=node_modules/@openzeppelin/",
+        ":@solidstate/=node_modules/@solidstate/",
+        ":ds-test/=lib/forge-std/lib/ds-test/src/",
+        ":erc721a/=node_modules/erc721a/",
+        ":eth-gas-reporter/=node_modules/eth-gas-reporter/",
+        ":forge-std/=lib/forge-std/src/",
+        ":hardhat/=node_modules/hardhat/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "contracts/upgradeInitializers/CantomonDiamondInit.sol": "CantomonDiamondInit"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "contracts/upgradeInitializers/CantomonDiamondInit.sol": {
+        "keccak256": "0xce21ea88b0667df059cd02fc2d311655ba78d9269dcb54708354873ee4de742b",
+        "urls": [
+          "bzz-raw://490252d7540fb6744b257935f125731b77f23829ea4f0077659450fafc54a485",
+          "dweb:/ipfs/QmNbFrPkVnbHQZiiYY91tH6Q43RnFvnPcjX8rG8ww3GnaV"
+        ],
+        "license": "MIT"
+      },
+      "node_modules/@solidstate/contracts/token/ERC721/metadata/ERC721MetadataStorage.sol": {
+        "keccak256": "0xe220a86657018b0d498708b7d8c728042d9a41e8ac230e22d1a09b6bf866332e",
+        "urls": [
+          "bzz-raw://42cb0e72b54f092e9d88dff467f21c3fc754d862144c4316b2d2e4d96719ed95",
+          "dweb:/ipfs/QmXMtfiGjAbXvAaZ4KquQpaa4gnSoZz7EQ9MFMnm5HrtYk"
+        ],
+        "license": "MIT"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "contracts/upgradeInitializers/CantomonDiamondInit.sol",
+    "id": 1554,
+    "exportedSymbols": {
+      "CantomonDiamondInit": [
+        1553
+      ],
+      "ERC721MetadataStorage": [
+        9039
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "33:422:10",
+    "nodes": [
+      {
+        "id": 1514,
+        "nodeType": "PragmaDirective",
+        "src": "33:24:10",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".19"
+        ]
+      },
+      {
+        "id": 1515,
+        "nodeType": "ImportDirective",
+        "src": "61:79:10",
+        "nodes": [],
+        "absolutePath": "node_modules/@solidstate/contracts/token/ERC721/metadata/ERC721MetadataStorage.sol",
+        "file": "@solidstate/contracts/token/ERC721/metadata/ERC721MetadataStorage.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 1554,
+        "sourceUnit": 9040,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 1553,
+        "nodeType": "ContractDefinition",
+        "src": "144:309:10",
+        "nodes": [
+          {
+            "id": 1552,
+            "nodeType": "FunctionDefinition",
+            "src": "184:266:10",
+            "nodes": [],
+            "body": {
+              "id": 1551,
+              "nodeType": "Block",
+              "src": "275:175:10",
+              "nodes": [],
+              "statements": [
+                {
+                  "assignments": [
+                    1528
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 1528,
+                      "mutability": "mutable",
+                      "name": "l",
+                      "nameLocation": "323:1:10",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 1551,
+                      "src": "286:38:10",
+                      "stateVariable": false,
+                      "storageLocation": "storage",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Layout_$9026_storage_ptr",
+                        "typeString": "struct ERC721MetadataStorage.Layout"
+                      },
+                      "typeName": {
+                        "id": 1527,
+                        "nodeType": "UserDefinedTypeName",
+                        "pathNode": {
+                          "id": 1526,
+                          "name": "ERC721MetadataStorage.Layout",
+                          "nameLocations": [
+                            "286:21:10",
+                            "308:6:10"
+                          ],
+                          "nodeType": "IdentifierPath",
+                          "referencedDeclaration": 9026,
+                          "src": "286:28:10"
+                        },
+                        "referencedDeclaration": 9026,
+                        "src": "286:28:10",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Layout_$9026_storage_ptr",
+                          "typeString": "struct ERC721MetadataStorage.Layout"
+                        }
+                      },
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 1532,
+                  "initialValue": {
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "expression": {
+                        "id": 1529,
+                        "name": "ERC721MetadataStorage",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 9039,
+                        "src": "327:21:10",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_contract$_ERC721MetadataStorage_$9039_$",
+                          "typeString": "type(library ERC721MetadataStorage)"
+                        }
+                      },
+                      "id": 1530,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberLocation": "349:6:10",
+                      "memberName": "layout",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 9038,
+                      "src": "327:28:10",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_pure$__$returns$_t_struct$_Layout_$9026_storage_ptr_$",
+                        "typeString": "function () pure returns (struct ERC721MetadataStorage.Layout storage pointer)"
+                      }
+                    },
+                    "id": 1531,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "327:30:10",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Layout_$9026_storage_ptr",
+                      "typeString": "struct ERC721MetadataStorage.Layout storage pointer"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "286:71:10"
+                },
+                {
+                  "expression": {
+                    "id": 1537,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "expression": {
+                        "id": 1533,
+                        "name": "l",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 1528,
+                        "src": "368:1:10",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Layout_$9026_storage_ptr",
+                          "typeString": "struct ERC721MetadataStorage.Layout storage pointer"
+                        }
+                      },
+                      "id": 1535,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberLocation": "370:4:10",
+                      "memberName": "name",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 9017,
+                      "src": "368:6:10",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_storage",
+                        "typeString": "string storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "id": 1536,
+                      "name": "_name",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1517,
+                      "src": "377:5:10",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_memory_ptr",
+                        "typeString": "string memory"
+                      }
+                    },
+                    "src": "368:14:10",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage",
+                      "typeString": "string storage ref"
+                    }
+                  },
+                  "id": 1538,
+                  "nodeType": "ExpressionStatement",
+                  "src": "368:14:10"
+                },
+                {
+                  "expression": {
+                    "id": 1543,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "expression": {
+                        "id": 1539,
+                        "name": "l",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 1528,
+                        "src": "393:1:10",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Layout_$9026_storage_ptr",
+                          "typeString": "struct ERC721MetadataStorage.Layout storage pointer"
+                        }
+                      },
+                      "id": 1541,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberLocation": "395:6:10",
+                      "memberName": "symbol",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 9019,
+                      "src": "393:8:10",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_storage",
+                        "typeString": "string storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "id": 1542,
+                      "name": "_symbol",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1519,
+                      "src": "404:7:10",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_memory_ptr",
+                        "typeString": "string memory"
+                      }
+                    },
+                    "src": "393:18:10",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage",
+                      "typeString": "string storage ref"
+                    }
+                  },
+                  "id": 1544,
+                  "nodeType": "ExpressionStatement",
+                  "src": "393:18:10"
+                },
+                {
+                  "expression": {
+                    "id": 1549,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "expression": {
+                        "id": 1545,
+                        "name": "l",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 1528,
+                        "src": "422:1:10",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Layout_$9026_storage_ptr",
+                          "typeString": "struct ERC721MetadataStorage.Layout storage pointer"
+                        }
+                      },
+                      "id": 1547,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberLocation": "424:7:10",
+                      "memberName": "baseURI",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 9021,
+                      "src": "422:9:10",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_storage",
+                        "typeString": "string storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "id": 1548,
+                      "name": "_baseURI",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1521,
+                      "src": "434:8:10",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_memory_ptr",
+                        "typeString": "string memory"
+                      }
+                    },
+                    "src": "422:20:10",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage",
+                      "typeString": "string storage ref"
+                    }
+                  },
+                  "id": 1550,
+                  "nodeType": "ExpressionStatement",
+                  "src": "422:20:10"
+                }
+              ]
+            },
+            "functionSelector": "41e461a0",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "init",
+            "nameLocation": "193:4:10",
+            "parameters": {
+              "id": 1522,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1517,
+                  "mutability": "mutable",
+                  "name": "_name",
+                  "nameLocation": "212:5:10",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1552,
+                  "src": "198:19:10",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 1516,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "198:6:10",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1519,
+                  "mutability": "mutable",
+                  "name": "_symbol",
+                  "nameLocation": "233:7:10",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1552,
+                  "src": "219:21:10",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 1518,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "219:6:10",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1521,
+                  "mutability": "mutable",
+                  "name": "_baseURI",
+                  "nameLocation": "256:8:10",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1552,
+                  "src": "242:22:10",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 1520,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "242:6:10",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "197:68:10"
+            },
+            "returnParameters": {
+              "id": 1523,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "275:0:10"
+            },
+            "scope": 1553,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "CantomonDiamondInit",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          1553
+        ],
+        "name": "CantomonDiamondInit",
+        "nameLocation": "153:19:10",
+        "scope": 1554,
+        "usedErrors": []
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 10
+}

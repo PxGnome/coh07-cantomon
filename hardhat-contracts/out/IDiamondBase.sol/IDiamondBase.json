@@ -1,0 +1,191 @@
+{
+  "abi": [
+    {
+      "inputs": [],
+      "name": "Proxy__ImplementationIsNotContract",
+      "type": "error"
+    },
+    {
+      "stateMutability": "payable",
+      "type": "fallback"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {},
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.19+commit.7dd6d404\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"Proxy__ImplementationIsNotContract\",\"type\":\"error\"},{\"stateMutability\":\"payable\",\"type\":\"fallback\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"node_modules/@solidstate/contracts/proxy/diamond/base/IDiamondBase.sol\":\"IDiamondBase\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@hyperlane-xyz/=node_modules/@hyperlane-xyz/\",\":@openzeppelin/=node_modules/@openzeppelin/\",\":@solidstate/=node_modules/@solidstate/\",\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":erc721a/=node_modules/erc721a/\",\":eth-gas-reporter/=node_modules/eth-gas-reporter/\",\":forge-std/=lib/forge-std/src/\",\":hardhat/=node_modules/hardhat/\"]},\"sources\":{\"node_modules/@solidstate/contracts/proxy/IProxy.sol\":{\"keccak256\":\"0x2a06657ce005059e60a0765fe090240732d910fc38de43ca8fd48804bb86c5e4\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://f893e1d80c28099c028560f96fdbc77fb28c5f3a5d30197e8274a130aa50c20b\",\"dweb:/ipfs/QmQ2WReybvHmivdwmSdZa4G3sCPJnJ4Ars9fYvb1byUPrw\"]},\"node_modules/@solidstate/contracts/proxy/diamond/base/IDiamondBase.sol\":{\"keccak256\":\"0x3329852027ffb50519a245376a1dee8f828223c0fa439bbb16a80a1bc226c2fa\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://4343964d070386d12d9e663607ad96e5134d4edd12234cb6412911ba77bcc5a9\",\"dweb:/ipfs/Qmbhp7gZRWRdryatZbjbgcxT4aWy9siaLWDXNoB1oCRWis\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.19+commit.7dd6d404"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "Proxy__ImplementationIsNotContract"
+        },
+        {
+          "inputs": [],
+          "stateMutability": "payable",
+          "type": "fallback"
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":@hyperlane-xyz/=node_modules/@hyperlane-xyz/",
+        ":@openzeppelin/=node_modules/@openzeppelin/",
+        ":@solidstate/=node_modules/@solidstate/",
+        ":ds-test/=lib/forge-std/lib/ds-test/src/",
+        ":erc721a/=node_modules/erc721a/",
+        ":eth-gas-reporter/=node_modules/eth-gas-reporter/",
+        ":forge-std/=lib/forge-std/src/",
+        ":hardhat/=node_modules/hardhat/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "node_modules/@solidstate/contracts/proxy/diamond/base/IDiamondBase.sol": "IDiamondBase"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "node_modules/@solidstate/contracts/proxy/IProxy.sol": {
+        "keccak256": "0x2a06657ce005059e60a0765fe090240732d910fc38de43ca8fd48804bb86c5e4",
+        "urls": [
+          "bzz-raw://f893e1d80c28099c028560f96fdbc77fb28c5f3a5d30197e8274a130aa50c20b",
+          "dweb:/ipfs/QmQ2WReybvHmivdwmSdZa4G3sCPJnJ4Ars9fYvb1byUPrw"
+        ],
+        "license": "MIT"
+      },
+      "node_modules/@solidstate/contracts/proxy/diamond/base/IDiamondBase.sol": {
+        "keccak256": "0x3329852027ffb50519a245376a1dee8f828223c0fa439bbb16a80a1bc226c2fa",
+        "urls": [
+          "bzz-raw://4343964d070386d12d9e663607ad96e5134d4edd12234cb6412911ba77bcc5a9",
+          "dweb:/ipfs/Qmbhp7gZRWRdryatZbjbgcxT4aWy9siaLWDXNoB1oCRWis"
+        ],
+        "license": "MIT"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "node_modules/@solidstate/contracts/proxy/diamond/base/IDiamondBase.sol",
+    "id": 5895,
+    "exportedSymbols": {
+      "IDiamondBase": [
+        5894
+      ],
+      "IProxy": [
+        5451
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "33:105:53",
+    "nodes": [
+      {
+        "id": 5889,
+        "nodeType": "PragmaDirective",
+        "src": "33:23:53",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".8"
+        ]
+      },
+      {
+        "id": 5891,
+        "nodeType": "ImportDirective",
+        "src": "58:42:53",
+        "nodes": [],
+        "absolutePath": "node_modules/@solidstate/contracts/proxy/IProxy.sol",
+        "file": "../../IProxy.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 5895,
+        "sourceUnit": 5452,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 5890,
+              "name": "IProxy",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 5451,
+              "src": "67:6:53",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 5894,
+        "nodeType": "ContractDefinition",
+        "src": "102:35:53",
+        "nodes": [],
+        "abstract": false,
+        "baseContracts": [
+          {
+            "baseName": {
+              "id": 5892,
+              "name": "IProxy",
+              "nameLocations": [
+                "128:6:53"
+              ],
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 5451,
+              "src": "128:6:53"
+            },
+            "id": 5893,
+            "nodeType": "InheritanceSpecifier",
+            "src": "128:6:53"
+          }
+        ],
+        "canonicalName": "IDiamondBase",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          5894,
+          5451
+        ],
+        "name": "IDiamondBase",
+        "nameLocation": "112:12:53",
+        "scope": 5895,
+        "usedErrors": [
+          5447
+        ]
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 53
+}

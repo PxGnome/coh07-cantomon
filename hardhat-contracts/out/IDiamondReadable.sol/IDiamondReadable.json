@@ -1,0 +1,741 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "bytes4",
+          "name": "selector",
+          "type": "bytes4"
+        }
+      ],
+      "name": "facetAddress",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "facet",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "facetAddresses",
+      "outputs": [
+        {
+          "internalType": "address[]",
+          "name": "addresses",
+          "type": "address[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "facet",
+          "type": "address"
+        }
+      ],
+      "name": "facetFunctionSelectors",
+      "outputs": [
+        {
+          "internalType": "bytes4[]",
+          "name": "selectors",
+          "type": "bytes4[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "facets",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "target",
+              "type": "address"
+            },
+            {
+              "internalType": "bytes4[]",
+              "name": "selectors",
+              "type": "bytes4[]"
+            }
+          ],
+          "internalType": "struct IDiamondReadable.Facet[]",
+          "name": "diamondFacets",
+          "type": "tuple[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "facetAddress(bytes4)": "cdffacc6",
+    "facetAddresses()": "52ef6b2c",
+    "facetFunctionSelectors(address)": "adfca15e",
+    "facets()": "7a0ed627"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.19+commit.7dd6d404\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"bytes4\",\"name\":\"selector\",\"type\":\"bytes4\"}],\"name\":\"facetAddress\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"facet\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"facetAddresses\",\"outputs\":[{\"internalType\":\"address[]\",\"name\":\"addresses\",\"type\":\"address[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"facet\",\"type\":\"address\"}],\"name\":\"facetFunctionSelectors\",\"outputs\":[{\"internalType\":\"bytes4[]\",\"name\":\"selectors\",\"type\":\"bytes4[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"facets\",\"outputs\":[{\"components\":[{\"internalType\":\"address\",\"name\":\"target\",\"type\":\"address\"},{\"internalType\":\"bytes4[]\",\"name\":\"selectors\",\"type\":\"bytes4[]\"}],\"internalType\":\"struct IDiamondReadable.Facet[]\",\"name\":\"diamondFacets\",\"type\":\"tuple[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"details\":\"see https://eips.ethereum.org/EIPS/eip-2535\",\"kind\":\"dev\",\"methods\":{\"facetAddress(bytes4)\":{\"params\":{\"selector\":\"function selector to query\"},\"returns\":{\"facet\":\"facet address (zero address if not found)\"}},\"facetAddresses()\":{\"returns\":{\"addresses\":\"array of facet addresses\"}},\"facetFunctionSelectors(address)\":{\"params\":{\"facet\":\"address of facet to query\"},\"returns\":{\"selectors\":\"array of function selectors\"}},\"facets()\":{\"returns\":{\"diamondFacets\":\"array of structured facet data\"}}},\"title\":\"Diamond proxy introspection interface\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"facetAddress(bytes4)\":{\"notice\":\"get the address of the facet associated with given selector\"},\"facetAddresses()\":{\"notice\":\"get addresses of all facets used by diamond\"},\"facetFunctionSelectors(address)\":{\"notice\":\"get all selectors for given facet address\"},\"facets()\":{\"notice\":\"get all facets and their selectors\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"node_modules/@solidstate/contracts/proxy/diamond/readable/IDiamondReadable.sol\":\"IDiamondReadable\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@hyperlane-xyz/=node_modules/@hyperlane-xyz/\",\":@openzeppelin/=node_modules/@openzeppelin/\",\":@solidstate/=node_modules/@solidstate/\",\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":erc721a/=node_modules/erc721a/\",\":eth-gas-reporter/=node_modules/eth-gas-reporter/\",\":forge-std/=lib/forge-std/src/\",\":hardhat/=node_modules/hardhat/\"]},\"sources\":{\"node_modules/@solidstate/contracts/proxy/diamond/readable/IDiamondReadable.sol\":{\"keccak256\":\"0xe3536079514a210e74f6e93b62525d451ed75c50c82773f9574c24e886ebe1ed\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://f815154b93cf0619d01f779f0b7b88e2bae701adb1f92a36bbe6132e5321b656\",\"dweb:/ipfs/QmYhYKEuVEEHD2hc5P1iegppfNHMUAvdqsA22RS1Nh16wr\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.19+commit.7dd6d404"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "bytes4",
+              "name": "selector",
+              "type": "bytes4"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "facetAddress",
+          "outputs": [
+            {
+              "internalType": "address",
+              "name": "facet",
+              "type": "address"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "facetAddresses",
+          "outputs": [
+            {
+              "internalType": "address[]",
+              "name": "addresses",
+              "type": "address[]"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "facet",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "facetFunctionSelectors",
+          "outputs": [
+            {
+              "internalType": "bytes4[]",
+              "name": "selectors",
+              "type": "bytes4[]"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "facets",
+          "outputs": [
+            {
+              "internalType": "struct IDiamondReadable.Facet[]",
+              "name": "diamondFacets",
+              "type": "tuple[]",
+              "components": [
+                {
+                  "internalType": "address",
+                  "name": "target",
+                  "type": "address"
+                },
+                {
+                  "internalType": "bytes4[]",
+                  "name": "selectors",
+                  "type": "bytes4[]"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {
+          "facetAddress(bytes4)": {
+            "params": {
+              "selector": "function selector to query"
+            },
+            "returns": {
+              "facet": "facet address (zero address if not found)"
+            }
+          },
+          "facetAddresses()": {
+            "returns": {
+              "addresses": "array of facet addresses"
+            }
+          },
+          "facetFunctionSelectors(address)": {
+            "params": {
+              "facet": "address of facet to query"
+            },
+            "returns": {
+              "selectors": "array of function selectors"
+            }
+          },
+          "facets()": {
+            "returns": {
+              "diamondFacets": "array of structured facet data"
+            }
+          }
+        },
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {
+          "facetAddress(bytes4)": {
+            "notice": "get the address of the facet associated with given selector"
+          },
+          "facetAddresses()": {
+            "notice": "get addresses of all facets used by diamond"
+          },
+          "facetFunctionSelectors(address)": {
+            "notice": "get all selectors for given facet address"
+          },
+          "facets()": {
+            "notice": "get all facets and their selectors"
+          }
+        },
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":@hyperlane-xyz/=node_modules/@hyperlane-xyz/",
+        ":@openzeppelin/=node_modules/@openzeppelin/",
+        ":@solidstate/=node_modules/@solidstate/",
+        ":ds-test/=lib/forge-std/lib/ds-test/src/",
+        ":erc721a/=node_modules/erc721a/",
+        ":eth-gas-reporter/=node_modules/eth-gas-reporter/",
+        ":forge-std/=lib/forge-std/src/",
+        ":hardhat/=node_modules/hardhat/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "node_modules/@solidstate/contracts/proxy/diamond/readable/IDiamondReadable.sol": "IDiamondReadable"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "node_modules/@solidstate/contracts/proxy/diamond/readable/IDiamondReadable.sol": {
+        "keccak256": "0xe3536079514a210e74f6e93b62525d451ed75c50c82773f9574c24e886ebe1ed",
+        "urls": [
+          "bzz-raw://f815154b93cf0619d01f779f0b7b88e2bae701adb1f92a36bbe6132e5321b656",
+          "dweb:/ipfs/QmYhYKEuVEEHD2hc5P1iegppfNHMUAvdqsA22RS1Nh16wr"
+        ],
+        "license": "MIT"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "node_modules/@solidstate/contracts/proxy/diamond/readable/IDiamondReadable.sol",
+    "id": 6568,
+    "exportedSymbols": {
+      "IDiamondReadable": [
+        6567
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "33:1266:57",
+    "nodes": [
+      {
+        "id": 6527,
+        "nodeType": "PragmaDirective",
+        "src": "33:23:57",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".8"
+        ]
+      },
+      {
+        "id": 6567,
+        "nodeType": "ContractDefinition",
+        "src": "166:1132:57",
+        "nodes": [
+          {
+            "id": 6534,
+            "nodeType": "StructDefinition",
+            "src": "199:72:57",
+            "nodes": [],
+            "canonicalName": "IDiamondReadable.Facet",
+            "members": [
+              {
+                "constant": false,
+                "id": 6530,
+                "mutability": "mutable",
+                "name": "target",
+                "nameLocation": "230:6:57",
+                "nodeType": "VariableDeclaration",
+                "scope": 6534,
+                "src": "222:14:57",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 6529,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "222:7:57",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 6533,
+                "mutability": "mutable",
+                "name": "selectors",
+                "nameLocation": "255:9:57",
+                "nodeType": "VariableDeclaration",
+                "scope": 6534,
+                "src": "246:18:57",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_array$_t_bytes4_$dyn_storage_ptr",
+                  "typeString": "bytes4[]"
+                },
+                "typeName": {
+                  "baseType": {
+                    "id": 6531,
+                    "name": "bytes4",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "246:6:57",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes4",
+                      "typeString": "bytes4"
+                    }
+                  },
+                  "id": 6532,
+                  "nodeType": "ArrayTypeName",
+                  "src": "246:8:57",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_bytes4_$dyn_storage_ptr",
+                    "typeString": "bytes4[]"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "name": "Facet",
+            "nameLocation": "206:5:57",
+            "scope": 6567,
+            "visibility": "public"
+          },
+          {
+            "id": 6542,
+            "nodeType": "FunctionDefinition",
+            "src": "403:71:57",
+            "nodes": [],
+            "documentation": {
+              "id": 6535,
+              "nodeType": "StructuredDocumentation",
+              "src": "277:121:57",
+              "text": " @notice get all facets and their selectors\n @return diamondFacets array of structured facet data"
+            },
+            "functionSelector": "7a0ed627",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "facets",
+            "nameLocation": "412:6:57",
+            "parameters": {
+              "id": 6536,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "418:2:57"
+            },
+            "returnParameters": {
+              "id": 6541,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 6540,
+                  "mutability": "mutable",
+                  "name": "diamondFacets",
+                  "nameLocation": "459:13:57",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 6542,
+                  "src": "444:28:57",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_struct$_Facet_$6534_memory_ptr_$dyn_memory_ptr",
+                    "typeString": "struct IDiamondReadable.Facet[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 6538,
+                      "nodeType": "UserDefinedTypeName",
+                      "pathNode": {
+                        "id": 6537,
+                        "name": "Facet",
+                        "nameLocations": [
+                          "444:5:57"
+                        ],
+                        "nodeType": "IdentifierPath",
+                        "referencedDeclaration": 6534,
+                        "src": "444:5:57"
+                      },
+                      "referencedDeclaration": 6534,
+                      "src": "444:5:57",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Facet_$6534_storage_ptr",
+                        "typeString": "struct IDiamondReadable.Facet"
+                      }
+                    },
+                    "id": 6539,
+                    "nodeType": "ArrayTypeName",
+                    "src": "444:7:57",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_struct$_Facet_$6534_storage_$dyn_storage_ptr",
+                      "typeString": "struct IDiamondReadable.Facet[]"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "443:30:57"
+            },
+            "scope": 6567,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 6551,
+            "nodeType": "FunctionDefinition",
+            "src": "652:111:57",
+            "nodes": [],
+            "documentation": {
+              "id": 6543,
+              "nodeType": "StructuredDocumentation",
+              "src": "480:167:57",
+              "text": " @notice get all selectors for given facet address\n @param facet address of facet to query\n @return selectors array of function selectors"
+            },
+            "functionSelector": "adfca15e",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "facetFunctionSelectors",
+            "nameLocation": "661:22:57",
+            "parameters": {
+              "id": 6546,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 6545,
+                  "mutability": "mutable",
+                  "name": "facet",
+                  "nameLocation": "701:5:57",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 6551,
+                  "src": "693:13:57",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 6544,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "693:7:57",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "683:29:57"
+            },
+            "returnParameters": {
+              "id": 6550,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 6549,
+                  "mutability": "mutable",
+                  "name": "selectors",
+                  "nameLocation": "752:9:57",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 6551,
+                  "src": "736:25:57",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_bytes4_$dyn_memory_ptr",
+                    "typeString": "bytes4[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 6547,
+                      "name": "bytes4",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "736:6:57",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes4",
+                        "typeString": "bytes4"
+                      }
+                    },
+                    "id": 6548,
+                    "nodeType": "ArrayTypeName",
+                    "src": "736:8:57",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_bytes4_$dyn_storage_ptr",
+                      "typeString": "bytes4[]"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "735:27:57"
+            },
+            "scope": 6567,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 6558,
+            "nodeType": "FunctionDefinition",
+            "src": "894:101:57",
+            "nodes": [],
+            "documentation": {
+              "id": 6552,
+              "nodeType": "StructuredDocumentation",
+              "src": "769:120:57",
+              "text": " @notice get addresses of all facets used by diamond\n @return addresses array of facet addresses"
+            },
+            "functionSelector": "52ef6b2c",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "facetAddresses",
+            "nameLocation": "903:14:57",
+            "parameters": {
+              "id": 6553,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "917:2:57"
+            },
+            "returnParameters": {
+              "id": 6557,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 6556,
+                  "mutability": "mutable",
+                  "name": "addresses",
+                  "nameLocation": "984:9:57",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 6558,
+                  "src": "967:26:57",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_address_$dyn_memory_ptr",
+                    "typeString": "address[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 6554,
+                      "name": "address",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "967:7:57",
+                      "stateMutability": "nonpayable",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "id": 6555,
+                    "nodeType": "ArrayTypeName",
+                    "src": "967:9:57",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
+                      "typeString": "address[]"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "966:28:57"
+            },
+            "scope": 6567,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 6566,
+            "nodeType": "FunctionDefinition",
+            "src": "1205:91:57",
+            "nodes": [],
+            "documentation": {
+              "id": 6559,
+              "nodeType": "StructuredDocumentation",
+              "src": "1001:199:57",
+              "text": " @notice get the address of the facet associated with given selector\n @param selector function selector to query\n @return facet facet address (zero address if not found)"
+            },
+            "functionSelector": "cdffacc6",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "facetAddress",
+            "nameLocation": "1214:12:57",
+            "parameters": {
+              "id": 6562,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 6561,
+                  "mutability": "mutable",
+                  "name": "selector",
+                  "nameLocation": "1243:8:57",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 6566,
+                  "src": "1236:15:57",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes4",
+                    "typeString": "bytes4"
+                  },
+                  "typeName": {
+                    "id": 6560,
+                    "name": "bytes4",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1236:6:57",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes4",
+                      "typeString": "bytes4"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1226:31:57"
+            },
+            "returnParameters": {
+              "id": 6565,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 6564,
+                  "mutability": "mutable",
+                  "name": "facet",
+                  "nameLocation": "1289:5:57",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 6566,
+                  "src": "1281:13:57",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 6563,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1281:7:57",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1280:15:57"
+            },
+            "scope": 6567,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IDiamondReadable",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 6528,
+          "nodeType": "StructuredDocumentation",
+          "src": "58:107:57",
+          "text": " @title Diamond proxy introspection interface\n @dev see https://eips.ethereum.org/EIPS/eip-2535"
+        },
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          6567
+        ],
+        "name": "IDiamondReadable",
+        "nameLocation": "176:16:57",
+        "scope": 6568,
+        "usedErrors": []
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 57
+}

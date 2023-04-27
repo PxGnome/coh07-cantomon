@@ -1,0 +1,2558 @@
+{
+  "abi": [
+    {
+      "inputs": [],
+      "name": "Ownable__NotOwner",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "Ownable__NotTransitiveOwner",
+      "type": "error"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "previousOwner",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "OwnershipTransferred",
+      "type": "event"
+    }
+  ],
+  "bytecode": {
+    "object": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea26469706673582212204dfbd289c7b3a588590f0e95d81b567586f0da2143a6938123f58e58ead514b064736f6c63430008130033",
+    "sourceMap": "2353:553:6:-:0;;;;;;;;;;;;;;;;;;;",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x6080604052600080fdfea26469706673582212204dfbd289c7b3a588590f0e95d81b567586f0da2143a6938123f58e58ead514b064736f6c63430008130033",
+    "sourceMap": "2353:553:6:-:0;;;;;",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {},
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.19+commit.7dd6d404\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"Ownable__NotOwner\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"Ownable__NotTransitiveOwner\",\"type\":\"error\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"previousOwner\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"OwnershipTransferred\",\"type\":\"event\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/libraries/LibAppStorage.sol\":\"CantomonModifiers\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@hyperlane-xyz/=node_modules/@hyperlane-xyz/\",\":@openzeppelin/=node_modules/@openzeppelin/\",\":@solidstate/=node_modules/@solidstate/\",\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":erc721a/=node_modules/erc721a/\",\":eth-gas-reporter/=node_modules/eth-gas-reporter/\",\":forge-std/=lib/forge-std/src/\",\":hardhat/=node_modules/hardhat/\"]},\"sources\":{\"contracts/libraries/LibAppStorage.sol\":{\"keccak256\":\"0xe1a28863c2fb319c88e248e8039361ad9335779a783c6c1ad078e3815c6186af\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://02d8503193e03a4678861aa58ba8ef645ea73f34493d3e48e4041f727dc76dd5\",\"dweb:/ipfs/QmSHV6WzDMmaEHDriDknP8mzVLAtTzvzmi7Q5rhVrNcGuQ\"]},\"node_modules/@hyperlane-xyz/core/contracts/interfaces/IInterchainSecurityModule.sol\":{\"keccak256\":\"0x22f298aa6bdf6f717538efa5f33abf0927376bc325445c65497babfba1716c13\",\"license\":\"MIT OR Apache-2.0\",\"urls\":[\"bzz-raw://0c737fbdeb40b0bb46dab213469cbafe85c5b952a75b418bc76b6fb506cb7e7a\",\"dweb:/ipfs/QmNYEy2CZEgAc5U9t7eoFEip2yGkt3kpxQW87jXGkXq8B6\"]},\"node_modules/@hyperlane-xyz/core/contracts/interfaces/IMailbox.sol\":{\"keccak256\":\"0x44d72975cee2b277f65bc1d0773cc4563c68c029eb760db350854da28ff581ec\",\"license\":\"MIT OR Apache-2.0\",\"urls\":[\"bzz-raw://80545bdeba73878b777f316182e369df4253c6477f8b2614dddb0fd849fc0ae8\",\"dweb:/ipfs/QmayzXhireVhZBQwQ3HHhieQWbz2WSGbcjWA1agDNcMTQs\"]},\"node_modules/@solidstate/contracts/access/ownable/IOwnableInternal.sol\":{\"keccak256\":\"0x6237a634712261bd82d5c7753780d35f77af215406d1e59512052f743f8f1c60\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://8e54ac6cd1b376224b8d148c704693ff3f7ac9f69954fd30ee3d949fa17210c3\",\"dweb:/ipfs/QmWjq37K3gg29XhFbepg5GbmmFYoyXb81sh2K1MnVZqG6y\"]},\"node_modules/@solidstate/contracts/access/ownable/OwnableInternal.sol\":{\"keccak256\":\"0x0185d24250a5e6fbafce443b9ba19bba761803e3e5d91ba423bfb1f5f0bbdbf9\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://547fadeaec559ee824f4dd37b2ef972a061ca59576f5733cf643e00d88a4db52\",\"dweb:/ipfs/QmYx6rmRmZZQkoS8TykMVsz9ZvfQ8MfSPt6UzWJ8pyj8qF\"]},\"node_modules/@solidstate/contracts/access/ownable/OwnableStorage.sol\":{\"keccak256\":\"0x7385e2020de914f75cabdc83c6adf88ed21e9de14669a89b3832b80f4f8c7b73\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://a367c512bf29fb4923ed5d2454783e3dae88e5e03dec216e65c3986f3c3a8995\",\"dweb:/ipfs/QmfYkD6osr6SQzod6wc7WPae6YvVnYbn2BjJuHrYL3ERXM\"]},\"node_modules/@solidstate/contracts/interfaces/IERC165.sol\":{\"keccak256\":\"0xc250e493770feaa0da8e5a55d241712c1c6526caa7d8df2455c3e5fa25124c0b\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://768e47d9ddeb15daeab0c8c1109ae43a4c2a0633bd9e4bf141488dfc9252f7ba\",\"dweb:/ipfs/QmWMTTRTncar9LptrxU7WK7WG5hHp8KsYnBGfm3cYowuP8\"]},\"node_modules/@solidstate/contracts/interfaces/IERC165Internal.sol\":{\"keccak256\":\"0xf4d4708a60ed04887849509a258db49d4eb686f33214cb9c9643325cd8dae89d\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://66e7ade64c12edf7adbc0f20c1195b3c635ea2df67b836215441a4fe22ae17da\",\"dweb:/ipfs/QmUAbU31ZYg3FrKzXCk8CE1FbCg6LNoB5HpR4pU2QwZc7p\"]},\"node_modules/@solidstate/contracts/interfaces/IERC173.sol\":{\"keccak256\":\"0xf1c1fbf0ec82110c29d549db1fbd8ec728ba0b995dc5f087e0a5464243135dce\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://16c7f3eba0547576833d0c1fddb7ec34aeba4f28b4ce9e878c3bd3ebc9c8d3d1\",\"dweb:/ipfs/Qme79eYLo7dinnhotgC4bvYnCg4doBDShHeCajrf5zpAUF\"]},\"node_modules/@solidstate/contracts/interfaces/IERC173Internal.sol\":{\"keccak256\":\"0x9644c3e56c9ecd1763f8aaa437d5d573a7f64a8d93ad7bea1a9c44beb5911b89\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://c32cfda38b44878ab196d32eeb72823a9f9904e8193286c787caccfb2e5bfa75\",\"dweb:/ipfs/QmfBNKWUSKaJtYL3JJ3YFioXCVFeeakqQ4cR5XzAxxZkCx\"]},\"node_modules/@solidstate/contracts/interfaces/IERC721.sol\":{\"keccak256\":\"0xa14655a5bdee327bc019b583b04480e8542fa6b0788e5569077ec54805d1463a\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://97a0c1c250247373528767dc98a0eeae79a1cf65cdcc95a282cb8cf03336409a\",\"dweb:/ipfs/QmQkwjNyCDCHntjdXTjRY7bQw8ybyQS8ogBQwfTYTypw6G\"]},\"node_modules/@solidstate/contracts/interfaces/IERC721Internal.sol\":{\"keccak256\":\"0x8d46d596fa0e48cdcbf8bb8d6a42120351c4d1b002156bf647f95523178cbe08\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://174969541ba4ef63d3a45d9c11556fa60fc70794539d4fd78dd551d7309b0181\",\"dweb:/ipfs/QmdTzThnKwfRD33SepVvZ8WugpiLeknMLgqKNVqunMShFP\"]},\"node_modules/@solidstate/contracts/utils/AddressUtils.sol\":{\"keccak256\":\"0x7d924db4dbd9210923ab08db77db3c77438014c255fd49fa208ebce283d991bf\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://5189eebdf91899224a14b4cd5184fa9e67a9b8904e6d88ff9610944d06c63929\",\"dweb:/ipfs/QmRwNhfcp98pPgbzK4i9hbypHLTWPGYpuRCtEJRCTNASRm\"]},\"node_modules/@solidstate/contracts/utils/UintUtils.sol\":{\"keccak256\":\"0x5aaeaea22a0800402c6f2d8ce6185293bc64f74f6c390c1b1c53b624b43972f8\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://8b1c95c745da8ca4de7b68e65ef9122dab4e748c3ae3c9f5fd5aa7c65887c9d2\",\"dweb:/ipfs/QmX2KURY4JbM4NVFp5KPYsNxoJGA8n8w6SdAFdD5Pasgza\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.19+commit.7dd6d404"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "Ownable__NotOwner"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "Ownable__NotTransitiveOwner"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "previousOwner",
+              "type": "address",
+              "indexed": true
+            },
+            {
+              "internalType": "address",
+              "name": "newOwner",
+              "type": "address",
+              "indexed": true
+            }
+          ],
+          "type": "event",
+          "name": "OwnershipTransferred",
+          "anonymous": false
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":@hyperlane-xyz/=node_modules/@hyperlane-xyz/",
+        ":@openzeppelin/=node_modules/@openzeppelin/",
+        ":@solidstate/=node_modules/@solidstate/",
+        ":ds-test/=lib/forge-std/lib/ds-test/src/",
+        ":erc721a/=node_modules/erc721a/",
+        ":eth-gas-reporter/=node_modules/eth-gas-reporter/",
+        ":forge-std/=lib/forge-std/src/",
+        ":hardhat/=node_modules/hardhat/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "contracts/libraries/LibAppStorage.sol": "CantomonModifiers"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "contracts/libraries/LibAppStorage.sol": {
+        "keccak256": "0xe1a28863c2fb319c88e248e8039361ad9335779a783c6c1ad078e3815c6186af",
+        "urls": [
+          "bzz-raw://02d8503193e03a4678861aa58ba8ef645ea73f34493d3e48e4041f727dc76dd5",
+          "dweb:/ipfs/QmSHV6WzDMmaEHDriDknP8mzVLAtTzvzmi7Q5rhVrNcGuQ"
+        ],
+        "license": "MIT"
+      },
+      "node_modules/@hyperlane-xyz/core/contracts/interfaces/IInterchainSecurityModule.sol": {
+        "keccak256": "0x22f298aa6bdf6f717538efa5f33abf0927376bc325445c65497babfba1716c13",
+        "urls": [
+          "bzz-raw://0c737fbdeb40b0bb46dab213469cbafe85c5b952a75b418bc76b6fb506cb7e7a",
+          "dweb:/ipfs/QmNYEy2CZEgAc5U9t7eoFEip2yGkt3kpxQW87jXGkXq8B6"
+        ],
+        "license": "MIT OR Apache-2.0"
+      },
+      "node_modules/@hyperlane-xyz/core/contracts/interfaces/IMailbox.sol": {
+        "keccak256": "0x44d72975cee2b277f65bc1d0773cc4563c68c029eb760db350854da28ff581ec",
+        "urls": [
+          "bzz-raw://80545bdeba73878b777f316182e369df4253c6477f8b2614dddb0fd849fc0ae8",
+          "dweb:/ipfs/QmayzXhireVhZBQwQ3HHhieQWbz2WSGbcjWA1agDNcMTQs"
+        ],
+        "license": "MIT OR Apache-2.0"
+      },
+      "node_modules/@solidstate/contracts/access/ownable/IOwnableInternal.sol": {
+        "keccak256": "0x6237a634712261bd82d5c7753780d35f77af215406d1e59512052f743f8f1c60",
+        "urls": [
+          "bzz-raw://8e54ac6cd1b376224b8d148c704693ff3f7ac9f69954fd30ee3d949fa17210c3",
+          "dweb:/ipfs/QmWjq37K3gg29XhFbepg5GbmmFYoyXb81sh2K1MnVZqG6y"
+        ],
+        "license": "MIT"
+      },
+      "node_modules/@solidstate/contracts/access/ownable/OwnableInternal.sol": {
+        "keccak256": "0x0185d24250a5e6fbafce443b9ba19bba761803e3e5d91ba423bfb1f5f0bbdbf9",
+        "urls": [
+          "bzz-raw://547fadeaec559ee824f4dd37b2ef972a061ca59576f5733cf643e00d88a4db52",
+          "dweb:/ipfs/QmYx6rmRmZZQkoS8TykMVsz9ZvfQ8MfSPt6UzWJ8pyj8qF"
+        ],
+        "license": "MIT"
+      },
+      "node_modules/@solidstate/contracts/access/ownable/OwnableStorage.sol": {
+        "keccak256": "0x7385e2020de914f75cabdc83c6adf88ed21e9de14669a89b3832b80f4f8c7b73",
+        "urls": [
+          "bzz-raw://a367c512bf29fb4923ed5d2454783e3dae88e5e03dec216e65c3986f3c3a8995",
+          "dweb:/ipfs/QmfYkD6osr6SQzod6wc7WPae6YvVnYbn2BjJuHrYL3ERXM"
+        ],
+        "license": "MIT"
+      },
+      "node_modules/@solidstate/contracts/interfaces/IERC165.sol": {
+        "keccak256": "0xc250e493770feaa0da8e5a55d241712c1c6526caa7d8df2455c3e5fa25124c0b",
+        "urls": [
+          "bzz-raw://768e47d9ddeb15daeab0c8c1109ae43a4c2a0633bd9e4bf141488dfc9252f7ba",
+          "dweb:/ipfs/QmWMTTRTncar9LptrxU7WK7WG5hHp8KsYnBGfm3cYowuP8"
+        ],
+        "license": "MIT"
+      },
+      "node_modules/@solidstate/contracts/interfaces/IERC165Internal.sol": {
+        "keccak256": "0xf4d4708a60ed04887849509a258db49d4eb686f33214cb9c9643325cd8dae89d",
+        "urls": [
+          "bzz-raw://66e7ade64c12edf7adbc0f20c1195b3c635ea2df67b836215441a4fe22ae17da",
+          "dweb:/ipfs/QmUAbU31ZYg3FrKzXCk8CE1FbCg6LNoB5HpR4pU2QwZc7p"
+        ],
+        "license": "MIT"
+      },
+      "node_modules/@solidstate/contracts/interfaces/IERC173.sol": {
+        "keccak256": "0xf1c1fbf0ec82110c29d549db1fbd8ec728ba0b995dc5f087e0a5464243135dce",
+        "urls": [
+          "bzz-raw://16c7f3eba0547576833d0c1fddb7ec34aeba4f28b4ce9e878c3bd3ebc9c8d3d1",
+          "dweb:/ipfs/Qme79eYLo7dinnhotgC4bvYnCg4doBDShHeCajrf5zpAUF"
+        ],
+        "license": "MIT"
+      },
+      "node_modules/@solidstate/contracts/interfaces/IERC173Internal.sol": {
+        "keccak256": "0x9644c3e56c9ecd1763f8aaa437d5d573a7f64a8d93ad7bea1a9c44beb5911b89",
+        "urls": [
+          "bzz-raw://c32cfda38b44878ab196d32eeb72823a9f9904e8193286c787caccfb2e5bfa75",
+          "dweb:/ipfs/QmfBNKWUSKaJtYL3JJ3YFioXCVFeeakqQ4cR5XzAxxZkCx"
+        ],
+        "license": "MIT"
+      },
+      "node_modules/@solidstate/contracts/interfaces/IERC721.sol": {
+        "keccak256": "0xa14655a5bdee327bc019b583b04480e8542fa6b0788e5569077ec54805d1463a",
+        "urls": [
+          "bzz-raw://97a0c1c250247373528767dc98a0eeae79a1cf65cdcc95a282cb8cf03336409a",
+          "dweb:/ipfs/QmQkwjNyCDCHntjdXTjRY7bQw8ybyQS8ogBQwfTYTypw6G"
+        ],
+        "license": "MIT"
+      },
+      "node_modules/@solidstate/contracts/interfaces/IERC721Internal.sol": {
+        "keccak256": "0x8d46d596fa0e48cdcbf8bb8d6a42120351c4d1b002156bf647f95523178cbe08",
+        "urls": [
+          "bzz-raw://174969541ba4ef63d3a45d9c11556fa60fc70794539d4fd78dd551d7309b0181",
+          "dweb:/ipfs/QmdTzThnKwfRD33SepVvZ8WugpiLeknMLgqKNVqunMShFP"
+        ],
+        "license": "MIT"
+      },
+      "node_modules/@solidstate/contracts/utils/AddressUtils.sol": {
+        "keccak256": "0x7d924db4dbd9210923ab08db77db3c77438014c255fd49fa208ebce283d991bf",
+        "urls": [
+          "bzz-raw://5189eebdf91899224a14b4cd5184fa9e67a9b8904e6d88ff9610944d06c63929",
+          "dweb:/ipfs/QmRwNhfcp98pPgbzK4i9hbypHLTWPGYpuRCtEJRCTNASRm"
+        ],
+        "license": "MIT"
+      },
+      "node_modules/@solidstate/contracts/utils/UintUtils.sol": {
+        "keccak256": "0x5aaeaea22a0800402c6f2d8ce6185293bc64f74f6c390c1b1c53b624b43972f8",
+        "urls": [
+          "bzz-raw://8b1c95c745da8ca4de7b68e65ef9122dab4e748c3ae3c9f5fd5aa7c65887c9d2",
+          "dweb:/ipfs/QmX2KURY4JbM4NVFp5KPYsNxoJGA8n8w6SdAFdD5Pasgza"
+        ],
+        "license": "MIT"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "contracts/libraries/LibAppStorage.sol",
+    "id": 854,
+    "exportedSymbols": {
+      "AddressUtils": [
+        9312
+      ],
+      "AppStorage": [
+        718
+      ],
+      "Cantomon": [
+        734
+      ],
+      "CantomonAttr": [
+        753
+      ],
+      "CantomonBaseStats": [
+        764
+      ],
+      "CantomonDynamicStats": [
+        780
+      ],
+      "CantomonMetaData": [
+        756
+      ],
+      "CantomonModifiers": [
+        853
+      ],
+      "CantomonStatus": [
+        748
+      ],
+      "EvolutionRule": [
+        787
+      ],
+      "GameSettings": [
+        744
+      ],
+      "IERC165": [
+        5145
+      ],
+      "IERC173": [
+        5169
+      ],
+      "IERC721": [
+        5273
+      ],
+      "IERC721Internal": [
+        5301
+      ],
+      "IInterchainSecurityModule": [
+        1611
+      ],
+      "IMailbox": [
+        1714
+      ],
+      "IOwnableInternal": [
+        3123
+      ],
+      "LibAppStorage": [
+        796
+      ],
+      "OwnableInternal": [
+        3314
+      ],
+      "OwnableStorage": [
+        3337
+      ],
+      "ProxySbt": [
+        741
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "169:2738:6",
+    "nodes": [
+      {
+        "id": 681,
+        "nodeType": "PragmaDirective",
+        "src": "169:24:6",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".19"
+        ]
+      },
+      {
+        "id": 682,
+        "nodeType": "ImportDirective",
+        "src": "195:63:6",
+        "nodes": [],
+        "absolutePath": "node_modules/@hyperlane-xyz/core/contracts/interfaces/IMailbox.sol",
+        "file": "@hyperlane-xyz/core/contracts/interfaces/IMailbox.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 854,
+        "sourceUnit": 1715,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 683,
+        "nodeType": "ImportDirective",
+        "src": "259:54:6",
+        "nodes": [],
+        "absolutePath": "node_modules/@solidstate/contracts/interfaces/IERC721.sol",
+        "file": "@solidstate/contracts/interfaces/IERC721.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 854,
+        "sourceUnit": 5274,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 684,
+        "nodeType": "ImportDirective",
+        "src": "314:66:6",
+        "nodes": [],
+        "absolutePath": "node_modules/@solidstate/contracts/access/ownable/OwnableInternal.sol",
+        "file": "@solidstate/contracts/access/ownable/OwnableInternal.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 854,
+        "sourceUnit": 3315,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 718,
+        "nodeType": "StructDefinition",
+        "src": "382:562:6",
+        "nodes": [],
+        "canonicalName": "AppStorage",
+        "members": [
+          {
+            "constant": false,
+            "id": 687,
+            "mutability": "mutable",
+            "name": "inbox",
+            "nameLocation": "415:5:6",
+            "nodeType": "VariableDeclaration",
+            "scope": 718,
+            "src": "406:14:6",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_IMailbox_$1714",
+              "typeString": "contract IMailbox"
+            },
+            "typeName": {
+              "id": 686,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode": {
+                "id": 685,
+                "name": "IMailbox",
+                "nameLocations": [
+                  "406:8:6"
+                ],
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 1714,
+                "src": "406:8:6"
+              },
+              "referencedDeclaration": 1714,
+              "src": "406:8:6",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_IMailbox_$1714",
+                "typeString": "contract IMailbox"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 689,
+            "mutability": "mutable",
+            "name": "lastSender",
+            "nameLocation": "434:10:6",
+            "nodeType": "VariableDeclaration",
+            "scope": 718,
+            "src": "426:18:6",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_bytes32",
+              "typeString": "bytes32"
+            },
+            "typeName": {
+              "id": 688,
+              "name": "bytes32",
+              "nodeType": "ElementaryTypeName",
+              "src": "426:7:6",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bytes32",
+                "typeString": "bytes32"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 691,
+            "mutability": "mutable",
+            "name": "lastMessage",
+            "nameLocation": "457:11:6",
+            "nodeType": "VariableDeclaration",
+            "scope": 718,
+            "src": "450:18:6",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_storage_ptr",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 690,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "450:6:6",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 693,
+            "mutability": "mutable",
+            "name": "approvedMessenger",
+            "nameLocation": "482:17:6",
+            "nodeType": "VariableDeclaration",
+            "scope": 718,
+            "src": "474:25:6",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_bytes32",
+              "typeString": "bytes32"
+            },
+            "typeName": {
+              "id": 692,
+              "name": "bytes32",
+              "nodeType": "ElementaryTypeName",
+              "src": "474:7:6",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bytes32",
+                "typeString": "bytes32"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 698,
+            "mutability": "mutable",
+            "name": "proxySbt",
+            "nameLocation": "534:8:6",
+            "nodeType": "VariableDeclaration",
+            "scope": 718,
+            "src": "505:37:6",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_ProxySbt_$741_storage_$",
+              "typeString": "mapping(uint256 => struct ProxySbt)"
+            },
+            "typeName": {
+              "id": 697,
+              "keyName": "",
+              "keyNameLocation": "-1:-1:-1",
+              "keyType": {
+                "id": 694,
+                "name": "uint256",
+                "nodeType": "ElementaryTypeName",
+                "src": "513:7:6",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "505:28:6",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_ProxySbt_$741_storage_$",
+                "typeString": "mapping(uint256 => struct ProxySbt)"
+              },
+              "valueName": "",
+              "valueNameLocation": "-1:-1:-1",
+              "valueType": {
+                "id": 696,
+                "nodeType": "UserDefinedTypeName",
+                "pathNode": {
+                  "id": 695,
+                  "name": "ProxySbt",
+                  "nameLocations": [
+                    "524:8:6"
+                  ],
+                  "nodeType": "IdentifierPath",
+                  "referencedDeclaration": 741,
+                  "src": "524:8:6"
+                },
+                "referencedDeclaration": 741,
+                "src": "524:8:6",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_ProxySbt_$741_storage_ptr",
+                  "typeString": "struct ProxySbt"
+                }
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 700,
+            "mutability": "mutable",
+            "name": "gameVersion",
+            "nameLocation": "556:11:6",
+            "nodeType": "VariableDeclaration",
+            "scope": 718,
+            "src": "549:18:6",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint16",
+              "typeString": "uint16"
+            },
+            "typeName": {
+              "id": 699,
+              "name": "uint16",
+              "nodeType": "ElementaryTypeName",
+              "src": "549:6:6",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint16",
+                "typeString": "uint16"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 702,
+            "mutability": "mutable",
+            "name": "gameSeason",
+            "nameLocation": "580:10:6",
+            "nodeType": "VariableDeclaration",
+            "scope": 718,
+            "src": "573:17:6",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint16",
+              "typeString": "uint16"
+            },
+            "typeName": {
+              "id": 701,
+              "name": "uint16",
+              "nodeType": "ElementaryTypeName",
+              "src": "573:6:6",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint16",
+                "typeString": "uint16"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 705,
+            "mutability": "mutable",
+            "name": "gameSettings",
+            "nameLocation": "609:12:6",
+            "nodeType": "VariableDeclaration",
+            "scope": 718,
+            "src": "596:25:6",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_struct$_GameSettings_$744_storage_ptr",
+              "typeString": "struct GameSettings"
+            },
+            "typeName": {
+              "id": 704,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode": {
+                "id": 703,
+                "name": "GameSettings",
+                "nameLocations": [
+                  "596:12:6"
+                ],
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 744,
+                "src": "596:12:6"
+              },
+              "referencedDeclaration": 744,
+              "src": "596:12:6",
+              "typeDescriptions": {
+                "typeIdentifier": "t_struct$_GameSettings_$744_storage_ptr",
+                "typeString": "struct GameSettings"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 710,
+            "mutability": "mutable",
+            "name": "cantomon",
+            "nameLocation": "656:8:6",
+            "nodeType": "VariableDeclaration",
+            "scope": 718,
+            "src": "627:37:6",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Cantomon_$734_storage_$",
+              "typeString": "mapping(uint256 => struct Cantomon)"
+            },
+            "typeName": {
+              "id": 709,
+              "keyName": "",
+              "keyNameLocation": "-1:-1:-1",
+              "keyType": {
+                "id": 706,
+                "name": "uint256",
+                "nodeType": "ElementaryTypeName",
+                "src": "635:7:6",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "627:28:6",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Cantomon_$734_storage_$",
+                "typeString": "mapping(uint256 => struct Cantomon)"
+              },
+              "valueName": "",
+              "valueNameLocation": "-1:-1:-1",
+              "valueType": {
+                "id": 708,
+                "nodeType": "UserDefinedTypeName",
+                "pathNode": {
+                  "id": 707,
+                  "name": "Cantomon",
+                  "nameLocations": [
+                    "646:8:6"
+                  ],
+                  "nodeType": "IdentifierPath",
+                  "referencedDeclaration": 734,
+                  "src": "646:8:6"
+                },
+                "referencedDeclaration": 734,
+                "src": "646:8:6",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_Cantomon_$734_storage_ptr",
+                  "typeString": "struct Cantomon"
+                }
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 712,
+            "mutability": "mutable",
+            "name": "nextCantomonId",
+            "nameLocation": "678:14:6",
+            "nodeType": "VariableDeclaration",
+            "scope": 718,
+            "src": "670:22:6",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 711,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "670:7:6",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 717,
+            "mutability": "mutable",
+            "name": "evolutionRule",
+            "nameLocation": "928:13:6",
+            "nodeType": "VariableDeclaration",
+            "scope": 718,
+            "src": "894:47:6",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_EvolutionRule_$787_storage_$",
+              "typeString": "mapping(uint256 => struct EvolutionRule)"
+            },
+            "typeName": {
+              "id": 716,
+              "keyName": "",
+              "keyNameLocation": "-1:-1:-1",
+              "keyType": {
+                "id": 713,
+                "name": "uint256",
+                "nodeType": "ElementaryTypeName",
+                "src": "902:7:6",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "894:33:6",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_EvolutionRule_$787_storage_$",
+                "typeString": "mapping(uint256 => struct EvolutionRule)"
+              },
+              "valueName": "",
+              "valueNameLocation": "-1:-1:-1",
+              "valueType": {
+                "id": 715,
+                "nodeType": "UserDefinedTypeName",
+                "pathNode": {
+                  "id": 714,
+                  "name": "EvolutionRule",
+                  "nameLocations": [
+                    "913:13:6"
+                  ],
+                  "nodeType": "IdentifierPath",
+                  "referencedDeclaration": 787,
+                  "src": "913:13:6"
+                },
+                "referencedDeclaration": 787,
+                "src": "913:13:6",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_EvolutionRule_$787_storage_ptr",
+                  "typeString": "struct EvolutionRule"
+                }
+              }
+            },
+            "visibility": "internal"
+          }
+        ],
+        "name": "AppStorage",
+        "nameLocation": "389:10:6",
+        "scope": 854,
+        "visibility": "public"
+      },
+      {
+        "id": 734,
+        "nodeType": "StructDefinition",
+        "src": "946:182:6",
+        "nodes": [],
+        "canonicalName": "Cantomon",
+        "members": [
+          {
+            "constant": false,
+            "id": 723,
+            "mutability": "mutable",
+            "name": "metadata",
+            "nameLocation": "1005:8:6",
+            "nodeType": "VariableDeclaration",
+            "scope": 734,
+            "src": "968:45:6",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_CantomonMetaData_$756_storage_$",
+              "typeString": "mapping(uint256 => struct CantomonMetaData)"
+            },
+            "typeName": {
+              "id": 722,
+              "keyName": "",
+              "keyNameLocation": "-1:-1:-1",
+              "keyType": {
+                "id": 719,
+                "name": "uint256",
+                "nodeType": "ElementaryTypeName",
+                "src": "976:7:6",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "968:36:6",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_CantomonMetaData_$756_storage_$",
+                "typeString": "mapping(uint256 => struct CantomonMetaData)"
+              },
+              "valueName": "",
+              "valueNameLocation": "-1:-1:-1",
+              "valueType": {
+                "id": 721,
+                "nodeType": "UserDefinedTypeName",
+                "pathNode": {
+                  "id": 720,
+                  "name": "CantomonMetaData",
+                  "nameLocations": [
+                    "987:16:6"
+                  ],
+                  "nodeType": "IdentifierPath",
+                  "referencedDeclaration": 756,
+                  "src": "987:16:6"
+                },
+                "referencedDeclaration": 756,
+                "src": "987:16:6",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_CantomonMetaData_$756_storage_ptr",
+                  "typeString": "struct CantomonMetaData"
+                }
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 728,
+            "mutability": "mutable",
+            "name": "baseStats",
+            "nameLocation": "1057:9:6",
+            "nodeType": "VariableDeclaration",
+            "scope": 734,
+            "src": "1019:47:6",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_CantomonBaseStats_$764_storage_$",
+              "typeString": "mapping(uint256 => struct CantomonBaseStats)"
+            },
+            "typeName": {
+              "id": 727,
+              "keyName": "",
+              "keyNameLocation": "-1:-1:-1",
+              "keyType": {
+                "id": 724,
+                "name": "uint256",
+                "nodeType": "ElementaryTypeName",
+                "src": "1027:7:6",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "1019:37:6",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_CantomonBaseStats_$764_storage_$",
+                "typeString": "mapping(uint256 => struct CantomonBaseStats)"
+              },
+              "valueName": "",
+              "valueNameLocation": "-1:-1:-1",
+              "valueType": {
+                "id": 726,
+                "nodeType": "UserDefinedTypeName",
+                "pathNode": {
+                  "id": 725,
+                  "name": "CantomonBaseStats",
+                  "nameLocations": [
+                    "1038:17:6"
+                  ],
+                  "nodeType": "IdentifierPath",
+                  "referencedDeclaration": 764,
+                  "src": "1038:17:6"
+                },
+                "referencedDeclaration": 764,
+                "src": "1038:17:6",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_CantomonBaseStats_$764_storage_ptr",
+                  "typeString": "struct CantomonBaseStats"
+                }
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 733,
+            "mutability": "mutable",
+            "name": "dynamicStats",
+            "nameLocation": "1113:12:6",
+            "nodeType": "VariableDeclaration",
+            "scope": 734,
+            "src": "1072:53:6",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_CantomonDynamicStats_$780_storage_$",
+              "typeString": "mapping(uint256 => struct CantomonDynamicStats)"
+            },
+            "typeName": {
+              "id": 732,
+              "keyName": "",
+              "keyNameLocation": "-1:-1:-1",
+              "keyType": {
+                "id": 729,
+                "name": "uint256",
+                "nodeType": "ElementaryTypeName",
+                "src": "1080:7:6",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "1072:40:6",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_CantomonDynamicStats_$780_storage_$",
+                "typeString": "mapping(uint256 => struct CantomonDynamicStats)"
+              },
+              "valueName": "",
+              "valueNameLocation": "-1:-1:-1",
+              "valueType": {
+                "id": 731,
+                "nodeType": "UserDefinedTypeName",
+                "pathNode": {
+                  "id": 730,
+                  "name": "CantomonDynamicStats",
+                  "nameLocations": [
+                    "1091:20:6"
+                  ],
+                  "nodeType": "IdentifierPath",
+                  "referencedDeclaration": 780,
+                  "src": "1091:20:6"
+                },
+                "referencedDeclaration": 780,
+                "src": "1091:20:6",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_CantomonDynamicStats_$780_storage_ptr",
+                  "typeString": "struct CantomonDynamicStats"
+                }
+              }
+            },
+            "visibility": "internal"
+          }
+        ],
+        "name": "Cantomon",
+        "nameLocation": "953:8:6",
+        "scope": 854,
+        "visibility": "public"
+      },
+      {
+        "id": 741,
+        "nodeType": "StructDefinition",
+        "src": "1131:88:6",
+        "nodes": [],
+        "canonicalName": "ProxySbt",
+        "members": [
+          {
+            "constant": false,
+            "id": 736,
+            "mutability": "mutable",
+            "name": "ogNftAddress",
+            "nameLocation": "1161:12:6",
+            "nodeType": "VariableDeclaration",
+            "scope": 741,
+            "src": "1153:20:6",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 735,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "1153:7:6",
+              "stateMutability": "nonpayable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 738,
+            "mutability": "mutable",
+            "name": "ogTokenId",
+            "nameLocation": "1187:9:6",
+            "nodeType": "VariableDeclaration",
+            "scope": 741,
+            "src": "1179:17:6",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 737,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "1179:7:6",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 740,
+            "mutability": "mutable",
+            "name": "isUnbound",
+            "nameLocation": "1207:9:6",
+            "nodeType": "VariableDeclaration",
+            "scope": 741,
+            "src": "1202:14:6",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_bool",
+              "typeString": "bool"
+            },
+            "typeName": {
+              "id": 739,
+              "name": "bool",
+              "nodeType": "ElementaryTypeName",
+              "src": "1202:4:6",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bool",
+                "typeString": "bool"
+              }
+            },
+            "visibility": "internal"
+          }
+        ],
+        "name": "ProxySbt",
+        "nameLocation": "1138:8:6",
+        "scope": 854,
+        "visibility": "public"
+      },
+      {
+        "id": 744,
+        "nodeType": "StructDefinition",
+        "src": "1221:132:6",
+        "nodes": [],
+        "canonicalName": "GameSettings",
+        "members": [
+          {
+            "constant": false,
+            "id": 743,
+            "mutability": "mutable",
+            "name": "evolutionRule",
+            "nameLocation": "1337:13:6",
+            "nodeType": "VariableDeclaration",
+            "scope": 744,
+            "src": "1330:20:6",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint16",
+              "typeString": "uint16"
+            },
+            "typeName": {
+              "id": 742,
+              "name": "uint16",
+              "nodeType": "ElementaryTypeName",
+              "src": "1330:6:6",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint16",
+                "typeString": "uint16"
+              }
+            },
+            "visibility": "internal"
+          }
+        ],
+        "name": "GameSettings",
+        "nameLocation": "1228:12:6",
+        "scope": 854,
+        "visibility": "public"
+      },
+      {
+        "id": 748,
+        "nodeType": "EnumDefinition",
+        "src": "1355:55:6",
+        "nodes": [],
+        "canonicalName": "CantomonStatus",
+        "members": [
+          {
+            "id": 745,
+            "name": "Healthy",
+            "nameLocation": "1381:7:6",
+            "nodeType": "EnumValue",
+            "src": "1381:7:6"
+          },
+          {
+            "id": 746,
+            "name": "Sick",
+            "nameLocation": "1394:4:6",
+            "nodeType": "EnumValue",
+            "src": "1394:4:6"
+          },
+          {
+            "id": 747,
+            "name": "Dead",
+            "nameLocation": "1404:4:6",
+            "nodeType": "EnumValue",
+            "src": "1404:4:6"
+          }
+        ],
+        "name": "CantomonStatus",
+        "nameLocation": "1360:14:6"
+      },
+      {
+        "id": 753,
+        "nodeType": "EnumDefinition",
+        "src": "1412:65:6",
+        "nodes": [],
+        "canonicalName": "CantomonAttr",
+        "members": [
+          {
+            "id": 749,
+            "name": "Unknown",
+            "nameLocation": "1436:7:6",
+            "nodeType": "EnumValue",
+            "src": "1436:7:6"
+          },
+          {
+            "id": 750,
+            "name": "Fire",
+            "nameLocation": "1449:4:6",
+            "nodeType": "EnumValue",
+            "src": "1449:4:6"
+          },
+          {
+            "id": 751,
+            "name": "Water",
+            "nameLocation": "1459:5:6",
+            "nodeType": "EnumValue",
+            "src": "1459:5:6"
+          },
+          {
+            "id": 752,
+            "name": "Grass",
+            "nameLocation": "1470:5:6",
+            "nodeType": "EnumValue",
+            "src": "1470:5:6"
+          }
+        ],
+        "name": "CantomonAttr",
+        "nameLocation": "1417:12:6"
+      },
+      {
+        "id": 756,
+        "nodeType": "StructDefinition",
+        "src": "1520:48:6",
+        "nodes": [],
+        "canonicalName": "CantomonMetaData",
+        "members": [
+          {
+            "constant": false,
+            "id": 755,
+            "mutability": "mutable",
+            "name": "tokenId",
+            "nameLocation": "1558:7:6",
+            "nodeType": "VariableDeclaration",
+            "scope": 756,
+            "src": "1550:15:6",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 754,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "1550:7:6",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "visibility": "internal"
+          }
+        ],
+        "name": "CantomonMetaData",
+        "nameLocation": "1527:16:6",
+        "scope": 854,
+        "visibility": "public"
+      },
+      {
+        "id": 764,
+        "nodeType": "StructDefinition",
+        "src": "1636:193:6",
+        "nodes": [],
+        "canonicalName": "CantomonBaseStats",
+        "members": [
+          {
+            "constant": false,
+            "id": 759,
+            "mutability": "mutable",
+            "name": "attribute",
+            "nameLocation": "1680:9:6",
+            "nodeType": "VariableDeclaration",
+            "scope": 764,
+            "src": "1667:22:6",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_enum$_CantomonAttr_$753",
+              "typeString": "enum CantomonAttr"
+            },
+            "typeName": {
+              "id": 758,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode": {
+                "id": 757,
+                "name": "CantomonAttr",
+                "nameLocations": [
+                  "1667:12:6"
+                ],
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 753,
+                "src": "1667:12:6"
+              },
+              "referencedDeclaration": 753,
+              "src": "1667:12:6",
+              "typeDescriptions": {
+                "typeIdentifier": "t_enum$_CantomonAttr_$753",
+                "typeString": "enum CantomonAttr"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 761,
+            "mutability": "mutable",
+            "name": "battlePower",
+            "nameLocation": "1703:11:6",
+            "nodeType": "VariableDeclaration",
+            "scope": 764,
+            "src": "1695:19:6",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 760,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "1695:7:6",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 763,
+            "mutability": "mutable",
+            "name": "dna",
+            "nameLocation": "1728:3:6",
+            "nodeType": "VariableDeclaration",
+            "scope": 764,
+            "src": "1720:11:6",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_bytes32",
+              "typeString": "bytes32"
+            },
+            "typeName": {
+              "id": 762,
+              "name": "bytes32",
+              "nodeType": "ElementaryTypeName",
+              "src": "1720:7:6",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bytes32",
+                "typeString": "bytes32"
+              }
+            },
+            "visibility": "internal"
+          }
+        ],
+        "name": "CantomonBaseStats",
+        "nameLocation": "1643:17:6",
+        "scope": 854,
+        "visibility": "public"
+      },
+      {
+        "id": 780,
+        "nodeType": "StructDefinition",
+        "src": "1866:183:6",
+        "nodes": [],
+        "canonicalName": "CantomonDynamicStats",
+        "members": [
+          {
+            "constant": false,
+            "id": 766,
+            "mutability": "mutable",
+            "name": "evoStage",
+            "nameLocation": "1908:8:6",
+            "nodeType": "VariableDeclaration",
+            "scope": 780,
+            "src": "1900:16:6",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 765,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "1900:7:6",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 768,
+            "mutability": "mutable",
+            "name": "evolution",
+            "nameLocation": "1930:9:6",
+            "nodeType": "VariableDeclaration",
+            "scope": 780,
+            "src": "1922:17:6",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 767,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "1922:7:6",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 771,
+            "mutability": "mutable",
+            "name": "status",
+            "nameLocation": "1960:6:6",
+            "nodeType": "VariableDeclaration",
+            "scope": 780,
+            "src": "1945:21:6",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_enum$_CantomonStatus_$748",
+              "typeString": "enum CantomonStatus"
+            },
+            "typeName": {
+              "id": 770,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode": {
+                "id": 769,
+                "name": "CantomonStatus",
+                "nameLocations": [
+                  "1945:14:6"
+                ],
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 748,
+                "src": "1945:14:6"
+              },
+              "referencedDeclaration": 748,
+              "src": "1945:14:6",
+              "typeDescriptions": {
+                "typeIdentifier": "t_enum$_CantomonStatus_$748",
+                "typeString": "enum CantomonStatus"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 773,
+            "mutability": "mutable",
+            "name": "xp",
+            "nameLocation": "1980:2:6",
+            "nodeType": "VariableDeclaration",
+            "scope": 780,
+            "src": "1972:10:6",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 772,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "1972:7:6",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 775,
+            "mutability": "mutable",
+            "name": "happiness",
+            "nameLocation": "1996:9:6",
+            "nodeType": "VariableDeclaration",
+            "scope": 780,
+            "src": "1988:17:6",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 774,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "1988:7:6",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 777,
+            "mutability": "mutable",
+            "name": "fitness",
+            "nameLocation": "2019:7:6",
+            "nodeType": "VariableDeclaration",
+            "scope": 780,
+            "src": "2011:15:6",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 776,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "2011:7:6",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 779,
+            "mutability": "mutable",
+            "name": "energy",
+            "nameLocation": "2040:6:6",
+            "nodeType": "VariableDeclaration",
+            "scope": 780,
+            "src": "2032:14:6",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 778,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "2032:7:6",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "visibility": "internal"
+          }
+        ],
+        "name": "CantomonDynamicStats",
+        "nameLocation": "1873:20:6",
+        "scope": 854,
+        "visibility": "public"
+      },
+      {
+        "id": 787,
+        "nodeType": "StructDefinition",
+        "src": "2087:98:6",
+        "nodes": [],
+        "canonicalName": "EvolutionRule",
+        "members": [
+          {
+            "constant": false,
+            "id": 784,
+            "mutability": "mutable",
+            "name": "xpForEvo",
+            "nameLocation": "2142:8:6",
+            "nodeType": "VariableDeclaration",
+            "scope": 787,
+            "src": "2114:36:6",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_uint256_$",
+              "typeString": "mapping(uint256 => uint256)"
+            },
+            "typeName": {
+              "id": 783,
+              "keyName": "",
+              "keyNameLocation": "-1:-1:-1",
+              "keyType": {
+                "id": 781,
+                "name": "uint256",
+                "nodeType": "ElementaryTypeName",
+                "src": "2122:7:6",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "2114:27:6",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_uint256_$",
+                "typeString": "mapping(uint256 => uint256)"
+              },
+              "valueName": "",
+              "valueNameLocation": "-1:-1:-1",
+              "valueType": {
+                "id": 782,
+                "name": "uint256",
+                "nodeType": "ElementaryTypeName",
+                "src": "2133:7:6",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 786,
+            "mutability": "mutable",
+            "name": "numberOfEvolutions",
+            "nameLocation": "2163:18:6",
+            "nodeType": "VariableDeclaration",
+            "scope": 787,
+            "src": "2156:25:6",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint16",
+              "typeString": "uint16"
+            },
+            "typeName": {
+              "id": 785,
+              "name": "uint16",
+              "nodeType": "ElementaryTypeName",
+              "src": "2156:6:6",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint16",
+                "typeString": "uint16"
+              }
+            },
+            "visibility": "internal"
+          }
+        ],
+        "name": "EvolutionRule",
+        "nameLocation": "2094:13:6",
+        "scope": 854,
+        "visibility": "public"
+      },
+      {
+        "id": 796,
+        "nodeType": "ContractDefinition",
+        "src": "2188:163:6",
+        "nodes": [
+          {
+            "id": 795,
+            "nodeType": "FunctionDefinition",
+            "src": "2216:133:6",
+            "nodes": [],
+            "body": {
+              "id": 794,
+              "nodeType": "Block",
+              "src": "2288:61:6",
+              "nodes": [],
+              "statements": [
+                {
+                  "AST": {
+                    "nodeType": "YulBlock",
+                    "src": "2307:36:6",
+                    "statements": [
+                      {
+                        "nodeType": "YulAssignment",
+                        "src": "2321:12:6",
+                        "value": {
+                          "kind": "number",
+                          "nodeType": "YulLiteral",
+                          "src": "2332:1:6",
+                          "type": "",
+                          "value": "0"
+                        },
+                        "variableNames": [
+                          {
+                            "name": "ds.slot",
+                            "nodeType": "YulIdentifier",
+                            "src": "2321:7:6"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "evmVersion": "london",
+                  "externalReferences": [
+                    {
+                      "declaration": 791,
+                      "isOffset": false,
+                      "isSlot": true,
+                      "src": "2321:7:6",
+                      "suffix": "slot",
+                      "valueSize": 1
+                    }
+                  ],
+                  "id": 793,
+                  "nodeType": "InlineAssembly",
+                  "src": "2298:45:6"
+                }
+              ]
+            },
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "diamondStorage",
+            "nameLocation": "2225:14:6",
+            "parameters": {
+              "id": 788,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2239:2:6"
+            },
+            "returnParameters": {
+              "id": 792,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 791,
+                  "mutability": "mutable",
+                  "name": "ds",
+                  "nameLocation": "2284:2:6",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 795,
+                  "src": "2265:21:6",
+                  "stateVariable": false,
+                  "storageLocation": "storage",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_AppStorage_$718_storage_ptr",
+                    "typeString": "struct AppStorage"
+                  },
+                  "typeName": {
+                    "id": 790,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 789,
+                      "name": "AppStorage",
+                      "nameLocations": [
+                        "2265:10:6"
+                      ],
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 718,
+                      "src": "2265:10:6"
+                    },
+                    "referencedDeclaration": 718,
+                    "src": "2265:10:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_AppStorage_$718_storage_ptr",
+                      "typeString": "struct AppStorage"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2264:23:6"
+            },
+            "scope": 796,
+            "stateMutability": "pure",
+            "virtual": false,
+            "visibility": "internal"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "LibAppStorage",
+        "contractDependencies": [],
+        "contractKind": "library",
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          796
+        ],
+        "name": "LibAppStorage",
+        "nameLocation": "2196:13:6",
+        "scope": 854,
+        "usedErrors": []
+      },
+      {
+        "id": 853,
+        "nodeType": "ContractDefinition",
+        "src": "2353:553:6",
+        "nodes": [
+          {
+            "id": 801,
+            "nodeType": "VariableDeclaration",
+            "src": "2405:21:6",
+            "nodes": [],
+            "constant": false,
+            "mutability": "mutable",
+            "name": "s",
+            "nameLocation": "2425:1:6",
+            "scope": 853,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_struct$_AppStorage_$718_storage",
+              "typeString": "struct AppStorage"
+            },
+            "typeName": {
+              "id": 800,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode": {
+                "id": 799,
+                "name": "AppStorage",
+                "nameLocations": [
+                  "2405:10:6"
+                ],
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 718,
+                "src": "2405:10:6"
+              },
+              "referencedDeclaration": 718,
+              "src": "2405:10:6",
+              "typeDescriptions": {
+                "typeIdentifier": "t_struct$_AppStorage_$718_storage_ptr",
+                "typeString": "struct AppStorage"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "id": 823,
+            "nodeType": "ModifierDefinition",
+            "src": "2433:193:6",
+            "nodes": [],
+            "body": {
+              "id": 822,
+              "nodeType": "Block",
+              "src": "2481:145:6",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "commonType": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        "id": 817,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "arguments": [
+                            {
+                              "id": 813,
+                              "name": "_cantomonId",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 803,
+                              "src": "2543:11:6",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                              }
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": [
+                              {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                              }
+                            ],
+                            "expression": {
+                              "arguments": [
+                                {
+                                  "arguments": [
+                                    {
+                                      "id": 809,
+                                      "name": "this",
+                                      "nodeType": "Identifier",
+                                      "overloadedDeclarations": [],
+                                      "referencedDeclaration": -28,
+                                      "src": "2528:4:6",
+                                      "typeDescriptions": {
+                                        "typeIdentifier": "t_contract$_CantomonModifiers_$853",
+                                        "typeString": "contract CantomonModifiers"
+                                      }
+                                    }
+                                  ],
+                                  "expression": {
+                                    "argumentTypes": [
+                                      {
+                                        "typeIdentifier": "t_contract$_CantomonModifiers_$853",
+                                        "typeString": "contract CantomonModifiers"
+                                      }
+                                    ],
+                                    "id": 808,
+                                    "isConstant": false,
+                                    "isLValue": false,
+                                    "isPure": true,
+                                    "lValueRequested": false,
+                                    "nodeType": "ElementaryTypeNameExpression",
+                                    "src": "2520:7:6",
+                                    "typeDescriptions": {
+                                      "typeIdentifier": "t_type$_t_address_$",
+                                      "typeString": "type(address)"
+                                    },
+                                    "typeName": {
+                                      "id": 807,
+                                      "name": "address",
+                                      "nodeType": "ElementaryTypeName",
+                                      "src": "2520:7:6",
+                                      "typeDescriptions": {}
+                                    }
+                                  },
+                                  "id": 810,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "kind": "typeConversion",
+                                  "lValueRequested": false,
+                                  "nameLocations": [],
+                                  "names": [],
+                                  "nodeType": "FunctionCall",
+                                  "src": "2520:13:6",
+                                  "tryCall": false,
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_address",
+                                    "typeString": "address"
+                                  }
+                                }
+                              ],
+                              "expression": {
+                                "argumentTypes": [
+                                  {
+                                    "typeIdentifier": "t_address",
+                                    "typeString": "address"
+                                  }
+                                ],
+                                "id": 806,
+                                "name": "IERC721",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": 5273,
+                                "src": "2512:7:6",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_type$_t_contract$_IERC721_$5273_$",
+                                  "typeString": "type(contract IERC721)"
+                                }
+                              },
+                              "id": 811,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "kind": "typeConversion",
+                              "lValueRequested": false,
+                              "nameLocations": [],
+                              "names": [],
+                              "nodeType": "FunctionCall",
+                              "src": "2512:22:6",
+                              "tryCall": false,
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_contract$_IERC721_$5273",
+                                "typeString": "contract IERC721"
+                              }
+                            },
+                            "id": 812,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "memberLocation": "2535:7:6",
+                            "memberName": "ownerOf",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": 5206,
+                            "src": "2512:30:6",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_function_external_view$_t_uint256_$returns$_t_address_$",
+                              "typeString": "function (uint256) view external returns (address)"
+                            }
+                          },
+                          "id": 814,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "kind": "functionCall",
+                          "lValueRequested": false,
+                          "nameLocations": [],
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "2512:43:6",
+                          "tryCall": false,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": "==",
+                        "rightExpression": {
+                          "expression": {
+                            "id": 815,
+                            "name": "msg",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": -15,
+                            "src": "2559:3:6",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_magic_message",
+                              "typeString": "msg"
+                            }
+                          },
+                          "id": 816,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberLocation": "2563:6:6",
+                          "memberName": "sender",
+                          "nodeType": "MemberAccess",
+                          "src": "2559:10:6",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        },
+                        "src": "2512:57:6",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      {
+                        "hexValue": "4e6f74204e4654206f776e6572",
+                        "id": 818,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "2583:15:6",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_fbc2e10076f6921a763c3f489052dd0b77e1bb855bd0a8a6901f7fbc1cc7125e",
+                          "typeString": "literal_string \"Not NFT owner\""
+                        },
+                        "value": "Not NFT owner"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_fbc2e10076f6921a763c3f489052dd0b77e1bb855bd0a8a6901f7fbc1cc7125e",
+                          "typeString": "literal_string \"Not NFT owner\""
+                        }
+                      ],
+                      "id": 805,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        -18,
+                        -18
+                      ],
+                      "referencedDeclaration": -18,
+                      "src": "2491:7:6",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (bool,string memory) pure"
+                      }
+                    },
+                    "id": 819,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "2491:117:6",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 820,
+                  "nodeType": "ExpressionStatement",
+                  "src": "2491:117:6"
+                },
+                {
+                  "id": 821,
+                  "nodeType": "PlaceholderStatement",
+                  "src": "2618:1:6"
+                }
+              ]
+            },
+            "name": "onlyCantomonOwner",
+            "nameLocation": "2442:17:6",
+            "parameters": {
+              "id": 804,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 803,
+                  "mutability": "mutable",
+                  "name": "_cantomonId",
+                  "nameLocation": "2468:11:6",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 823,
+                  "src": "2460:19:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 802,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2460:7:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2459:21:6"
+            },
+            "virtual": false,
+            "visibility": "internal"
+          },
+          {
+            "id": 852,
+            "nodeType": "ModifierDefinition",
+            "src": "2632:272:6",
+            "nodes": [],
+            "body": {
+              "id": 851,
+              "nodeType": "Block",
+              "src": "2677:227:6",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "commonType": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        "id": 846,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "baseExpression": {
+                            "expression": {
+                              "baseExpression": {
+                                "expression": {
+                                  "id": 828,
+                                  "name": "s",
+                                  "nodeType": "Identifier",
+                                  "overloadedDeclarations": [],
+                                  "referencedDeclaration": 801,
+                                  "src": "2708:1:6",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_struct$_AppStorage_$718_storage",
+                                    "typeString": "struct AppStorage storage ref"
+                                  }
+                                },
+                                "id": 829,
+                                "isConstant": false,
+                                "isLValue": true,
+                                "isPure": false,
+                                "lValueRequested": false,
+                                "memberLocation": "2710:13:6",
+                                "memberName": "evolutionRule",
+                                "nodeType": "MemberAccess",
+                                "referencedDeclaration": 717,
+                                "src": "2708:15:6",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_EvolutionRule_$787_storage_$",
+                                  "typeString": "mapping(uint256 => struct EvolutionRule storage ref)"
+                                }
+                              },
+                              "id": 833,
+                              "indexExpression": {
+                                "expression": {
+                                  "expression": {
+                                    "id": 830,
+                                    "name": "s",
+                                    "nodeType": "Identifier",
+                                    "overloadedDeclarations": [],
+                                    "referencedDeclaration": 801,
+                                    "src": "2724:1:6",
+                                    "typeDescriptions": {
+                                      "typeIdentifier": "t_struct$_AppStorage_$718_storage",
+                                      "typeString": "struct AppStorage storage ref"
+                                    }
+                                  },
+                                  "id": 831,
+                                  "isConstant": false,
+                                  "isLValue": true,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "memberLocation": "2726:12:6",
+                                  "memberName": "gameSettings",
+                                  "nodeType": "MemberAccess",
+                                  "referencedDeclaration": 705,
+                                  "src": "2724:14:6",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_struct$_GameSettings_$744_storage",
+                                    "typeString": "struct GameSettings storage ref"
+                                  }
+                                },
+                                "id": 832,
+                                "isConstant": false,
+                                "isLValue": true,
+                                "isPure": false,
+                                "lValueRequested": false,
+                                "memberLocation": "2739:13:6",
+                                "memberName": "evolutionRule",
+                                "nodeType": "MemberAccess",
+                                "referencedDeclaration": 743,
+                                "src": "2724:28:6",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_uint16",
+                                  "typeString": "uint16"
+                                }
+                              },
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "nodeType": "IndexAccess",
+                              "src": "2708:45:6",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_struct$_EvolutionRule_$787_storage",
+                                "typeString": "struct EvolutionRule storage ref"
+                              }
+                            },
+                            "id": 834,
+                            "isConstant": false,
+                            "isLValue": true,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "memberLocation": "2754:8:6",
+                            "memberName": "xpForEvo",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": 784,
+                            "src": "2708:54:6",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_mapping$_t_uint256_$_t_uint256_$",
+                              "typeString": "mapping(uint256 => uint256)"
+                            }
+                          },
+                          "id": 844,
+                          "indexExpression": {
+                            "expression": {
+                              "baseExpression": {
+                                "expression": {
+                                  "baseExpression": {
+                                    "expression": {
+                                      "id": 835,
+                                      "name": "s",
+                                      "nodeType": "Identifier",
+                                      "overloadedDeclarations": [],
+                                      "referencedDeclaration": 801,
+                                      "src": "2763:1:6",
+                                      "typeDescriptions": {
+                                        "typeIdentifier": "t_struct$_AppStorage_$718_storage",
+                                        "typeString": "struct AppStorage storage ref"
+                                      }
+                                    },
+                                    "id": 836,
+                                    "isConstant": false,
+                                    "isLValue": true,
+                                    "isPure": false,
+                                    "lValueRequested": false,
+                                    "memberLocation": "2765:8:6",
+                                    "memberName": "cantomon",
+                                    "nodeType": "MemberAccess",
+                                    "referencedDeclaration": 710,
+                                    "src": "2763:10:6",
+                                    "typeDescriptions": {
+                                      "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Cantomon_$734_storage_$",
+                                      "typeString": "mapping(uint256 => struct Cantomon storage ref)"
+                                    }
+                                  },
+                                  "id": 838,
+                                  "indexExpression": {
+                                    "id": 837,
+                                    "name": "_cantomonId",
+                                    "nodeType": "Identifier",
+                                    "overloadedDeclarations": [],
+                                    "referencedDeclaration": 825,
+                                    "src": "2774:11:6",
+                                    "typeDescriptions": {
+                                      "typeIdentifier": "t_uint256",
+                                      "typeString": "uint256"
+                                    }
+                                  },
+                                  "isConstant": false,
+                                  "isLValue": true,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "nodeType": "IndexAccess",
+                                  "src": "2763:23:6",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_struct$_Cantomon_$734_storage",
+                                    "typeString": "struct Cantomon storage ref"
+                                  }
+                                },
+                                "id": 839,
+                                "isConstant": false,
+                                "isLValue": true,
+                                "isPure": false,
+                                "lValueRequested": false,
+                                "memberLocation": "2787:12:6",
+                                "memberName": "dynamicStats",
+                                "nodeType": "MemberAccess",
+                                "referencedDeclaration": 733,
+                                "src": "2763:36:6",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_CantomonDynamicStats_$780_storage_$",
+                                  "typeString": "mapping(uint256 => struct CantomonDynamicStats storage ref)"
+                                }
+                              },
+                              "id": 842,
+                              "indexExpression": {
+                                "expression": {
+                                  "id": 840,
+                                  "name": "s",
+                                  "nodeType": "Identifier",
+                                  "overloadedDeclarations": [],
+                                  "referencedDeclaration": 801,
+                                  "src": "2800:1:6",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_struct$_AppStorage_$718_storage",
+                                    "typeString": "struct AppStorage storage ref"
+                                  }
+                                },
+                                "id": 841,
+                                "isConstant": false,
+                                "isLValue": true,
+                                "isPure": false,
+                                "lValueRequested": false,
+                                "memberLocation": "2802:11:6",
+                                "memberName": "gameVersion",
+                                "nodeType": "MemberAccess",
+                                "referencedDeclaration": 700,
+                                "src": "2800:13:6",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_uint16",
+                                  "typeString": "uint16"
+                                }
+                              },
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "nodeType": "IndexAccess",
+                              "src": "2763:51:6",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_struct$_CantomonDynamicStats_$780_storage",
+                                "typeString": "struct CantomonDynamicStats storage ref"
+                              }
+                            },
+                            "id": 843,
+                            "isConstant": false,
+                            "isLValue": true,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "memberLocation": "2815:8:6",
+                            "memberName": "evoStage",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": 766,
+                            "src": "2763:60:6",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          },
+                          "isConstant": false,
+                          "isLValue": true,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "nodeType": "IndexAccess",
+                          "src": "2708:116:6",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": ">",
+                        "rightExpression": {
+                          "hexValue": "30",
+                          "id": 845,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "number",
+                          "lValueRequested": false,
+                          "nodeType": "Literal",
+                          "src": "2827:1:6",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_rational_0_by_1",
+                            "typeString": "int_const 0"
+                          },
+                          "value": "0"
+                        },
+                        "src": "2708:120:6",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      {
+                        "hexValue": "43616e746f6d6f6e2063616e6e6f742065766f6c76652066757274686572206174207468697320706f696e74",
+                        "id": 847,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "2830:46:6",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_f8839f418066dd822e5b9a12c19c7bf80cda18f57ba90ce30c10af08ad5e4640",
+                          "typeString": "literal_string \"Cantomon cannot evolve further at this point\""
+                        },
+                        "value": "Cantomon cannot evolve further at this point"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_f8839f418066dd822e5b9a12c19c7bf80cda18f57ba90ce30c10af08ad5e4640",
+                          "typeString": "literal_string \"Cantomon cannot evolve further at this point\""
+                        }
+                      ],
+                      "id": 827,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        -18,
+                        -18
+                      ],
+                      "referencedDeclaration": -18,
+                      "src": "2687:7:6",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (bool,string memory) pure"
+                      }
+                    },
+                    "id": 848,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "2687:199:6",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 849,
+                  "nodeType": "ExpressionStatement",
+                  "src": "2687:199:6"
+                },
+                {
+                  "id": 850,
+                  "nodeType": "PlaceholderStatement",
+                  "src": "2896:1:6"
+                }
+              ]
+            },
+            "name": "cantomonMaxEvo",
+            "nameLocation": "2641:14:6",
+            "parameters": {
+              "id": 826,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 825,
+                  "mutability": "mutable",
+                  "name": "_cantomonId",
+                  "nameLocation": "2664:11:6",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 852,
+                  "src": "2656:19:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 824,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2656:7:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2655:21:6"
+            },
+            "virtual": false,
+            "visibility": "internal"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [
+          {
+            "baseName": {
+              "id": 797,
+              "name": "OwnableInternal",
+              "nameLocations": [
+                "2383:15:6"
+              ],
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 3314,
+              "src": "2383:15:6"
+            },
+            "id": 798,
+            "nodeType": "InheritanceSpecifier",
+            "src": "2383:15:6"
+          }
+        ],
+        "canonicalName": "CantomonModifiers",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          853,
+          3314,
+          3123,
+          5179
+        ],
+        "name": "CantomonModifiers",
+        "nameLocation": "2362:17:6",
+        "scope": 854,
+        "usedErrors": [
+          3120,
+          3122
+        ]
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 6
+}
