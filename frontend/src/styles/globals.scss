@@ -2,6 +2,18 @@
 @import "../../node_modules/bootstrap/scss/variables";
 @import "../../node_modules/bootstrap/scss/mixins";
 
+@font-face {
+  font-family: "VT323";
+  src: url("./../assets/font/VT323-Regular.ttf");
+}
+
+html, body {
+  font-family: 'VT323', monospace;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background-image: url("./../assets/background.png");
   background-size: 85%;
@@ -10,7 +22,21 @@ body {
   align-items: center;
   display: flex;
   background-color: black;
+  color: #09FF00;
 }
+a {
+  text-decoration: none;
+  color: #09FF00;
+}
+
+a:hover {
+  color: #09FF00;
+}
+
+.btn {
+  color: white;
+}
+
 .holder { 
   .main-wrapper {
     width: 100vw;
@@ -18,6 +44,7 @@ body {
 
     header,
     footer {
+      width: 100%;
       height: 85px;
       position: fixed;
 
@@ -25,6 +52,49 @@ body {
 
     header {
       top: 0;
+
+      .center {
+        position: relative;
+        bottom: 6px;
+        left: 52px;
+      }
+      .left, .right {
+        position: relative;
+        top: 10px;
+      }
+
+      .left {
+        .logo {
+          height: 30px;
+        }
+        .menu-wrapper {
+          font-size: 25px;
+          display: flex;
+          flex-direction: row;
+          gap: 0px;
+
+          a {
+            padding-top: 15px;
+            align-items: center;
+            width: 45px;
+
+            i {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              font-size: 20px;
+              border: solid white 1px;
+              padding: 2px;
+              padding-left: 12px;
+              padding-right: 12px;
+              border-radius: 4px;
+              font-weight: 900;
+              background-color: deepskyblue;
+              color: white;
+            }
+          }
+        }
+      }
     }
 
     footer {
@@ -32,6 +102,7 @@ body {
     }
 
     main {
+      width: 100%;
       padding-top: 85px;
       padding-bottom: 85px;
     }
