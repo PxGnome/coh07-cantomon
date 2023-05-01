@@ -1,7 +1,20 @@
+import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import EggPlaceholder from "./../../assets/nft-collection/egg-placeholder.png";
 export default function DemoNFTItem() {
+    const [isModalVisible, setModalVisibility] = React.useState(false);
+    const showModal = (e) => {
+        e.preventDefault();
+        setModalVisibility(true); 
+    }
+    const closeModal = (e) => {
+        e.preventDefault();
+        setModalVisibility(false); 
+    }
+    const gotoCantomon = (e) => {
+        e.preventDefault(); 
+    }
     return (
         <div className="container list-group">
             <div className="row">
@@ -12,6 +25,8 @@ export default function DemoNFTItem() {
                         query: { slug: "1" },
 
                     }}
+
+                    onClick={showModal}
                 >
                     <div className="item card">
                         <h5>#1. Demo NFT Item</h5>
@@ -27,6 +42,8 @@ export default function DemoNFTItem() {
                         query: { slug: "2" },
 
                     }}
+
+                    onClick={showModal}
                 >
                     <div className="item card">
                         <h5>#2. Demo NFT Item</h5>
@@ -42,6 +59,8 @@ export default function DemoNFTItem() {
                         query: { slug: "3" },
 
                     }}
+
+                    onClick={showModal}
                 >
                     <div className="item card">
                         <h5>#3. Demo NFT Item</h5>
@@ -59,6 +78,8 @@ export default function DemoNFTItem() {
                         query: { slug: "4" },
 
                     }}
+
+                    onClick={showModal}
                 >
                     <div className="item card">
                         <h5>#4. Demo NFT Item</h5>
@@ -76,6 +97,8 @@ export default function DemoNFTItem() {
                         query: { slug: "5" },
 
                     }}
+
+                    onClick={showModal}
                 >
                     <div className="item card">
                         <h5>#5. Demo NFT Item</h5>
@@ -91,6 +114,8 @@ export default function DemoNFTItem() {
                         query: { slug: "6" },
 
                     }}
+
+                    onClick={showModal}
                 >
                     <div className="item card">
                         <h5>#6. Demo NFT Item</h5>
@@ -108,6 +133,8 @@ export default function DemoNFTItem() {
                         query: { slug: "7" },
 
                     }}
+
+                    onClick={showModal}
                 >
                     <div className="item card">
                         <h5>#7. Demo NFT Item</h5>
@@ -123,6 +150,8 @@ export default function DemoNFTItem() {
                         query: { slug: "8" },
 
                     }}
+
+                    onClick={showModal}
                 >
                     <div className="item card">
                         <h5>#8. Demo NFT Item</h5>
@@ -138,6 +167,8 @@ export default function DemoNFTItem() {
                         query: { slug: "9" },
 
                     }}
+
+                    onClick={showModal}
                 >
                     <div className="item card">
                         <h5>#9. Demo NFT Item</h5>
@@ -156,6 +187,8 @@ export default function DemoNFTItem() {
                         query: { slug: "10" },
 
                     }}
+
+                    onClick={showModal}
                 >
                     <div className="item card">
                         <h5>#10. Demo NFT Item</h5>
@@ -171,6 +204,8 @@ export default function DemoNFTItem() {
                         query: { slug: "11" },
 
                     }}
+
+                    onClick={showModal}
                 >
                     <div className="item card">
                         <h5>#11. Demo NFT Item</h5>
@@ -186,6 +221,8 @@ export default function DemoNFTItem() {
                         query: { slug: "12" },
 
                     }}
+
+                    onClick={showModal}
                 >
                     <div className="item card">
                         <h5>#12. Demo NFT Item</h5>
@@ -204,6 +241,8 @@ export default function DemoNFTItem() {
                         query: { slug: "13" },
 
                     }}
+
+                    onClick={showModal}
                 >
                     <div className="item card">
                         <h5>#13. Demo NFT Item</h5>
@@ -219,6 +258,8 @@ export default function DemoNFTItem() {
                         query: { slug: "14" },
 
                     }}
+
+                    onClick={showModal}
                 >
                     <div className="item card">
                         <h5>#14. Demo NFT Item</h5>
@@ -234,6 +275,8 @@ export default function DemoNFTItem() {
                         query: { slug: "15" },
 
                     }}
+
+                    onClick={showModal}
                 >
                     <div className="item card">
                         <h5>#15. Demo NFT Item</h5>
@@ -252,6 +295,8 @@ export default function DemoNFTItem() {
                         query: { slug: "16" },
 
                     }}
+
+                    onClick={showModal}
                 >
                     <div className="item card">
                         <h5>#16. Demo NFT Item</h5>
@@ -267,6 +312,8 @@ export default function DemoNFTItem() {
                         query: { slug: "17" },
 
                     }}
+
+                    onClick={showModal}
                 >
                     <div className="item card">
                         <h5>#17. Demo NFT Item</h5>
@@ -282,6 +329,8 @@ export default function DemoNFTItem() {
                         query: { slug: "18" },
 
                     }}
+
+                    onClick={showModal}
                 >
                     <div className="item card">
                         <h5>#18. Demo NFT Item</h5>
@@ -293,6 +342,29 @@ export default function DemoNFTItem() {
             </div>
 
 
+            <div className={isModalVisible ? ("modal show"):("modal")} tabindex="-1">
+                <div className="modal-dialog">
+                    <div className="modal-content">
+                        <div className="modal-header">
+                            <h5 className="modal-title">Window</h5>
+                            <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"
+
+                                onClick={closeModal}></button>
+                        </div>
+                        <div className="modal-body">
+                            <p>Transaction in Progress.</p>
+                            <p>
+                                <Link className="external-url" href="#" >Link URL</Link>
+                            </p>
+                        </div>
+                        <div className="modal-footer center">
+                            <button type="button" className="btn btn-primary"
+
+                                onClick={gotoCantomon}>Go to Cantomon</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     )
 }

@@ -17,4 +17,21 @@
 //nft-collection
 @import "./components/nft-collection.scss";
 @import "./components/nft-collection-item.scss";
- 
+
+.modal.show {
+  display: block;
+}
+
+.modal-header {
+  background-color: rgb(102, 102, 102);
+  color: white;
+}
+
+.modal-body {
+  color: black;
+
+  a {
+    color: black;
+    text-decoration: underline;
+  }
+}
