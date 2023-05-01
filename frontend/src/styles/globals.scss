@@ -3,5 +3,37 @@
 @import "../../node_modules/bootstrap/scss/mixins";
 
 body {
+  background-image: url("./../assets/background.png");
+  background-size: 85%;
+  background-repeat: no-repeat;
+  background-position: center;
+  align-items: center;
+  display: flex;
+  background-color: black;
+}
+.holder { 
+  .main-wrapper {
+    width: 100vw;
+    height: 100vh;
 
+    header,
+    footer {
+      height: 85px;
+      position: fixed;
+
+    }
+
+    header {
+      top: 0;
+    }
+
+    footer {
+      bottom: 0;
+    }
+
+    main {
+      padding-top: 85px;
+      padding-bottom: 85px;
+    }
+  }
 }
