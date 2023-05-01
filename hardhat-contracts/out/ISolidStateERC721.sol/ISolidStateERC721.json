@@ -1230,12 +1230,12 @@
       ]
     },
     "nodeType": "SourceUnit",
-    "src": "33:418:62",
+    "src": "33:418:79",
     "nodes": [
       {
         "id": 7477,
         "nodeType": "PragmaDirective",
-        "src": "33:23:62",
+        "src": "33:23:79",
         "nodes": [],
         "literals": [
           "solidity",
@@ -1247,7 +1247,7 @@
       {
         "id": 7479,
         "nodeType": "ImportDirective",
-        "src": "58:53:62",
+        "src": "58:53:79",
         "nodes": [],
         "absolutePath": "node_modules/@solidstate/contracts/token/ERC721/base/IERC721Base.sol",
         "file": "./base/IERC721Base.sol",
@@ -1262,7 +1262,7 @@
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
               "referencedDeclaration": 8592,
-              "src": "67:11:62",
+              "src": "67:11:79",
               "typeDescriptions": {}
             },
             "nameLocation": "-1:-1:-1"
@@ -1273,7 +1273,7 @@
       {
         "id": 7481,
         "nodeType": "ImportDirective",
-        "src": "112:71:62",
+        "src": "112:71:79",
         "nodes": [],
         "absolutePath": "node_modules/@solidstate/contracts/token/ERC721/enumerable/IERC721Enumerable.sol",
         "file": "./enumerable/IERC721Enumerable.sol",
@@ -1288,7 +1288,7 @@
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
               "referencedDeclaration": 8783,
-              "src": "121:17:62",
+              "src": "121:17:79",
               "typeDescriptions": {}
             },
             "nameLocation": "-1:-1:-1"
@@ -1299,7 +1299,7 @@
       {
         "id": 7483,
         "nodeType": "ImportDirective",
-        "src": "184:65:62",
+        "src": "184:65:79",
         "nodes": [],
         "absolutePath": "node_modules/@solidstate/contracts/token/ERC721/metadata/IERC721Metadata.sol",
         "file": "./metadata/IERC721Metadata.sol",
@@ -1314,7 +1314,7 @@
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
               "referencedDeclaration": 9067,
-              "src": "193:15:62",
+              "src": "193:15:79",
               "typeDescriptions": {}
             },
             "nameLocation": "-1:-1:-1"
@@ -1325,36 +1325,36 @@
       {
         "id": 7494,
         "nodeType": "ContractDefinition",
-        "src": "251:199:62",
+        "src": "251:199:79",
         "nodes": [
           {
             "id": 7491,
             "nodeType": "ErrorDefinition",
-            "src": "336:53:62",
+            "src": "336:53:79",
             "nodes": [],
             "errorSelector": "b56d7c1b",
             "name": "SolidStateERC721__PayableApproveNotSupported",
-            "nameLocation": "342:44:62",
+            "nameLocation": "342:44:79",
             "parameters": {
               "id": 7490,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "386:2:62"
+              "src": "386:2:79"
             }
           },
           {
             "id": 7493,
             "nodeType": "ErrorDefinition",
-            "src": "394:54:62",
+            "src": "394:54:79",
             "nodes": [],
             "errorSelector": "22b18139",
             "name": "SolidStateERC721__PayableTransferNotSupported",
-            "nameLocation": "400:45:62",
+            "nameLocation": "400:45:79",
             "parameters": {
               "id": 7492,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "445:2:62"
+              "src": "445:2:79"
             }
           }
         ],
@@ -1365,45 +1365,45 @@
               "id": 7484,
               "name": "IERC721Base",
               "nameLocations": [
-                "282:11:62"
+                "282:11:79"
               ],
               "nodeType": "IdentifierPath",
               "referencedDeclaration": 8592,
-              "src": "282:11:62"
+              "src": "282:11:79"
             },
             "id": 7485,
             "nodeType": "InheritanceSpecifier",
-            "src": "282:11:62"
+            "src": "282:11:79"
           },
           {
             "baseName": {
               "id": 7486,
               "name": "IERC721Enumerable",
               "nameLocations": [
-                "295:17:62"
+                "295:17:79"
               ],
               "nodeType": "IdentifierPath",
               "referencedDeclaration": 8783,
-              "src": "295:17:62"
+              "src": "295:17:79"
             },
             "id": 7487,
             "nodeType": "InheritanceSpecifier",
-            "src": "295:17:62"
+            "src": "295:17:79"
           },
           {
             "baseName": {
               "id": 7488,
               "name": "IERC721Metadata",
               "nameLocations": [
-                "314:15:62"
+                "314:15:79"
               ],
               "nodeType": "IdentifierPath",
               "referencedDeclaration": 9067,
-              "src": "314:15:62"
+              "src": "314:15:79"
             },
             "id": 7489,
             "nodeType": "InheritanceSpecifier",
-            "src": "314:15:62"
+            "src": "314:15:79"
           }
         ],
         "canonicalName": "ISolidStateERC721",
@@ -1423,7 +1423,7 @@
           5301
         ],
         "name": "ISolidStateERC721",
-        "nameLocation": "261:17:62",
+        "nameLocation": "261:17:79",
         "scope": 7495,
         "usedErrors": [
           7491,
@@ -1444,5 +1444,5 @@
     ],
     "license": "MIT"
   },
-  "id": 62
+  "id": 79
 }

@@ -17,12 +17,12 @@
       ]
     },
     "nodeType": "SourceUnit",
-    "src": "90:61:15",
+    "src": "90:61:32",
     "nodes": [
       {
         "id": 1829,
         "nodeType": "PragmaDirective",
-        "src": "90:23:15",
+        "src": "90:23:32",
         "nodes": [],
         "literals": [
           "solidity",
@@ -34,7 +34,7 @@
       {
         "id": 1830,
         "nodeType": "ImportDirective",
-        "src": "115:35:15",
+        "src": "115:35:32",
         "nodes": [],
         "absolutePath": "node_modules/@openzeppelin/contracts/token/ERC20/IERC20.sol",
         "file": "../token/ERC20/IERC20.sol",
@@ -47,5 +47,5 @@
     ],
     "license": "MIT"
   },
-  "id": 15
+  "id": 32
 }

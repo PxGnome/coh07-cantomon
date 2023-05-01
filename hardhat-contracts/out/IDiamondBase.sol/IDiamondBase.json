@@ -106,12 +106,12 @@
       ]
     },
     "nodeType": "SourceUnit",
-    "src": "33:105:53",
+    "src": "33:105:70",
     "nodes": [
       {
         "id": 5889,
         "nodeType": "PragmaDirective",
-        "src": "33:23:53",
+        "src": "33:23:70",
         "nodes": [],
         "literals": [
           "solidity",
@@ -123,7 +123,7 @@
       {
         "id": 5891,
         "nodeType": "ImportDirective",
-        "src": "58:42:53",
+        "src": "58:42:70",
         "nodes": [],
         "absolutePath": "node_modules/@solidstate/contracts/proxy/IProxy.sol",
         "file": "../../IProxy.sol",
@@ -138,7 +138,7 @@
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
               "referencedDeclaration": 5451,
-              "src": "67:6:53",
+              "src": "67:6:70",
               "typeDescriptions": {}
             },
             "nameLocation": "-1:-1:-1"
@@ -149,7 +149,7 @@
       {
         "id": 5894,
         "nodeType": "ContractDefinition",
-        "src": "102:35:53",
+        "src": "102:35:70",
         "nodes": [],
         "abstract": false,
         "baseContracts": [
@@ -158,15 +158,15 @@
               "id": 5892,
               "name": "IProxy",
               "nameLocations": [
-                "128:6:53"
+                "128:6:70"
               ],
               "nodeType": "IdentifierPath",
               "referencedDeclaration": 5451,
-              "src": "128:6:53"
+              "src": "128:6:70"
             },
             "id": 5893,
             "nodeType": "InheritanceSpecifier",
-            "src": "128:6:53"
+            "src": "128:6:70"
           }
         ],
         "canonicalName": "IDiamondBase",
@@ -178,7 +178,7 @@
           5451
         ],
         "name": "IDiamondBase",
-        "nameLocation": "112:12:53",
+        "nameLocation": "112:12:70",
         "scope": 5895,
         "usedErrors": [
           5447
@@ -187,5 +187,5 @@
     ],
     "license": "MIT"
   },
-  "id": 53
+  "id": 70
 }

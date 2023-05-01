@@ -199,12 +199,12 @@
       ]
     },
     "nodeType": "SourceUnit",
-    "src": "33:543:42",
+    "src": "33:543:59",
     "nodes": [
       {
         "id": 5319,
         "nodeType": "PragmaDirective",
-        "src": "33:23:42",
+        "src": "33:23:59",
         "nodes": [],
         "literals": [
           "solidity",
@@ -216,7 +216,7 @@
       {
         "id": 5321,
         "nodeType": "ImportDirective",
-        "src": "58:58:42",
+        "src": "58:58:59",
         "nodes": [],
         "absolutePath": "node_modules/@solidstate/contracts/interfaces/IERC165.sol",
         "file": "../../../interfaces/IERC165.sol",
@@ -231,7 +231,7 @@
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
               "referencedDeclaration": 5145,
-              "src": "67:7:42",
+              "src": "67:7:59",
               "typeDescriptions": {}
             },
             "nameLocation": "-1:-1:-1"
@@ -242,7 +242,7 @@
       {
         "id": 5323,
         "nodeType": "ImportDirective",
-        "src": "117:48:42",
+        "src": "117:48:59",
         "nodes": [],
         "absolutePath": "node_modules/@solidstate/contracts/introspection/ERC165/base/IERC165Base.sol",
         "file": "./IERC165Base.sol",
@@ -257,7 +257,7 @@
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
               "referencedDeclaration": 5434,
-              "src": "126:11:42",
+              "src": "126:11:59",
               "typeDescriptions": {}
             },
             "nameLocation": "-1:-1:-1"
@@ -268,7 +268,7 @@
       {
         "id": 5325,
         "nodeType": "ImportDirective",
-        "src": "166:62:42",
+        "src": "166:62:59",
         "nodes": [],
         "absolutePath": "node_modules/@solidstate/contracts/introspection/ERC165/base/ERC165BaseInternal.sol",
         "file": "./ERC165BaseInternal.sol",
@@ -283,7 +283,7 @@
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
               "referencedDeclaration": 5398,
-              "src": "175:18:42",
+              "src": "175:18:59",
               "typeDescriptions": {}
             },
             "nameLocation": "-1:-1:-1"
@@ -294,7 +294,7 @@
       {
         "id": 5327,
         "nodeType": "ImportDirective",
-        "src": "229:60:42",
+        "src": "229:60:59",
         "nodes": [],
         "absolutePath": "node_modules/@solidstate/contracts/introspection/ERC165/base/ERC165BaseStorage.sol",
         "file": "./ERC165BaseStorage.sol",
@@ -309,7 +309,7 @@
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
               "referencedDeclaration": 5423,
-              "src": "238:17:42",
+              "src": "238:17:59",
               "typeDescriptions": {}
             },
             "nameLocation": "-1:-1:-1"
@@ -320,17 +320,17 @@
       {
         "id": 5346,
         "nodeType": "ContractDefinition",
-        "src": "331:244:42",
+        "src": "331:244:59",
         "nodes": [
           {
             "id": 5345,
             "nodeType": "FunctionDefinition",
-            "src": "444:129:42",
+            "src": "444:129:59",
             "nodes": [],
             "body": {
               "id": 5344,
               "nodeType": "Block",
-              "src": "518:55:42",
+              "src": "518:55:59",
               "nodes": [],
               "statements": [
                 {
@@ -342,7 +342,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 5335,
-                        "src": "554:11:42",
+                        "src": "554:11:59",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes4",
                           "typeString": "bytes4"
@@ -361,7 +361,7 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 5371,
-                      "src": "535:18:42",
+                      "src": "535:18:59",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_view$_t_bytes4_$returns$_t_bool_$",
                         "typeString": "function (bytes4) view returns (bool)"
@@ -376,7 +376,7 @@
                     "nameLocations": [],
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "535:31:42",
+                    "src": "535:31:59",
                     "tryCall": false,
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
@@ -386,7 +386,7 @@
                   "functionReturnParameters": 5339,
                   "id": 5343,
                   "nodeType": "Return",
-                  "src": "528:38:42"
+                  "src": "528:38:59"
                 }
               ]
             },
@@ -396,7 +396,7 @@
             "documentation": {
               "id": 5333,
               "nodeType": "StructuredDocumentation",
-              "src": "401:38:42",
+              "src": "401:38:59",
               "text": " @inheritdoc IERC165"
             },
             "functionSelector": "01ffc9a7",
@@ -404,7 +404,7 @@
             "kind": "function",
             "modifiers": [],
             "name": "supportsInterface",
-            "nameLocation": "453:17:42",
+            "nameLocation": "453:17:59",
             "parameters": {
               "id": 5336,
               "nodeType": "ParameterList",
@@ -414,10 +414,10 @@
                   "id": 5335,
                   "mutability": "mutable",
                   "name": "interfaceId",
-                  "nameLocation": "478:11:42",
+                  "nameLocation": "478:11:59",
                   "nodeType": "VariableDeclaration",
                   "scope": 5345,
-                  "src": "471:18:42",
+                  "src": "471:18:59",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -428,7 +428,7 @@
                     "id": 5334,
                     "name": "bytes4",
                     "nodeType": "ElementaryTypeName",
-                    "src": "471:6:42",
+                    "src": "471:6:59",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes4",
                       "typeString": "bytes4"
@@ -437,7 +437,7 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "470:20:42"
+              "src": "470:20:59"
             },
             "returnParameters": {
               "id": 5339,
@@ -451,7 +451,7 @@
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
                   "scope": 5345,
-                  "src": "512:4:42",
+                  "src": "512:4:59",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -462,7 +462,7 @@
                     "id": 5337,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "512:4:42",
+                    "src": "512:4:59",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -471,7 +471,7 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "511:6:42"
+              "src": "511:6:59"
             },
             "scope": 5346,
             "stateMutability": "view",
@@ -486,30 +486,30 @@
               "id": 5329,
               "name": "IERC165Base",
               "nameLocations": [
-                "363:11:42"
+                "363:11:59"
               ],
               "nodeType": "IdentifierPath",
               "referencedDeclaration": 5434,
-              "src": "363:11:42"
+              "src": "363:11:59"
             },
             "id": 5330,
             "nodeType": "InheritanceSpecifier",
-            "src": "363:11:42"
+            "src": "363:11:59"
           },
           {
             "baseName": {
               "id": 5331,
               "name": "ERC165BaseInternal",
               "nameLocations": [
-                "376:18:42"
+                "376:18:59"
               ],
               "nodeType": "IdentifierPath",
               "referencedDeclaration": 5398,
-              "src": "376:18:42"
+              "src": "376:18:59"
             },
             "id": 5332,
             "nodeType": "InheritanceSpecifier",
-            "src": "376:18:42"
+            "src": "376:18:59"
           }
         ],
         "canonicalName": "ERC165Base",
@@ -518,7 +518,7 @@
         "documentation": {
           "id": 5328,
           "nodeType": "StructuredDocumentation",
-          "src": "291:39:42",
+          "src": "291:39:59",
           "text": " @title ERC165 implementation"
         },
         "fullyImplemented": true,
@@ -531,7 +531,7 @@
           5149
         ],
         "name": "ERC165Base",
-        "nameLocation": "349:10:42",
+        "nameLocation": "349:10:59",
         "scope": 5347,
         "usedErrors": [
           5442
@@ -540,5 +540,5 @@
     ],
     "license": "MIT"
   },
-  "id": 42
+  "id": 59
 }

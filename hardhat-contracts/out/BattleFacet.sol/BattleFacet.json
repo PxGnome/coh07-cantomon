@@ -35,56 +35,33 @@
           "internalType": "uint256",
           "name": "_cantomonId",
           "type": "uint256"
-        }
-      ],
-      "name": "evolveCantomon",
-      "outputs": [],
-      "stateMutability": "nonpayable",
-      "type": "function"
-    },
-    {
-      "inputs": [
+        },
         {
           "internalType": "uint256",
-          "name": "_cantomonId",
+          "name": "_npcId",
           "type": "uint256"
         }
       ],
-      "name": "feedCantomon",
-      "outputs": [],
-      "stateMutability": "nonpayable",
-      "type": "function"
-    },
-    {
-      "inputs": [
-        {
-          "internalType": "uint256",
-          "name": "_cantomonId",
-          "type": "uint256"
-        }
-      ],
-      "name": "trainCantomon",
+      "name": "battleNPC",
       "outputs": [],
       "stateMutability": "nonpayable",
       "type": "function"
     }
   ],
   "bytecode": {
-    "object": "0x608060405234801561001057600080fd5b5061018c806100206000396000f3fe608060405234801561001057600080fd5b50600436106100415760003560e01c806358888905146100465780637f0b4d4114610046578063edc3148314610046575b600080fd5b61005961005436600461010d565b61005b565b005b6040516331a9108f60e11b815260048101829052819033903090636352211e90602401602060405180830381865afa15801561009b573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906100bf9190610126565b6001600160a01b0316146101095760405162461bcd60e51b815260206004820152600d60248201526c2737ba1027232a1037bbb732b960991b604482015260640160405180910390fd5b5050565b60006020828403121561011f57600080fd5b5035919050565b60006020828403121561013857600080fd5b81516001600160a01b038116811461014f57600080fd5b939250505056fea26469706673582212200732a7a4fc26215fdcc4aba19b8ba37a82950bd39d341a533b28ab682863cf0164736f6c63430008130033",
-    "sourceMap": "471:358:1:-:0;;;;;;;;;;;;;;;;;;;",
+    "object": "0x608060405234801561001057600080fd5b50610280806100206000396000f3fe608060405234801561001057600080fd5b506004361061002b5760003560e01c806309cf2af014610030575b600080fd5b61004361003e3660046101d1565b610045565b005b6040516331a9108f60e11b815260048101839052829033903090636352211e90602401602060405180830381865afa158015610085573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906100a991906101f3565b6001600160a01b0316146100f45760405162461bcd60e51b815260206004820152600d60248201526c2737ba1027232a1037bbb732b960991b60448201526064015b60405180910390fd5b600083815260076020908152604080832060055461ffff168452600201909152902060048101546101605760405162461bcd60e51b815260206004820152601660248201527543616e746f6d6f6e20686173206e6f20656e6572677960501b60448201526064016100eb565b600084815260076020908152604080832060055461ffff168085526001808301855283862060039093018552838620898752600a8652848720928752600290920190945291842060048601805492959394919391929091906101c3908490610223565b909155505050505050505050565b600080604083850312156101e457600080fd5b50508035926020909101359150565b60006020828403121561020557600080fd5b81516001600160a01b038116811461021c57600080fd5b9392505050565b8181038181111561024457634e487b7160e01b600052601160045260246000fd5b9291505056fea26469706673582212202ad9ee848d8aee46ddcc7d9271034493d62f7e853263227017b80c1c70118cfc64736f6c63430008130033",
+    "sourceMap": "471:637:0:-:0;;;;;;;;;;;;;;;;;;;",
     "linkReferences": {}
   },
   "deployedBytecode": {
-    "object": "0x608060405234801561001057600080fd5b50600436106100415760003560e01c806358888905146100465780637f0b4d4114610046578063edc3148314610046575b600080fd5b61005961005436600461010d565b61005b565b005b6040516331a9108f60e11b815260048101829052819033903090636352211e90602401602060405180830381865afa15801561009b573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906100bf9190610126565b6001600160a01b0316146101095760405162461bcd60e51b815260206004820152600d60248201526c2737ba1027232a1037bbb732b960991b604482015260640160405180910390fd5b5050565b60006020828403121561011f57600080fd5b5035919050565b60006020828403121561013857600080fd5b81516001600160a01b038116811461014f57600080fd5b939250505056fea26469706673582212200732a7a4fc26215fdcc4aba19b8ba37a82950bd39d341a533b28ab682863cf0164736f6c63430008130033",
-    "sourceMap": "471:358:1:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;625:98;;;;;;:::i;:::-;;:::i;:::-;;;2512:43:6;;-1:-1:-1;;;2512:43:6;;;;;345:25:84;;;694:11:1;;2559:10:6;;2528:4;;2512:30;;318:18:84;;2512:43:6;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;;;;;2512:57:6;;2491:117;;;;-1:-1:-1;;;2491:117:6;;878:2:84;2491:117:6;;;860:21:84;917:2;897:18;;;890:30;-1:-1:-1;;;936:18:84;;;929:43;989:18;;2491:117:6;;;;;;;;625:98:1;;:::o;14:180:84:-;73:6;126:2;114:9;105:7;101:23;97:32;94:52;;;142:1;139;132:12;94:52;-1:-1:-1;165:23:84;;14:180;-1:-1:-1;14:180:84:o;381:290::-;451:6;504:2;492:9;483:7;479:23;475:32;472:52;;;520:1;517;510:12;472:52;546:16;;-1:-1:-1;;;;;591:31:84;;581:42;;571:70;;637:1;634;627:12;571:70;660:5;381:290;-1:-1:-1;;;381:290:84:o",
+    "object": "0x608060405234801561001057600080fd5b506004361061002b5760003560e01c806309cf2af014610030575b600080fd5b61004361003e3660046101d1565b610045565b005b6040516331a9108f60e11b815260048101839052829033903090636352211e90602401602060405180830381865afa158015610085573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906100a991906101f3565b6001600160a01b0316146100f45760405162461bcd60e51b815260206004820152600d60248201526c2737ba1027232a1037bbb732b960991b60448201526064015b60405180910390fd5b600083815260076020908152604080832060055461ffff168452600201909152902060048101546101605760405162461bcd60e51b815260206004820152601660248201527543616e746f6d6f6e20686173206e6f20656e6572677960501b60448201526064016100eb565b600084815260076020908152604080832060055461ffff168085526001808301855283862060039093018552838620898752600a8652848720928752600290920190945291842060048601805492959394919391929091906101c3908490610223565b909155505050505050505050565b600080604083850312156101e457600080fd5b50508035926020909101359150565b60006020828403121561020557600080fd5b81516001600160a01b038116811461021c57600080fd5b9392505050565b8181038181111561024457634e487b7160e01b600052601160045260246000fd5b9291505056fea26469706673582212202ad9ee848d8aee46ddcc7d9271034493d62f7e853263227017b80c1c70118cfc64736f6c63430008130033",
+    "sourceMap": "471:637:0:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;519:587;;;;;;:::i;:::-;;:::i;:::-;;;3251:43:4;;-1:-1:-1;;;3251:43:4;;;;;413:25:42;;;602:11:0;;3298:10:4;;3267:4;;3251:30;;386:18:42;;3251:43:4;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;;;;;3251:57:4;;3230:117;;;;-1:-1:-1;;;3230:117:4;;946:2:42;3230:117:4;;;928:21:42;985:2;965:18;;;958:30;-1:-1:-1;;;1004:18:42;;;997:43;1057:18;;3230:117:4;;;;;;;;;625:43:0::1;671:23:::0;;;:10:::1;:23;::::0;;;;;;;708:13:::1;::::0;::::1;;671:51:::0;;:36:::1;;:51:::0;;;;;740:21:::1;::::0;::::1;::::0;732:60:::1;;;::::0;-1:-1:-1;;;732:60:0;;1288:2:42;732:60:0::1;::::0;::::1;1270:21:42::0;1327:2;1307:18;;;1300:30;-1:-1:-1;;;1346:18:42;;;1339:52;1408:18;;732:60:0::1;1086:346:42::0;732:60:0::1;803:37;843:23:::0;;;:10:::1;:23;::::0;;;;;;;877:13:::1;::::0;::::1;;843:48:::0;;;:33:::1;::::0;;::::1;:48:::0;;;;;939:32:::1;::::0;;::::1;:47:::0;;;;;1025:13;;;:5:::1;:13:::0;;;;;:37;;;:22:::1;::::0;;::::1;:37:::0;;;;;;1073:21:::1;::::0;::::1;:26:::0;;843:48;;939:47;;1025:37;;843:33;;1073:21;;803:37;1073:26:::1;::::0;843:33;;1073:26:::1;:::i;:::-;::::0;;;-1:-1:-1;;;;;;;;;519:587:0:o;14:248:42:-;82:6;90;143:2;131:9;122:7;118:23;114:32;111:52;;;159:1;156;149:12;111:52;-1:-1:-1;;182:23:42;;;252:2;237:18;;;224:32;;-1:-1:-1;14:248:42:o;449:290::-;519:6;572:2;560:9;551:7;547:23;543:32;540:52;;;588:1;585;578:12;540:52;614:16;;-1:-1:-1;;;;;659:31:42;;649:42;;639:70;;705:1;702;695:12;639:70;728:5;449:290;-1:-1:-1;;;449:290:42:o;1437:225::-;1504:9;;;1525:11;;;1522:134;;;1578:10;1573:3;1569:20;1566:1;1559:31;1613:4;1610:1;1603:15;1641:4;1638:1;1631:15;1522:134;1437:225;;;;:::o",
     "linkReferences": {}
   },
   "methodIdentifiers": {
-    "evolveCantomon(uint256)": "7f0b4d41",
-    "feedCantomon(uint256)": "edc31483",
-    "trainCantomon(uint256)": "58888905"
+    "battleNPC(uint256,uint256)": "09cf2af0"
   },
-  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.19+commit.7dd6d404\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"Ownable__NotOwner\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"Ownable__NotTransitiveOwner\",\"type\":\"error\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"previousOwner\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"OwnershipTransferred\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_cantomonId\",\"type\":\"uint256\"}],\"name\":\"evolveCantomon\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_cantomonId\",\"type\":\"uint256\"}],\"name\":\"feedCantomon\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_cantomonId\",\"type\":\"uint256\"}],\"name\":\"trainCantomon\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/destination/facet/BattleFacet.sol\":\"BattleFacet\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@hyperlane-xyz/=node_modules/@hyperlane-xyz/\",\":@openzeppelin/=node_modules/@openzeppelin/\",\":@solidstate/=node_modules/@solidstate/\",\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":erc721a/=node_modules/erc721a/\",\":eth-gas-reporter/=node_modules/eth-gas-reporter/\",\":forge-std/=lib/forge-std/src/\",\":hardhat/=node_modules/hardhat/\"]},\"sources\":{\"contracts/destination/facet/BattleFacet.sol\":{\"keccak256\":\"0xb6767aef4177865f26ccc0810f68b0386788074940f35119d6709f75819c4c18\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://c5179feff5ced5c327ffe7c0520784c7b1e85ff222e74fa76f41234850a731aa\",\"dweb:/ipfs/QmW9i1KhibmiMiQgXwAaTERzkwgqdi3p1GfEngUgPVSfzT\"]},\"contracts/libraries/LibAppStorage.sol\":{\"keccak256\":\"0xe1a28863c2fb319c88e248e8039361ad9335779a783c6c1ad078e3815c6186af\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://02d8503193e03a4678861aa58ba8ef645ea73f34493d3e48e4041f727dc76dd5\",\"dweb:/ipfs/QmSHV6WzDMmaEHDriDknP8mzVLAtTzvzmi7Q5rhVrNcGuQ\"]},\"node_modules/@hyperlane-xyz/core/contracts/interfaces/IInterchainSecurityModule.sol\":{\"keccak256\":\"0x22f298aa6bdf6f717538efa5f33abf0927376bc325445c65497babfba1716c13\",\"license\":\"MIT OR Apache-2.0\",\"urls\":[\"bzz-raw://0c737fbdeb40b0bb46dab213469cbafe85c5b952a75b418bc76b6fb506cb7e7a\",\"dweb:/ipfs/QmNYEy2CZEgAc5U9t7eoFEip2yGkt3kpxQW87jXGkXq8B6\"]},\"node_modules/@hyperlane-xyz/core/contracts/interfaces/IMailbox.sol\":{\"keccak256\":\"0x44d72975cee2b277f65bc1d0773cc4563c68c029eb760db350854da28ff581ec\",\"license\":\"MIT OR Apache-2.0\",\"urls\":[\"bzz-raw://80545bdeba73878b777f316182e369df4253c6477f8b2614dddb0fd849fc0ae8\",\"dweb:/ipfs/QmayzXhireVhZBQwQ3HHhieQWbz2WSGbcjWA1agDNcMTQs\"]},\"node_modules/@solidstate/contracts/access/ownable/IOwnableInternal.sol\":{\"keccak256\":\"0x6237a634712261bd82d5c7753780d35f77af215406d1e59512052f743f8f1c60\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://8e54ac6cd1b376224b8d148c704693ff3f7ac9f69954fd30ee3d949fa17210c3\",\"dweb:/ipfs/QmWjq37K3gg29XhFbepg5GbmmFYoyXb81sh2K1MnVZqG6y\"]},\"node_modules/@solidstate/contracts/access/ownable/OwnableInternal.sol\":{\"keccak256\":\"0x0185d24250a5e6fbafce443b9ba19bba761803e3e5d91ba423bfb1f5f0bbdbf9\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://547fadeaec559ee824f4dd37b2ef972a061ca59576f5733cf643e00d88a4db52\",\"dweb:/ipfs/QmYx6rmRmZZQkoS8TykMVsz9ZvfQ8MfSPt6UzWJ8pyj8qF\"]},\"node_modules/@solidstate/contracts/access/ownable/OwnableStorage.sol\":{\"keccak256\":\"0x7385e2020de914f75cabdc83c6adf88ed21e9de14669a89b3832b80f4f8c7b73\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://a367c512bf29fb4923ed5d2454783e3dae88e5e03dec216e65c3986f3c3a8995\",\"dweb:/ipfs/QmfYkD6osr6SQzod6wc7WPae6YvVnYbn2BjJuHrYL3ERXM\"]},\"node_modules/@solidstate/contracts/data/EnumerableMap.sol\":{\"keccak256\":\"0x1140a8669a93db82ea70d7f53e112049d42a813fe7188f50aa2f7ec5e529d38a\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://d4e709d980408bd835a9ee88bbd396b4e0281b41c4c63930456f24f8284beebe\",\"dweb:/ipfs/QmRQGu74Y8wgUv6UForngBwH8tD9jjdmVyfDp4UmwCQpm6\"]},\"node_modules/@solidstate/contracts/data/EnumerableSet.sol\":{\"keccak256\":\"0xbbaaeb805b3e1e704ceba33c9093285220254b1ff6b4b7f577e515b118e116f6\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://7229641733255170ea5a327a85b5e5f4812f7d51ac0494b4b85afcc6ddf05da3\",\"dweb:/ipfs/QmWAdKkfqBDDC2sz7qwuySKF8baUq2vtHPV6eDYNDH4wAi\"]},\"node_modules/@solidstate/contracts/interfaces/IERC165.sol\":{\"keccak256\":\"0xc250e493770feaa0da8e5a55d241712c1c6526caa7d8df2455c3e5fa25124c0b\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://768e47d9ddeb15daeab0c8c1109ae43a4c2a0633bd9e4bf141488dfc9252f7ba\",\"dweb:/ipfs/QmWMTTRTncar9LptrxU7WK7WG5hHp8KsYnBGfm3cYowuP8\"]},\"node_modules/@solidstate/contracts/interfaces/IERC165Internal.sol\":{\"keccak256\":\"0xf4d4708a60ed04887849509a258db49d4eb686f33214cb9c9643325cd8dae89d\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://66e7ade64c12edf7adbc0f20c1195b3c635ea2df67b836215441a4fe22ae17da\",\"dweb:/ipfs/QmUAbU31ZYg3FrKzXCk8CE1FbCg6LNoB5HpR4pU2QwZc7p\"]},\"node_modules/@solidstate/contracts/interfaces/IERC173.sol\":{\"keccak256\":\"0xf1c1fbf0ec82110c29d549db1fbd8ec728ba0b995dc5f087e0a5464243135dce\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://16c7f3eba0547576833d0c1fddb7ec34aeba4f28b4ce9e878c3bd3ebc9c8d3d1\",\"dweb:/ipfs/Qme79eYLo7dinnhotgC4bvYnCg4doBDShHeCajrf5zpAUF\"]},\"node_modules/@solidstate/contracts/interfaces/IERC173Internal.sol\":{\"keccak256\":\"0x9644c3e56c9ecd1763f8aaa437d5d573a7f64a8d93ad7bea1a9c44beb5911b89\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://c32cfda38b44878ab196d32eeb72823a9f9904e8193286c787caccfb2e5bfa75\",\"dweb:/ipfs/QmfBNKWUSKaJtYL3JJ3YFioXCVFeeakqQ4cR5XzAxxZkCx\"]},\"node_modules/@solidstate/contracts/interfaces/IERC721.sol\":{\"keccak256\":\"0xa14655a5bdee327bc019b583b04480e8542fa6b0788e5569077ec54805d1463a\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://97a0c1c250247373528767dc98a0eeae79a1cf65cdcc95a282cb8cf03336409a\",\"dweb:/ipfs/QmQkwjNyCDCHntjdXTjRY7bQw8ybyQS8ogBQwfTYTypw6G\"]},\"node_modules/@solidstate/contracts/interfaces/IERC721Internal.sol\":{\"keccak256\":\"0x8d46d596fa0e48cdcbf8bb8d6a42120351c4d1b002156bf647f95523178cbe08\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://174969541ba4ef63d3a45d9c11556fa60fc70794539d4fd78dd551d7309b0181\",\"dweb:/ipfs/QmdTzThnKwfRD33SepVvZ8WugpiLeknMLgqKNVqunMShFP\"]},\"node_modules/@solidstate/contracts/interfaces/IERC721Receiver.sol\":{\"keccak256\":\"0x38ca94617ab4a4cdc08d9fed753f1b17d91a9823b36f7f485cd1ed5e5324aa8f\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://c2ef61243990b7d84225dfe73a269b588b093f057fcd6971119eeababb89f84a\",\"dweb:/ipfs/QmYFS3SX2uJRbyQbs81fPUMeLF1Q4qQekeCzLi8UwYzUfn\"]},\"node_modules/@solidstate/contracts/introspection/ERC165/base/ERC165Base.sol\":{\"keccak256\":\"0x3f2268856fdd9b27946adc65010bc83992069a90034bf692ab630802a926a9c2\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://c8f4aa0a9d369054fa3241abbf4a937eff32e42f7984ec2c11efe84b3536bdfd\",\"dweb:/ipfs/QmdL9cjvBLa5yszgCdxsqoh5BMYj6tJ2YWKPfLcRSzkA9c\"]},\"node_modules/@solidstate/contracts/introspection/ERC165/base/ERC165BaseInternal.sol\":{\"keccak256\":\"0xad163d89454d9c8a018880253c5be156ee0f847f05a392a12b2a7061c7fa8682\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://f76be2455986e64dd5108360e42087c7f5d87552d60a256ff616d3258c01fa7d\",\"dweb:/ipfs/QmZEYtAya7yeZQ6BWBUYeCetm5Wem3vaxiq3mdx4DLLtUJ\"]},\"node_modules/@solidstate/contracts/introspection/ERC165/base/ERC165BaseStorage.sol\":{\"keccak256\":\"0xfd1cfba40f8aabda5898ffe21adeeea8c7011da12bfdad7f7aa0cf87b3635653\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://6b80596a94faae265ecd9e03875ccebf5c1e45d94d8119dcf04e3a1cd92f5fb6\",\"dweb:/ipfs/QmVK8xje6PeEwVoZfFcugAdy43kLx59D9UHr4m8Qu9GgV9\"]},\"node_modules/@solidstate/contracts/introspection/ERC165/base/IERC165Base.sol\":{\"keccak256\":\"0x288c50013c735cf30be90eb084589fc54bc0ee77a88ec69c3cc1efb11d7dccf4\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://857c5836ad7808d13a87afa482af6ef2adbb26616767b2dd558b33ccb9569a28\",\"dweb:/ipfs/QmdptfxicGQUfsXFHpTW1y8NDV6k6oCuk5r9UqgGuv49Tk\"]},\"node_modules/@solidstate/contracts/introspection/ERC165/base/IERC165BaseInternal.sol\":{\"keccak256\":\"0xccda4b118c8c09c276a0e577168aa404ea6207aad6b384b04f5f3a8923316422\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://dcbafa161920a2a39ac001c76ee166ae4b345bef3ee6a0c5ca505504c0e9c052\",\"dweb:/ipfs/QmTF3DPJQPLsiYTmGNZXGBkmVRs14g2bUb1QJDH4ywwMq5\"]},\"node_modules/@solidstate/contracts/token/ERC721/ISolidStateERC721.sol\":{\"keccak256\":\"0x4fc3b4d30c0f7124751439c3289e060cd0a566fad2beca51e9f05737bd8cf825\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://12d90ff8ddc6cdc6d049394347f35fe0ecaab632fd74e22d87b0ddcaa5fd46f8\",\"dweb:/ipfs/QmRbSLrERciHBUmNSviEi8TWBzLN6fQAiLFWgEnvZ7WhK9\"]},\"node_modules/@solidstate/contracts/token/ERC721/SolidStateERC721.sol\":{\"keccak256\":\"0x397706dffa317a4d7da18896ae98562ac14a50361a06bedc7e2d4c68f83abf3f\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://74e62f220fc26e77e1c49698980559da8617eda7aa8356d95b46b82ae8e6758c\",\"dweb:/ipfs/QmPzwvoPDsdbwyoRpEFm7LtV8Br8ChP8LzV2jqsUoEFmbc\"]},\"node_modules/@solidstate/contracts/token/ERC721/base/ERC721Base.sol\":{\"keccak256\":\"0xfedcffd8d3aaf06e7c2f42ce7b8756c8b62442b0cb731c15b53f5d237104863a\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://2a188a4c4bcfb1fd6774cc92792ec5e8ebd9c83dcf8f8dc9fb14f6f86602c5ea\",\"dweb:/ipfs/QmTUmfV8dS889sMSBvwqmKFiZiyCgZEaDbnK8xmLGpxN9r\"]},\"node_modules/@solidstate/contracts/token/ERC721/base/ERC721BaseInternal.sol\":{\"keccak256\":\"0xcc7bc3523871dc4f4e67c88f9c12931fd92d261de914144e749a1b71a3787dae\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://ba079294c0b354169445c550b344aa97304c4c5b4f8d4cce3071a3846ba3c4c9\",\"dweb:/ipfs/QmZYhTCCSsLog7PDDd6PBaZ31P2Ka8BziWKtLNM72Ax3rc\"]},\"node_modules/@solidstate/contracts/token/ERC721/base/ERC721BaseStorage.sol\":{\"keccak256\":\"0x9570596eca4d18e1c872177aa12125fcaba1dd7db940e5affa44e6ce2231b0a1\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://f3ab9977ff7d4c2ad6687b67536f89a5626bc75111a950308d29ee40f0978b14\",\"dweb:/ipfs/QmZGFJxscPjbhjMk8EEsrpb6oY9zxAuBvAnzWJQWqxBWxn\"]},\"node_modules/@solidstate/contracts/token/ERC721/base/IERC721Base.sol\":{\"keccak256\":\"0x5b99ebbddcc97f5a825cb21fb377b04c9ad184c4e4b69b92685334b6d42b7636\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://5d0e194cbccc22999126f7c3b4e578d5f96141116c0f386480987bb82dfa97cd\",\"dweb:/ipfs/QmewjCTNw9odCM5MbDvqvUjjWRZeK4svJSg4wxgxgY2nJY\"]},\"node_modules/@solidstate/contracts/token/ERC721/base/IERC721BaseInternal.sol\":{\"keccak256\":\"0x3118e4b75bc32c0c5b1f7aca49d30bf618966260179d848171b2ce3e3e0b5373\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://006c183ae41b2b36ebf587d6f7910addcffad2d153f56338e7de07d754858d73\",\"dweb:/ipfs/QmPMgSgU788jYZ8hS3hj24q9gvM2wmbq4s3iPbzvqoGj3C\"]},\"node_modules/@solidstate/contracts/token/ERC721/enumerable/ERC721Enumerable.sol\":{\"keccak256\":\"0x762db931dbe79f32fa48ba2f66b23b096e9c43e89c09310a98c10ab18b6e73b6\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://5c1ddf0d07406bcd3d2c7544d1071bce6d62adad0c05d6db0c87c3ce0a6e1b4c\",\"dweb:/ipfs/QmQq7UjagFwy1p7N8Gvw27nnGiz4qDyCvWEDZcxcGeqbDp\"]},\"node_modules/@solidstate/contracts/token/ERC721/enumerable/ERC721EnumerableInternal.sol\":{\"keccak256\":\"0xcb195fe5d264a1756a67b0c9bf8ac5493c12d25f947290196f15a67d7f3e81ad\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://b915e175bdba423855e8ffa1d90842530b6010bffeaf834db4f189a942767949\",\"dweb:/ipfs/QmXdwfUxDTWSLHHVLMYrXLXhKJX2XCyZxs6EmvByKBW6qi\"]},\"node_modules/@solidstate/contracts/token/ERC721/enumerable/IERC721Enumerable.sol\":{\"keccak256\":\"0x4dcc1d41df336f28a2ea6fa2e7ec17e3d1745938146db5385400238a7e7a1bad\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://11892235a7ba822ee4227c79b696369cfc62460f8c3fcc5da040a4a0ab6aec21\",\"dweb:/ipfs/QmPn48qw9UTqkeWErE2KoT4mGvkHBHF5WBLtrMFg1EE9Mn\"]},\"node_modules/@solidstate/contracts/token/ERC721/metadata/ERC721Metadata.sol\":{\"keccak256\":\"0xc626c723aa50119564d77caa3749a728526ca8a93b385000e3d52208b6bc40c5\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://07e2367e25ad7621e6d99206af45d12d758f090d2cb519b92371fc7047907033\",\"dweb:/ipfs/QmZycg9AJRz4WeJeRRmC2TZoHFDBchJmvW3Z3LXutN4dYn\"]},\"node_modules/@solidstate/contracts/token/ERC721/metadata/ERC721MetadataInternal.sol\":{\"keccak256\":\"0xcd61c0be2e81ab0c140a5753d2bea656ad6ade067fe4b8994ce0bcc825feeaa2\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://314314af458c9ccc848cd2ed817fb05992c32e20ec62b484a856df9ad7780bba\",\"dweb:/ipfs/QmbK6PkgmjSwVXnK17Dz5f2ivNVbGGjZktCNWpvHSQgq7S\"]},\"node_modules/@solidstate/contracts/token/ERC721/metadata/ERC721MetadataStorage.sol\":{\"keccak256\":\"0xe220a86657018b0d498708b7d8c728042d9a41e8ac230e22d1a09b6bf866332e\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://42cb0e72b54f092e9d88dff467f21c3fc754d862144c4316b2d2e4d96719ed95\",\"dweb:/ipfs/QmXMtfiGjAbXvAaZ4KquQpaa4gnSoZz7EQ9MFMnm5HrtYk\"]},\"node_modules/@solidstate/contracts/token/ERC721/metadata/IERC721Metadata.sol\":{\"keccak256\":\"0x281dd4dbf81c3acf12bf43bc6e0f77ae68cb2764450cce8121a53c061bf87960\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://82a8077509b60fa6371bfac9d25282b93f4ad07749eb8ba7bec607151737b2e4\",\"dweb:/ipfs/QmZY951Uafkp8o9zqRbdwuGqVUkhTYBWtRyHeax2MaNU78\"]},\"node_modules/@solidstate/contracts/token/ERC721/metadata/IERC721MetadataInternal.sol\":{\"keccak256\":\"0xd420b4227db773f26b0e40cb6ea4819d340d0ee5ea59d6321c27e79ae7ecca86\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://c9f546f98aaa0f809ee428c71c2ac9e14980116c89a5ee2858c4066fc732dadb\",\"dweb:/ipfs/QmPgnNTmRxn4yKkMUYuuDwatZrjN1D9sh7rfrr1HzvoNt3\"]},\"node_modules/@solidstate/contracts/utils/AddressUtils.sol\":{\"keccak256\":\"0x7d924db4dbd9210923ab08db77db3c77438014c255fd49fa208ebce283d991bf\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://5189eebdf91899224a14b4cd5184fa9e67a9b8904e6d88ff9610944d06c63929\",\"dweb:/ipfs/QmRwNhfcp98pPgbzK4i9hbypHLTWPGYpuRCtEJRCTNASRm\"]},\"node_modules/@solidstate/contracts/utils/UintUtils.sol\":{\"keccak256\":\"0x5aaeaea22a0800402c6f2d8ce6185293bc64f74f6c390c1b1c53b624b43972f8\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://8b1c95c745da8ca4de7b68e65ef9122dab4e748c3ae3c9f5fd5aa7c65887c9d2\",\"dweb:/ipfs/QmX2KURY4JbM4NVFp5KPYsNxoJGA8n8w6SdAFdD5Pasgza\"]}},\"version\":1}",
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.19+commit.7dd6d404\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"Ownable__NotOwner\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"Ownable__NotTransitiveOwner\",\"type\":\"error\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"previousOwner\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"OwnershipTransferred\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_cantomonId\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"_npcId\",\"type\":\"uint256\"}],\"name\":\"battleNPC\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/destination/facet/BattleFacet.sol\":\"BattleFacet\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@hyperlane-xyz/=node_modules/@hyperlane-xyz/\",\":@openzeppelin/=node_modules/@openzeppelin/\",\":@solidstate/=node_modules/@solidstate/\",\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":erc721a/=node_modules/erc721a/\",\":eth-gas-reporter/=node_modules/eth-gas-reporter/\",\":forge-std/=lib/forge-std/src/\",\":hardhat/=node_modules/hardhat/\"]},\"sources\":{\"contracts/destination/facet/BattleFacet.sol\":{\"keccak256\":\"0xa7797906124809e7267b3bac5c8e06b7827ce4029c101f313276f0b6fb167edb\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://2479184f1caba0f0846c6af41413aa527a5fff8d06a28e59962cefb03b9e594b\",\"dweb:/ipfs/QmUgsAHCArtnyR7pXb5yjhTw3SVAuzjd6VXnEUWYaxpHtg\"]},\"contracts/libraries/LibAppStorage.sol\":{\"keccak256\":\"0x7af0d2046870d075257866d5879c656b6ff2fe2c620b7240893740d1439742ad\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://af69ac7d29c753daa3300528eff4f783605f51747a96a04591b372e9bdcd8752\",\"dweb:/ipfs/QmQJhGgDfWT4yckuW1XBNwPS5wh1TDwNPqVtvb84XwGHYB\"]},\"node_modules/@hyperlane-xyz/core/contracts/interfaces/IInterchainSecurityModule.sol\":{\"keccak256\":\"0x22f298aa6bdf6f717538efa5f33abf0927376bc325445c65497babfba1716c13\",\"license\":\"MIT OR Apache-2.0\",\"urls\":[\"bzz-raw://0c737fbdeb40b0bb46dab213469cbafe85c5b952a75b418bc76b6fb506cb7e7a\",\"dweb:/ipfs/QmNYEy2CZEgAc5U9t7eoFEip2yGkt3kpxQW87jXGkXq8B6\"]},\"node_modules/@hyperlane-xyz/core/contracts/interfaces/IMailbox.sol\":{\"keccak256\":\"0x44d72975cee2b277f65bc1d0773cc4563c68c029eb760db350854da28ff581ec\",\"license\":\"MIT OR Apache-2.0\",\"urls\":[\"bzz-raw://80545bdeba73878b777f316182e369df4253c6477f8b2614dddb0fd849fc0ae8\",\"dweb:/ipfs/QmayzXhireVhZBQwQ3HHhieQWbz2WSGbcjWA1agDNcMTQs\"]},\"node_modules/@solidstate/contracts/access/ownable/IOwnableInternal.sol\":{\"keccak256\":\"0x6237a634712261bd82d5c7753780d35f77af215406d1e59512052f743f8f1c60\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://8e54ac6cd1b376224b8d148c704693ff3f7ac9f69954fd30ee3d949fa17210c3\",\"dweb:/ipfs/QmWjq37K3gg29XhFbepg5GbmmFYoyXb81sh2K1MnVZqG6y\"]},\"node_modules/@solidstate/contracts/access/ownable/OwnableInternal.sol\":{\"keccak256\":\"0x0185d24250a5e6fbafce443b9ba19bba761803e3e5d91ba423bfb1f5f0bbdbf9\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://547fadeaec559ee824f4dd37b2ef972a061ca59576f5733cf643e00d88a4db52\",\"dweb:/ipfs/QmYx6rmRmZZQkoS8TykMVsz9ZvfQ8MfSPt6UzWJ8pyj8qF\"]},\"node_modules/@solidstate/contracts/access/ownable/OwnableStorage.sol\":{\"keccak256\":\"0x7385e2020de914f75cabdc83c6adf88ed21e9de14669a89b3832b80f4f8c7b73\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://a367c512bf29fb4923ed5d2454783e3dae88e5e03dec216e65c3986f3c3a8995\",\"dweb:/ipfs/QmfYkD6osr6SQzod6wc7WPae6YvVnYbn2BjJuHrYL3ERXM\"]},\"node_modules/@solidstate/contracts/data/EnumerableMap.sol\":{\"keccak256\":\"0x1140a8669a93db82ea70d7f53e112049d42a813fe7188f50aa2f7ec5e529d38a\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://d4e709d980408bd835a9ee88bbd396b4e0281b41c4c63930456f24f8284beebe\",\"dweb:/ipfs/QmRQGu74Y8wgUv6UForngBwH8tD9jjdmVyfDp4UmwCQpm6\"]},\"node_modules/@solidstate/contracts/data/EnumerableSet.sol\":{\"keccak256\":\"0xbbaaeb805b3e1e704ceba33c9093285220254b1ff6b4b7f577e515b118e116f6\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://7229641733255170ea5a327a85b5e5f4812f7d51ac0494b4b85afcc6ddf05da3\",\"dweb:/ipfs/QmWAdKkfqBDDC2sz7qwuySKF8baUq2vtHPV6eDYNDH4wAi\"]},\"node_modules/@solidstate/contracts/interfaces/IERC165.sol\":{\"keccak256\":\"0xc250e493770feaa0da8e5a55d241712c1c6526caa7d8df2455c3e5fa25124c0b\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://768e47d9ddeb15daeab0c8c1109ae43a4c2a0633bd9e4bf141488dfc9252f7ba\",\"dweb:/ipfs/QmWMTTRTncar9LptrxU7WK7WG5hHp8KsYnBGfm3cYowuP8\"]},\"node_modules/@solidstate/contracts/interfaces/IERC165Internal.sol\":{\"keccak256\":\"0xf4d4708a60ed04887849509a258db49d4eb686f33214cb9c9643325cd8dae89d\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://66e7ade64c12edf7adbc0f20c1195b3c635ea2df67b836215441a4fe22ae17da\",\"dweb:/ipfs/QmUAbU31ZYg3FrKzXCk8CE1FbCg6LNoB5HpR4pU2QwZc7p\"]},\"node_modules/@solidstate/contracts/interfaces/IERC173.sol\":{\"keccak256\":\"0xf1c1fbf0ec82110c29d549db1fbd8ec728ba0b995dc5f087e0a5464243135dce\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://16c7f3eba0547576833d0c1fddb7ec34aeba4f28b4ce9e878c3bd3ebc9c8d3d1\",\"dweb:/ipfs/Qme79eYLo7dinnhotgC4bvYnCg4doBDShHeCajrf5zpAUF\"]},\"node_modules/@solidstate/contracts/interfaces/IERC173Internal.sol\":{\"keccak256\":\"0x9644c3e56c9ecd1763f8aaa437d5d573a7f64a8d93ad7bea1a9c44beb5911b89\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://c32cfda38b44878ab196d32eeb72823a9f9904e8193286c787caccfb2e5bfa75\",\"dweb:/ipfs/QmfBNKWUSKaJtYL3JJ3YFioXCVFeeakqQ4cR5XzAxxZkCx\"]},\"node_modules/@solidstate/contracts/interfaces/IERC721.sol\":{\"keccak256\":\"0xa14655a5bdee327bc019b583b04480e8542fa6b0788e5569077ec54805d1463a\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://97a0c1c250247373528767dc98a0eeae79a1cf65cdcc95a282cb8cf03336409a\",\"dweb:/ipfs/QmQkwjNyCDCHntjdXTjRY7bQw8ybyQS8ogBQwfTYTypw6G\"]},\"node_modules/@solidstate/contracts/interfaces/IERC721Internal.sol\":{\"keccak256\":\"0x8d46d596fa0e48cdcbf8bb8d6a42120351c4d1b002156bf647f95523178cbe08\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://174969541ba4ef63d3a45d9c11556fa60fc70794539d4fd78dd551d7309b0181\",\"dweb:/ipfs/QmdTzThnKwfRD33SepVvZ8WugpiLeknMLgqKNVqunMShFP\"]},\"node_modules/@solidstate/contracts/interfaces/IERC721Receiver.sol\":{\"keccak256\":\"0x38ca94617ab4a4cdc08d9fed753f1b17d91a9823b36f7f485cd1ed5e5324aa8f\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://c2ef61243990b7d84225dfe73a269b588b093f057fcd6971119eeababb89f84a\",\"dweb:/ipfs/QmYFS3SX2uJRbyQbs81fPUMeLF1Q4qQekeCzLi8UwYzUfn\"]},\"node_modules/@solidstate/contracts/introspection/ERC165/base/ERC165Base.sol\":{\"keccak256\":\"0x3f2268856fdd9b27946adc65010bc83992069a90034bf692ab630802a926a9c2\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://c8f4aa0a9d369054fa3241abbf4a937eff32e42f7984ec2c11efe84b3536bdfd\",\"dweb:/ipfs/QmdL9cjvBLa5yszgCdxsqoh5BMYj6tJ2YWKPfLcRSzkA9c\"]},\"node_modules/@solidstate/contracts/introspection/ERC165/base/ERC165BaseInternal.sol\":{\"keccak256\":\"0xad163d89454d9c8a018880253c5be156ee0f847f05a392a12b2a7061c7fa8682\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://f76be2455986e64dd5108360e42087c7f5d87552d60a256ff616d3258c01fa7d\",\"dweb:/ipfs/QmZEYtAya7yeZQ6BWBUYeCetm5Wem3vaxiq3mdx4DLLtUJ\"]},\"node_modules/@solidstate/contracts/introspection/ERC165/base/ERC165BaseStorage.sol\":{\"keccak256\":\"0xfd1cfba40f8aabda5898ffe21adeeea8c7011da12bfdad7f7aa0cf87b3635653\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://6b80596a94faae265ecd9e03875ccebf5c1e45d94d8119dcf04e3a1cd92f5fb6\",\"dweb:/ipfs/QmVK8xje6PeEwVoZfFcugAdy43kLx59D9UHr4m8Qu9GgV9\"]},\"node_modules/@solidstate/contracts/introspection/ERC165/base/IERC165Base.sol\":{\"keccak256\":\"0x288c50013c735cf30be90eb084589fc54bc0ee77a88ec69c3cc1efb11d7dccf4\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://857c5836ad7808d13a87afa482af6ef2adbb26616767b2dd558b33ccb9569a28\",\"dweb:/ipfs/QmdptfxicGQUfsXFHpTW1y8NDV6k6oCuk5r9UqgGuv49Tk\"]},\"node_modules/@solidstate/contracts/introspection/ERC165/base/IERC165BaseInternal.sol\":{\"keccak256\":\"0xccda4b118c8c09c276a0e577168aa404ea6207aad6b384b04f5f3a8923316422\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://dcbafa161920a2a39ac001c76ee166ae4b345bef3ee6a0c5ca505504c0e9c052\",\"dweb:/ipfs/QmTF3DPJQPLsiYTmGNZXGBkmVRs14g2bUb1QJDH4ywwMq5\"]},\"node_modules/@solidstate/contracts/token/ERC721/ISolidStateERC721.sol\":{\"keccak256\":\"0x4fc3b4d30c0f7124751439c3289e060cd0a566fad2beca51e9f05737bd8cf825\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://12d90ff8ddc6cdc6d049394347f35fe0ecaab632fd74e22d87b0ddcaa5fd46f8\",\"dweb:/ipfs/QmRbSLrERciHBUmNSviEi8TWBzLN6fQAiLFWgEnvZ7WhK9\"]},\"node_modules/@solidstate/contracts/token/ERC721/SolidStateERC721.sol\":{\"keccak256\":\"0x397706dffa317a4d7da18896ae98562ac14a50361a06bedc7e2d4c68f83abf3f\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://74e62f220fc26e77e1c49698980559da8617eda7aa8356d95b46b82ae8e6758c\",\"dweb:/ipfs/QmPzwvoPDsdbwyoRpEFm7LtV8Br8ChP8LzV2jqsUoEFmbc\"]},\"node_modules/@solidstate/contracts/token/ERC721/base/ERC721Base.sol\":{\"keccak256\":\"0xfedcffd8d3aaf06e7c2f42ce7b8756c8b62442b0cb731c15b53f5d237104863a\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://2a188a4c4bcfb1fd6774cc92792ec5e8ebd9c83dcf8f8dc9fb14f6f86602c5ea\",\"dweb:/ipfs/QmTUmfV8dS889sMSBvwqmKFiZiyCgZEaDbnK8xmLGpxN9r\"]},\"node_modules/@solidstate/contracts/token/ERC721/base/ERC721BaseInternal.sol\":{\"keccak256\":\"0xcc7bc3523871dc4f4e67c88f9c12931fd92d261de914144e749a1b71a3787dae\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://ba079294c0b354169445c550b344aa97304c4c5b4f8d4cce3071a3846ba3c4c9\",\"dweb:/ipfs/QmZYhTCCSsLog7PDDd6PBaZ31P2Ka8BziWKtLNM72Ax3rc\"]},\"node_modules/@solidstate/contracts/token/ERC721/base/ERC721BaseStorage.sol\":{\"keccak256\":\"0x9570596eca4d18e1c872177aa12125fcaba1dd7db940e5affa44e6ce2231b0a1\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://f3ab9977ff7d4c2ad6687b67536f89a5626bc75111a950308d29ee40f0978b14\",\"dweb:/ipfs/QmZGFJxscPjbhjMk8EEsrpb6oY9zxAuBvAnzWJQWqxBWxn\"]},\"node_modules/@solidstate/contracts/token/ERC721/base/IERC721Base.sol\":{\"keccak256\":\"0x5b99ebbddcc97f5a825cb21fb377b04c9ad184c4e4b69b92685334b6d42b7636\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://5d0e194cbccc22999126f7c3b4e578d5f96141116c0f386480987bb82dfa97cd\",\"dweb:/ipfs/QmewjCTNw9odCM5MbDvqvUjjWRZeK4svJSg4wxgxgY2nJY\"]},\"node_modules/@solidstate/contracts/token/ERC721/base/IERC721BaseInternal.sol\":{\"keccak256\":\"0x3118e4b75bc32c0c5b1f7aca49d30bf618966260179d848171b2ce3e3e0b5373\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://006c183ae41b2b36ebf587d6f7910addcffad2d153f56338e7de07d754858d73\",\"dweb:/ipfs/QmPMgSgU788jYZ8hS3hj24q9gvM2wmbq4s3iPbzvqoGj3C\"]},\"node_modules/@solidstate/contracts/token/ERC721/enumerable/ERC721Enumerable.sol\":{\"keccak256\":\"0x762db931dbe79f32fa48ba2f66b23b096e9c43e89c09310a98c10ab18b6e73b6\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://5c1ddf0d07406bcd3d2c7544d1071bce6d62adad0c05d6db0c87c3ce0a6e1b4c\",\"dweb:/ipfs/QmQq7UjagFwy1p7N8Gvw27nnGiz4qDyCvWEDZcxcGeqbDp\"]},\"node_modules/@solidstate/contracts/token/ERC721/enumerable/ERC721EnumerableInternal.sol\":{\"keccak256\":\"0xcb195fe5d264a1756a67b0c9bf8ac5493c12d25f947290196f15a67d7f3e81ad\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://b915e175bdba423855e8ffa1d90842530b6010bffeaf834db4f189a942767949\",\"dweb:/ipfs/QmXdwfUxDTWSLHHVLMYrXLXhKJX2XCyZxs6EmvByKBW6qi\"]},\"node_modules/@solidstate/contracts/token/ERC721/enumerable/IERC721Enumerable.sol\":{\"keccak256\":\"0x4dcc1d41df336f28a2ea6fa2e7ec17e3d1745938146db5385400238a7e7a1bad\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://11892235a7ba822ee4227c79b696369cfc62460f8c3fcc5da040a4a0ab6aec21\",\"dweb:/ipfs/QmPn48qw9UTqkeWErE2KoT4mGvkHBHF5WBLtrMFg1EE9Mn\"]},\"node_modules/@solidstate/contracts/token/ERC721/metadata/ERC721Metadata.sol\":{\"keccak256\":\"0xc626c723aa50119564d77caa3749a728526ca8a93b385000e3d52208b6bc40c5\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://07e2367e25ad7621e6d99206af45d12d758f090d2cb519b92371fc7047907033\",\"dweb:/ipfs/QmZycg9AJRz4WeJeRRmC2TZoHFDBchJmvW3Z3LXutN4dYn\"]},\"node_modules/@solidstate/contracts/token/ERC721/metadata/ERC721MetadataInternal.sol\":{\"keccak256\":\"0xcd61c0be2e81ab0c140a5753d2bea656ad6ade067fe4b8994ce0bcc825feeaa2\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://314314af458c9ccc848cd2ed817fb05992c32e20ec62b484a856df9ad7780bba\",\"dweb:/ipfs/QmbK6PkgmjSwVXnK17Dz5f2ivNVbGGjZktCNWpvHSQgq7S\"]},\"node_modules/@solidstate/contracts/token/ERC721/metadata/ERC721MetadataStorage.sol\":{\"keccak256\":\"0xe220a86657018b0d498708b7d8c728042d9a41e8ac230e22d1a09b6bf866332e\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://42cb0e72b54f092e9d88dff467f21c3fc754d862144c4316b2d2e4d96719ed95\",\"dweb:/ipfs/QmXMtfiGjAbXvAaZ4KquQpaa4gnSoZz7EQ9MFMnm5HrtYk\"]},\"node_modules/@solidstate/contracts/token/ERC721/metadata/IERC721Metadata.sol\":{\"keccak256\":\"0x281dd4dbf81c3acf12bf43bc6e0f77ae68cb2764450cce8121a53c061bf87960\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://82a8077509b60fa6371bfac9d25282b93f4ad07749eb8ba7bec607151737b2e4\",\"dweb:/ipfs/QmZY951Uafkp8o9zqRbdwuGqVUkhTYBWtRyHeax2MaNU78\"]},\"node_modules/@solidstate/contracts/token/ERC721/metadata/IERC721MetadataInternal.sol\":{\"keccak256\":\"0xd420b4227db773f26b0e40cb6ea4819d340d0ee5ea59d6321c27e79ae7ecca86\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://c9f546f98aaa0f809ee428c71c2ac9e14980116c89a5ee2858c4066fc732dadb\",\"dweb:/ipfs/QmPgnNTmRxn4yKkMUYuuDwatZrjN1D9sh7rfrr1HzvoNt3\"]},\"node_modules/@solidstate/contracts/utils/AddressUtils.sol\":{\"keccak256\":\"0x7d924db4dbd9210923ab08db77db3c77438014c255fd49fa208ebce283d991bf\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://5189eebdf91899224a14b4cd5184fa9e67a9b8904e6d88ff9610944d06c63929\",\"dweb:/ipfs/QmRwNhfcp98pPgbzK4i9hbypHLTWPGYpuRCtEJRCTNASRm\"]},\"node_modules/@solidstate/contracts/utils/UintUtils.sol\":{\"keccak256\":\"0x5aaeaea22a0800402c6f2d8ce6185293bc64f74f6c390c1b1c53b624b43972f8\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://8b1c95c745da8ca4de7b68e65ef9122dab4e748c3ae3c9f5fd5aa7c65887c9d2\",\"dweb:/ipfs/QmX2KURY4JbM4NVFp5KPYsNxoJGA8n8w6SdAFdD5Pasgza\"]}},\"version\":1}",
   "metadata": {
     "compiler": {
       "version": "0.8.19+commit.7dd6d404"
@@ -127,35 +104,16 @@
               "internalType": "uint256",
               "name": "_cantomonId",
               "type": "uint256"
-            }
-          ],
-          "stateMutability": "nonpayable",
-          "type": "function",
-          "name": "evolveCantomon"
-        },
-        {
-          "inputs": [
+            },
             {
               "internalType": "uint256",
-              "name": "_cantomonId",
+              "name": "_npcId",
               "type": "uint256"
             }
           ],
           "stateMutability": "nonpayable",
           "type": "function",
-          "name": "feedCantomon"
-        },
-        {
-          "inputs": [
-            {
-              "internalType": "uint256",
-              "name": "_cantomonId",
-              "type": "uint256"
-            }
-          ],
-          "stateMutability": "nonpayable",
-          "type": "function",
-          "name": "trainCantomon"
+          "name": "battleNPC"
         }
       ],
       "devdoc": {
@@ -194,18 +152,18 @@
     },
     "sources": {
       "contracts/destination/facet/BattleFacet.sol": {
-        "keccak256": "0xb6767aef4177865f26ccc0810f68b0386788074940f35119d6709f75819c4c18",
+        "keccak256": "0xa7797906124809e7267b3bac5c8e06b7827ce4029c101f313276f0b6fb167edb",
         "urls": [
-          "bzz-raw://c5179feff5ced5c327ffe7c0520784c7b1e85ff222e74fa76f41234850a731aa",
-          "dweb:/ipfs/QmW9i1KhibmiMiQgXwAaTERzkwgqdi3p1GfEngUgPVSfzT"
+          "bzz-raw://2479184f1caba0f0846c6af41413aa527a5fff8d06a28e59962cefb03b9e594b",
+          "dweb:/ipfs/QmUgsAHCArtnyR7pXb5yjhTw3SVAuzjd6VXnEUWYaxpHtg"
         ],
         "license": "MIT"
       },
       "contracts/libraries/LibAppStorage.sol": {
-        "keccak256": "0xe1a28863c2fb319c88e248e8039361ad9335779a783c6c1ad078e3815c6186af",
+        "keccak256": "0x7af0d2046870d075257866d5879c656b6ff2fe2c620b7240893740d1439742ad",
         "urls": [
-          "bzz-raw://02d8503193e03a4678861aa58ba8ef645ea73f34493d3e48e4041f727dc76dd5",
-          "dweb:/ipfs/QmSHV6WzDMmaEHDriDknP8mzVLAtTzvzmi7Q5rhVrNcGuQ"
+          "bzz-raw://af69ac7d29c753daa3300528eff4f783605f51747a96a04591b372e9bdcd8752",
+          "dweb:/ipfs/QmQJhGgDfWT4yckuW1XBNwPS5wh1TDwNPqVtvb84XwGHYB"
         ],
         "license": "MIT"
       },
@@ -502,106 +460,124 @@
   },
   "ast": {
     "absolutePath": "contracts/destination/facet/BattleFacet.sol",
-    "id": 41,
+    "id": 81,
     "exportedSymbols": {
       "AddressUtils": [
-        9312
+        5693
       ],
       "AppStorage": [
-        718
+        1403
       ],
       "BattleFacet": [
-        40
+        80
       ],
       "Cantomon": [
-        734
+        1429
       ],
       "CantomonAttr": [
-        753
+        1448
       ],
       "CantomonBaseStats": [
-        764
+        1461
+      ],
+      "CantomonCareStats": [
+        1486
       ],
       "CantomonDynamicStats": [
-        780
+        1477
+      ],
+      "CantomonEvoStats": [
+        1521
       ],
       "CantomonMetaData": [
-        756
+        1451
       ],
       "CantomonModifiers": [
-        853
+        1621
       ],
       "CantomonStatus": [
-        748
+        1443
       ],
       "ERC165Base": [
-        5346
+        3759
       ],
       "ERC721Base": [
-        7749
+        4130
       ],
       "ERC721BaseInternal": [
-        8529
+        4910
       ],
       "ERC721Enumerable": [
-        8684
+        5065
       ],
       "ERC721Metadata": [
-        8848
+        5229
+      ],
+      "EvolutionBonus": [
+        1555
+      ],
+      "EvolutionRequirements": [
+        1550
       ],
       "EvolutionRule": [
-        787
+        1541
       ],
       "GameSettings": [
-        744
+        1439
       ],
       "IERC165": [
-        5145
+        3558
       ],
       "IERC173": [
-        5169
+        3582
       ],
       "IERC721": [
-        5273
+        3686
       ],
       "IERC721Internal": [
-        5301
+        3714
       ],
       "IInterchainSecurityModule": [
-        1611
+        1646
       ],
       "IMailbox": [
-        1714
+        1749
       ],
       "IOwnableInternal": [
-        3123
+        1760
       ],
       "ISolidStateERC721": [
-        7494
+        3875
       ],
       "LibAppStorage": [
-        796
+        1564
+      ],
+      "NPC": [
+        1500
+      ],
+      "NPCStats": [
+        1514
       ],
       "OwnableInternal": [
-        3314
+        1884
       ],
       "OwnableStorage": [
-        3337
+        1907
       ],
       "ProxySbt": [
-        741
+        1436
       ],
       "SolidStateERC721": [
-        7598
+        3979
       ]
     },
     "nodeType": "SourceUnit",
-    "src": "233:597:1",
+    "src": "233:876:0",
     "nodes": [
       {
-        "id": 7,
+        "id": 1,
         "nodeType": "PragmaDirective",
-        "src": "233:24:1",
+        "src": "233:24:0",
         "nodes": [],
         "literals": [
           "solidity",
@@ -611,348 +587,1006 @@
         ]
       },
       {
-        "id": 8,
+        "id": 2,
         "nodeType": "ImportDirective",
-        "src": "293:66:1",
+        "src": "293:66:0",
         "nodes": [],
         "absolutePath": "node_modules/@solidstate/contracts/access/ownable/OwnableInternal.sol",
         "file": "@solidstate/contracts/access/ownable/OwnableInternal.sol",
         "nameLocation": "-1:-1:-1",
-        "scope": 41,
-        "sourceUnit": 3315,
+        "scope": 81,
+        "sourceUnit": 1885,
         "symbolAliases": [],
         "unitAlias": ""
       },
       {
-        "id": 9,
+        "id": 3,
         "nodeType": "ImportDirective",
-        "src": "360:65:1",
+        "src": "360:65:0",
         "nodes": [],
         "absolutePath": "node_modules/@solidstate/contracts/token/ERC721/SolidStateERC721.sol",
         "file": "@solidstate/contracts/token/ERC721/SolidStateERC721.sol",
         "nameLocation": "-1:-1:-1",
-        "scope": 41,
-        "sourceUnit": 7599,
+        "scope": 81,
+        "sourceUnit": 3980,
         "symbolAliases": [],
         "unitAlias": ""
       },
       {
-        "id": 10,
+        "id": 4,
         "nodeType": "ImportDirective",
-        "src": "426:43:1",
+        "src": "426:43:0",
         "nodes": [],
         "absolutePath": "contracts/libraries/LibAppStorage.sol",
         "file": "../../libraries/LibAppStorage.sol",
         "nameLocation": "-1:-1:-1",
-        "scope": 41,
-        "sourceUnit": 854,
+        "scope": 81,
+        "sourceUnit": 1622,
         "symbolAliases": [],
         "unitAlias": ""
       },
       {
-        "id": 40,
+        "id": 80,
         "nodeType": "ContractDefinition",
-        "src": "471:358:1",
+        "src": "471:637:0",
         "nodes": [
           {
-            "id": 21,
+            "id": 79,
             "nodeType": "FunctionDefinition",
-            "src": "519:99:1",
+            "src": "519:587:0",
             "nodes": [],
             "body": {
-              "id": 20,
+              "id": 78,
               "nodeType": "Block",
-              "src": "602:16:1",
+              "src": "615:491:0",
               "nodes": [],
-              "statements": []
+              "statements": [
+                {
+                  "assignments": [
+                    18
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 18,
+                      "mutability": "mutable",
+                      "name": "c_dynamicStats",
+                      "nameLocation": "654:14:0",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 78,
+                      "src": "625:43:0",
+                      "stateVariable": false,
+                      "storageLocation": "storage",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_CantomonDynamicStats_$1477_storage_ptr",
+                        "typeString": "struct CantomonDynamicStats"
+                      },
+                      "typeName": {
+                        "id": 17,
+                        "nodeType": "UserDefinedTypeName",
+                        "pathNode": {
+                          "id": 16,
+                          "name": "CantomonDynamicStats",
+                          "nameLocations": [
+                            "625:20:0"
+                          ],
+                          "nodeType": "IdentifierPath",
+                          "referencedDeclaration": 1477,
+                          "src": "625:20:0"
+                        },
+                        "referencedDeclaration": 1477,
+                        "src": "625:20:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_CantomonDynamicStats_$1477_storage_ptr",
+                          "typeString": "struct CantomonDynamicStats"
+                        }
+                      },
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 27,
+                  "initialValue": {
+                    "baseExpression": {
+                      "expression": {
+                        "baseExpression": {
+                          "expression": {
+                            "id": 19,
+                            "name": "s",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 1569,
+                            "src": "671:1:0",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_struct$_AppStorage_$1403_storage",
+                              "typeString": "struct AppStorage storage ref"
+                            }
+                          },
+                          "id": 20,
+                          "isConstant": false,
+                          "isLValue": true,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberLocation": "673:8:0",
+                          "memberName": "cantomon",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": 1390,
+                          "src": "671:10:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Cantomon_$1429_storage_$",
+                            "typeString": "mapping(uint256 => struct Cantomon storage ref)"
+                          }
+                        },
+                        "id": 22,
+                        "indexExpression": {
+                          "id": 21,
+                          "name": "_cantomonId",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 8,
+                          "src": "682:11:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "IndexAccess",
+                        "src": "671:23:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Cantomon_$1429_storage",
+                          "typeString": "struct Cantomon storage ref"
+                        }
+                      },
+                      "id": 23,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberLocation": "695:12:0",
+                      "memberName": "dynamicStats",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 1418,
+                      "src": "671:36:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_CantomonDynamicStats_$1477_storage_$",
+                        "typeString": "mapping(uint256 => struct CantomonDynamicStats storage ref)"
+                      }
+                    },
+                    "id": 26,
+                    "indexExpression": {
+                      "expression": {
+                        "id": 24,
+                        "name": "s",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 1569,
+                        "src": "708:1:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_AppStorage_$1403_storage",
+                          "typeString": "struct AppStorage storage ref"
+                        }
+                      },
+                      "id": 25,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberLocation": "710:11:0",
+                      "memberName": "gameVersion",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 1380,
+                      "src": "708:13:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint16",
+                        "typeString": "uint16"
+                      }
+                    },
+                    "isConstant": false,
+                    "isLValue": true,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "IndexAccess",
+                    "src": "671:51:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_CantomonDynamicStats_$1477_storage",
+                      "typeString": "struct CantomonDynamicStats storage ref"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "625:97:0"
+                },
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "commonType": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        "id": 32,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "expression": {
+                            "id": 29,
+                            "name": "c_dynamicStats",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 18,
+                            "src": "740:14:0",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_struct$_CantomonDynamicStats_$1477_storage_ptr",
+                              "typeString": "struct CantomonDynamicStats storage pointer"
+                            }
+                          },
+                          "id": 30,
+                          "isConstant": false,
+                          "isLValue": true,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberLocation": "755:6:0",
+                          "memberName": "energy",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": 1472,
+                          "src": "740:21:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": ">",
+                        "rightExpression": {
+                          "hexValue": "30",
+                          "id": 31,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "number",
+                          "lValueRequested": false,
+                          "nodeType": "Literal",
+                          "src": "764:1:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_rational_0_by_1",
+                            "typeString": "int_const 0"
+                          },
+                          "value": "0"
+                        },
+                        "src": "740:25:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      {
+                        "hexValue": "43616e746f6d6f6e20686173206e6f20656e65726779",
+                        "id": 33,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "767:24:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_d5d193e4740108a34b1b3f3c9cb13294d69aa2e793432e1ed5a1ae36f9012cbb",
+                          "typeString": "literal_string \"Cantomon has no energy\""
+                        },
+                        "value": "Cantomon has no energy"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_d5d193e4740108a34b1b3f3c9cb13294d69aa2e793432e1ed5a1ae36f9012cbb",
+                          "typeString": "literal_string \"Cantomon has no energy\""
+                        }
+                      ],
+                      "id": 28,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        -18,
+                        -18
+                      ],
+                      "referencedDeclaration": -18,
+                      "src": "732:7:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (bool,string memory) pure"
+                      }
+                    },
+                    "id": 34,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "732:60:0",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 35,
+                  "nodeType": "ExpressionStatement",
+                  "src": "732:60:0"
+                },
+                {
+                  "assignments": [
+                    38
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 38,
+                      "mutability": "mutable",
+                      "name": "c_baseStats",
+                      "nameLocation": "829:11:0",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 78,
+                      "src": "803:37:0",
+                      "stateVariable": false,
+                      "storageLocation": "storage",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_CantomonBaseStats_$1461_storage_ptr",
+                        "typeString": "struct CantomonBaseStats"
+                      },
+                      "typeName": {
+                        "id": 37,
+                        "nodeType": "UserDefinedTypeName",
+                        "pathNode": {
+                          "id": 36,
+                          "name": "CantomonBaseStats",
+                          "nameLocations": [
+                            "803:17:0"
+                          ],
+                          "nodeType": "IdentifierPath",
+                          "referencedDeclaration": 1461,
+                          "src": "803:17:0"
+                        },
+                        "referencedDeclaration": 1461,
+                        "src": "803:17:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_CantomonBaseStats_$1461_storage_ptr",
+                          "typeString": "struct CantomonBaseStats"
+                        }
+                      },
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 47,
+                  "initialValue": {
+                    "baseExpression": {
+                      "expression": {
+                        "baseExpression": {
+                          "expression": {
+                            "id": 39,
+                            "name": "s",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 1569,
+                            "src": "843:1:0",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_struct$_AppStorage_$1403_storage",
+                              "typeString": "struct AppStorage storage ref"
+                            }
+                          },
+                          "id": 40,
+                          "isConstant": false,
+                          "isLValue": true,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberLocation": "845:8:0",
+                          "memberName": "cantomon",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": 1390,
+                          "src": "843:10:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Cantomon_$1429_storage_$",
+                            "typeString": "mapping(uint256 => struct Cantomon storage ref)"
+                          }
+                        },
+                        "id": 42,
+                        "indexExpression": {
+                          "id": 41,
+                          "name": "_cantomonId",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 8,
+                          "src": "854:11:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "IndexAccess",
+                        "src": "843:23:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Cantomon_$1429_storage",
+                          "typeString": "struct Cantomon storage ref"
+                        }
+                      },
+                      "id": 43,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberLocation": "867:9:0",
+                      "memberName": "baseStats",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 1413,
+                      "src": "843:33:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_CantomonBaseStats_$1461_storage_$",
+                        "typeString": "mapping(uint256 => struct CantomonBaseStats storage ref)"
+                      }
+                    },
+                    "id": 46,
+                    "indexExpression": {
+                      "expression": {
+                        "id": 44,
+                        "name": "s",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 1569,
+                        "src": "877:1:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_AppStorage_$1403_storage",
+                          "typeString": "struct AppStorage storage ref"
+                        }
+                      },
+                      "id": 45,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberLocation": "879:11:0",
+                      "memberName": "gameVersion",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 1380,
+                      "src": "877:13:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint16",
+                        "typeString": "uint16"
+                      }
+                    },
+                    "isConstant": false,
+                    "isLValue": true,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "IndexAccess",
+                    "src": "843:48:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_CantomonBaseStats_$1461_storage",
+                      "typeString": "struct CantomonBaseStats storage ref"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "803:88:0"
+                },
+                {
+                  "assignments": [
+                    50
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 50,
+                      "mutability": "mutable",
+                      "name": "c_evoStats",
+                      "nameLocation": "926:10:0",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 78,
+                      "src": "901:35:0",
+                      "stateVariable": false,
+                      "storageLocation": "storage",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_CantomonEvoStats_$1521_storage_ptr",
+                        "typeString": "struct CantomonEvoStats"
+                      },
+                      "typeName": {
+                        "id": 49,
+                        "nodeType": "UserDefinedTypeName",
+                        "pathNode": {
+                          "id": 48,
+                          "name": "CantomonEvoStats",
+                          "nameLocations": [
+                            "901:16:0"
+                          ],
+                          "nodeType": "IdentifierPath",
+                          "referencedDeclaration": 1521,
+                          "src": "901:16:0"
+                        },
+                        "referencedDeclaration": 1521,
+                        "src": "901:16:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_CantomonEvoStats_$1521_storage_ptr",
+                          "typeString": "struct CantomonEvoStats"
+                        }
+                      },
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 59,
+                  "initialValue": {
+                    "baseExpression": {
+                      "expression": {
+                        "baseExpression": {
+                          "expression": {
+                            "id": 51,
+                            "name": "s",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 1569,
+                            "src": "939:1:0",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_struct$_AppStorage_$1403_storage",
+                              "typeString": "struct AppStorage storage ref"
+                            }
+                          },
+                          "id": 52,
+                          "isConstant": false,
+                          "isLValue": true,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberLocation": "941:8:0",
+                          "memberName": "cantomon",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": 1390,
+                          "src": "939:10:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Cantomon_$1429_storage_$",
+                            "typeString": "mapping(uint256 => struct Cantomon storage ref)"
+                          }
+                        },
+                        "id": 54,
+                        "indexExpression": {
+                          "id": 53,
+                          "name": "_cantomonId",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 8,
+                          "src": "950:11:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "IndexAccess",
+                        "src": "939:23:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Cantomon_$1429_storage",
+                          "typeString": "struct Cantomon storage ref"
+                        }
+                      },
+                      "id": 55,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberLocation": "963:8:0",
+                      "memberName": "evoStats",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 1423,
+                      "src": "939:32:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_CantomonEvoStats_$1521_storage_$",
+                        "typeString": "mapping(uint256 => struct CantomonEvoStats storage ref)"
+                      }
+                    },
+                    "id": 58,
+                    "indexExpression": {
+                      "expression": {
+                        "id": 56,
+                        "name": "s",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 1569,
+                        "src": "972:1:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_AppStorage_$1403_storage",
+                          "typeString": "struct AppStorage storage ref"
+                        }
+                      },
+                      "id": 57,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberLocation": "974:11:0",
+                      "memberName": "gameVersion",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 1380,
+                      "src": "972:13:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint16",
+                        "typeString": "uint16"
+                      }
+                    },
+                    "isConstant": false,
+                    "isLValue": true,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "IndexAccess",
+                    "src": "939:47:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_CantomonEvoStats_$1521_storage",
+                      "typeString": "struct CantomonEvoStats storage ref"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "901:85:0"
+                },
+                {
+                  "assignments": [
+                    62
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 62,
+                      "mutability": "mutable",
+                      "name": "npcStats",
+                      "nameLocation": "1014:8:0",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 78,
+                      "src": "997:25:0",
+                      "stateVariable": false,
+                      "storageLocation": "storage",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_NPCStats_$1514_storage_ptr",
+                        "typeString": "struct NPCStats"
+                      },
+                      "typeName": {
+                        "id": 61,
+                        "nodeType": "UserDefinedTypeName",
+                        "pathNode": {
+                          "id": 60,
+                          "name": "NPCStats",
+                          "nameLocations": [
+                            "997:8:0"
+                          ],
+                          "nodeType": "IdentifierPath",
+                          "referencedDeclaration": 1514,
+                          "src": "997:8:0"
+                        },
+                        "referencedDeclaration": 1514,
+                        "src": "997:8:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_NPCStats_$1514_storage_ptr",
+                          "typeString": "struct NPCStats"
+                        }
+                      },
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 71,
+                  "initialValue": {
+                    "baseExpression": {
+                      "expression": {
+                        "baseExpression": {
+                          "expression": {
+                            "id": 63,
+                            "name": "s",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 1569,
+                            "src": "1025:1:0",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_struct$_AppStorage_$1403_storage",
+                              "typeString": "struct AppStorage storage ref"
+                            }
+                          },
+                          "id": 64,
+                          "isConstant": false,
+                          "isLValue": true,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberLocation": "1027:3:0",
+                          "memberName": "npc",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": 1402,
+                          "src": "1025:5:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_NPC_$1500_storage_$",
+                            "typeString": "mapping(uint256 => struct NPC storage ref)"
+                          }
+                        },
+                        "id": 66,
+                        "indexExpression": {
+                          "id": 65,
+                          "name": "_npcId",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 10,
+                          "src": "1031:6:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "IndexAccess",
+                        "src": "1025:13:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_NPC_$1500_storage",
+                          "typeString": "struct NPC storage ref"
+                        }
+                      },
+                      "id": 67,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberLocation": "1039:8:0",
+                      "memberName": "npcStats",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 1499,
+                      "src": "1025:22:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_NPCStats_$1514_storage_$",
+                        "typeString": "mapping(uint256 => struct NPCStats storage ref)"
+                      }
+                    },
+                    "id": 70,
+                    "indexExpression": {
+                      "expression": {
+                        "id": 68,
+                        "name": "s",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 1569,
+                        "src": "1048:1:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_AppStorage_$1403_storage",
+                          "typeString": "struct AppStorage storage ref"
+                        }
+                      },
+                      "id": 69,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberLocation": "1050:11:0",
+                      "memberName": "gameVersion",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 1380,
+                      "src": "1048:13:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint16",
+                        "typeString": "uint16"
+                      }
+                    },
+                    "isConstant": false,
+                    "isLValue": true,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "IndexAccess",
+                    "src": "1025:37:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_NPCStats_$1514_storage",
+                      "typeString": "struct NPCStats storage ref"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "997:65:0"
+                },
+                {
+                  "expression": {
+                    "id": 76,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "expression": {
+                        "id": 72,
+                        "name": "c_dynamicStats",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 18,
+                        "src": "1073:14:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_CantomonDynamicStats_$1477_storage_ptr",
+                          "typeString": "struct CantomonDynamicStats storage pointer"
+                        }
+                      },
+                      "id": 74,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberLocation": "1088:6:0",
+                      "memberName": "energy",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 1472,
+                      "src": "1073:21:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "-=",
+                    "rightHandSide": {
+                      "hexValue": "31",
+                      "id": 75,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "1098:1:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_1_by_1",
+                        "typeString": "int_const 1"
+                      },
+                      "value": "1"
+                    },
+                    "src": "1073:26:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 77,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1073:26:0"
+                }
+              ]
             },
-            "functionSelector": "7f0b4d41",
+            "functionSelector": "09cf2af0",
             "implemented": true,
             "kind": "function",
             "modifiers": [
               {
                 "arguments": [
                   {
-                    "id": 17,
+                    "id": 13,
                     "name": "_cantomonId",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 14,
-                    "src": "589:11:1",
+                    "referencedDeclaration": 8,
+                    "src": "602:11:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   }
                 ],
-                "id": 18,
+                "id": 14,
                 "kind": "modifierInvocation",
                 "modifierName": {
-                  "id": 16,
+                  "id": 12,
                   "name": "onlyCantomonOwner",
                   "nameLocations": [
-                    "571:17:1"
+                    "584:17:0"
                   ],
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 823,
-                  "src": "571:17:1"
+                  "referencedDeclaration": 1591,
+                  "src": "584:17:0"
                 },
                 "nodeType": "ModifierInvocation",
-                "src": "571:30:1"
+                "src": "584:30:0"
               }
             ],
-            "name": "evolveCantomon",
-            "nameLocation": "528:14:1",
+            "name": "battleNPC",
+            "nameLocation": "528:9:0",
             "parameters": {
+              "id": 11,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 8,
+                  "mutability": "mutable",
+                  "name": "_cantomonId",
+                  "nameLocation": "546:11:0",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 79,
+                  "src": "538:19:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 7,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "538:7:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 10,
+                  "mutability": "mutable",
+                  "name": "_npcId",
+                  "nameLocation": "567:6:0",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 79,
+                  "src": "559:14:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 9,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "559:7:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "537:37:0"
+            },
+            "returnParameters": {
               "id": 15,
               "nodeType": "ParameterList",
-              "parameters": [
-                {
-                  "constant": false,
-                  "id": 14,
-                  "mutability": "mutable",
-                  "name": "_cantomonId",
-                  "nameLocation": "551:11:1",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 21,
-                  "src": "543:19:1",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_uint256",
-                    "typeString": "uint256"
-                  },
-                  "typeName": {
-                    "id": 13,
-                    "name": "uint256",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "543:7:1",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_uint256",
-                      "typeString": "uint256"
-                    }
-                  },
-                  "visibility": "internal"
-                }
-              ],
-              "src": "542:21:1"
-            },
-            "returnParameters": {
-              "id": 19,
-              "nodeType": "ParameterList",
               "parameters": [],
-              "src": "602:0:1"
+              "src": "615:0:0"
             },
-            "scope": 40,
+            "scope": 80,
             "stateMutability": "nonpayable",
             "virtual": false,
-            "visibility": "public"
-          },
-          {
-            "id": 30,
-            "nodeType": "FunctionDefinition",
-            "src": "625:98:1",
-            "nodes": [],
-            "body": {
-              "id": 29,
-              "nodeType": "Block",
-              "src": "707:16:1",
-              "nodes": [],
-              "statements": []
-            },
-            "functionSelector": "58888905",
-            "implemented": true,
-            "kind": "function",
-            "modifiers": [
-              {
-                "arguments": [
-                  {
-                    "id": 26,
-                    "name": "_cantomonId",
-                    "nodeType": "Identifier",
-                    "overloadedDeclarations": [],
-                    "referencedDeclaration": 23,
-                    "src": "694:11:1",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_uint256",
-                      "typeString": "uint256"
-                    }
-                  }
-                ],
-                "id": 27,
-                "kind": "modifierInvocation",
-                "modifierName": {
-                  "id": 25,
-                  "name": "onlyCantomonOwner",
-                  "nameLocations": [
-                    "676:17:1"
-                  ],
-                  "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 823,
-                  "src": "676:17:1"
-                },
-                "nodeType": "ModifierInvocation",
-                "src": "676:30:1"
-              }
-            ],
-            "name": "trainCantomon",
-            "nameLocation": "634:13:1",
-            "parameters": {
-              "id": 24,
-              "nodeType": "ParameterList",
-              "parameters": [
-                {
-                  "constant": false,
-                  "id": 23,
-                  "mutability": "mutable",
-                  "name": "_cantomonId",
-                  "nameLocation": "656:11:1",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 30,
-                  "src": "648:19:1",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_uint256",
-                    "typeString": "uint256"
-                  },
-                  "typeName": {
-                    "id": 22,
-                    "name": "uint256",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "648:7:1",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_uint256",
-                      "typeString": "uint256"
-                    }
-                  },
-                  "visibility": "internal"
-                }
-              ],
-              "src": "647:21:1"
-            },
-            "returnParameters": {
-              "id": 28,
-              "nodeType": "ParameterList",
-              "parameters": [],
-              "src": "707:0:1"
-            },
-            "scope": 40,
-            "stateMutability": "nonpayable",
-            "virtual": false,
-            "visibility": "public"
-          },
-          {
-            "id": 39,
-            "nodeType": "FunctionDefinition",
-            "src": "729:98:1",
-            "nodes": [],
-            "body": {
-              "id": 38,
-              "nodeType": "Block",
-              "src": "811:16:1",
-              "nodes": [],
-              "statements": []
-            },
-            "functionSelector": "edc31483",
-            "implemented": true,
-            "kind": "function",
-            "modifiers": [
-              {
-                "arguments": [
-                  {
-                    "id": 35,
-                    "name": "_cantomonId",
-                    "nodeType": "Identifier",
-                    "overloadedDeclarations": [],
-                    "referencedDeclaration": 32,
-                    "src": "798:11:1",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_uint256",
-                      "typeString": "uint256"
-                    }
-                  }
-                ],
-                "id": 36,
-                "kind": "modifierInvocation",
-                "modifierName": {
-                  "id": 34,
-                  "name": "onlyCantomonOwner",
-                  "nameLocations": [
-                    "779:17:1"
-                  ],
-                  "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 823,
-                  "src": "779:17:1"
-                },
-                "nodeType": "ModifierInvocation",
-                "src": "779:31:1"
-              }
-            ],
-            "name": "feedCantomon",
-            "nameLocation": "738:12:1",
-            "parameters": {
-              "id": 33,
-              "nodeType": "ParameterList",
-              "parameters": [
-                {
-                  "constant": false,
-                  "id": 32,
-                  "mutability": "mutable",
-                  "name": "_cantomonId",
-                  "nameLocation": "759:11:1",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 39,
-                  "src": "751:19:1",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_uint256",
-                    "typeString": "uint256"
-                  },
-                  "typeName": {
-                    "id": 31,
-                    "name": "uint256",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "751:7:1",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_uint256",
-                      "typeString": "uint256"
-                    }
-                  },
-                  "visibility": "internal"
-                }
-              ],
-              "src": "750:21:1"
-            },
-            "returnParameters": {
-              "id": 37,
-              "nodeType": "ParameterList",
-              "parameters": [],
-              "src": "811:0:1"
-            },
-            "scope": 40,
-            "stateMutability": "nonpayable",
-            "virtual": false,
-            "visibility": "public"
+            "visibility": "external"
           }
         ],
         "abstract": false,
         "baseContracts": [
           {
             "baseName": {
-              "id": 11,
+              "id": 5,
               "name": "CantomonModifiers",
               "nameLocations": [
-                "495:17:1"
+                "495:17:0"
               ],
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 853,
-              "src": "495:17:1"
+              "referencedDeclaration": 1621,
+              "src": "495:17:0"
             },
-            "id": 12,
+            "id": 6,
             "nodeType": "InheritanceSpecifier",
-            "src": "495:17:1"
+            "src": "495:17:0"
           }
         ],
         "canonicalName": "BattleFacet",
@@ -960,22 +1594,22 @@
         "contractKind": "contract",
         "fullyImplemented": true,
         "linearizedBaseContracts": [
-          40,
-          853,
-          3314,
-          3123,
-          5179
+          80,
+          1621,
+          1884,
+          1760,
+          3592
         ],
         "name": "BattleFacet",
-        "nameLocation": "480:11:1",
-        "scope": 41,
+        "nameLocation": "480:11:0",
+        "scope": 81,
         "usedErrors": [
-          3120,
-          3122
+          1757,
+          1759
         ]
       }
     ],
     "license": "MIT"
   },
-  "id": 1
+  "id": 0
 }

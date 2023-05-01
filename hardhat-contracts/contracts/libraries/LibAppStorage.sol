@@ -23,16 +23,16 @@ struct AppStorage {
     GameSettings gameSettings;
     mapping(uint256 => Cantomon) cantomon;
     uint256 nextCantomonId;
-    // mapping(uint256 => CantomonMetaData) cantomonMetaData;
-    // mapping(uint256 => CantomonBaseStats) cantomonBaseStats;
-    // mapping(uint256 => CantomonDynamicStats) cantomonDynamicStats;
     mapping(uint256 => EvolutionRule) evolutionRule;
+    mapping(uint256 => NPC) npc;
 }
 
 struct Cantomon {
     mapping(uint256 => CantomonMetaData) metadata;
     mapping(uint256 => CantomonBaseStats) baseStats;
     mapping(uint256 => CantomonDynamicStats) dynamicStats;
+    mapping(uint256 => CantomonEvoStats) evoStats;
+    mapping(uint256 => CantomonCareStats) careStats;
 }
 
 
@@ -43,9 +43,6 @@ struct ProxySbt {
 }
 
 struct GameSettings {
-    // uint16 metaData_v;
-    // uint16 baseStats_v;
-    // uint16 dynamicStats_v;
     uint16 evolutionRule;
 }
 
@@ -70,10 +67,10 @@ struct CantomonMetaData {
 
 ///@dev BaseStats is assigned at hatching and should be immutable
 struct CantomonBaseStats {
+    uint256 dna;
     CantomonAttr attribute;
     uint256 battlePower;
-    bytes32 dna;
-
+    uint256 birthTime;
     // uint256 hp;
     // uint256 attack;
     // uint256 speed;
@@ -82,19 +79,59 @@ struct CantomonBaseStats {
 
 ///@dev Metadata is tied to season
 struct CantomonDynamicStats {
-    uint256 evoStage;
-    uint256 evolution;
     CantomonStatus status;
     uint256 xp;
     uint256 happiness;
-    uint256 fitness;
+    uint256 skill;
     uint256 energy;
+    uint256 battles;
+    uint256 wins;
+}
+struct CantomonCareStats {
+    uint256 lastFed;
+    uint256 lastTrained;
+    uint256 numberTrained;
+    uint256 numberFed;
+}
+
+struct NPC {
+    mapping(string => uint256) npcNameToId;
+    mapping(uint256 => string) npcIdToName;
+    mapping(uint256 => NPCStats) npcStats;
+}
+
+struct NPCStats {
+    CantomonAttr attribute;
+    uint256 evolutionId;
+    uint256 battlePower;
+    uint256 npcSkill;
+    uint256 npcBattles;
+    uint256 npcWins;
+}
+
+struct CantomonEvoStats {
+    uint256 evoStage;
+    uint256 evolutionId;
+    uint256 evoTime;
 }
 
 ///@dev Need to assign this at init
 struct EvolutionRule {
     mapping(uint256 => uint256) xpForEvo;
-    uint16 numberOfEvolutions; 
+    mapping(uint256 => uint256[]) evolutionOptions;
+    mapping(uint256 => EvolutionRequirements) evolutionRequirements;
+    mapping(uint256 => EvolutionBonus) evolutionBonus;
+}
+
+struct EvolutionRequirements {
+    uint256 evolutionId;
+    uint256 happiness;
+    uint256 wins;
+    uint256 battles;
+}
+struct EvolutionBonus {
+    uint256 battlePower;
+    uint256 skill;
 }
 
 
@@ -119,7 +156,7 @@ contract CantomonModifiers is OwnableInternal {
 
     modifier cantomonMaxEvo(uint256 _cantomonId) {
         require(
-            s.evolutionRule[s.gameSettings.evolutionRule].xpForEvo[s.cantomon[_cantomonId].dynamicStats[s.gameVersion].evoStage] > 0, "Cantomon cannot evolve further at this point"
+            s.evolutionRule[s.gameSettings.evolutionRule].xpForEvo[s.cantomon[_cantomonId].evoStats[s.gameVersion].evoStage] > 0, "Cantomon cannot evolve further at this point"
         );
         _;
     }

@@ -53,19 +53,21 @@ const cantomon_Test = function () {
 
     initArg = ['Cantomon', "CANTOMON", "/BASEURI"];
     diamondAddress = await deploy(initArg);
-    console.log(diamondAddress);
 
     proxyERC721Facet = await ethers.getContractAt("ProxyERC721Facet", diamondAddress);
+    gmFacet = await ethers.getContractAt("GMFacet", diamondAddress);
+    battleFacet = await ethers.getContractAt("BattleFacet", diamondAddress);
+    evolutionFacet = await ethers.getContractAt("EvolutionFacet", diamondAddress);
+    
 
-    const SolidStateERC721Mock = await ethers.getContractFactory("SolidStateERC721Mock");
+    SolidStateERC721Mock = await ethers.getContractFactory("SolidStateERC721Mock");
     mockNft = await SolidStateERC721Mock.deploy('mock', 'mock', 'MOCK');
     await mockNft.mint(owner.address);
   });
   describe("Minting Tests", function () {
-    it("Check Init Arguments", async function() {
+    it("Check ProxyERC721Facet Init Arguments", async function() {
       expect(await proxyERC721Facet.name()).to.equal('Cantomon');
       expect(await proxyERC721Facet.symbol()).to.equal('CANTOMON');
-      // expect(await proxyERC721Facet.tokenURI(1)).to.equal('/BASEURI/1');
     });
     it("setApprovedMessenger", async function() {
       const bytes32Value = ethers.utils.hexZeroPad(nftReader.address, 32);
@@ -92,8 +94,80 @@ const cantomon_Test = function () {
       expect(lastEvent.args.to.toString()).to.equal(addr1.address);
       expect(await proxyERC721Facet.ownerOf(nftOwnedId)).to.equal(addr1.address);
     });
+    it("Declare gmFacet variables", async function () {
+      version = 1;
+      season = 1;
+      await gmFacet.setGameVersion(version);
+      expect(await gmFacet.getGameVersion()).equal(version);
+      await gmFacet.setGameSeason(season);
+      expect(await gmFacet.getGameSeason()).equal(season);
 
-    it("Template", async function () {
+      xpRules = [60, 120, 180];
+
+      for(let i = 0; i < xpRules.length; i++) {
+        await gmFacet.setEvolutionXpforEvo(i, xpRules[i]);
+        expect(await gmFacet.getEvolutionXpforEvo(i)).equal(xpRules[i]);
+      }
+      
+      evoOptions = {
+        0: [1, 2, 3],
+        1: [4, 5],
+        2: [6, 7],
+        3: [8, 9]
+      }
+
+      for(let i = 0; i < evoOptions.length; i++) {
+        await gmFacet.setEvolutionOptions(i, evoOptions[i]);
+        expect(await gmFacet.getEvolutionOptions(i)).to.deep.equal(evoOptions[i]);
+      }
+
+      evoRequirements = {
+        0: [0, 0, 0, 0],
+        1: [0, 0, 0, 0],
+        2: [0, 0, 0, 0],
+        3: [0, 0, 0, 0],
+        4: [1, 0, 0, 0],
+        5: [1, 50, 0, 0],
+        6: [2, 0, 0, 0],
+        7: [2, 50, 0, 0],  
+        8: [3, 0, 0, 0],
+        9: [3, 50, 0, 0]
+      }
+      
+      for(let i = 0; i < evoRequirements.length; i++) {
+        await gmFacet.setEvolutionRequirements(i, evoRequirements[i]);
+        expect(await gmFacet.getEvolutionRequirements(i)).to.deep.equal(evoRequirements[i]);
+      }
+
+      evoBonus = {
+        0: [0, 0],
+        1: [0, 0],
+        2: [0, 0],
+        3: [0, 0],
+        4: [10, 0],
+        5: [20, 0],
+        6: [10, 0],
+        7: [20, 0],
+        8: [10, 0],
+        9: [20, 0]
+      }
+
+      for(let i = 0; i < evoBonus.length; i++) {
+        await gmFacet.setEvolutionBonus(i, evoBonus[i]);
+        expect(await gmFacet.getEvolutionBonus(i)).to.deep.equal(evoBonus[i]);
+      }
+    });
+
+
+    it("hatch", async function () {
+      
+    });
+
+    it("train", async function () {
+
+    });
+    it("feed", async function () {
+
     });
   });
 }
@@ -101,3 +175,5 @@ const cantomon_Test = function () {
 module.exports = {
   cantomon_Test
 };
+
+

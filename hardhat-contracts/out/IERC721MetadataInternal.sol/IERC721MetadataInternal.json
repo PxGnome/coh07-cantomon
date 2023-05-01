@@ -355,12 +355,12 @@
       ]
     },
     "nodeType": "SourceUnit",
-    "src": "33:256:76",
+    "src": "33:256:93",
     "nodes": [
       {
         "id": 9069,
         "nodeType": "PragmaDirective",
-        "src": "33:23:76",
+        "src": "33:23:93",
         "nodes": [],
         "literals": [
           "solidity",
@@ -372,7 +372,7 @@
       {
         "id": 9071,
         "nodeType": "ImportDirective",
-        "src": "58:70:76",
+        "src": "58:70:93",
         "nodes": [],
         "absolutePath": "node_modules/@solidstate/contracts/token/ERC721/base/IERC721BaseInternal.sol",
         "file": "../base/IERC721BaseInternal.sol",
@@ -387,7 +387,7 @@
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
               "referencedDeclaration": 8620,
-              "src": "67:19:76",
+              "src": "67:19:93",
               "typeDescriptions": {}
             },
             "nameLocation": "-1:-1:-1"
@@ -398,21 +398,21 @@
       {
         "id": 9077,
         "nodeType": "ContractDefinition",
-        "src": "182:106:76",
+        "src": "182:106:93",
         "nodes": [
           {
             "id": 9076,
             "nodeType": "ErrorDefinition",
-            "src": "245:41:76",
+            "src": "245:41:93",
             "nodes": [],
             "errorSelector": "2382d380",
             "name": "ERC721Metadata__NonExistentToken",
-            "nameLocation": "251:32:76",
+            "nameLocation": "251:32:93",
             "parameters": {
               "id": 9075,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "283:2:76"
+              "src": "283:2:93"
             }
           }
         ],
@@ -423,15 +423,15 @@
               "id": 9073,
               "name": "IERC721BaseInternal",
               "nameLocations": [
-                "219:19:76"
+                "219:19:93"
               ],
               "nodeType": "IdentifierPath",
               "referencedDeclaration": 8620,
-              "src": "219:19:76"
+              "src": "219:19:93"
             },
             "id": 9074,
             "nodeType": "InheritanceSpecifier",
-            "src": "219:19:76"
+            "src": "219:19:93"
           }
         ],
         "canonicalName": "IERC721MetadataInternal",
@@ -440,7 +440,7 @@
         "documentation": {
           "id": 9072,
           "nodeType": "StructuredDocumentation",
-          "src": "130:51:76",
+          "src": "130:51:93",
           "text": " @title ERC721Metadata internal interface"
         },
         "fullyImplemented": true,
@@ -450,7 +450,7 @@
           5301
         ],
         "name": "IERC721MetadataInternal",
-        "nameLocation": "192:23:76",
+        "nameLocation": "192:23:93",
         "scope": 9078,
         "usedErrors": [
           8601,
@@ -469,5 +469,5 @@
     ],
     "license": "MIT"
   },
-  "id": 76
+  "id": 93
 }

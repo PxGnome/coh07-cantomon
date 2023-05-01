@@ -145,12 +145,12 @@
       ]
     },
     "nodeType": "SourceUnit",
-    "src": "33:220:24",
+    "src": "33:220:41",
     "nodes": [
       {
         "id": 3114,
         "nodeType": "PragmaDirective",
-        "src": "33:23:24",
+        "src": "33:23:41",
         "nodes": [],
         "literals": [
           "solidity",
@@ -162,7 +162,7 @@
       {
         "id": 3116,
         "nodeType": "ImportDirective",
-        "src": "58:71:24",
+        "src": "58:71:41",
         "nodes": [],
         "absolutePath": "node_modules/@solidstate/contracts/interfaces/IERC173Internal.sol",
         "file": "../../interfaces/IERC173Internal.sol",
@@ -177,7 +177,7 @@
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
               "referencedDeclaration": 5179,
-              "src": "67:15:24",
+              "src": "67:15:41",
               "typeDescriptions": {}
             },
             "nameLocation": "-1:-1:-1"
@@ -188,36 +188,36 @@
       {
         "id": 3123,
         "nodeType": "ContractDefinition",
-        "src": "131:121:24",
+        "src": "131:121:41",
         "nodes": [
           {
             "id": 3120,
             "nodeType": "ErrorDefinition",
-            "src": "183:26:24",
+            "src": "183:26:41",
             "nodes": [],
             "errorSelector": "2f7a8ee1",
             "name": "Ownable__NotOwner",
-            "nameLocation": "189:17:24",
+            "nameLocation": "189:17:41",
             "parameters": {
               "id": 3119,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "206:2:24"
+              "src": "206:2:41"
             }
           },
           {
             "id": 3122,
             "nodeType": "ErrorDefinition",
-            "src": "214:36:24",
+            "src": "214:36:41",
             "nodes": [],
             "errorSelector": "d0b49847",
             "name": "Ownable__NotTransitiveOwner",
-            "nameLocation": "220:27:24",
+            "nameLocation": "220:27:41",
             "parameters": {
               "id": 3121,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "247:2:24"
+              "src": "247:2:41"
             }
           }
         ],
@@ -228,15 +228,15 @@
               "id": 3117,
               "name": "IERC173Internal",
               "nameLocations": [
-                "161:15:24"
+                "161:15:41"
               ],
               "nodeType": "IdentifierPath",
               "referencedDeclaration": 5179,
-              "src": "161:15:24"
+              "src": "161:15:41"
             },
             "id": 3118,
             "nodeType": "InheritanceSpecifier",
-            "src": "161:15:24"
+            "src": "161:15:41"
           }
         ],
         "canonicalName": "IOwnableInternal",
@@ -248,7 +248,7 @@
           5179
         ],
         "name": "IOwnableInternal",
-        "nameLocation": "141:16:24",
+        "nameLocation": "141:16:41",
         "scope": 3124,
         "usedErrors": [
           3120,
@@ -258,5 +258,5 @@
     ],
     "license": "MIT"
   },
-  "id": 24
+  "id": 41
 }

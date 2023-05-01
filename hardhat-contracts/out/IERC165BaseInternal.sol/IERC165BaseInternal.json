@@ -97,12 +97,12 @@
       ]
     },
     "nodeType": "SourceUnit",
-    "src": "33:198:46",
+    "src": "33:198:63",
     "nodes": [
       {
         "id": 5436,
         "nodeType": "PragmaDirective",
-        "src": "33:23:46",
+        "src": "33:23:63",
         "nodes": [],
         "literals": [
           "solidity",
@@ -114,7 +114,7 @@
       {
         "id": 5438,
         "nodeType": "ImportDirective",
-        "src": "58:74:46",
+        "src": "58:74:63",
         "nodes": [],
         "absolutePath": "node_modules/@solidstate/contracts/interfaces/IERC165Internal.sol",
         "file": "../../../interfaces/IERC165Internal.sol",
@@ -129,7 +129,7 @@
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
               "referencedDeclaration": 5149,
-              "src": "67:15:46",
+              "src": "67:15:63",
               "typeDescriptions": {}
             },
             "nameLocation": "-1:-1:-1"
@@ -140,21 +140,21 @@
       {
         "id": 5443,
         "nodeType": "ContractDefinition",
-        "src": "134:96:46",
+        "src": "134:96:63",
         "nodes": [
           {
             "id": 5442,
             "nodeType": "ErrorDefinition",
-            "src": "189:39:46",
+            "src": "189:39:63",
             "nodes": [],
             "errorSelector": "b0a19dd5",
             "name": "ERC165Base__InvalidInterfaceId",
-            "nameLocation": "195:30:46",
+            "nameLocation": "195:30:63",
             "parameters": {
               "id": 5441,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "225:2:46"
+              "src": "225:2:63"
             }
           }
         ],
@@ -165,15 +165,15 @@
               "id": 5439,
               "name": "IERC165Internal",
               "nameLocations": [
-                "167:15:46"
+                "167:15:63"
               ],
               "nodeType": "IdentifierPath",
               "referencedDeclaration": 5149,
-              "src": "167:15:46"
+              "src": "167:15:63"
             },
             "id": 5440,
             "nodeType": "InheritanceSpecifier",
-            "src": "167:15:46"
+            "src": "167:15:63"
           }
         ],
         "canonicalName": "IERC165BaseInternal",
@@ -185,7 +185,7 @@
           5149
         ],
         "name": "IERC165BaseInternal",
-        "nameLocation": "144:19:46",
+        "nameLocation": "144:19:63",
         "scope": 5444,
         "usedErrors": [
           5442
@@ -194,5 +194,5 @@
     ],
     "license": "MIT"
   },
-  "id": 46
+  "id": 63
 }

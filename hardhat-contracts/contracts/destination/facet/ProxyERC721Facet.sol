@@ -16,7 +16,7 @@ import "../../libraries/LibAppStorage.sol";
 
 contract ProxyERC721Facet is CantomonModifiers, SolidStateERC721 {
     //MESSAGE RELAYING (HYPERLANE) BELOW
-    function setApprovedMessenger(bytes32 _addr) public onlyOwner {
+    function setApprovedMessenger(bytes32 _addr) external onlyOwner {
         s.approvedMessenger = _addr;
     }
 
@@ -43,16 +43,17 @@ contract ProxyERC721Facet is CantomonModifiers, SolidStateERC721 {
             isUnbound: false
         });
 
+        s.cantomon[cantomonId].evoStats[s.gameVersion].evoTime = block.timestamp;
         s.nextCantomonId = cantomonId + 1;
         emit ReceivedMessage(_origin, _sender, _message);
     }
 
     // OWNER FUNCTIONS BELOW
     ///@dev owner can call any function on this contract
-    function ownerCalls(bytes memory _abi, string memory _functionSignature) external onlyOwner {
-        (bool success, ) = address(this).call(abi.encodeWithSignature(_functionSignature));
-        require(success, "Failed to call function");
-    }
+    // function ownerCalls(bytes memory _abi, string memory _functionSignature) external onlyOwner {
+    //     (bool success, ) = address(this).call(abi.encodeWithSignature(_functionSignature));
+    //     require(success, "Failed to call function");
+    // }
 
     //SOULBOUND BELOW
     event SwitchUnbound(uint256 _tokenId, bool _switch);
@@ -73,7 +74,7 @@ contract ProxyERC721Facet is CantomonModifiers, SolidStateERC721 {
         if (!s.proxySbt[_tokenId].isUnbound) {
             require(
                 _from == address(0) || _to == address(0),
-                "ProxySbtFactory: This a Soulbound token. It cannot be transferred"
+                "ProxySbtFactory: This a Soulbound token. It cannot be transferred."
             );
         }
         super._beforeTokenTransfer(_from, _to, _tokenId);

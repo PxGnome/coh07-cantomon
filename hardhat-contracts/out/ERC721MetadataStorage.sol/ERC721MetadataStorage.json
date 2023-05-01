@@ -2,12 +2,12 @@
   "abi": [],
   "bytecode": {
     "object": "0x60566037600b82828239805160001a607314602a57634e487b7160e01b600052600060045260246000fd5b30600052607381538281f3fe73000000000000000000000000000000000000000030146080604052600080fdfea26469706673582212202572eab39ee0a7027e6bcf72f6b6a30bb8fc08c66048067e095da1107c9ec68664736f6c63430008130033",
-    "sourceMap": "58:450:74:-:0;;;;;;;;;;;;;;;-1:-1:-1;;;58:450:74;;;;;;;;;;;;;;;;;",
+    "sourceMap": "58:450:91:-:0;;;;;;;;;;;;;;;-1:-1:-1;;;58:450:91;;;;;;;;;;;;;;;;;",
     "linkReferences": {}
   },
   "deployedBytecode": {
     "object": "0x73000000000000000000000000000000000000000030146080604052600080fdfea26469706673582212202572eab39ee0a7027e6bcf72f6b6a30bb8fc08c66048067e095da1107c9ec68664736f6c63430008130033",
-    "sourceMap": "58:450:74:-:0;;;;;;;;",
+    "sourceMap": "58:450:91:-:0;;;;;;;;",
     "linkReferences": {}
   },
   "methodIdentifiers": {},
@@ -74,12 +74,12 @@
       ]
     },
     "nodeType": "SourceUnit",
-    "src": "33:476:74",
+    "src": "33:476:91",
     "nodes": [
       {
         "id": 9010,
         "nodeType": "PragmaDirective",
-        "src": "33:23:74",
+        "src": "33:23:91",
         "nodes": [],
         "literals": [
           "solidity",
@@ -91,17 +91,17 @@
       {
         "id": 9039,
         "nodeType": "ContractDefinition",
-        "src": "58:450:74",
+        "src": "58:450:91",
         "nodes": [
           {
             "id": 9015,
             "nodeType": "VariableDeclaration",
-            "src": "94:105:74",
+            "src": "94:105:91",
             "nodes": [],
             "constant": true,
             "mutability": "constant",
             "name": "STORAGE_SLOT",
-            "nameLocation": "120:12:74",
+            "nameLocation": "120:12:91",
             "scope": 9039,
             "stateVariable": true,
             "storageLocation": "default",
@@ -113,7 +113,7 @@
               "id": 9011,
               "name": "bytes32",
               "nodeType": "ElementaryTypeName",
-              "src": "94:7:74",
+              "src": "94:7:91",
               "typeDescriptions": {
                 "typeIdentifier": "t_bytes32",
                 "typeString": "bytes32"
@@ -130,7 +130,7 @@
                   "kind": "string",
                   "lValueRequested": false,
                   "nodeType": "Literal",
-                  "src": "153:45:74",
+                  "src": "153:45:91",
                   "typeDescriptions": {
                     "typeIdentifier": "t_stringliteral_99574a7094154bb123ae6ae102096f0bf9679b85a5cd1e727aaa0ae5f132e6b1",
                     "typeString": "literal_string \"solidstate.contracts.storage.ERC721Metadata\""
@@ -150,7 +150,7 @@
                 "nodeType": "Identifier",
                 "overloadedDeclarations": [],
                 "referencedDeclaration": -8,
-                "src": "143:9:74",
+                "src": "143:9:91",
                 "typeDescriptions": {
                   "typeIdentifier": "t_function_keccak256_pure$_t_bytes_memory_ptr_$returns$_t_bytes32_$",
                   "typeString": "function (bytes memory) pure returns (bytes32)"
@@ -165,7 +165,7 @@
               "nameLocations": [],
               "names": [],
               "nodeType": "FunctionCall",
-              "src": "143:56:74",
+              "src": "143:56:91",
               "tryCall": false,
               "typeDescriptions": {
                 "typeIdentifier": "t_bytes32",
@@ -177,7 +177,7 @@
           {
             "id": 9026,
             "nodeType": "StructDefinition",
-            "src": "206:135:74",
+            "src": "206:135:91",
             "nodes": [],
             "canonicalName": "ERC721MetadataStorage.Layout",
             "members": [
@@ -186,10 +186,10 @@
                 "id": 9017,
                 "mutability": "mutable",
                 "name": "name",
-                "nameLocation": "237:4:74",
+                "nameLocation": "237:4:91",
                 "nodeType": "VariableDeclaration",
                 "scope": 9026,
-                "src": "230:11:74",
+                "src": "230:11:91",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -200,7 +200,7 @@
                   "id": 9016,
                   "name": "string",
                   "nodeType": "ElementaryTypeName",
-                  "src": "230:6:74",
+                  "src": "230:6:91",
                   "typeDescriptions": {
                     "typeIdentifier": "t_string_storage_ptr",
                     "typeString": "string"
@@ -213,10 +213,10 @@
                 "id": 9019,
                 "mutability": "mutable",
                 "name": "symbol",
-                "nameLocation": "258:6:74",
+                "nameLocation": "258:6:91",
                 "nodeType": "VariableDeclaration",
                 "scope": 9026,
-                "src": "251:13:74",
+                "src": "251:13:91",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -227,7 +227,7 @@
                   "id": 9018,
                   "name": "string",
                   "nodeType": "ElementaryTypeName",
-                  "src": "251:6:74",
+                  "src": "251:6:91",
                   "typeDescriptions": {
                     "typeIdentifier": "t_string_storage_ptr",
                     "typeString": "string"
@@ -240,10 +240,10 @@
                 "id": 9021,
                 "mutability": "mutable",
                 "name": "baseURI",
-                "nameLocation": "281:7:74",
+                "nameLocation": "281:7:91",
                 "nodeType": "VariableDeclaration",
                 "scope": 9026,
-                "src": "274:14:74",
+                "src": "274:14:91",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -254,7 +254,7 @@
                   "id": 9020,
                   "name": "string",
                   "nodeType": "ElementaryTypeName",
-                  "src": "274:6:74",
+                  "src": "274:6:91",
                   "typeDescriptions": {
                     "typeIdentifier": "t_string_storage_ptr",
                     "typeString": "string"
@@ -267,10 +267,10 @@
                 "id": 9025,
                 "mutability": "mutable",
                 "name": "tokenURIs",
-                "nameLocation": "325:9:74",
+                "nameLocation": "325:9:91",
                 "nodeType": "VariableDeclaration",
                 "scope": 9026,
-                "src": "298:36:74",
+                "src": "298:36:91",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -285,14 +285,14 @@
                     "id": 9022,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "306:7:74",
+                    "src": "306:7:91",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
                   "nodeType": "Mapping",
-                  "src": "298:26:74",
+                  "src": "298:26:91",
                   "typeDescriptions": {
                     "typeIdentifier": "t_mapping$_t_uint256_$_t_string_storage_$",
                     "typeString": "mapping(uint256 => string)"
@@ -303,7 +303,7 @@
                     "id": 9023,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
-                    "src": "317:6:74",
+                    "src": "317:6:91",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage_ptr",
                       "typeString": "string"
@@ -314,19 +314,19 @@
               }
             ],
             "name": "Layout",
-            "nameLocation": "213:6:74",
+            "nameLocation": "213:6:91",
             "scope": 9039,
             "visibility": "public"
           },
           {
             "id": 9038,
             "nodeType": "FunctionDefinition",
-            "src": "347:159:74",
+            "src": "347:159:91",
             "nodes": [],
             "body": {
               "id": 9037,
               "nodeType": "Block",
-              "src": "406:100:74",
+              "src": "406:100:91",
               "nodes": [],
               "statements": [
                 {
@@ -339,10 +339,10 @@
                       "id": 9033,
                       "mutability": "mutable",
                       "name": "slot",
-                      "nameLocation": "424:4:74",
+                      "nameLocation": "424:4:91",
                       "nodeType": "VariableDeclaration",
                       "scope": 9037,
-                      "src": "416:12:74",
+                      "src": "416:12:91",
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
@@ -353,7 +353,7 @@
                         "id": 9032,
                         "name": "bytes32",
                         "nodeType": "ElementaryTypeName",
-                        "src": "416:7:74",
+                        "src": "416:7:91",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes32",
                           "typeString": "bytes32"
@@ -369,33 +369,33 @@
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
                     "referencedDeclaration": 9015,
-                    "src": "431:12:74",
+                    "src": "431:12:91",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
                     }
                   },
                   "nodeType": "VariableDeclarationStatement",
-                  "src": "416:27:74"
+                  "src": "416:27:91"
                 },
                 {
                   "AST": {
                     "nodeType": "YulBlock",
-                    "src": "462:38:74",
+                    "src": "462:38:91",
                     "statements": [
                       {
                         "nodeType": "YulAssignment",
-                        "src": "476:14:74",
+                        "src": "476:14:91",
                         "value": {
                           "name": "slot",
                           "nodeType": "YulIdentifier",
-                          "src": "486:4:74"
+                          "src": "486:4:91"
                         },
                         "variableNames": [
                           {
                             "name": "l.slot",
                             "nodeType": "YulIdentifier",
-                            "src": "476:6:74"
+                            "src": "476:6:91"
                           }
                         ]
                       }
@@ -407,7 +407,7 @@
                       "declaration": 9030,
                       "isOffset": false,
                       "isSlot": true,
-                      "src": "476:6:74",
+                      "src": "476:6:91",
                       "suffix": "slot",
                       "valueSize": 1
                     },
@@ -415,13 +415,13 @@
                       "declaration": 9033,
                       "isOffset": false,
                       "isSlot": false,
-                      "src": "486:4:74",
+                      "src": "486:4:91",
                       "valueSize": 1
                     }
                   ],
                   "id": 9036,
                   "nodeType": "InlineAssembly",
-                  "src": "453:47:74"
+                  "src": "453:47:91"
                 }
               ]
             },
@@ -429,12 +429,12 @@
             "kind": "function",
             "modifiers": [],
             "name": "layout",
-            "nameLocation": "356:6:74",
+            "nameLocation": "356:6:91",
             "parameters": {
               "id": 9027,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "362:2:74"
+              "src": "362:2:91"
             },
             "returnParameters": {
               "id": 9031,
@@ -445,10 +445,10 @@
                   "id": 9030,
                   "mutability": "mutable",
                   "name": "l",
-                  "nameLocation": "403:1:74",
+                  "nameLocation": "403:1:91",
                   "nodeType": "VariableDeclaration",
                   "scope": 9038,
-                  "src": "388:16:74",
+                  "src": "388:16:91",
                   "stateVariable": false,
                   "storageLocation": "storage",
                   "typeDescriptions": {
@@ -462,14 +462,14 @@
                       "id": 9028,
                       "name": "Layout",
                       "nameLocations": [
-                        "388:6:74"
+                        "388:6:91"
                       ],
                       "nodeType": "IdentifierPath",
                       "referencedDeclaration": 9026,
-                      "src": "388:6:74"
+                      "src": "388:6:91"
                     },
                     "referencedDeclaration": 9026,
-                    "src": "388:6:74",
+                    "src": "388:6:91",
                     "typeDescriptions": {
                       "typeIdentifier": "t_struct$_Layout_$9026_storage_ptr",
                       "typeString": "struct ERC721MetadataStorage.Layout"
@@ -478,7 +478,7 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "387:18:74"
+              "src": "387:18:91"
             },
             "scope": 9039,
             "stateMutability": "pure",
@@ -496,12 +496,12 @@
           9039
         ],
         "name": "ERC721MetadataStorage",
-        "nameLocation": "66:21:74",
+        "nameLocation": "66:21:91",
         "scope": 9040,
         "usedErrors": []
       }
     ],
     "license": "MIT"
   },
-  "id": 74
+  "id": 91
 }

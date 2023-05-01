@@ -337,12 +337,12 @@
       ]
     },
     "nodeType": "SourceUnit",
-    "src": "33:632:68",
+    "src": "33:632:85",
     "nodes": [
       {
         "id": 8594,
         "nodeType": "PragmaDirective",
-        "src": "33:23:68",
+        "src": "33:23:85",
         "nodes": [],
         "literals": [
           "solidity",
@@ -354,7 +354,7 @@
       {
         "id": 8596,
         "nodeType": "ImportDirective",
-        "src": "58:74:68",
+        "src": "58:74:85",
         "nodes": [],
         "absolutePath": "node_modules/@solidstate/contracts/interfaces/IERC721Internal.sol",
         "file": "../../../interfaces/IERC721Internal.sol",
@@ -369,7 +369,7 @@
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
               "referencedDeclaration": 5301,
-              "src": "67:15:68",
+              "src": "67:15:85",
               "typeDescriptions": {}
             },
             "nameLocation": "-1:-1:-1"
@@ -380,156 +380,156 @@
       {
         "id": 8620,
         "nodeType": "ContractDefinition",
-        "src": "174:490:68",
+        "src": "174:490:85",
         "nodes": [
           {
             "id": 8601,
             "nodeType": "ErrorDefinition",
-            "src": "229:39:68",
+            "src": "229:39:85",
             "nodes": [],
             "errorSelector": "2f5de44f",
             "name": "ERC721Base__NotOwnerOrApproved",
-            "nameLocation": "235:30:68",
+            "nameLocation": "235:30:85",
             "parameters": {
               "id": 8600,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "265:2:68"
+              "src": "265:2:85"
             }
           },
           {
             "id": 8603,
             "nodeType": "ErrorDefinition",
-            "src": "273:33:68",
+            "src": "273:33:85",
             "nodes": [],
             "errorSelector": "424a22cb",
             "name": "ERC721Base__SelfApproval",
-            "nameLocation": "279:24:68",
+            "nameLocation": "279:24:85",
             "parameters": {
               "id": 8602,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "303:2:68"
+              "src": "303:2:85"
             }
           },
           {
             "id": 8605,
             "nodeType": "ErrorDefinition",
-            "src": "311:44:68",
+            "src": "311:44:85",
             "nodes": [],
             "errorSelector": "810ff970",
             "name": "ERC721Base__BalanceQueryZeroAddress",
-            "nameLocation": "317:35:68",
+            "nameLocation": "317:35:85",
             "parameters": {
               "id": 8604,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "352:2:68"
+              "src": "352:2:85"
             }
           },
           {
             "id": 8607,
             "nodeType": "ErrorDefinition",
-            "src": "360:49:68",
+            "src": "360:49:85",
             "nodes": [],
             "errorSelector": "9ff10cdd",
             "name": "ERC721Base__ERC721ReceiverNotImplemented",
-            "nameLocation": "366:40:68",
+            "nameLocation": "366:40:85",
             "parameters": {
               "id": 8606,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "406:2:68"
+              "src": "406:2:85"
             }
           },
           {
             "id": 8609,
             "nodeType": "ErrorDefinition",
-            "src": "414:33:68",
+            "src": "414:33:85",
             "nodes": [],
             "errorSelector": "7e1a7d8b",
             "name": "ERC721Base__InvalidOwner",
-            "nameLocation": "420:24:68",
+            "nameLocation": "420:24:85",
             "parameters": {
               "id": 8608,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "444:2:68"
+              "src": "444:2:85"
             }
           },
           {
             "id": 8611,
             "nodeType": "ErrorDefinition",
-            "src": "452:38:68",
+            "src": "452:38:85",
             "nodes": [],
             "errorSelector": "23e5311a",
             "name": "ERC721Base__MintToZeroAddress",
-            "nameLocation": "458:29:68",
+            "nameLocation": "458:29:85",
             "parameters": {
               "id": 8610,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "487:2:68"
+              "src": "487:2:85"
             }
           },
           {
             "id": 8613,
             "nodeType": "ErrorDefinition",
-            "src": "495:37:68",
+            "src": "495:37:85",
             "nodes": [],
             "errorSelector": "c1b843ef",
             "name": "ERC721Base__NonExistentToken",
-            "nameLocation": "501:28:68",
+            "nameLocation": "501:28:85",
             "parameters": {
               "id": 8612,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "529:2:68"
+              "src": "529:2:85"
             }
           },
           {
             "id": 8615,
             "nodeType": "ErrorDefinition",
-            "src": "537:34:68",
+            "src": "537:34:85",
             "nodes": [],
             "errorSelector": "0f2db4ad",
             "name": "ERC721Base__NotTokenOwner",
-            "nameLocation": "543:25:68",
+            "nameLocation": "543:25:85",
             "parameters": {
               "id": 8614,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "568:2:68"
+              "src": "568:2:85"
             }
           },
           {
             "id": 8617,
             "nodeType": "ErrorDefinition",
-            "src": "576:39:68",
+            "src": "576:39:85",
             "nodes": [],
             "errorSelector": "6c35dbd8",
             "name": "ERC721Base__TokenAlreadyMinted",
-            "nameLocation": "582:30:68",
+            "nameLocation": "582:30:85",
             "parameters": {
               "id": 8616,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "612:2:68"
+              "src": "612:2:85"
             }
           },
           {
             "id": 8619,
             "nodeType": "ErrorDefinition",
-            "src": "620:42:68",
+            "src": "620:42:85",
             "nodes": [],
             "errorSelector": "40311a09",
             "name": "ERC721Base__TransferToZeroAddress",
-            "nameLocation": "626:33:68",
+            "nameLocation": "626:33:85",
             "parameters": {
               "id": 8618,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "659:2:68"
+              "src": "659:2:85"
             }
           }
         ],
@@ -540,15 +540,15 @@
               "id": 8598,
               "name": "IERC721Internal",
               "nameLocations": [
-                "207:15:68"
+                "207:15:85"
               ],
               "nodeType": "IdentifierPath",
               "referencedDeclaration": 5301,
-              "src": "207:15:68"
+              "src": "207:15:85"
             },
             "id": 8599,
             "nodeType": "InheritanceSpecifier",
-            "src": "207:15:68"
+            "src": "207:15:85"
           }
         ],
         "canonicalName": "IERC721BaseInternal",
@@ -557,7 +557,7 @@
         "documentation": {
           "id": 8597,
           "nodeType": "StructuredDocumentation",
-          "src": "134:39:68",
+          "src": "134:39:85",
           "text": " @title ERC721 base interface"
         },
         "fullyImplemented": true,
@@ -566,7 +566,7 @@
           5301
         ],
         "name": "IERC721BaseInternal",
-        "nameLocation": "184:19:68",
+        "nameLocation": "184:19:85",
         "scope": 8621,
         "usedErrors": [
           8601,
@@ -584,5 +584,5 @@
     ],
     "license": "MIT"
   },
-  "id": 68
+  "id": 85
 }

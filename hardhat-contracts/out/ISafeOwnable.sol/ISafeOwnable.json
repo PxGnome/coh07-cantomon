@@ -309,12 +309,12 @@
       ]
     },
     "nodeType": "SourceUnit",
-    "src": "33:467:25",
+    "src": "33:467:42",
     "nodes": [
       {
         "id": 3125,
         "nodeType": "PragmaDirective",
-        "src": "33:23:25",
+        "src": "33:23:42",
         "nodes": [],
         "literals": [
           "solidity",
@@ -326,7 +326,7 @@
       {
         "id": 3127,
         "nodeType": "ImportDirective",
-        "src": "58:42:25",
+        "src": "58:42:42",
         "nodes": [],
         "absolutePath": "node_modules/@solidstate/contracts/access/ownable/IOwnable.sol",
         "file": "./IOwnable.sol",
@@ -341,7 +341,7 @@
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
               "referencedDeclaration": 3112,
-              "src": "67:8:25",
+              "src": "67:8:42",
               "typeDescriptions": {}
             },
             "nameLocation": "-1:-1:-1"
@@ -352,7 +352,7 @@
       {
         "id": 3129,
         "nodeType": "ImportDirective",
-        "src": "101:66:25",
+        "src": "101:66:42",
         "nodes": [],
         "absolutePath": "node_modules/@solidstate/contracts/access/ownable/ISafeOwnableInternal.sol",
         "file": "./ISafeOwnableInternal.sol",
@@ -367,7 +367,7 @@
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
               "referencedDeclaration": 3153,
-              "src": "110:20:25",
+              "src": "110:20:42",
               "typeDescriptions": {}
             },
             "nameLocation": "-1:-1:-1"
@@ -378,17 +378,17 @@
       {
         "id": 3144,
         "nodeType": "ContractDefinition",
-        "src": "169:330:25",
+        "src": "169:330:42",
         "nodes": [
           {
             "id": 3139,
             "nodeType": "FunctionDefinition",
-            "src": "330:56:25",
+            "src": "330:56:42",
             "nodes": [],
             "documentation": {
               "id": 3134,
               "nodeType": "StructuredDocumentation",
-              "src": "232:93:25",
+              "src": "232:93:42",
               "text": " @notice get the nominated owner who has permission to call acceptOwnership"
             },
             "functionSelector": "8ab5150a",
@@ -396,12 +396,12 @@
             "kind": "function",
             "modifiers": [],
             "name": "nomineeOwner",
-            "nameLocation": "339:12:25",
+            "nameLocation": "339:12:42",
             "parameters": {
               "id": 3135,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "351:2:25"
+              "src": "351:2:42"
             },
             "returnParameters": {
               "id": 3138,
@@ -415,7 +415,7 @@
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
                   "scope": 3139,
-                  "src": "377:7:25",
+                  "src": "377:7:42",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -426,7 +426,7 @@
                     "id": 3136,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "377:7:25",
+                    "src": "377:7:42",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -436,7 +436,7 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "376:9:25"
+              "src": "376:9:42"
             },
             "scope": 3144,
             "stateMutability": "view",
@@ -446,12 +446,12 @@
           {
             "id": 3143,
             "nodeType": "FunctionDefinition",
-            "src": "461:36:25",
+            "src": "461:36:42",
             "nodes": [],
             "documentation": {
               "id": 3140,
               "nodeType": "StructuredDocumentation",
-              "src": "392:64:25",
+              "src": "392:64:42",
               "text": " @notice accept transfer of contract ownership"
             },
             "functionSelector": "79ba5097",
@@ -459,18 +459,18 @@
             "kind": "function",
             "modifiers": [],
             "name": "acceptOwnership",
-            "nameLocation": "470:15:25",
+            "nameLocation": "470:15:42",
             "parameters": {
               "id": 3141,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "485:2:25"
+              "src": "485:2:42"
             },
             "returnParameters": {
               "id": 3142,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "496:0:25"
+              "src": "496:0:42"
             },
             "scope": 3144,
             "stateMutability": "nonpayable",
@@ -485,30 +485,30 @@
               "id": 3130,
               "name": "ISafeOwnableInternal",
               "nameLocations": [
-                "195:20:25"
+                "195:20:42"
               ],
               "nodeType": "IdentifierPath",
               "referencedDeclaration": 3153,
-              "src": "195:20:25"
+              "src": "195:20:42"
             },
             "id": 3131,
             "nodeType": "InheritanceSpecifier",
-            "src": "195:20:25"
+            "src": "195:20:42"
           },
           {
             "baseName": {
               "id": 3132,
               "name": "IOwnable",
               "nameLocations": [
-                "217:8:25"
+                "217:8:42"
               ],
               "nodeType": "IdentifierPath",
               "referencedDeclaration": 3112,
-              "src": "217:8:25"
+              "src": "217:8:42"
             },
             "id": 3133,
             "nodeType": "InheritanceSpecifier",
-            "src": "217:8:25"
+            "src": "217:8:42"
           }
         ],
         "canonicalName": "ISafeOwnable",
@@ -524,7 +524,7 @@
           5179
         ],
         "name": "ISafeOwnable",
-        "nameLocation": "179:12:25",
+        "nameLocation": "179:12:42",
         "scope": 3145,
         "usedErrors": [
           3120,
@@ -535,5 +535,5 @@
     ],
     "license": "MIT"
   },
-  "id": 25
+  "id": 42
 }

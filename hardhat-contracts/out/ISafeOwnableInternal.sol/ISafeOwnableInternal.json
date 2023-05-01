@@ -163,12 +163,12 @@
       ]
     },
     "nodeType": "SourceUnit",
-    "src": "33:182:26",
+    "src": "33:182:43",
     "nodes": [
       {
         "id": 3146,
         "nodeType": "PragmaDirective",
-        "src": "33:23:26",
+        "src": "33:23:43",
         "nodes": [],
         "literals": [
           "solidity",
@@ -180,7 +180,7 @@
       {
         "id": 3148,
         "nodeType": "ImportDirective",
-        "src": "58:58:26",
+        "src": "58:58:43",
         "nodes": [],
         "absolutePath": "node_modules/@solidstate/contracts/access/ownable/IOwnableInternal.sol",
         "file": "./IOwnableInternal.sol",
@@ -195,7 +195,7 @@
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
               "referencedDeclaration": 3123,
-              "src": "67:16:26",
+              "src": "67:16:43",
               "typeDescriptions": {}
             },
             "nameLocation": "-1:-1:-1"
@@ -206,21 +206,21 @@
       {
         "id": 3153,
         "nodeType": "ContractDefinition",
-        "src": "118:96:26",
+        "src": "118:96:43",
         "nodes": [
           {
             "id": 3152,
             "nodeType": "ErrorDefinition",
-            "src": "175:37:26",
+            "src": "175:37:43",
             "nodes": [],
             "errorSelector": "efd1052d",
             "name": "SafeOwnable__NotNomineeOwner",
-            "nameLocation": "181:28:26",
+            "nameLocation": "181:28:43",
             "parameters": {
               "id": 3151,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "209:2:26"
+              "src": "209:2:43"
             }
           }
         ],
@@ -231,15 +231,15 @@
               "id": 3149,
               "name": "IOwnableInternal",
               "nameLocations": [
-                "152:16:26"
+                "152:16:43"
               ],
               "nodeType": "IdentifierPath",
               "referencedDeclaration": 3123,
-              "src": "152:16:26"
+              "src": "152:16:43"
             },
             "id": 3150,
             "nodeType": "InheritanceSpecifier",
-            "src": "152:16:26"
+            "src": "152:16:43"
           }
         ],
         "canonicalName": "ISafeOwnableInternal",
@@ -252,7 +252,7 @@
           5179
         ],
         "name": "ISafeOwnableInternal",
-        "nameLocation": "128:20:26",
+        "nameLocation": "128:20:43",
         "scope": 3154,
         "usedErrors": [
           3120,
@@ -263,5 +263,5 @@
     ],
     "license": "MIT"
   },
-  "id": 26
+  "id": 43
 }

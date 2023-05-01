@@ -114,12 +114,12 @@
       ]
     },
     "nodeType": "SourceUnit",
-    "src": "33:238:38",
+    "src": "33:238:55",
     "nodes": [
       {
         "id": 5171,
         "nodeType": "PragmaDirective",
-        "src": "33:23:38",
+        "src": "33:23:55",
         "nodes": [],
         "literals": [
           "solidity",
@@ -131,17 +131,17 @@
       {
         "id": 5179,
         "nodeType": "ContractDefinition",
-        "src": "130:140:38",
+        "src": "130:140:55",
         "nodes": [
           {
             "id": 5178,
             "nodeType": "EventDefinition",
-            "src": "162:106:38",
+            "src": "162:106:55",
             "nodes": [],
             "anonymous": false,
             "eventSelector": "8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0",
             "name": "OwnershipTransferred",
-            "nameLocation": "168:20:38",
+            "nameLocation": "168:20:55",
             "parameters": {
               "id": 5177,
               "nodeType": "ParameterList",
@@ -152,10 +152,10 @@
                   "indexed": true,
                   "mutability": "mutable",
                   "name": "previousOwner",
-                  "nameLocation": "214:13:38",
+                  "nameLocation": "214:13:55",
                   "nodeType": "VariableDeclaration",
                   "scope": 5178,
-                  "src": "198:29:38",
+                  "src": "198:29:55",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -166,7 +166,7 @@
                     "id": 5173,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "198:7:38",
+                    "src": "198:7:55",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -181,10 +181,10 @@
                   "indexed": true,
                   "mutability": "mutable",
                   "name": "newOwner",
-                  "nameLocation": "253:8:38",
+                  "nameLocation": "253:8:55",
                   "nodeType": "VariableDeclaration",
                   "scope": 5178,
-                  "src": "237:24:38",
+                  "src": "237:24:55",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -195,7 +195,7 @@
                     "id": 5175,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "237:7:38",
+                    "src": "237:7:55",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -205,7 +205,7 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "188:79:38"
+              "src": "188:79:55"
             }
           }
         ],
@@ -217,7 +217,7 @@
         "documentation": {
           "id": 5172,
           "nodeType": "StructuredDocumentation",
-          "src": "58:71:38",
+          "src": "58:71:55",
           "text": " @title Partial ERC173 interface needed by internal functions"
         },
         "fullyImplemented": true,
@@ -225,12 +225,12 @@
           5179
         ],
         "name": "IERC173Internal",
-        "nameLocation": "140:15:38",
+        "nameLocation": "140:15:55",
         "scope": 5180,
         "usedErrors": []
       }
     ],
     "license": "MIT"
   },
-  "id": 38
+  "id": 55
 }

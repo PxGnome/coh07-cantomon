@@ -27,11 +27,12 @@ async function deploy(_initArg) {
         target: facet.address,
         action: FacetCutAction.Add,
         selectors: getSelectors(facet).remove(['supportsInterface(bytes4)'])
-
     })
 
     var FacetNames = [
-        // 'ProxyERC721Facet',
+        'GMFacet',
+        'BattleFacet',
+        'EvolutionFacet'
     ]
 
     for (var FacetName of FacetNames) {

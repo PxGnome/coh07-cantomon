@@ -169,12 +169,12 @@
       ]
     },
     "nodeType": "SourceUnit",
-    "src": "33:207:45",
+    "src": "33:207:62",
     "nodes": [
       {
         "id": 5425,
         "nodeType": "PragmaDirective",
-        "src": "33:23:45",
+        "src": "33:23:62",
         "nodes": [],
         "literals": [
           "solidity",
@@ -186,7 +186,7 @@
       {
         "id": 5427,
         "nodeType": "ImportDirective",
-        "src": "58:58:45",
+        "src": "58:58:62",
         "nodes": [],
         "absolutePath": "node_modules/@solidstate/contracts/interfaces/IERC165.sol",
         "file": "../../../interfaces/IERC165.sol",
@@ -201,7 +201,7 @@
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
               "referencedDeclaration": 5145,
-              "src": "67:7:45",
+              "src": "67:7:62",
               "typeDescriptions": {}
             },
             "nameLocation": "-1:-1:-1"
@@ -212,7 +212,7 @@
       {
         "id": 5429,
         "nodeType": "ImportDirective",
-        "src": "117:64:45",
+        "src": "117:64:62",
         "nodes": [],
         "absolutePath": "node_modules/@solidstate/contracts/introspection/ERC165/base/IERC165BaseInternal.sol",
         "file": "./IERC165BaseInternal.sol",
@@ -227,7 +227,7 @@
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
               "referencedDeclaration": 5443,
-              "src": "126:19:45",
+              "src": "126:19:62",
               "typeDescriptions": {}
             },
             "nameLocation": "-1:-1:-1"
@@ -238,7 +238,7 @@
       {
         "id": 5434,
         "nodeType": "ContractDefinition",
-        "src": "183:56:45",
+        "src": "183:56:62",
         "nodes": [],
         "abstract": false,
         "baseContracts": [
@@ -247,30 +247,30 @@
               "id": 5430,
               "name": "IERC165",
               "nameLocations": [
-                "208:7:45"
+                "208:7:62"
               ],
               "nodeType": "IdentifierPath",
               "referencedDeclaration": 5145,
-              "src": "208:7:45"
+              "src": "208:7:62"
             },
             "id": 5431,
             "nodeType": "InheritanceSpecifier",
-            "src": "208:7:45"
+            "src": "208:7:62"
           },
           {
             "baseName": {
               "id": 5432,
               "name": "IERC165BaseInternal",
               "nameLocations": [
-                "217:19:45"
+                "217:19:62"
               ],
               "nodeType": "IdentifierPath",
               "referencedDeclaration": 5443,
-              "src": "217:19:45"
+              "src": "217:19:62"
             },
             "id": 5433,
             "nodeType": "InheritanceSpecifier",
-            "src": "217:19:45"
+            "src": "217:19:62"
           }
         ],
         "canonicalName": "IERC165Base",
@@ -284,7 +284,7 @@
           5149
         ],
         "name": "IERC165Base",
-        "nameLocation": "193:11:45",
+        "nameLocation": "193:11:62",
         "scope": 5435,
         "usedErrors": [
           5442
@@ -293,5 +293,5 @@
     ],
     "license": "MIT"
   },
-  "id": 45
+  "id": 62
 }

@@ -14,16 +14,15 @@ import "@solidstate/contracts/token/ERC721/SolidStateERC721.sol";
 import "../../libraries/LibAppStorage.sol";
 
 contract BattleFacet is CantomonModifiers {
-    function evolveCantomon(uint256 _cantomonId) public onlyCantomonOwner(_cantomonId) {
-        
-    }
+    function battleNPC(uint256 _cantomonId, uint256 _npcId) external onlyCantomonOwner(_cantomonId) {
+        CantomonDynamicStats storage c_dynamicStats = s.cantomon[_cantomonId].dynamicStats[s.gameVersion];
+        require(c_dynamicStats.energy > 0, "Cantomon has no energy");
 
+        CantomonBaseStats storage c_baseStats = s.cantomon[_cantomonId].baseStats[s.gameVersion];
+        CantomonEvoStats storage c_evoStats = s.cantomon[_cantomonId].evoStats[s.gameVersion];
 
-    function trainCantomon(uint256 _cantomonId) public onlyCantomonOwner(_cantomonId) {
-        
-    }
+        NPCStats storage npcStats = s.npc[_npcId].npcStats[s.gameVersion];
 
-    function feedCantomon(uint256 _cantomonId) public onlyCantomonOwner( _cantomonId) {
-        
+        c_dynamicStats.energy -= 1;
     }
 }

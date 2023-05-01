@@ -344,12 +344,12 @@
       ]
     },
     "nodeType": "SourceUnit",
-    "src": "33:704:60",
+    "src": "33:704:77",
     "nodes": [
       {
         "id": 7415,
         "nodeType": "PragmaDirective",
-        "src": "33:23:60",
+        "src": "33:23:77",
         "nodes": [],
         "literals": [
           "solidity",
@@ -361,7 +361,7 @@
       {
         "id": 7417,
         "nodeType": "ImportDirective",
-        "src": "58:74:60",
+        "src": "58:74:77",
         "nodes": [],
         "absolutePath": "node_modules/@solidstate/contracts/proxy/diamond/writable/IDiamondWritableInternal.sol",
         "file": "./IDiamondWritableInternal.sol",
@@ -376,7 +376,7 @@
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
               "referencedDeclaration": 7475,
-              "src": "67:24:60",
+              "src": "67:24:77",
               "typeDescriptions": {}
             },
             "nameLocation": "-1:-1:-1"
@@ -387,17 +387,17 @@
       {
         "id": 7433,
         "nodeType": "ContractDefinition",
-        "src": "236:500:60",
+        "src": "236:500:77",
         "nodes": [
           {
             "id": 7432,
             "nodeType": "FunctionDefinition",
-            "src": "607:127:60",
+            "src": "607:127:77",
             "nodes": [],
             "documentation": {
               "id": 7421,
               "nodeType": "StructuredDocumentation",
-              "src": "297:305:60",
+              "src": "297:305:77",
               "text": " @notice update diamond facets and optionally execute arbitrary initialization function\n @param facetCuts array of structured Diamond facet update data\n @param target optional target of initialization delegatecall\n @param data optional initialization function call data"
             },
             "functionSelector": "1f931c1c",
@@ -405,7 +405,7 @@
             "kind": "function",
             "modifiers": [],
             "name": "diamondCut",
-            "nameLocation": "616:10:60",
+            "nameLocation": "616:10:77",
             "parameters": {
               "id": 7430,
               "nodeType": "ParameterList",
@@ -415,10 +415,10 @@
                   "id": 7425,
                   "mutability": "mutable",
                   "name": "facetCuts",
-                  "nameLocation": "656:9:60",
+                  "nameLocation": "656:9:77",
                   "nodeType": "VariableDeclaration",
                   "scope": 7432,
-                  "src": "636:29:60",
+                  "src": "636:29:77",
                   "stateVariable": false,
                   "storageLocation": "calldata",
                   "typeDescriptions": {
@@ -433,14 +433,14 @@
                         "id": 7422,
                         "name": "FacetCut",
                         "nameLocations": [
-                          "636:8:60"
+                          "636:8:77"
                         ],
                         "nodeType": "IdentifierPath",
                         "referencedDeclaration": 7474,
-                        "src": "636:8:60"
+                        "src": "636:8:77"
                       },
                       "referencedDeclaration": 7474,
-                      "src": "636:8:60",
+                      "src": "636:8:77",
                       "typeDescriptions": {
                         "typeIdentifier": "t_struct$_FacetCut_$7474_storage_ptr",
                         "typeString": "struct IDiamondWritableInternal.FacetCut"
@@ -448,7 +448,7 @@
                     },
                     "id": 7424,
                     "nodeType": "ArrayTypeName",
-                    "src": "636:10:60",
+                    "src": "636:10:77",
                     "typeDescriptions": {
                       "typeIdentifier": "t_array$_t_struct$_FacetCut_$7474_storage_$dyn_storage_ptr",
                       "typeString": "struct IDiamondWritableInternal.FacetCut[]"
@@ -461,10 +461,10 @@
                   "id": 7427,
                   "mutability": "mutable",
                   "name": "target",
-                  "nameLocation": "683:6:60",
+                  "nameLocation": "683:6:77",
                   "nodeType": "VariableDeclaration",
                   "scope": 7432,
-                  "src": "675:14:60",
+                  "src": "675:14:77",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -475,7 +475,7 @@
                     "id": 7426,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "675:7:60",
+                    "src": "675:7:77",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -489,10 +489,10 @@
                   "id": 7429,
                   "mutability": "mutable",
                   "name": "data",
-                  "nameLocation": "714:4:60",
+                  "nameLocation": "714:4:77",
                   "nodeType": "VariableDeclaration",
                   "scope": 7432,
-                  "src": "699:19:60",
+                  "src": "699:19:77",
                   "stateVariable": false,
                   "storageLocation": "calldata",
                   "typeDescriptions": {
@@ -503,7 +503,7 @@
                     "id": 7428,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
-                    "src": "699:5:60",
+                    "src": "699:5:77",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes_storage_ptr",
                       "typeString": "bytes"
@@ -512,13 +512,13 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "626:98:60"
+              "src": "626:98:77"
             },
             "returnParameters": {
               "id": 7431,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "733:0:60"
+              "src": "733:0:77"
             },
             "scope": 7433,
             "stateMutability": "nonpayable",
@@ -533,15 +533,15 @@
               "id": 7419,
               "name": "IDiamondWritableInternal",
               "nameLocations": [
-                "266:24:60"
+                "266:24:77"
               ],
               "nodeType": "IdentifierPath",
               "referencedDeclaration": 7475,
-              "src": "266:24:60"
+              "src": "266:24:77"
             },
             "id": 7420,
             "nodeType": "InheritanceSpecifier",
-            "src": "266:24:60"
+            "src": "266:24:77"
           }
         ],
         "canonicalName": "IDiamondWritable",
@@ -550,7 +550,7 @@
         "documentation": {
           "id": 7418,
           "nodeType": "StructuredDocumentation",
-          "src": "134:101:60",
+          "src": "134:101:77",
           "text": " @title Diamond proxy upgrade interface\n @dev see https://eips.ethereum.org/EIPS/eip-2535"
         },
         "fullyImplemented": false,
@@ -559,7 +559,7 @@
           7475
         ],
         "name": "IDiamondWritable",
-        "nameLocation": "246:16:60",
+        "nameLocation": "246:16:77",
         "scope": 7434,
         "usedErrors": [
           7451,
@@ -575,5 +575,5 @@
     ],
     "license": "MIT"
   },
-  "id": 60
+  "id": 77
 }

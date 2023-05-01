@@ -74,12 +74,12 @@
       ]
     },
     "nodeType": "SourceUnit",
-    "src": "33:114:36",
+    "src": "33:114:53",
     "nodes": [
       {
         "id": 5147,
         "nodeType": "PragmaDirective",
-        "src": "33:23:36",
+        "src": "33:23:53",
         "nodes": [],
         "literals": [
           "solidity",
@@ -91,7 +91,7 @@
       {
         "id": 5149,
         "nodeType": "ContractDefinition",
-        "src": "116:30:36",
+        "src": "116:30:53",
         "nodes": [],
         "abstract": false,
         "baseContracts": [],
@@ -101,7 +101,7 @@
         "documentation": {
           "id": 5148,
           "nodeType": "StructuredDocumentation",
-          "src": "58:57:36",
+          "src": "58:57:53",
           "text": " @title ERC165 interface registration interface"
         },
         "fullyImplemented": true,
@@ -109,12 +109,12 @@
           5149
         ],
         "name": "IERC165Internal",
-        "nameLocation": "126:15:36",
+        "nameLocation": "126:15:53",
         "scope": 5150,
         "usedErrors": []
       }
     ],
     "license": "MIT"
   },
-  "id": 36
+  "id": 53
 }

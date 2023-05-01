@@ -902,12 +902,12 @@
       ]
     },
     "nodeType": "SourceUnit",
-    "src": "33:249:67",
+    "src": "33:249:84",
     "nodes": [
       {
         "id": 8582,
         "nodeType": "PragmaDirective",
-        "src": "33:23:67",
+        "src": "33:23:84",
         "nodes": [],
         "literals": [
           "solidity",
@@ -919,7 +919,7 @@
       {
         "id": 8584,
         "nodeType": "ImportDirective",
-        "src": "58:58:67",
+        "src": "58:58:84",
         "nodes": [],
         "absolutePath": "node_modules/@solidstate/contracts/interfaces/IERC721.sol",
         "file": "../../../interfaces/IERC721.sol",
@@ -934,7 +934,7 @@
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
               "referencedDeclaration": 5273,
-              "src": "67:7:67",
+              "src": "67:7:84",
               "typeDescriptions": {}
             },
             "nameLocation": "-1:-1:-1"
@@ -945,7 +945,7 @@
       {
         "id": 8586,
         "nodeType": "ImportDirective",
-        "src": "117:64:67",
+        "src": "117:64:84",
         "nodes": [],
         "absolutePath": "node_modules/@solidstate/contracts/token/ERC721/base/IERC721BaseInternal.sol",
         "file": "./IERC721BaseInternal.sol",
@@ -960,7 +960,7 @@
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
               "referencedDeclaration": 8620,
-              "src": "126:19:67",
+              "src": "126:19:84",
               "typeDescriptions": {}
             },
             "nameLocation": "-1:-1:-1"
@@ -971,7 +971,7 @@
       {
         "id": 8592,
         "nodeType": "ContractDefinition",
-        "src": "223:58:67",
+        "src": "223:58:84",
         "nodes": [],
         "abstract": false,
         "baseContracts": [
@@ -980,30 +980,30 @@
               "id": 8588,
               "name": "IERC721BaseInternal",
               "nameLocations": [
-                "248:19:67"
+                "248:19:84"
               ],
               "nodeType": "IdentifierPath",
               "referencedDeclaration": 8620,
-              "src": "248:19:67"
+              "src": "248:19:84"
             },
             "id": 8589,
             "nodeType": "InheritanceSpecifier",
-            "src": "248:19:67"
+            "src": "248:19:84"
           },
           {
             "baseName": {
               "id": 8590,
               "name": "IERC721",
               "nameLocations": [
-                "269:7:67"
+                "269:7:84"
               ],
               "nodeType": "IdentifierPath",
               "referencedDeclaration": 5273,
-              "src": "269:7:67"
+              "src": "269:7:84"
             },
             "id": 8591,
             "nodeType": "InheritanceSpecifier",
-            "src": "269:7:67"
+            "src": "269:7:84"
           }
         ],
         "canonicalName": "IERC721Base",
@@ -1012,7 +1012,7 @@
         "documentation": {
           "id": 8587,
           "nodeType": "StructuredDocumentation",
-          "src": "183:39:67",
+          "src": "183:39:84",
           "text": " @title ERC721 base interface"
         },
         "fullyImplemented": false,
@@ -1025,7 +1025,7 @@
           5301
         ],
         "name": "IERC721Base",
-        "nameLocation": "233:11:67",
+        "nameLocation": "233:11:84",
         "scope": 8593,
         "usedErrors": [
           8601,
@@ -1043,5 +1043,5 @@
     ],
     "license": "MIT"
   },
-  "id": 67
+  "id": 84
 }

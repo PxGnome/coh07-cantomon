@@ -140,12 +140,12 @@
       ]
     },
     "nodeType": "SourceUnit",
-    "src": "33:501:35",
+    "src": "33:501:52",
     "nodes": [
       {
         "id": 5131,
         "nodeType": "PragmaDirective",
-        "src": "33:23:35",
+        "src": "33:23:52",
         "nodes": [],
         "literals": [
           "solidity",
@@ -157,7 +157,7 @@
       {
         "id": 5133,
         "nodeType": "ImportDirective",
-        "src": "58:56:35",
+        "src": "58:56:52",
         "nodes": [],
         "absolutePath": "node_modules/@solidstate/contracts/interfaces/IERC165Internal.sol",
         "file": "./IERC165Internal.sol",
@@ -172,7 +172,7 @@
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
               "referencedDeclaration": 5149,
-              "src": "67:15:35",
+              "src": "67:15:52",
               "typeDescriptions": {}
             },
             "nameLocation": "-1:-1:-1"
@@ -183,17 +183,17 @@
       {
         "id": 5145,
         "nodeType": "ContractDefinition",
-        "src": "225:308:35",
+        "src": "225:308:52",
         "nodes": [
           {
             "id": 5144,
             "nodeType": "FunctionDefinition",
-            "src": "455:76:35",
+            "src": "455:76:52",
             "nodes": [],
             "documentation": {
               "id": 5137,
               "nodeType": "StructuredDocumentation",
-              "src": "268:182:35",
+              "src": "268:182:52",
               "text": " @notice query whether contract has registered support for given interface\n @param interfaceId interface id\n @return bool whether interface is supported"
             },
             "functionSelector": "01ffc9a7",
@@ -201,7 +201,7 @@
             "kind": "function",
             "modifiers": [],
             "name": "supportsInterface",
-            "nameLocation": "464:17:35",
+            "nameLocation": "464:17:52",
             "parameters": {
               "id": 5140,
               "nodeType": "ParameterList",
@@ -211,10 +211,10 @@
                   "id": 5139,
                   "mutability": "mutable",
                   "name": "interfaceId",
-                  "nameLocation": "489:11:35",
+                  "nameLocation": "489:11:52",
                   "nodeType": "VariableDeclaration",
                   "scope": 5144,
-                  "src": "482:18:35",
+                  "src": "482:18:52",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -225,7 +225,7 @@
                     "id": 5138,
                     "name": "bytes4",
                     "nodeType": "ElementaryTypeName",
-                    "src": "482:6:35",
+                    "src": "482:6:52",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes4",
                       "typeString": "bytes4"
@@ -234,7 +234,7 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "481:20:35"
+              "src": "481:20:52"
             },
             "returnParameters": {
               "id": 5143,
@@ -248,7 +248,7 @@
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
                   "scope": 5144,
-                  "src": "525:4:35",
+                  "src": "525:4:52",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -259,7 +259,7 @@
                     "id": 5141,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "525:4:35",
+                    "src": "525:4:52",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -268,7 +268,7 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "524:6:35"
+              "src": "524:6:52"
             },
             "scope": 5145,
             "stateMutability": "view",
@@ -283,15 +283,15 @@
               "id": 5135,
               "name": "IERC165Internal",
               "nameLocations": [
-                "246:15:35"
+                "246:15:52"
               ],
               "nodeType": "IdentifierPath",
               "referencedDeclaration": 5149,
-              "src": "246:15:35"
+              "src": "246:15:52"
             },
             "id": 5136,
             "nodeType": "InheritanceSpecifier",
-            "src": "246:15:35"
+            "src": "246:15:52"
           }
         ],
         "canonicalName": "IERC165",
@@ -300,7 +300,7 @@
         "documentation": {
           "id": 5134,
           "nodeType": "StructuredDocumentation",
-          "src": "116:108:35",
+          "src": "116:108:52",
           "text": " @title ERC165 interface registration interface\n @dev see https://eips.ethereum.org/EIPS/eip-165"
         },
         "fullyImplemented": false,
@@ -309,12 +309,12 @@
           5149
         ],
         "name": "IERC165",
-        "nameLocation": "235:7:35",
+        "nameLocation": "235:7:52",
         "scope": 5146,
         "usedErrors": []
       }
     ],
     "license": "MIT"
   },
-  "id": 35
+  "id": 52
 }
