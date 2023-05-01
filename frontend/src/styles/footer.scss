@@ -1,0 +1,18 @@
+footer {
+    bottom: 0;
+    height: 65px;
+
+    .container-fluid {
+        .center {
+            .row.action-menu {
+                display: flex;
+                flex-direction: row;
+                gap: 25px;
+
+                a {
+                    width: 20px
+                }
+            }
+        }
+    }
+}

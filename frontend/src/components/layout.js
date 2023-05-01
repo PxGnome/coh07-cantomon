@@ -7,7 +7,13 @@ export default function Layout({ children }) {
         <div className='holder'>
             <div className='main-wrapper'>
                 <Header />
-                <main>{children}</main>
+                <main>
+                    <div className="left">&nbsp;</div>
+                    <div className="center">
+                        {children}
+                    </div>
+                    <div className="right">&nbsp;</div>
+                </main>
                 <Footer />
             </div>
         </div>

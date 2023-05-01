@@ -1,0 +1,73 @@
+html,
+body {
+    font-family: 'VT323', monospace;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("./../assets/background.png");
+    background-size: 85%;
+    background-repeat: no-repeat;
+    background-position: center;
+    align-items: center;
+    display: flex;
+    background-color: black;
+    color: #09FF00;
+}
+
+
+.holder {
+    .main-wrapper {
+        width: 100vw;
+        height: 100vh;
+
+        header,
+        footer {
+            width: 100%;
+            position: fixed;
+        }
+    }
+}
+
+a {
+    text-decoration: none;
+    color: #09FF00;
+}
+
+a:hover {
+    color: #09FF00;
+}
+
+a.menu-btn {
+    padding-top: 15px;
+    align-items: center;
+    width: 45px;
+
+    i {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 25px;
+        border: solid white 1px;
+        border-radius: 4px;
+        font-weight: 900;
+        background-color: deepskyblue;
+        color: white;
+
+        &.st {
+
+            padding-left: 14px;
+            padding-right: 14px;
+            padding-top: 2px;
+            padding-bottom: 2px;
+        }
+    }
+
+
+}
+
+.btn {
+    color: white;
+}

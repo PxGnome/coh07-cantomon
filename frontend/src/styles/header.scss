@@ -1,0 +1,22 @@
+ header {
+     top: 0;
+     height: 85px;
+
+     .center {
+         position: relative;
+         bottom: 18px;
+         left: 52px;
+
+         .logo {
+             height: 25px;
+         }
+
+
+     }
+
+     .left,
+     .right {
+         position: relative;
+         top: 10px;
+     } 
+ }
