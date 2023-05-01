@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 
 import Head from 'next/head'; 
-import NFTCollectionItem from '@/components/collection_item';
+import NFTCollectionItem from '@/components/collection-item';
 
 import { useDispatch, useSelector } from "react-redux";
 import { setCurrentPage } from '@/features/manageNavigationState';

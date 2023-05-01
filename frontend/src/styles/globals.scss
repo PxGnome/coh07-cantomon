@@ -18,6 +18,12 @@
 @import "./components/nft-collection.scss";
 @import "./components/nft-collection-item.scss";
 
+//cantomon-management
+@import "./components/cantomon-management.scss";
+@import "./components/cantomon-management-training.scss";
+@import "./components/cantomon-management-battling.scss";
+@import "./components/cantomon-management-feeding.scss";
+
 .modal.show {
   display: block;
 }

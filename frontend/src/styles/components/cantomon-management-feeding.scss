@@ -1,0 +1,121 @@
+#cantomon-management-feeding {
+
+    .row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .cantomon-detail-panel {
+        .panel-header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            background-color: rgb(35, 77, 113);
+
+            .left {
+                display: flex;
+                justify-content: left;
+            }
+
+            .right {
+                display: flex;
+                justify-content: right;
+            }
+        }
+
+        .panel-body {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            background-color: rgb(151, 217, 242);
+
+            .image-wrapper {
+                height: 250px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                background-color: rgb(44, 173, 220);
+                border-style: groove;
+                border-color: #2D6686;
+                border-width: 5px;
+                padding-top: 15%;
+
+                img {
+                    display: flex;
+                    justify-content: center;
+                    align-self: center;
+                    transform: scale(3.2);
+                }
+
+                .name {
+                    color: rgb(145, 200, 229);
+                    font-size: 20px;
+                }
+            }
+
+            .text-wrapper {
+                height: 250px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background-color: rgb(129, 189, 212);
+                color: rgb(145, 200, 229);
+
+                .row {
+                    width: 100%;
+                    padding: 10px;
+
+                    .progress {
+
+                        border-style: solid;
+                        border-color: #2D6686;
+                        border-width: 2px;
+                    }
+                }
+
+                .row.description {
+                    height: 80%;
+                    margin-top: 10%;
+                    border-style: solid;
+                    border-color: #2D6686;
+                    border-width: 2px;
+                }
+
+                .row.loader {
+                    height: 20%;
+                }
+            }
+        }
+
+        .panel-footer {
+            background-color: rgb(103, 99, 150);
+
+            .nav {
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                padding: 20px;
+
+                li {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 18px;
+                    background-color: rgb(38, 163, 209);
+                    border: solid 2px black;
+                    border-radius: 5px;
+                    padding: 12px;
+                    width: 65px;
+
+                    a {
+                        color: white;
+                        font-weight: 700;
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
