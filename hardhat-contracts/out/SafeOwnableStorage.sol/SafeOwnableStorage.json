@@ -1,0 +1,404 @@
+{
+  "abi": [],
+  "bytecode": {
+    "object": "0x60566037600b82828239805160001a607314602a57634e487b7160e01b600052600060045260246000fd5b30600052607381538281f3fe73000000000000000000000000000000000000000030146080604052600080fdfea2646970667358221220a13c2530fd10c845dcac07edd7871229c93c64025793e0ce06d1ba15881df6c164736f6c63430008130033",
+    "sourceMap": "58:360:49:-:0;;;;;;;;;;;;;;;-1:-1:-1;;;58:360:49;;;;;;;;;;;;;;;;;",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x73000000000000000000000000000000000000000030146080604052600080fdfea2646970667358221220a13c2530fd10c845dcac07edd7871229c93c64025793e0ce06d1ba15881df6c164736f6c63430008130033",
+    "sourceMap": "58:360:49:-:0;;;;;;;;",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {},
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.19+commit.7dd6d404\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"node_modules/@solidstate/contracts/access/ownable/SafeOwnableStorage.sol\":\"SafeOwnableStorage\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@hyperlane-xyz/=node_modules/@hyperlane-xyz/\",\":@openzeppelin/=node_modules/@openzeppelin/\",\":@solidstate/=node_modules/@solidstate/\",\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":erc721a/=node_modules/erc721a/\",\":eth-gas-reporter/=node_modules/eth-gas-reporter/\",\":forge-std/=lib/forge-std/src/\",\":hardhat/=node_modules/hardhat/\"]},\"sources\":{\"node_modules/@solidstate/contracts/access/ownable/SafeOwnableStorage.sol\":{\"keccak256\":\"0x4818afb0b39e0770f881cbeaea1b1c77fba0daaa64bd8c1361d6e3a197628e93\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://db4cb17939eb9bf2d1ae1d8aec3c95495991a75b760a3ff211fb485ac4aeb1cb\",\"dweb:/ipfs/Qme93NCwDTb7B6MYCxLedZreEAjpEe9NCQFpPLsaT823jq\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.19+commit.7dd6d404"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":@hyperlane-xyz/=node_modules/@hyperlane-xyz/",
+        ":@openzeppelin/=node_modules/@openzeppelin/",
+        ":@solidstate/=node_modules/@solidstate/",
+        ":ds-test/=lib/forge-std/lib/ds-test/src/",
+        ":erc721a/=node_modules/erc721a/",
+        ":eth-gas-reporter/=node_modules/eth-gas-reporter/",
+        ":forge-std/=lib/forge-std/src/",
+        ":hardhat/=node_modules/hardhat/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "node_modules/@solidstate/contracts/access/ownable/SafeOwnableStorage.sol": "SafeOwnableStorage"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "node_modules/@solidstate/contracts/access/ownable/SafeOwnableStorage.sol": {
+        "keccak256": "0x4818afb0b39e0770f881cbeaea1b1c77fba0daaa64bd8c1361d6e3a197628e93",
+        "urls": [
+          "bzz-raw://db4cb17939eb9bf2d1ae1d8aec3c95495991a75b760a3ff211fb485ac4aeb1cb",
+          "dweb:/ipfs/Qme93NCwDTb7B6MYCxLedZreEAjpEe9NCQFpPLsaT823jq"
+        ],
+        "license": "MIT"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "node_modules/@solidstate/contracts/access/ownable/SafeOwnableStorage.sol",
+    "id": 3495,
+    "exportedSymbols": {
+      "SafeOwnableStorage": [
+        3494
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "33:386:49",
+    "nodes": [
+      {
+        "id": 3473,
+        "nodeType": "PragmaDirective",
+        "src": "33:23:49",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".8"
+        ]
+      },
+      {
+        "id": 3494,
+        "nodeType": "ContractDefinition",
+        "src": "58:360:49",
+        "nodes": [
+          {
+            "id": 3476,
+            "nodeType": "StructDefinition",
+            "src": "91:51:49",
+            "nodes": [],
+            "canonicalName": "SafeOwnableStorage.Layout",
+            "members": [
+              {
+                "constant": false,
+                "id": 3475,
+                "mutability": "mutable",
+                "name": "nomineeOwner",
+                "nameLocation": "123:12:49",
+                "nodeType": "VariableDeclaration",
+                "scope": 3476,
+                "src": "115:20:49",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 3474,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "115:7:49",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "name": "Layout",
+            "nameLocation": "98:6:49",
+            "scope": 3494,
+            "visibility": "public"
+          },
+          {
+            "id": 3481,
+            "nodeType": "VariableDeclaration",
+            "src": "148:102:49",
+            "nodes": [],
+            "constant": true,
+            "mutability": "constant",
+            "name": "STORAGE_SLOT",
+            "nameLocation": "174:12:49",
+            "scope": 3494,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_bytes32",
+              "typeString": "bytes32"
+            },
+            "typeName": {
+              "id": 3477,
+              "name": "bytes32",
+              "nodeType": "ElementaryTypeName",
+              "src": "148:7:49",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bytes32",
+                "typeString": "bytes32"
+              }
+            },
+            "value": {
+              "arguments": [
+                {
+                  "hexValue": "736f6c696473746174652e636f6e7472616374732e73746f726167652e536166654f776e61626c65",
+                  "id": 3479,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "kind": "string",
+                  "lValueRequested": false,
+                  "nodeType": "Literal",
+                  "src": "207:42:49",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_stringliteral_24aa1f7b31fd188a8d3ecfb06bc55c806040e59b03bd4396283442fce6617890",
+                    "typeString": "literal_string \"solidstate.contracts.storage.SafeOwnable\""
+                  },
+                  "value": "solidstate.contracts.storage.SafeOwnable"
+                }
+              ],
+              "expression": {
+                "argumentTypes": [
+                  {
+                    "typeIdentifier": "t_stringliteral_24aa1f7b31fd188a8d3ecfb06bc55c806040e59b03bd4396283442fce6617890",
+                    "typeString": "literal_string \"solidstate.contracts.storage.SafeOwnable\""
+                  }
+                ],
+                "id": 3478,
+                "name": "keccak256",
+                "nodeType": "Identifier",
+                "overloadedDeclarations": [],
+                "referencedDeclaration": -8,
+                "src": "197:9:49",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_function_keccak256_pure$_t_bytes_memory_ptr_$returns$_t_bytes32_$",
+                  "typeString": "function (bytes memory) pure returns (bytes32)"
+                }
+              },
+              "id": 3480,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "functionCall",
+              "lValueRequested": false,
+              "nameLocations": [],
+              "names": [],
+              "nodeType": "FunctionCall",
+              "src": "197:53:49",
+              "tryCall": false,
+              "typeDescriptions": {
+                "typeIdentifier": "t_bytes32",
+                "typeString": "bytes32"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "id": 3493,
+            "nodeType": "FunctionDefinition",
+            "src": "257:159:49",
+            "nodes": [],
+            "body": {
+              "id": 3492,
+              "nodeType": "Block",
+              "src": "316:100:49",
+              "nodes": [],
+              "statements": [
+                {
+                  "assignments": [
+                    3488
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 3488,
+                      "mutability": "mutable",
+                      "name": "slot",
+                      "nameLocation": "334:4:49",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 3492,
+                      "src": "326:12:49",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes32",
+                        "typeString": "bytes32"
+                      },
+                      "typeName": {
+                        "id": 3487,
+                        "name": "bytes32",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "326:7:49",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        }
+                      },
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 3490,
+                  "initialValue": {
+                    "id": 3489,
+                    "name": "STORAGE_SLOT",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 3481,
+                    "src": "341:12:49",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "326:27:49"
+                },
+                {
+                  "AST": {
+                    "nodeType": "YulBlock",
+                    "src": "372:38:49",
+                    "statements": [
+                      {
+                        "nodeType": "YulAssignment",
+                        "src": "386:14:49",
+                        "value": {
+                          "name": "slot",
+                          "nodeType": "YulIdentifier",
+                          "src": "396:4:49"
+                        },
+                        "variableNames": [
+                          {
+                            "name": "l.slot",
+                            "nodeType": "YulIdentifier",
+                            "src": "386:6:49"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "evmVersion": "london",
+                  "externalReferences": [
+                    {
+                      "declaration": 3485,
+                      "isOffset": false,
+                      "isSlot": true,
+                      "src": "386:6:49",
+                      "suffix": "slot",
+                      "valueSize": 1
+                    },
+                    {
+                      "declaration": 3488,
+                      "isOffset": false,
+                      "isSlot": false,
+                      "src": "396:4:49",
+                      "valueSize": 1
+                    }
+                  ],
+                  "id": 3491,
+                  "nodeType": "InlineAssembly",
+                  "src": "363:47:49"
+                }
+              ]
+            },
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "layout",
+            "nameLocation": "266:6:49",
+            "parameters": {
+              "id": 3482,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "272:2:49"
+            },
+            "returnParameters": {
+              "id": 3486,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3485,
+                  "mutability": "mutable",
+                  "name": "l",
+                  "nameLocation": "313:1:49",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3493,
+                  "src": "298:16:49",
+                  "stateVariable": false,
+                  "storageLocation": "storage",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_Layout_$3476_storage_ptr",
+                    "typeString": "struct SafeOwnableStorage.Layout"
+                  },
+                  "typeName": {
+                    "id": 3484,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 3483,
+                      "name": "Layout",
+                      "nameLocations": [
+                        "298:6:49"
+                      ],
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 3476,
+                      "src": "298:6:49"
+                    },
+                    "referencedDeclaration": 3476,
+                    "src": "298:6:49",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Layout_$3476_storage_ptr",
+                      "typeString": "struct SafeOwnableStorage.Layout"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "297:18:49"
+            },
+            "scope": 3494,
+            "stateMutability": "pure",
+            "virtual": false,
+            "visibility": "internal"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "SafeOwnableStorage",
+        "contractDependencies": [],
+        "contractKind": "library",
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          3494
+        ],
+        "name": "SafeOwnableStorage",
+        "nameLocation": "66:18:49",
+        "scope": 3495,
+        "usedErrors": []
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 49
+}

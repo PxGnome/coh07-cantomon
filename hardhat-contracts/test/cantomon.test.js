@@ -53,36 +53,121 @@ const cantomon_Test = function () {
 
     initArg = ['Cantomon', "CANTOMON", "/BASEURI"];
     diamondAddress = await deploy(initArg);
-    console.log(diamondAddress);
 
     proxyERC721Facet = await ethers.getContractAt("ProxyERC721Facet", diamondAddress);
+    gmFacet = await ethers.getContractAt("GMFacet", diamondAddress);
+    battleFacet = await ethers.getContractAt("BattleFacet", diamondAddress);
+    evolutionFacet = await ethers.getContractAt("EvolutionFacet", diamondAddress);
+    
 
-    const SolidStateERC721Mock = await ethers.getContractFactory("SolidStateERC721Mock");
+    SolidStateERC721Mock = await ethers.getContractFactory("SolidStateERC721Mock");
     mockNft = await SolidStateERC721Mock.deploy('mock', 'mock', 'MOCK');
     await mockNft.mint(owner.address);
   });
   describe("Minting Tests", function () {
-    it("Check Init Arguments", async function() {
+    it("Check ProxyERC721Facet Init Arguments", async function() {
       expect(await proxyERC721Facet.name()).to.equal('Cantomon');
       expect(await proxyERC721Facet.symbol()).to.equal('CANTOMON');
-      // expect(await proxyERC721Facet.tokenURI(1)).to.equal('/BASEURI/1');
     });
     it("setApprovedMessenger", async function() {
       const bytes32Value = ethers.utils.hexZeroPad(nftReader.address, 32);
-
-      console.log(bytes32Value);
       await proxyERC721Facet.setApprovedMessenger(bytes32Value);
     });
-    it("Should mint 1 NFT", async function () {
+    it("Should mint 1 SBT", async function () {
       nftOwnedId = 0;
       await nftReader.portNftTest(0, mockNft.address, nftOwnedId, diamondAddress, {value: 1});
         
       let eventFilter = proxyERC721Facet.filters.Transfer();
       let events = await proxyERC721Facet.queryFilter(eventFilter);
       let lastEvent = events.pop();
-      console.log(lastEvent.args);
-      console.log(lastEvent.args[4]);
-      expect(await proxyERC721Facet.ownerOf(nftOwnedId)).to.equal(owner.address);
+      expect(lastEvent.args.to.toString()).to.equal(owner.address);
+    });
+    it("Transfer SBT error", async function () {
+      await expect(proxyERC721Facet.transferFrom(owner.address, addr1.address, nftOwnedId)).to.be.revertedWith("ProxySbtFactory: This a Soulbound token. It cannot be transferred.");
+    });
+    it("switchUnbound & transfer", async function () {
+      await proxyERC721Facet.switchUnbound(nftOwnedId);
+      await proxyERC721Facet.transferFrom(owner.address, addr1.address, nftOwnedId);
+      let eventFilter = proxyERC721Facet.filters.Transfer();
+      let events = await proxyERC721Facet.queryFilter(eventFilter);
+      let lastEvent = events.pop();
+      expect(lastEvent.args.to.toString()).to.equal(addr1.address);
+      expect(await proxyERC721Facet.ownerOf(nftOwnedId)).to.equal(addr1.address);
+    });
+    it("Declare gmFacet variables", async function () {
+      version = 1;
+      season = 1;
+      await gmFacet.setGameVersion(version);
+      expect(await gmFacet.getGameVersion()).equal(version);
+      await gmFacet.setGameSeason(season);
+      expect(await gmFacet.getGameSeason()).equal(season);
+
+      xpRules = [60, 120, 180];
+
+      for(let i = 0; i < xpRules.length; i++) {
+        await gmFacet.setEvolutionXpforEvo(i, xpRules[i]);
+        expect(await gmFacet.getEvolutionXpforEvo(i)).equal(xpRules[i]);
+      }
+      
+      evoOptions = {
+        0: [1, 2, 3],
+        1: [4, 5],
+        2: [6, 7],
+        3: [8, 9]
+      }
+
+      for(let i = 0; i < evoOptions.length; i++) {
+        await gmFacet.setEvolutionOptions(i, evoOptions[i]);
+        expect(await gmFacet.getEvolutionOptions(i)).to.deep.equal(evoOptions[i]);
+      }
+
+      evoRequirements = {
+        0: [0, 0, 0, 0],
+        1: [0, 0, 0, 0],
+        2: [0, 0, 0, 0],
+        3: [0, 0, 0, 0],
+        4: [1, 0, 0, 0],
+        5: [1, 50, 0, 0],
+        6: [2, 0, 0, 0],
+        7: [2, 50, 0, 0],  
+        8: [3, 0, 0, 0],
+        9: [3, 50, 0, 0]
+      }
+      
+      for(let i = 0; i < evoRequirements.length; i++) {
+        await gmFacet.setEvolutionRequirements(i, evoRequirements[i]);
+        expect(await gmFacet.getEvolutionRequirements(i)).to.deep.equal(evoRequirements[i]);
+      }
+
+      evoBonus = {
+        0: [0, 0],
+        1: [0, 0],
+        2: [0, 0],
+        3: [0, 0],
+        4: [10, 0],
+        5: [20, 0],
+        6: [10, 0],
+        7: [20, 0],
+        8: [10, 0],
+        9: [20, 0]
+      }
+
+      for(let i = 0; i < evoBonus.length; i++) {
+        await gmFacet.setEvolutionBonus(i, evoBonus[i]);
+        expect(await gmFacet.getEvolutionBonus(i)).to.deep.equal(evoBonus[i]);
+      }
+    });
+
+
+    it("hatch", async function () {
+      
+    });
+
+    it("train", async function () {
+
+    });
+    it("feed", async function () {
+
     });
   });
 }
@@ -92,35 +177,3 @@ module.exports = {
 };
 
 
-// '0x79ba5097',
-//   '0x1f931c1c',
-//   '0xcdffacc6',
-//   '0x52ef6b2c',
-//   '0xadfca15e',
-//   '0x7a0ed627',
-//   '0x2c408059',
-//   '0x8ab5150a',
-//   '0x8da5cb5b',
-//   '0x91423765',
-//   '0x01ffc9a7',
-//   '0xf2fde38b',
-
-//       '0x095ea7b3',
-//       '0x70a08231',
-//       '0x081812fc',
-//       '0x56d5d475',
-//       '0xe985e9c5',
-//       '0x06fdde03',
-//       '0x17d26dac',
-//       '0x6352211e',
-//       '0x42842e0e',
-//       '0xb88d4fde',
-//       '0xa22cb465',
-//       '0xa4b7d162',
-//       '0xc762dc0a',
-//       '0x95d89b41',
-//       '0x4f6ccce7',
-//       '0x2f745c59',
-//       '0xc87b56dd',
-//       '0x18160ddd',
-//       '0x23b872dd',

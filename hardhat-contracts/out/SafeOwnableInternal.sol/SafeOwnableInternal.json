@@ -1,0 +1,1158 @@
+{
+  "abi": [
+    {
+      "inputs": [],
+      "name": "Ownable__NotOwner",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "Ownable__NotTransitiveOwner",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "SafeOwnable__NotNomineeOwner",
+      "type": "error"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "previousOwner",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "OwnershipTransferred",
+      "type": "event"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {},
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.19+commit.7dd6d404\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"Ownable__NotOwner\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"Ownable__NotTransitiveOwner\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"SafeOwnable__NotNomineeOwner\",\"type\":\"error\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"previousOwner\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"OwnershipTransferred\",\"type\":\"event\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"node_modules/@solidstate/contracts/access/ownable/SafeOwnableInternal.sol\":\"SafeOwnableInternal\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@hyperlane-xyz/=node_modules/@hyperlane-xyz/\",\":@openzeppelin/=node_modules/@openzeppelin/\",\":@solidstate/=node_modules/@solidstate/\",\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":erc721a/=node_modules/erc721a/\",\":eth-gas-reporter/=node_modules/eth-gas-reporter/\",\":forge-std/=lib/forge-std/src/\",\":hardhat/=node_modules/hardhat/\"]},\"sources\":{\"node_modules/@solidstate/contracts/access/ownable/IOwnableInternal.sol\":{\"keccak256\":\"0x6237a634712261bd82d5c7753780d35f77af215406d1e59512052f743f8f1c60\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://8e54ac6cd1b376224b8d148c704693ff3f7ac9f69954fd30ee3d949fa17210c3\",\"dweb:/ipfs/QmWjq37K3gg29XhFbepg5GbmmFYoyXb81sh2K1MnVZqG6y\"]},\"node_modules/@solidstate/contracts/access/ownable/ISafeOwnableInternal.sol\":{\"keccak256\":\"0xd5d44576a2f82b4ffdcf29feec6043e82436011784d92567a968609aa49a0f6b\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://43961ad59d89c044a403ebb3fdd8c9be9b01a59d5e549ef205423725dcfb9889\",\"dweb:/ipfs/QmeatkxGznGMCHXAz2CHTTSbk5HjUXzrjEtMc8CppNxnTZ\"]},\"node_modules/@solidstate/contracts/access/ownable/OwnableInternal.sol\":{\"keccak256\":\"0x0185d24250a5e6fbafce443b9ba19bba761803e3e5d91ba423bfb1f5f0bbdbf9\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://547fadeaec559ee824f4dd37b2ef972a061ca59576f5733cf643e00d88a4db52\",\"dweb:/ipfs/QmYx6rmRmZZQkoS8TykMVsz9ZvfQ8MfSPt6UzWJ8pyj8qF\"]},\"node_modules/@solidstate/contracts/access/ownable/OwnableStorage.sol\":{\"keccak256\":\"0x7385e2020de914f75cabdc83c6adf88ed21e9de14669a89b3832b80f4f8c7b73\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://a367c512bf29fb4923ed5d2454783e3dae88e5e03dec216e65c3986f3c3a8995\",\"dweb:/ipfs/QmfYkD6osr6SQzod6wc7WPae6YvVnYbn2BjJuHrYL3ERXM\"]},\"node_modules/@solidstate/contracts/access/ownable/SafeOwnableInternal.sol\":{\"keccak256\":\"0x1ab5cbb63b897d2bef48d4437ef9519fc15cd49ed976539c1d0fd262f087786f\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://e348b34065e6297fc7485f52d4671add3abc4c4329c9c907c30f315d91c80dd0\",\"dweb:/ipfs/Qmc7dvy2roTkJyi6G51Aoay8Mai7hGxBSBWHeXWSDwA9dL\"]},\"node_modules/@solidstate/contracts/access/ownable/SafeOwnableStorage.sol\":{\"keccak256\":\"0x4818afb0b39e0770f881cbeaea1b1c77fba0daaa64bd8c1361d6e3a197628e93\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://db4cb17939eb9bf2d1ae1d8aec3c95495991a75b760a3ff211fb485ac4aeb1cb\",\"dweb:/ipfs/Qme93NCwDTb7B6MYCxLedZreEAjpEe9NCQFpPLsaT823jq\"]},\"node_modules/@solidstate/contracts/interfaces/IERC173.sol\":{\"keccak256\":\"0xf1c1fbf0ec82110c29d549db1fbd8ec728ba0b995dc5f087e0a5464243135dce\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://16c7f3eba0547576833d0c1fddb7ec34aeba4f28b4ce9e878c3bd3ebc9c8d3d1\",\"dweb:/ipfs/Qme79eYLo7dinnhotgC4bvYnCg4doBDShHeCajrf5zpAUF\"]},\"node_modules/@solidstate/contracts/interfaces/IERC173Internal.sol\":{\"keccak256\":\"0x9644c3e56c9ecd1763f8aaa437d5d573a7f64a8d93ad7bea1a9c44beb5911b89\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://c32cfda38b44878ab196d32eeb72823a9f9904e8193286c787caccfb2e5bfa75\",\"dweb:/ipfs/QmfBNKWUSKaJtYL3JJ3YFioXCVFeeakqQ4cR5XzAxxZkCx\"]},\"node_modules/@solidstate/contracts/utils/AddressUtils.sol\":{\"keccak256\":\"0x7d924db4dbd9210923ab08db77db3c77438014c255fd49fa208ebce283d991bf\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://5189eebdf91899224a14b4cd5184fa9e67a9b8904e6d88ff9610944d06c63929\",\"dweb:/ipfs/QmRwNhfcp98pPgbzK4i9hbypHLTWPGYpuRCtEJRCTNASRm\"]},\"node_modules/@solidstate/contracts/utils/UintUtils.sol\":{\"keccak256\":\"0x5aaeaea22a0800402c6f2d8ce6185293bc64f74f6c390c1b1c53b624b43972f8\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://8b1c95c745da8ca4de7b68e65ef9122dab4e748c3ae3c9f5fd5aa7c65887c9d2\",\"dweb:/ipfs/QmX2KURY4JbM4NVFp5KPYsNxoJGA8n8w6SdAFdD5Pasgza\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.19+commit.7dd6d404"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "Ownable__NotOwner"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "Ownable__NotTransitiveOwner"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "SafeOwnable__NotNomineeOwner"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "previousOwner",
+              "type": "address",
+              "indexed": true
+            },
+            {
+              "internalType": "address",
+              "name": "newOwner",
+              "type": "address",
+              "indexed": true
+            }
+          ],
+          "type": "event",
+          "name": "OwnershipTransferred",
+          "anonymous": false
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":@hyperlane-xyz/=node_modules/@hyperlane-xyz/",
+        ":@openzeppelin/=node_modules/@openzeppelin/",
+        ":@solidstate/=node_modules/@solidstate/",
+        ":ds-test/=lib/forge-std/lib/ds-test/src/",
+        ":erc721a/=node_modules/erc721a/",
+        ":eth-gas-reporter/=node_modules/eth-gas-reporter/",
+        ":forge-std/=lib/forge-std/src/",
+        ":hardhat/=node_modules/hardhat/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "node_modules/@solidstate/contracts/access/ownable/SafeOwnableInternal.sol": "SafeOwnableInternal"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "node_modules/@solidstate/contracts/access/ownable/IOwnableInternal.sol": {
+        "keccak256": "0x6237a634712261bd82d5c7753780d35f77af215406d1e59512052f743f8f1c60",
+        "urls": [
+          "bzz-raw://8e54ac6cd1b376224b8d148c704693ff3f7ac9f69954fd30ee3d949fa17210c3",
+          "dweb:/ipfs/QmWjq37K3gg29XhFbepg5GbmmFYoyXb81sh2K1MnVZqG6y"
+        ],
+        "license": "MIT"
+      },
+      "node_modules/@solidstate/contracts/access/ownable/ISafeOwnableInternal.sol": {
+        "keccak256": "0xd5d44576a2f82b4ffdcf29feec6043e82436011784d92567a968609aa49a0f6b",
+        "urls": [
+          "bzz-raw://43961ad59d89c044a403ebb3fdd8c9be9b01a59d5e549ef205423725dcfb9889",
+          "dweb:/ipfs/QmeatkxGznGMCHXAz2CHTTSbk5HjUXzrjEtMc8CppNxnTZ"
+        ],
+        "license": "MIT"
+      },
+      "node_modules/@solidstate/contracts/access/ownable/OwnableInternal.sol": {
+        "keccak256": "0x0185d24250a5e6fbafce443b9ba19bba761803e3e5d91ba423bfb1f5f0bbdbf9",
+        "urls": [
+          "bzz-raw://547fadeaec559ee824f4dd37b2ef972a061ca59576f5733cf643e00d88a4db52",
+          "dweb:/ipfs/QmYx6rmRmZZQkoS8TykMVsz9ZvfQ8MfSPt6UzWJ8pyj8qF"
+        ],
+        "license": "MIT"
+      },
+      "node_modules/@solidstate/contracts/access/ownable/OwnableStorage.sol": {
+        "keccak256": "0x7385e2020de914f75cabdc83c6adf88ed21e9de14669a89b3832b80f4f8c7b73",
+        "urls": [
+          "bzz-raw://a367c512bf29fb4923ed5d2454783e3dae88e5e03dec216e65c3986f3c3a8995",
+          "dweb:/ipfs/QmfYkD6osr6SQzod6wc7WPae6YvVnYbn2BjJuHrYL3ERXM"
+        ],
+        "license": "MIT"
+      },
+      "node_modules/@solidstate/contracts/access/ownable/SafeOwnableInternal.sol": {
+        "keccak256": "0x1ab5cbb63b897d2bef48d4437ef9519fc15cd49ed976539c1d0fd262f087786f",
+        "urls": [
+          "bzz-raw://e348b34065e6297fc7485f52d4671add3abc4c4329c9c907c30f315d91c80dd0",
+          "dweb:/ipfs/Qmc7dvy2roTkJyi6G51Aoay8Mai7hGxBSBWHeXWSDwA9dL"
+        ],
+        "license": "MIT"
+      },
+      "node_modules/@solidstate/contracts/access/ownable/SafeOwnableStorage.sol": {
+        "keccak256": "0x4818afb0b39e0770f881cbeaea1b1c77fba0daaa64bd8c1361d6e3a197628e93",
+        "urls": [
+          "bzz-raw://db4cb17939eb9bf2d1ae1d8aec3c95495991a75b760a3ff211fb485ac4aeb1cb",
+          "dweb:/ipfs/Qme93NCwDTb7B6MYCxLedZreEAjpEe9NCQFpPLsaT823jq"
+        ],
+        "license": "MIT"
+      },
+      "node_modules/@solidstate/contracts/interfaces/IERC173.sol": {
+        "keccak256": "0xf1c1fbf0ec82110c29d549db1fbd8ec728ba0b995dc5f087e0a5464243135dce",
+        "urls": [
+          "bzz-raw://16c7f3eba0547576833d0c1fddb7ec34aeba4f28b4ce9e878c3bd3ebc9c8d3d1",
+          "dweb:/ipfs/Qme79eYLo7dinnhotgC4bvYnCg4doBDShHeCajrf5zpAUF"
+        ],
+        "license": "MIT"
+      },
+      "node_modules/@solidstate/contracts/interfaces/IERC173Internal.sol": {
+        "keccak256": "0x9644c3e56c9ecd1763f8aaa437d5d573a7f64a8d93ad7bea1a9c44beb5911b89",
+        "urls": [
+          "bzz-raw://c32cfda38b44878ab196d32eeb72823a9f9904e8193286c787caccfb2e5bfa75",
+          "dweb:/ipfs/QmfBNKWUSKaJtYL3JJ3YFioXCVFeeakqQ4cR5XzAxxZkCx"
+        ],
+        "license": "MIT"
+      },
+      "node_modules/@solidstate/contracts/utils/AddressUtils.sol": {
+        "keccak256": "0x7d924db4dbd9210923ab08db77db3c77438014c255fd49fa208ebce283d991bf",
+        "urls": [
+          "bzz-raw://5189eebdf91899224a14b4cd5184fa9e67a9b8904e6d88ff9610944d06c63929",
+          "dweb:/ipfs/QmRwNhfcp98pPgbzK4i9hbypHLTWPGYpuRCtEJRCTNASRm"
+        ],
+        "license": "MIT"
+      },
+      "node_modules/@solidstate/contracts/utils/UintUtils.sol": {
+        "keccak256": "0x5aaeaea22a0800402c6f2d8ce6185293bc64f74f6c390c1b1c53b624b43972f8",
+        "urls": [
+          "bzz-raw://8b1c95c745da8ca4de7b68e65ef9122dab4e748c3ae3c9f5fd5aa7c65887c9d2",
+          "dweb:/ipfs/QmX2KURY4JbM4NVFp5KPYsNxoJGA8n8w6SdAFdD5Pasgza"
+        ],
+        "license": "MIT"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "node_modules/@solidstate/contracts/access/ownable/SafeOwnableInternal.sol",
+    "id": 3472,
+    "exportedSymbols": {
+      "ISafeOwnableInternal": [
+        3153
+      ],
+      "OwnableInternal": [
+        3314
+      ],
+      "SafeOwnableInternal": [
+        3471
+      ],
+      "SafeOwnableStorage": [
+        3494
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "33:1283:48",
+    "nodes": [
+      {
+        "id": 3392,
+        "nodeType": "PragmaDirective",
+        "src": "33:23:48",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".8"
+        ]
+      },
+      {
+        "id": 3394,
+        "nodeType": "ImportDirective",
+        "src": "58:66:48",
+        "nodes": [],
+        "absolutePath": "node_modules/@solidstate/contracts/access/ownable/ISafeOwnableInternal.sol",
+        "file": "./ISafeOwnableInternal.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 3472,
+        "sourceUnit": 3154,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 3393,
+              "name": "ISafeOwnableInternal",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 3153,
+              "src": "67:20:48",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 3396,
+        "nodeType": "ImportDirective",
+        "src": "125:56:48",
+        "nodes": [],
+        "absolutePath": "node_modules/@solidstate/contracts/access/ownable/OwnableInternal.sol",
+        "file": "./OwnableInternal.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 3472,
+        "sourceUnit": 3315,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 3395,
+              "name": "OwnableInternal",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 3314,
+              "src": "134:15:48",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 3398,
+        "nodeType": "ImportDirective",
+        "src": "182:62:48",
+        "nodes": [],
+        "absolutePath": "node_modules/@solidstate/contracts/access/ownable/SafeOwnableStorage.sol",
+        "file": "./SafeOwnableStorage.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 3472,
+        "sourceUnit": 3495,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 3397,
+              "name": "SafeOwnableStorage",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 3494,
+              "src": "191:18:48",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 3471,
+        "nodeType": "ContractDefinition",
+        "src": "246:1069:48",
+        "nodes": [
+          {
+            "id": 3415,
+            "nodeType": "ModifierDefinition",
+            "src": "331:140:48",
+            "nodes": [],
+            "body": {
+              "id": 3414,
+              "nodeType": "Block",
+              "src": "359:112:48",
+              "nodes": [],
+              "statements": [
+                {
+                  "condition": {
+                    "commonType": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    },
+                    "id": 3408,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "expression": {
+                        "id": 3404,
+                        "name": "msg",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": -15,
+                        "src": "373:3:48",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_magic_message",
+                          "typeString": "msg"
+                        }
+                      },
+                      "id": 3405,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberLocation": "377:6:48",
+                      "memberName": "sender",
+                      "nodeType": "MemberAccess",
+                      "src": "373:10:48",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": "!=",
+                    "rightExpression": {
+                      "arguments": [],
+                      "expression": {
+                        "argumentTypes": [],
+                        "id": 3406,
+                        "name": "_nomineeOwner",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 3427,
+                        "src": "387:13:48",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_function_internal_view$__$returns$_t_address_$",
+                          "typeString": "function () view returns (address)"
+                        }
+                      },
+                      "id": 3407,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "functionCall",
+                      "lValueRequested": false,
+                      "nameLocations": [],
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "387:15:48",
+                      "tryCall": false,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "src": "373:29:48",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 3412,
+                  "nodeType": "IfStatement",
+                  "src": "369:84:48",
+                  "trueBody": {
+                    "errorCall": {
+                      "arguments": [],
+                      "expression": {
+                        "argumentTypes": [],
+                        "id": 3409,
+                        "name": "SafeOwnable__NotNomineeOwner",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 3152,
+                        "src": "423:28:48",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_function_error_pure$__$returns$__$",
+                          "typeString": "function () pure"
+                        }
+                      },
+                      "id": 3410,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "functionCall",
+                      "lValueRequested": false,
+                      "nameLocations": [],
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "423:30:48",
+                      "tryCall": false,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_tuple$__$",
+                        "typeString": "tuple()"
+                      }
+                    },
+                    "id": 3411,
+                    "nodeType": "RevertStatement",
+                    "src": "416:37:48"
+                  }
+                },
+                {
+                  "id": 3413,
+                  "nodeType": "PlaceholderStatement",
+                  "src": "463:1:48"
+                }
+              ]
+            },
+            "name": "onlyNomineeOwner",
+            "nameLocation": "340:16:48",
+            "parameters": {
+              "id": 3403,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "356:2:48"
+            },
+            "virtual": false,
+            "visibility": "internal"
+          },
+          {
+            "id": 3427,
+            "nodeType": "FunctionDefinition",
+            "src": "575:129:48",
+            "nodes": [],
+            "body": {
+              "id": 3426,
+              "nodeType": "Block",
+              "src": "640:64:48",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "expression": {
+                      "arguments": [],
+                      "expression": {
+                        "argumentTypes": [],
+                        "expression": {
+                          "id": 3421,
+                          "name": "SafeOwnableStorage",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 3494,
+                          "src": "657:18:48",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_contract$_SafeOwnableStorage_$3494_$",
+                            "typeString": "type(library SafeOwnableStorage)"
+                          }
+                        },
+                        "id": 3422,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberLocation": "676:6:48",
+                        "memberName": "layout",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 3493,
+                        "src": "657:25:48",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_function_internal_pure$__$returns$_t_struct$_Layout_$3476_storage_ptr_$",
+                          "typeString": "function () pure returns (struct SafeOwnableStorage.Layout storage pointer)"
+                        }
+                      },
+                      "id": 3423,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "functionCall",
+                      "lValueRequested": false,
+                      "nameLocations": [],
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "657:27:48",
+                      "tryCall": false,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Layout_$3476_storage_ptr",
+                        "typeString": "struct SafeOwnableStorage.Layout storage pointer"
+                      }
+                    },
+                    "id": 3424,
+                    "isConstant": false,
+                    "isLValue": true,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "memberLocation": "685:12:48",
+                    "memberName": "nomineeOwner",
+                    "nodeType": "MemberAccess",
+                    "referencedDeclaration": 3475,
+                    "src": "657:40:48",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "functionReturnParameters": 3420,
+                  "id": 3425,
+                  "nodeType": "Return",
+                  "src": "650:47:48"
+                }
+              ]
+            },
+            "documentation": {
+              "id": 3416,
+              "nodeType": "StructuredDocumentation",
+              "src": "477:93:48",
+              "text": " @notice get the nominated owner who has permission to call acceptOwnership"
+            },
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "_nomineeOwner",
+            "nameLocation": "584:13:48",
+            "parameters": {
+              "id": 3417,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "597:2:48"
+            },
+            "returnParameters": {
+              "id": 3420,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3419,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3427,
+                  "src": "631:7:48",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 3418,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "631:7:48",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "630:9:48"
+            },
+            "scope": 3471,
+            "stateMutability": "view",
+            "virtual": true,
+            "visibility": "internal"
+          },
+          {
+            "id": 3443,
+            "nodeType": "FunctionDefinition",
+            "src": "779:140:48",
+            "nodes": [],
+            "body": {
+              "id": 3442,
+              "nodeType": "Block",
+              "src": "824:95:48",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "expression": {
+                          "id": 3432,
+                          "name": "msg",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": -15,
+                          "src": "844:3:48",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_magic_message",
+                            "typeString": "msg"
+                          }
+                        },
+                        "id": 3433,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberLocation": "848:6:48",
+                        "memberName": "sender",
+                        "nodeType": "MemberAccess",
+                        "src": "844:10:48",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "id": 3431,
+                      "name": "_setOwner",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 3313,
+                      "src": "834:9:48",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_address_$returns$__$",
+                        "typeString": "function (address)"
+                      }
+                    },
+                    "id": 3434,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "834:21:48",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 3435,
+                  "nodeType": "ExpressionStatement",
+                  "src": "834:21:48"
+                },
+                {
+                  "expression": {
+                    "id": 3440,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "UnaryOperation",
+                    "operator": "delete",
+                    "prefix": true,
+                    "src": "865:47:48",
+                    "subExpression": {
+                      "expression": {
+                        "arguments": [],
+                        "expression": {
+                          "argumentTypes": [],
+                          "expression": {
+                            "id": 3436,
+                            "name": "SafeOwnableStorage",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 3494,
+                            "src": "872:18:48",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_type$_t_contract$_SafeOwnableStorage_$3494_$",
+                              "typeString": "type(library SafeOwnableStorage)"
+                            }
+                          },
+                          "id": 3437,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberLocation": "891:6:48",
+                          "memberName": "layout",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": 3493,
+                          "src": "872:25:48",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_function_internal_pure$__$returns$_t_struct$_Layout_$3476_storage_ptr_$",
+                            "typeString": "function () pure returns (struct SafeOwnableStorage.Layout storage pointer)"
+                          }
+                        },
+                        "id": 3438,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "functionCall",
+                        "lValueRequested": false,
+                        "nameLocations": [],
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "872:27:48",
+                        "tryCall": false,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Layout_$3476_storage_ptr",
+                          "typeString": "struct SafeOwnableStorage.Layout storage pointer"
+                        }
+                      },
+                      "id": 3439,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberLocation": "900:12:48",
+                      "memberName": "nomineeOwner",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 3475,
+                      "src": "872:40:48",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 3441,
+                  "nodeType": "ExpressionStatement",
+                  "src": "865:47:48"
+                }
+              ]
+            },
+            "documentation": {
+              "id": 3428,
+              "nodeType": "StructuredDocumentation",
+              "src": "710:64:48",
+              "text": " @notice accept transfer of contract ownership"
+            },
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "_acceptOwnership",
+            "nameLocation": "788:16:48",
+            "parameters": {
+              "id": 3429,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "804:2:48"
+            },
+            "returnParameters": {
+              "id": 3430,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "824:0:48"
+            },
+            "scope": 3471,
+            "stateMutability": "nonpayable",
+            "virtual": true,
+            "visibility": "internal"
+          },
+          {
+            "id": 3455,
+            "nodeType": "FunctionDefinition",
+            "src": "1018:113:48",
+            "nodes": [],
+            "body": {
+              "id": 3454,
+              "nodeType": "Block",
+              "src": "1089:42:48",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "id": 3451,
+                        "name": "account",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 3446,
+                        "src": "1116:7:48",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "id": 3450,
+                      "name": "_setNomineeOwner",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 3470,
+                      "src": "1099:16:48",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_address_$returns$__$",
+                        "typeString": "function (address)"
+                      }
+                    },
+                    "id": 3452,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1099:25:48",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 3453,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1099:25:48"
+                }
+              ]
+            },
+            "baseFunctions": [
+              3286
+            ],
+            "documentation": {
+              "id": 3444,
+              "nodeType": "StructuredDocumentation",
+              "src": "925:88:48",
+              "text": " @notice grant permission to given address to claim contract ownership"
+            },
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "_transferOwnership",
+            "nameLocation": "1027:18:48",
+            "overrides": {
+              "id": 3448,
+              "nodeType": "OverrideSpecifier",
+              "overrides": [],
+              "src": "1080:8:48"
+            },
+            "parameters": {
+              "id": 3447,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3446,
+                  "mutability": "mutable",
+                  "name": "account",
+                  "nameLocation": "1054:7:48",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3455,
+                  "src": "1046:15:48",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 3445,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1046:7:48",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1045:17:48"
+            },
+            "returnParameters": {
+              "id": 3449,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1089:0:48"
+            },
+            "scope": 3471,
+            "stateMutability": "nonpayable",
+            "virtual": true,
+            "visibility": "internal"
+          },
+          {
+            "id": 3470,
+            "nodeType": "FunctionDefinition",
+            "src": "1186:127:48",
+            "nodes": [],
+            "body": {
+              "id": 3469,
+              "nodeType": "Block",
+              "src": "1246:67:48",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "id": 3467,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "expression": {
+                        "arguments": [],
+                        "expression": {
+                          "argumentTypes": [],
+                          "expression": {
+                            "id": 3461,
+                            "name": "SafeOwnableStorage",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 3494,
+                            "src": "1256:18:48",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_type$_t_contract$_SafeOwnableStorage_$3494_$",
+                              "typeString": "type(library SafeOwnableStorage)"
+                            }
+                          },
+                          "id": 3463,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberLocation": "1275:6:48",
+                          "memberName": "layout",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": 3493,
+                          "src": "1256:25:48",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_function_internal_pure$__$returns$_t_struct$_Layout_$3476_storage_ptr_$",
+                            "typeString": "function () pure returns (struct SafeOwnableStorage.Layout storage pointer)"
+                          }
+                        },
+                        "id": 3464,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "functionCall",
+                        "lValueRequested": false,
+                        "nameLocations": [],
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "1256:27:48",
+                        "tryCall": false,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Layout_$3476_storage_ptr",
+                          "typeString": "struct SafeOwnableStorage.Layout storage pointer"
+                        }
+                      },
+                      "id": 3465,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberLocation": "1284:12:48",
+                      "memberName": "nomineeOwner",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 3475,
+                      "src": "1256:40:48",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "id": 3466,
+                      "name": "account",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 3458,
+                      "src": "1299:7:48",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "src": "1256:50:48",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "id": 3468,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1256:50:48"
+                }
+              ]
+            },
+            "documentation": {
+              "id": 3456,
+              "nodeType": "StructuredDocumentation",
+              "src": "1137:44:48",
+              "text": " @notice set nominee owner"
+            },
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "_setNomineeOwner",
+            "nameLocation": "1195:16:48",
+            "parameters": {
+              "id": 3459,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3458,
+                  "mutability": "mutable",
+                  "name": "account",
+                  "nameLocation": "1220:7:48",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3470,
+                  "src": "1212:15:48",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 3457,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1212:7:48",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1211:17:48"
+            },
+            "returnParameters": {
+              "id": 3460,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1246:0:48"
+            },
+            "scope": 3471,
+            "stateMutability": "nonpayable",
+            "virtual": true,
+            "visibility": "internal"
+          }
+        ],
+        "abstract": true,
+        "baseContracts": [
+          {
+            "baseName": {
+              "id": 3399,
+              "name": "ISafeOwnableInternal",
+              "nameLocations": [
+                "287:20:48"
+              ],
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 3153,
+              "src": "287:20:48"
+            },
+            "id": 3400,
+            "nodeType": "InheritanceSpecifier",
+            "src": "287:20:48"
+          },
+          {
+            "baseName": {
+              "id": 3401,
+              "name": "OwnableInternal",
+              "nameLocations": [
+                "309:15:48"
+              ],
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 3314,
+              "src": "309:15:48"
+            },
+            "id": 3402,
+            "nodeType": "InheritanceSpecifier",
+            "src": "309:15:48"
+          }
+        ],
+        "canonicalName": "SafeOwnableInternal",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          3471,
+          3314,
+          3153,
+          3123,
+          5179
+        ],
+        "name": "SafeOwnableInternal",
+        "nameLocation": "264:19:48",
+        "scope": 3472,
+        "usedErrors": [
+          3120,
+          3122,
+          3152
+        ]
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 48
+}

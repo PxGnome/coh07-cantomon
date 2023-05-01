@@ -1,0 +1,4019 @@
+{
+  "_format": "ethers-rs-sol-cache-3",
+  "paths": {
+    "artifacts": "out",
+    "build_infos": "out/build-info",
+    "sources": "contracts",
+    "tests": "test",
+    "scripts": "script",
+    "libraries": [
+      "lib",
+      "node_modules"
+    ]
+  },
+  "files": {
+    "contracts/destination/CantomonDiamond.sol": {
+      "lastModificationDate": 1682438164005,
+      "contentHash": "9108af959de615c7021db8e617d89953",
+      "sourceName": "contracts/destination/CantomonDiamond.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "node_modules/@solidstate/contracts/access/ownable/IOwnable.sol",
+        "node_modules/@solidstate/contracts/access/ownable/IOwnableInternal.sol",
+        "node_modules/@solidstate/contracts/access/ownable/ISafeOwnable.sol",
+        "node_modules/@solidstate/contracts/access/ownable/ISafeOwnableInternal.sol",
+        "node_modules/@solidstate/contracts/access/ownable/Ownable.sol",
+        "node_modules/@solidstate/contracts/access/ownable/OwnableInternal.sol",
+        "node_modules/@solidstate/contracts/access/ownable/OwnableStorage.sol",
+        "node_modules/@solidstate/contracts/access/ownable/SafeOwnable.sol",
+        "node_modules/@solidstate/contracts/access/ownable/SafeOwnableInternal.sol",
+        "node_modules/@solidstate/contracts/access/ownable/SafeOwnableStorage.sol",
+        "node_modules/@solidstate/contracts/interfaces/IERC165.sol",
+        "node_modules/@solidstate/contracts/interfaces/IERC165Internal.sol",
+        "node_modules/@solidstate/contracts/interfaces/IERC173.sol",
+        "node_modules/@solidstate/contracts/interfaces/IERC173Internal.sol",
+        "node_modules/@solidstate/contracts/introspection/ERC165/base/ERC165Base.sol",
+        "node_modules/@solidstate/contracts/introspection/ERC165/base/ERC165BaseInternal.sol",
+        "node_modules/@solidstate/contracts/introspection/ERC165/base/ERC165BaseStorage.sol",
+        "node_modules/@solidstate/contracts/introspection/ERC165/base/IERC165Base.sol",
+        "node_modules/@solidstate/contracts/introspection/ERC165/base/IERC165BaseInternal.sol",
+        "node_modules/@solidstate/contracts/proxy/IProxy.sol",
+        "node_modules/@solidstate/contracts/proxy/Proxy.sol",
+        "node_modules/@solidstate/contracts/proxy/diamond/ISolidStateDiamond.sol",
+        "node_modules/@solidstate/contracts/proxy/diamond/SolidStateDiamond.sol",
+        "node_modules/@solidstate/contracts/proxy/diamond/base/DiamondBase.sol",
+        "node_modules/@solidstate/contracts/proxy/diamond/base/DiamondBaseStorage.sol",
+        "node_modules/@solidstate/contracts/proxy/diamond/base/IDiamondBase.sol",
+        "node_modules/@solidstate/contracts/proxy/diamond/fallback/DiamondFallback.sol",
+        "node_modules/@solidstate/contracts/proxy/diamond/fallback/IDiamondFallback.sol",
+        "node_modules/@solidstate/contracts/proxy/diamond/readable/DiamondReadable.sol",
+        "node_modules/@solidstate/contracts/proxy/diamond/readable/IDiamondReadable.sol",
+        "node_modules/@solidstate/contracts/proxy/diamond/writable/DiamondWritable.sol",
+        "node_modules/@solidstate/contracts/proxy/diamond/writable/DiamondWritableInternal.sol",
+        "node_modules/@solidstate/contracts/proxy/diamond/writable/IDiamondWritable.sol",
+        "node_modules/@solidstate/contracts/proxy/diamond/writable/IDiamondWritableInternal.sol",
+        "node_modules/@solidstate/contracts/utils/AddressUtils.sol",
+        "node_modules/@solidstate/contracts/utils/UintUtils.sol",
+        "node_modules/hardhat/console.sol"
+      ],
+      "versionRequirement": "^0.8.19",
+      "artifacts": {
+        "CantomonDiamond": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "CantomonDiamond.sol/CantomonDiamond.json"
+        }
+      }
+    },
+    "contracts/destination/facet/BattleFacet.sol": {
+      "lastModificationDate": 1682870108584,
+      "contentHash": "7b52cbba1b12a8daf94e1a8914ed74ac",
+      "sourceName": "contracts/destination/facet/BattleFacet.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "contracts/libraries/LibAppStorage.sol",
+        "node_modules/@hyperlane-xyz/core/contracts/interfaces/IInterchainSecurityModule.sol",
+        "node_modules/@hyperlane-xyz/core/contracts/interfaces/IMailbox.sol",
+        "node_modules/@solidstate/contracts/access/ownable/IOwnableInternal.sol",
+        "node_modules/@solidstate/contracts/access/ownable/OwnableInternal.sol",
+        "node_modules/@solidstate/contracts/access/ownable/OwnableStorage.sol",
+        "node_modules/@solidstate/contracts/data/EnumerableMap.sol",
+        "node_modules/@solidstate/contracts/data/EnumerableSet.sol",
+        "node_modules/@solidstate/contracts/interfaces/IERC165.sol",
+        "node_modules/@solidstate/contracts/interfaces/IERC165Internal.sol",
+        "node_modules/@solidstate/contracts/interfaces/IERC173.sol",
+        "node_modules/@solidstate/contracts/interfaces/IERC173Internal.sol",
+        "node_modules/@solidstate/contracts/interfaces/IERC721.sol",
+        "node_modules/@solidstate/contracts/interfaces/IERC721Internal.sol",
+        "node_modules/@solidstate/contracts/interfaces/IERC721Receiver.sol",
+        "node_modules/@solidstate/contracts/introspection/ERC165/base/ERC165Base.sol",
+        "node_modules/@solidstate/contracts/introspection/ERC165/base/ERC165BaseInternal.sol",
+        "node_modules/@solidstate/contracts/introspection/ERC165/base/ERC165BaseStorage.sol",
+        "node_modules/@solidstate/contracts/introspection/ERC165/base/IERC165Base.sol",
+        "node_modules/@solidstate/contracts/introspection/ERC165/base/IERC165BaseInternal.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/ISolidStateERC721.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/SolidStateERC721.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/base/ERC721Base.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/base/ERC721BaseInternal.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/base/ERC721BaseStorage.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/base/IERC721Base.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/base/IERC721BaseInternal.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/enumerable/ERC721Enumerable.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/enumerable/ERC721EnumerableInternal.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/enumerable/IERC721Enumerable.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/metadata/ERC721Metadata.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/metadata/ERC721MetadataInternal.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/metadata/ERC721MetadataStorage.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/metadata/IERC721Metadata.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/metadata/IERC721MetadataInternal.sol",
+        "node_modules/@solidstate/contracts/utils/AddressUtils.sol",
+        "node_modules/@solidstate/contracts/utils/UintUtils.sol"
+      ],
+      "versionRequirement": "^0.8.19",
+      "artifacts": {
+        "BattleFacet": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "BattleFacet.sol/BattleFacet.json"
+        }
+      }
+    },
+    "contracts/destination/facet/EvolutionFacet.sol": {
+      "lastModificationDate": 1682869906754,
+      "contentHash": "3c1546f395685e7b1bb2c37f5aa97ed4",
+      "sourceName": "contracts/destination/facet/EvolutionFacet.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "contracts/libraries/LibAppStorage.sol",
+        "node_modules/@hyperlane-xyz/core/contracts/interfaces/IInterchainSecurityModule.sol",
+        "node_modules/@hyperlane-xyz/core/contracts/interfaces/IMailbox.sol",
+        "node_modules/@solidstate/contracts/access/ownable/IOwnableInternal.sol",
+        "node_modules/@solidstate/contracts/access/ownable/OwnableInternal.sol",
+        "node_modules/@solidstate/contracts/access/ownable/OwnableStorage.sol",
+        "node_modules/@solidstate/contracts/data/EnumerableMap.sol",
+        "node_modules/@solidstate/contracts/data/EnumerableSet.sol",
+        "node_modules/@solidstate/contracts/interfaces/IERC165.sol",
+        "node_modules/@solidstate/contracts/interfaces/IERC165Internal.sol",
+        "node_modules/@solidstate/contracts/interfaces/IERC173.sol",
+        "node_modules/@solidstate/contracts/interfaces/IERC173Internal.sol",
+        "node_modules/@solidstate/contracts/interfaces/IERC721.sol",
+        "node_modules/@solidstate/contracts/interfaces/IERC721Internal.sol",
+        "node_modules/@solidstate/contracts/interfaces/IERC721Receiver.sol",
+        "node_modules/@solidstate/contracts/introspection/ERC165/base/ERC165Base.sol",
+        "node_modules/@solidstate/contracts/introspection/ERC165/base/ERC165BaseInternal.sol",
+        "node_modules/@solidstate/contracts/introspection/ERC165/base/ERC165BaseStorage.sol",
+        "node_modules/@solidstate/contracts/introspection/ERC165/base/IERC165Base.sol",
+        "node_modules/@solidstate/contracts/introspection/ERC165/base/IERC165BaseInternal.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/ISolidStateERC721.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/SolidStateERC721.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/base/ERC721Base.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/base/ERC721BaseInternal.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/base/ERC721BaseStorage.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/base/IERC721Base.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/base/IERC721BaseInternal.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/enumerable/ERC721Enumerable.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/enumerable/ERC721EnumerableInternal.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/enumerable/IERC721Enumerable.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/metadata/ERC721Metadata.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/metadata/ERC721MetadataInternal.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/metadata/ERC721MetadataStorage.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/metadata/IERC721Metadata.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/metadata/IERC721MetadataInternal.sol",
+        "node_modules/@solidstate/contracts/utils/AddressUtils.sol",
+        "node_modules/@solidstate/contracts/utils/UintUtils.sol"
+      ],
+      "versionRequirement": "^0.8.19",
+      "artifacts": {
+        "EvolutionFacet": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "EvolutionFacet.sol/EvolutionFacet.json"
+        }
+      }
+    },
+    "contracts/destination/facet/GMFacet.sol": {
+      "lastModificationDate": 1682869720274,
+      "contentHash": "61ae07207a5417adaf56e29f318b98ff",
+      "sourceName": "contracts/destination/facet/GMFacet.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "contracts/libraries/LibAppStorage.sol",
+        "node_modules/@hyperlane-xyz/core/contracts/interfaces/IInterchainSecurityModule.sol",
+        "node_modules/@hyperlane-xyz/core/contracts/interfaces/IMailbox.sol",
+        "node_modules/@solidstate/contracts/access/ownable/IOwnableInternal.sol",
+        "node_modules/@solidstate/contracts/access/ownable/OwnableInternal.sol",
+        "node_modules/@solidstate/contracts/access/ownable/OwnableStorage.sol",
+        "node_modules/@solidstate/contracts/data/EnumerableMap.sol",
+        "node_modules/@solidstate/contracts/data/EnumerableSet.sol",
+        "node_modules/@solidstate/contracts/interfaces/IERC165.sol",
+        "node_modules/@solidstate/contracts/interfaces/IERC165Internal.sol",
+        "node_modules/@solidstate/contracts/interfaces/IERC173.sol",
+        "node_modules/@solidstate/contracts/interfaces/IERC173Internal.sol",
+        "node_modules/@solidstate/contracts/interfaces/IERC721.sol",
+        "node_modules/@solidstate/contracts/interfaces/IERC721Internal.sol",
+        "node_modules/@solidstate/contracts/interfaces/IERC721Receiver.sol",
+        "node_modules/@solidstate/contracts/introspection/ERC165/base/ERC165Base.sol",
+        "node_modules/@solidstate/contracts/introspection/ERC165/base/ERC165BaseInternal.sol",
+        "node_modules/@solidstate/contracts/introspection/ERC165/base/ERC165BaseStorage.sol",
+        "node_modules/@solidstate/contracts/introspection/ERC165/base/IERC165Base.sol",
+        "node_modules/@solidstate/contracts/introspection/ERC165/base/IERC165BaseInternal.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/ISolidStateERC721.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/SolidStateERC721.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/base/ERC721Base.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/base/ERC721BaseInternal.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/base/ERC721BaseStorage.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/base/IERC721Base.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/base/IERC721BaseInternal.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/enumerable/ERC721Enumerable.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/enumerable/ERC721EnumerableInternal.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/enumerable/IERC721Enumerable.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/metadata/ERC721Metadata.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/metadata/ERC721MetadataInternal.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/metadata/ERC721MetadataStorage.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/metadata/IERC721Metadata.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/metadata/IERC721MetadataInternal.sol",
+        "node_modules/@solidstate/contracts/utils/AddressUtils.sol",
+        "node_modules/@solidstate/contracts/utils/UintUtils.sol"
+      ],
+      "versionRequirement": "^0.8.19",
+      "artifacts": {
+        "GMFacet": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "GMFacet.sol/GMFacet.json"
+        }
+      }
+    },
+    "contracts/destination/facet/ProxyERC721Facet.sol": {
+      "lastModificationDate": 1682869303824,
+      "contentHash": "2dd4031ded24aac7eaf3c195bf973de1",
+      "sourceName": "contracts/destination/facet/ProxyERC721Facet.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "contracts/libraries/LibAppStorage.sol",
+        "node_modules/@hyperlane-xyz/core/contracts/interfaces/IInterchainSecurityModule.sol",
+        "node_modules/@hyperlane-xyz/core/contracts/interfaces/IMailbox.sol",
+        "node_modules/@solidstate/contracts/access/ownable/IOwnableInternal.sol",
+        "node_modules/@solidstate/contracts/access/ownable/OwnableInternal.sol",
+        "node_modules/@solidstate/contracts/access/ownable/OwnableStorage.sol",
+        "node_modules/@solidstate/contracts/data/EnumerableMap.sol",
+        "node_modules/@solidstate/contracts/data/EnumerableSet.sol",
+        "node_modules/@solidstate/contracts/interfaces/IERC165.sol",
+        "node_modules/@solidstate/contracts/interfaces/IERC165Internal.sol",
+        "node_modules/@solidstate/contracts/interfaces/IERC173.sol",
+        "node_modules/@solidstate/contracts/interfaces/IERC173Internal.sol",
+        "node_modules/@solidstate/contracts/interfaces/IERC721.sol",
+        "node_modules/@solidstate/contracts/interfaces/IERC721Internal.sol",
+        "node_modules/@solidstate/contracts/interfaces/IERC721Receiver.sol",
+        "node_modules/@solidstate/contracts/introspection/ERC165/base/ERC165Base.sol",
+        "node_modules/@solidstate/contracts/introspection/ERC165/base/ERC165BaseInternal.sol",
+        "node_modules/@solidstate/contracts/introspection/ERC165/base/ERC165BaseStorage.sol",
+        "node_modules/@solidstate/contracts/introspection/ERC165/base/IERC165Base.sol",
+        "node_modules/@solidstate/contracts/introspection/ERC165/base/IERC165BaseInternal.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/ISolidStateERC721.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/SolidStateERC721.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/base/ERC721Base.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/base/ERC721BaseInternal.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/base/ERC721BaseStorage.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/base/IERC721Base.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/base/IERC721BaseInternal.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/enumerable/ERC721Enumerable.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/enumerable/ERC721EnumerableInternal.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/enumerable/IERC721Enumerable.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/metadata/ERC721Metadata.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/metadata/ERC721MetadataInternal.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/metadata/ERC721MetadataStorage.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/metadata/IERC721Metadata.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/metadata/IERC721MetadataInternal.sol",
+        "node_modules/@solidstate/contracts/utils/AddressUtils.sol",
+        "node_modules/@solidstate/contracts/utils/UintUtils.sol"
+      ],
+      "versionRequirement": "^0.8.19",
+      "artifacts": {
+        "ProxyERC721Facet": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "ProxyERC721Facet.sol/ProxyERC721Facet.json"
+        }
+      }
+    },
+    "contracts/interfaces/ITestMailbox.sol": {
+      "lastModificationDate": 1682388824574,
+      "contentHash": "3843fd69c8e7733244b0cb456572fe4e",
+      "sourceName": "contracts/interfaces/ITestMailbox.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.8.0",
+      "artifacts": {
+        "ITestMailbox": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "ITestMailbox.sol/ITestMailbox.json"
+        }
+      }
+    },
+    "contracts/libraries/LibAppStorage.sol": {
+      "lastModificationDate": 1682870061944,
+      "contentHash": "6239d9500a11b8533e6af967197f0d15",
+      "sourceName": "contracts/libraries/LibAppStorage.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "node_modules/@hyperlane-xyz/core/contracts/interfaces/IInterchainSecurityModule.sol",
+        "node_modules/@hyperlane-xyz/core/contracts/interfaces/IMailbox.sol",
+        "node_modules/@solidstate/contracts/access/ownable/IOwnableInternal.sol",
+        "node_modules/@solidstate/contracts/access/ownable/OwnableInternal.sol",
+        "node_modules/@solidstate/contracts/access/ownable/OwnableStorage.sol",
+        "node_modules/@solidstate/contracts/interfaces/IERC165.sol",
+        "node_modules/@solidstate/contracts/interfaces/IERC165Internal.sol",
+        "node_modules/@solidstate/contracts/interfaces/IERC173.sol",
+        "node_modules/@solidstate/contracts/interfaces/IERC173Internal.sol",
+        "node_modules/@solidstate/contracts/interfaces/IERC721.sol",
+        "node_modules/@solidstate/contracts/interfaces/IERC721Internal.sol",
+        "node_modules/@solidstate/contracts/utils/AddressUtils.sol",
+        "node_modules/@solidstate/contracts/utils/UintUtils.sol"
+      ],
+      "versionRequirement": "^0.8.19",
+      "artifacts": {
+        "CantomonModifiers": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "LibAppStorage.sol/CantomonModifiers.json"
+        },
+        "LibAppStorage": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "LibAppStorage.sol/LibAppStorage.json"
+        }
+      }
+    },
+    "contracts/mock/MockERC721.sol": {
+      "lastModificationDate": 1682442583385,
+      "contentHash": "30c8807ba42b40eaa8bb25c16ef69557",
+      "sourceName": "contracts/mock/MockERC721.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "node_modules/@solidstate/contracts/data/EnumerableMap.sol",
+        "node_modules/@solidstate/contracts/data/EnumerableSet.sol",
+        "node_modules/@solidstate/contracts/interfaces/IERC165.sol",
+        "node_modules/@solidstate/contracts/interfaces/IERC165Internal.sol",
+        "node_modules/@solidstate/contracts/interfaces/IERC721.sol",
+        "node_modules/@solidstate/contracts/interfaces/IERC721Internal.sol",
+        "node_modules/@solidstate/contracts/interfaces/IERC721Receiver.sol",
+        "node_modules/@solidstate/contracts/introspection/ERC165/base/ERC165Base.sol",
+        "node_modules/@solidstate/contracts/introspection/ERC165/base/ERC165BaseInternal.sol",
+        "node_modules/@solidstate/contracts/introspection/ERC165/base/ERC165BaseStorage.sol",
+        "node_modules/@solidstate/contracts/introspection/ERC165/base/IERC165Base.sol",
+        "node_modules/@solidstate/contracts/introspection/ERC165/base/IERC165BaseInternal.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/ISolidStateERC721.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/SolidStateERC721.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/base/ERC721Base.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/base/ERC721BaseInternal.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/base/ERC721BaseStorage.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/base/IERC721Base.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/base/IERC721BaseInternal.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/enumerable/ERC721Enumerable.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/enumerable/ERC721EnumerableInternal.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/enumerable/IERC721Enumerable.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/metadata/ERC721Metadata.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/metadata/ERC721MetadataInternal.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/metadata/ERC721MetadataStorage.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/metadata/IERC721Metadata.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/metadata/IERC721MetadataInternal.sol",
+        "node_modules/@solidstate/contracts/utils/AddressUtils.sol",
+        "node_modules/@solidstate/contracts/utils/UintUtils.sol"
+      ],
+      "versionRequirement": "^0.8.8",
+      "artifacts": {
+        "SolidStateERC721Mock": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "MockERC721.sol/SolidStateERC721Mock.json"
+        }
+      }
+    },
+    "contracts/origin/NftReader.sol": {
+      "lastModificationDate": 1682442941115,
+      "contentHash": "9956abfc19398b39062958187d17a5ac",
+      "sourceName": "contracts/origin/NftReader.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "contracts/interfaces/ITestMailbox.sol",
+        "node_modules/@hyperlane-xyz/core/contracts/interfaces/IInterchainGasPaymaster.sol",
+        "node_modules/@hyperlane-xyz/core/contracts/interfaces/IInterchainSecurityModule.sol",
+        "node_modules/@hyperlane-xyz/core/contracts/interfaces/IMailbox.sol",
+        "node_modules/@openzeppelin/contracts/access/Ownable.sol",
+        "node_modules/@openzeppelin/contracts/interfaces/IERC20.sol",
+        "node_modules/@openzeppelin/contracts/interfaces/IERC721.sol",
+        "node_modules/@openzeppelin/contracts/token/ERC20/IERC20.sol",
+        "node_modules/@openzeppelin/contracts/token/ERC721/IERC721.sol",
+        "node_modules/@openzeppelin/contracts/utils/Context.sol",
+        "node_modules/@openzeppelin/contracts/utils/introspection/IERC165.sol"
+      ],
+      "versionRequirement": "^0.8.19",
+      "artifacts": {
+        "NftReader": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "NftReader.sol/NftReader.json"
+        }
+      }
+    },
+    "contracts/tokens/ERC721A_Template.sol": {
+      "lastModificationDate": 1682269664537,
+      "contentHash": "2b406ae03f8bd74178a96fae560bda7d",
+      "sourceName": "contracts/tokens/ERC721A_Template.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "node_modules/@openzeppelin/contracts/access/Ownable.sol",
+        "node_modules/@openzeppelin/contracts/interfaces/IERC20.sol",
+        "node_modules/@openzeppelin/contracts/token/ERC20/IERC20.sol",
+        "node_modules/@openzeppelin/contracts/utils/Context.sol",
+        "node_modules/@openzeppelin/contracts/utils/Strings.sol",
+        "node_modules/@openzeppelin/contracts/utils/math/Math.sol",
+        "node_modules/erc721a/contracts/ERC721A.sol",
+        "node_modules/erc721a/contracts/IERC721A.sol",
+        "node_modules/erc721a/contracts/extensions/ERC721AQueryable.sol",
+        "node_modules/erc721a/contracts/extensions/IERC721AQueryable.sol"
+      ],
+      "versionRequirement": "^0.8.19",
+      "artifacts": {
+        "ERC721A_Template": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "ERC721A_Template.sol/ERC721A_Template.json"
+        }
+      }
+    },
+    "contracts/upgradeInitializers/CantomonDiamondInit.sol": {
+      "lastModificationDate": 1682441982435,
+      "contentHash": "a98448c956b9b942f63dc2d6ad4668f8",
+      "sourceName": "contracts/upgradeInitializers/CantomonDiamondInit.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "node_modules/@solidstate/contracts/token/ERC721/metadata/ERC721MetadataStorage.sol"
+      ],
+      "versionRequirement": "^0.8.19",
+      "artifacts": {
+        "CantomonDiamondInit": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "CantomonDiamondInit.sol/CantomonDiamondInit.json"
+        }
+      }
+    },
+    "node_modules/@hyperlane-xyz/core/contracts/interfaces/IInterchainGasPaymaster.sol": {
+      "lastModificationDate": 1682272663793,
+      "contentHash": "f9db3bc8f96a64f88c5cfd3dfeaa54d8",
+      "sourceName": "node_modules/@hyperlane-xyz/core/contracts/interfaces/IInterchainGasPaymaster.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.6.11",
+      "artifacts": {
+        "IInterchainGasPaymaster": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "IInterchainGasPaymaster.sol/IInterchainGasPaymaster.json"
+        }
+      }
+    },
+    "node_modules/@hyperlane-xyz/core/contracts/interfaces/IInterchainSecurityModule.sol": {
+      "lastModificationDate": 1682272663793,
+      "contentHash": "999c0fd1c5646749d3270d6101cba401",
+      "sourceName": "node_modules/@hyperlane-xyz/core/contracts/interfaces/IInterchainSecurityModule.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.6.11",
+      "artifacts": {
+        "IInterchainSecurityModule": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "IInterchainSecurityModule.sol/IInterchainSecurityModule.json"
+        },
+        "ISpecifiesInterchainSecurityModule": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "IInterchainSecurityModule.sol/ISpecifiesInterchainSecurityModule.json"
+        }
+      }
+    },
+    "node_modules/@hyperlane-xyz/core/contracts/interfaces/IMailbox.sol": {
+      "lastModificationDate": 1682272663793,
+      "contentHash": "e828543fcf5c6cb605b25900032cad3d",
+      "sourceName": "node_modules/@hyperlane-xyz/core/contracts/interfaces/IMailbox.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "node_modules/@hyperlane-xyz/core/contracts/interfaces/IInterchainSecurityModule.sol"
+      ],
+      "versionRequirement": ">=0.8.0",
+      "artifacts": {
+        "IMailbox": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "IMailbox.sol/IMailbox.json"
+        }
+      }
+    },
+    "node_modules/@openzeppelin/contracts/access/Ownable.sol": {
+      "lastModificationDate": 1682270896834,
+      "contentHash": "e436cea06129be2c73cda4b1acc848b5",
+      "sourceName": "node_modules/@openzeppelin/contracts/access/Ownable.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "node_modules/@openzeppelin/contracts/utils/Context.sol"
+      ],
+      "versionRequirement": "^0.8.0",
+      "artifacts": {
+        "Ownable": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "Ownable.sol/Ownable.json"
+        }
+      }
+    },
+    "node_modules/@openzeppelin/contracts/interfaces/IERC20.sol": {
+      "lastModificationDate": 1682270896824,
+      "contentHash": "d151fbfe7939989b9acf22797b32058b",
+      "sourceName": "node_modules/@openzeppelin/contracts/interfaces/IERC20.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "node_modules/@openzeppelin/contracts/token/ERC20/IERC20.sol"
+      ],
+      "versionRequirement": "^0.8.0",
+      "artifacts": {
+        "IERC20": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "interfaces/IERC20.sol/IERC20.json"
+        }
+      }
+    },
+    "node_modules/@openzeppelin/contracts/interfaces/IERC721.sol": {
+      "lastModificationDate": 1682270896834,
+      "contentHash": "e6da7798a8c22c5043cc42d64a2a8f80",
+      "sourceName": "node_modules/@openzeppelin/contracts/interfaces/IERC721.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "node_modules/@openzeppelin/contracts/token/ERC721/IERC721.sol",
+        "node_modules/@openzeppelin/contracts/utils/introspection/IERC165.sol"
+      ],
+      "versionRequirement": "^0.8.0",
+      "artifacts": {
+        "IERC721": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "interfaces/IERC721.sol/IERC721.json"
+        }
+      }
+    },
+    "node_modules/@openzeppelin/contracts/token/ERC20/IERC20.sol": {
+      "lastModificationDate": 1682270896824,
+      "contentHash": "ad7c2d0af148c8f9f097d65deeb4da6b",
+      "sourceName": "node_modules/@openzeppelin/contracts/token/ERC20/IERC20.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.0",
+      "artifacts": {
+        "IERC20": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "IERC20.sol/IERC20.json"
+        }
+      }
+    },
+    "node_modules/@openzeppelin/contracts/token/ERC721/IERC721.sol": {
+      "lastModificationDate": 1682270896834,
+      "contentHash": "eb7e61db29f31d88b3c1cef1b063d338",
+      "sourceName": "node_modules/@openzeppelin/contracts/token/ERC721/IERC721.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "node_modules/@openzeppelin/contracts/utils/introspection/IERC165.sol"
+      ],
+      "versionRequirement": "^0.8.0",
+      "artifacts": {
+        "IERC721": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "ERC721/IERC721.sol/IERC721.json"
+        }
+      }
+    },
+    "node_modules/@openzeppelin/contracts/utils/Context.sol": {
+      "lastModificationDate": 1682270896784,
+      "contentHash": "5f2c5c4b6af2dd4551027144797bc8be",
+      "sourceName": "node_modules/@openzeppelin/contracts/utils/Context.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.0",
+      "artifacts": {
+        "Context": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "Context.sol/Context.json"
+        }
+      }
+    },
+    "node_modules/@openzeppelin/contracts/utils/Strings.sol": {
+      "lastModificationDate": 1682270896844,
+      "contentHash": "396031251978f8febfd90cb62cb240ec",
+      "sourceName": "node_modules/@openzeppelin/contracts/utils/Strings.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "node_modules/@openzeppelin/contracts/utils/math/Math.sol"
+      ],
+      "versionRequirement": "^0.8.0",
+      "artifacts": {
+        "Strings": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "Strings.sol/Strings.json"
+        }
+      }
+    },
+    "node_modules/@openzeppelin/contracts/utils/introspection/IERC165.sol": {
+      "lastModificationDate": 1682270896824,
+      "contentHash": "03e6768535ac4da0e9756f1d8a4a018a",
+      "sourceName": "node_modules/@openzeppelin/contracts/utils/introspection/IERC165.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.0",
+      "artifacts": {
+        "IERC165": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "introspection/IERC165.sol/IERC165.json"
+        }
+      }
+    },
+    "node_modules/@openzeppelin/contracts/utils/math/Math.sol": {
+      "lastModificationDate": 1682270896834,
+      "contentHash": "b9c58920ce74d6dc819161786112e7ee",
+      "sourceName": "node_modules/@openzeppelin/contracts/utils/math/Math.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.0",
+      "artifacts": {
+        "Math": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "Math.sol/Math.json"
+        }
+      }
+    },
+    "node_modules/@solidstate/contracts/access/ownable/IOwnable.sol": {
+      "lastModificationDate": 1682276792342,
+      "contentHash": "7137369eb1048e26c894b805d62d4c88",
+      "sourceName": "node_modules/@solidstate/contracts/access/ownable/IOwnable.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "node_modules/@solidstate/contracts/access/ownable/IOwnableInternal.sol",
+        "node_modules/@solidstate/contracts/interfaces/IERC173.sol",
+        "node_modules/@solidstate/contracts/interfaces/IERC173Internal.sol"
+      ],
+      "versionRequirement": "^0.8.8",
+      "artifacts": {
+        "IOwnable": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "IOwnable.sol/IOwnable.json"
+        }
+      }
+    },
+    "node_modules/@solidstate/contracts/access/ownable/IOwnableInternal.sol": {
+      "lastModificationDate": 1682276792342,
+      "contentHash": "1b4485ee11e314b89acfd1553a2381ba",
+      "sourceName": "node_modules/@solidstate/contracts/access/ownable/IOwnableInternal.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "node_modules/@solidstate/contracts/interfaces/IERC173Internal.sol"
+      ],
+      "versionRequirement": "^0.8.8",
+      "artifacts": {
+        "IOwnableInternal": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "IOwnableInternal.sol/IOwnableInternal.json"
+        }
+      }
+    },
+    "node_modules/@solidstate/contracts/access/ownable/ISafeOwnable.sol": {
+      "lastModificationDate": 1682276792342,
+      "contentHash": "3c7bfed766f461255d1453614190a64d",
+      "sourceName": "node_modules/@solidstate/contracts/access/ownable/ISafeOwnable.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "node_modules/@solidstate/contracts/access/ownable/IOwnable.sol",
+        "node_modules/@solidstate/contracts/access/ownable/IOwnableInternal.sol",
+        "node_modules/@solidstate/contracts/access/ownable/ISafeOwnableInternal.sol",
+        "node_modules/@solidstate/contracts/interfaces/IERC173.sol",
+        "node_modules/@solidstate/contracts/interfaces/IERC173Internal.sol"
+      ],
+      "versionRequirement": "^0.8.8",
+      "artifacts": {
+        "ISafeOwnable": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "ISafeOwnable.sol/ISafeOwnable.json"
+        }
+      }
+    },
+    "node_modules/@solidstate/contracts/access/ownable/ISafeOwnableInternal.sol": {
+      "lastModificationDate": 1682276792342,
+      "contentHash": "5eaac42e298cc2023122e792048dd4ae",
+      "sourceName": "node_modules/@solidstate/contracts/access/ownable/ISafeOwnableInternal.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "node_modules/@solidstate/contracts/access/ownable/IOwnableInternal.sol",
+        "node_modules/@solidstate/contracts/interfaces/IERC173Internal.sol"
+      ],
+      "versionRequirement": "^0.8.8",
+      "artifacts": {
+        "ISafeOwnableInternal": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "ISafeOwnableInternal.sol/ISafeOwnableInternal.json"
+        }
+      }
+    },
+    "node_modules/@solidstate/contracts/access/ownable/Ownable.sol": {
+      "lastModificationDate": 1682276792352,
+      "contentHash": "deabc129830c24b45ba89a7288ed7a85",
+      "sourceName": "node_modules/@solidstate/contracts/access/ownable/Ownable.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "node_modules/@solidstate/contracts/access/ownable/IOwnable.sol",
+        "node_modules/@solidstate/contracts/access/ownable/IOwnableInternal.sol",
+        "node_modules/@solidstate/contracts/access/ownable/OwnableInternal.sol",
+        "node_modules/@solidstate/contracts/access/ownable/OwnableStorage.sol",
+        "node_modules/@solidstate/contracts/interfaces/IERC173.sol",
+        "node_modules/@solidstate/contracts/interfaces/IERC173Internal.sol",
+        "node_modules/@solidstate/contracts/utils/AddressUtils.sol",
+        "node_modules/@solidstate/contracts/utils/UintUtils.sol"
+      ],
+      "versionRequirement": "^0.8.8",
+      "artifacts": {
+        "Ownable": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "ownable/Ownable.sol/Ownable.json"
+        }
+      }
+    },
+    "node_modules/@solidstate/contracts/access/ownable/OwnableInternal.sol": {
+      "lastModificationDate": 1682276792352,
+      "contentHash": "21bf2a3e0b20893c8a668088e4a0d32c",
+      "sourceName": "node_modules/@solidstate/contracts/access/ownable/OwnableInternal.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "node_modules/@solidstate/contracts/access/ownable/IOwnableInternal.sol",
+        "node_modules/@solidstate/contracts/access/ownable/OwnableStorage.sol",
+        "node_modules/@solidstate/contracts/interfaces/IERC173.sol",
+        "node_modules/@solidstate/contracts/interfaces/IERC173Internal.sol",
+        "node_modules/@solidstate/contracts/utils/AddressUtils.sol",
+        "node_modules/@solidstate/contracts/utils/UintUtils.sol"
+      ],
+      "versionRequirement": "^0.8.8",
+      "artifacts": {
+        "OwnableInternal": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "OwnableInternal.sol/OwnableInternal.json"
+        }
+      }
+    },
+    "node_modules/@solidstate/contracts/access/ownable/OwnableStorage.sol": {
+      "lastModificationDate": 1682276792352,
+      "contentHash": "eb5b8e5d7cc0a6a80ee2909b50ba0ee5",
+      "sourceName": "node_modules/@solidstate/contracts/access/ownable/OwnableStorage.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.8",
+      "artifacts": {
+        "OwnableStorage": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "OwnableStorage.sol/OwnableStorage.json"
+        }
+      }
+    },
+    "node_modules/@solidstate/contracts/access/ownable/SafeOwnable.sol": {
+      "lastModificationDate": 1682276792362,
+      "contentHash": "a607bdacb118f1ca7eae95514db7d8ce",
+      "sourceName": "node_modules/@solidstate/contracts/access/ownable/SafeOwnable.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "node_modules/@solidstate/contracts/access/ownable/IOwnable.sol",
+        "node_modules/@solidstate/contracts/access/ownable/IOwnableInternal.sol",
+        "node_modules/@solidstate/contracts/access/ownable/ISafeOwnable.sol",
+        "node_modules/@solidstate/contracts/access/ownable/ISafeOwnableInternal.sol",
+        "node_modules/@solidstate/contracts/access/ownable/Ownable.sol",
+        "node_modules/@solidstate/contracts/access/ownable/OwnableInternal.sol",
+        "node_modules/@solidstate/contracts/access/ownable/OwnableStorage.sol",
+        "node_modules/@solidstate/contracts/access/ownable/SafeOwnableInternal.sol",
+        "node_modules/@solidstate/contracts/access/ownable/SafeOwnableStorage.sol",
+        "node_modules/@solidstate/contracts/interfaces/IERC173.sol",
+        "node_modules/@solidstate/contracts/interfaces/IERC173Internal.sol",
+        "node_modules/@solidstate/contracts/utils/AddressUtils.sol",
+        "node_modules/@solidstate/contracts/utils/UintUtils.sol"
+      ],
+      "versionRequirement": "^0.8.8",
+      "artifacts": {
+        "SafeOwnable": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "SafeOwnable.sol/SafeOwnable.json"
+        }
+      }
+    },
+    "node_modules/@solidstate/contracts/access/ownable/SafeOwnableInternal.sol": {
+      "lastModificationDate": 1682276792362,
+      "contentHash": "f9621509296ec9e4320dc4d2b253271c",
+      "sourceName": "node_modules/@solidstate/contracts/access/ownable/SafeOwnableInternal.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "node_modules/@solidstate/contracts/access/ownable/IOwnableInternal.sol",
+        "node_modules/@solidstate/contracts/access/ownable/ISafeOwnableInternal.sol",
+        "node_modules/@solidstate/contracts/access/ownable/OwnableInternal.sol",
+        "node_modules/@solidstate/contracts/access/ownable/OwnableStorage.sol",
+        "node_modules/@solidstate/contracts/access/ownable/SafeOwnableStorage.sol",
+        "node_modules/@solidstate/contracts/interfaces/IERC173.sol",
+        "node_modules/@solidstate/contracts/interfaces/IERC173Internal.sol",
+        "node_modules/@solidstate/contracts/utils/AddressUtils.sol",
+        "node_modules/@solidstate/contracts/utils/UintUtils.sol"
+      ],
+      "versionRequirement": "^0.8.8",
+      "artifacts": {
+        "SafeOwnableInternal": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "SafeOwnableInternal.sol/SafeOwnableInternal.json"
+        }
+      }
+    },
+    "node_modules/@solidstate/contracts/access/ownable/SafeOwnableStorage.sol": {
+      "lastModificationDate": 1682276792362,
+      "contentHash": "dbe4599f5ffc6cba32208ae471389c2e",
+      "sourceName": "node_modules/@solidstate/contracts/access/ownable/SafeOwnableStorage.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.8",
+      "artifacts": {
+        "SafeOwnableStorage": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "SafeOwnableStorage.sol/SafeOwnableStorage.json"
+        }
+      }
+    },
+    "node_modules/@solidstate/contracts/data/EnumerableMap.sol": {
+      "lastModificationDate": 1682276792292,
+      "contentHash": "617ce241c4e6e2aedae55f330f1c877c",
+      "sourceName": "node_modules/@solidstate/contracts/data/EnumerableMap.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.8",
+      "artifacts": {
+        "EnumerableMap": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "EnumerableMap.sol/EnumerableMap.json"
+        }
+      }
+    },
+    "node_modules/@solidstate/contracts/data/EnumerableSet.sol": {
+      "lastModificationDate": 1682276792292,
+      "contentHash": "08d265ad27204a87276c35074ab611ce",
+      "sourceName": "node_modules/@solidstate/contracts/data/EnumerableSet.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.8",
+      "artifacts": {
+        "EnumerableSet": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "EnumerableSet.sol/EnumerableSet.json"
+        }
+      }
+    },
+    "node_modules/@solidstate/contracts/interfaces/IERC165.sol": {
+      "lastModificationDate": 1682276792332,
+      "contentHash": "69b3ec8b394b10e4f828aa9cf2a04531",
+      "sourceName": "node_modules/@solidstate/contracts/interfaces/IERC165.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "node_modules/@solidstate/contracts/interfaces/IERC165Internal.sol"
+      ],
+      "versionRequirement": "^0.8.8",
+      "artifacts": {
+        "IERC165": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "IERC165.sol/IERC165.json"
+        }
+      }
+    },
+    "node_modules/@solidstate/contracts/interfaces/IERC165Internal.sol": {
+      "lastModificationDate": 1682276792332,
+      "contentHash": "26bbb6fd5ae75a3d597c3e47f1cd0d4e",
+      "sourceName": "node_modules/@solidstate/contracts/interfaces/IERC165Internal.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.8",
+      "artifacts": {
+        "IERC165Internal": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "IERC165Internal.sol/IERC165Internal.json"
+        }
+      }
+    },
+    "node_modules/@solidstate/contracts/interfaces/IERC173.sol": {
+      "lastModificationDate": 1682276792332,
+      "contentHash": "ba9f7936efbbdeb55df55b99026a6dbc",
+      "sourceName": "node_modules/@solidstate/contracts/interfaces/IERC173.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "node_modules/@solidstate/contracts/interfaces/IERC173Internal.sol"
+      ],
+      "versionRequirement": "^0.8.8",
+      "artifacts": {
+        "IERC173": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "IERC173.sol/IERC173.json"
+        }
+      }
+    },
+    "node_modules/@solidstate/contracts/interfaces/IERC173Internal.sol": {
+      "lastModificationDate": 1682276792332,
+      "contentHash": "64e9b98233e6a0123e11ad7f0aad7590",
+      "sourceName": "node_modules/@solidstate/contracts/interfaces/IERC173Internal.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.8",
+      "artifacts": {
+        "IERC173Internal": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "IERC173Internal.sol/IERC173Internal.json"
+        }
+      }
+    },
+    "node_modules/@solidstate/contracts/interfaces/IERC721.sol": {
+      "lastModificationDate": 1682276792342,
+      "contentHash": "e03ebe658449584c38c5d2214d0882c1",
+      "sourceName": "node_modules/@solidstate/contracts/interfaces/IERC721.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "node_modules/@solidstate/contracts/interfaces/IERC165.sol",
+        "node_modules/@solidstate/contracts/interfaces/IERC165Internal.sol",
+        "node_modules/@solidstate/contracts/interfaces/IERC721Internal.sol"
+      ],
+      "versionRequirement": "^0.8.8",
+      "artifacts": {
+        "IERC721": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "IERC721.sol/IERC721.json"
+        }
+      }
+    },
+    "node_modules/@solidstate/contracts/interfaces/IERC721Internal.sol": {
+      "lastModificationDate": 1682276792342,
+      "contentHash": "9879270087dda28bd7bc249cc7a49717",
+      "sourceName": "node_modules/@solidstate/contracts/interfaces/IERC721Internal.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.8",
+      "artifacts": {
+        "IERC721Internal": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "IERC721Internal.sol/IERC721Internal.json"
+        }
+      }
+    },
+    "node_modules/@solidstate/contracts/interfaces/IERC721Receiver.sol": {
+      "lastModificationDate": 1682276792342,
+      "contentHash": "8e53afa4e7c8864d73b138aa0f484e53",
+      "sourceName": "node_modules/@solidstate/contracts/interfaces/IERC721Receiver.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.8",
+      "artifacts": {
+        "IERC721Receiver": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "IERC721Receiver.sol/IERC721Receiver.json"
+        }
+      }
+    },
+    "node_modules/@solidstate/contracts/introspection/ERC165/base/ERC165Base.sol": {
+      "lastModificationDate": 1682276792302,
+      "contentHash": "e93cc108775adb1706cb4b3f016a0301",
+      "sourceName": "node_modules/@solidstate/contracts/introspection/ERC165/base/ERC165Base.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "node_modules/@solidstate/contracts/interfaces/IERC165.sol",
+        "node_modules/@solidstate/contracts/interfaces/IERC165Internal.sol",
+        "node_modules/@solidstate/contracts/introspection/ERC165/base/ERC165BaseInternal.sol",
+        "node_modules/@solidstate/contracts/introspection/ERC165/base/ERC165BaseStorage.sol",
+        "node_modules/@solidstate/contracts/introspection/ERC165/base/IERC165Base.sol",
+        "node_modules/@solidstate/contracts/introspection/ERC165/base/IERC165BaseInternal.sol"
+      ],
+      "versionRequirement": "^0.8.8",
+      "artifacts": {
+        "ERC165Base": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "ERC165Base.sol/ERC165Base.json"
+        }
+      }
+    },
+    "node_modules/@solidstate/contracts/introspection/ERC165/base/ERC165BaseInternal.sol": {
+      "lastModificationDate": 1682276792302,
+      "contentHash": "105153737475d1507402bc2ffd7adff0",
+      "sourceName": "node_modules/@solidstate/contracts/introspection/ERC165/base/ERC165BaseInternal.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "node_modules/@solidstate/contracts/interfaces/IERC165Internal.sol",
+        "node_modules/@solidstate/contracts/introspection/ERC165/base/ERC165BaseStorage.sol",
+        "node_modules/@solidstate/contracts/introspection/ERC165/base/IERC165BaseInternal.sol"
+      ],
+      "versionRequirement": "^0.8.8",
+      "artifacts": {
+        "ERC165BaseInternal": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "ERC165BaseInternal.sol/ERC165BaseInternal.json"
+        }
+      }
+    },
+    "node_modules/@solidstate/contracts/introspection/ERC165/base/ERC165BaseStorage.sol": {
+      "lastModificationDate": 1682276792302,
+      "contentHash": "777c0039222a4cc2cefff2ba89763a3b",
+      "sourceName": "node_modules/@solidstate/contracts/introspection/ERC165/base/ERC165BaseStorage.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.8",
+      "artifacts": {
+        "ERC165BaseStorage": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "ERC165BaseStorage.sol/ERC165BaseStorage.json"
+        }
+      }
+    },
+    "node_modules/@solidstate/contracts/introspection/ERC165/base/IERC165Base.sol": {
+      "lastModificationDate": 1682276792332,
+      "contentHash": "7dc765fedfe9eaccdcc7911e5bf01249",
+      "sourceName": "node_modules/@solidstate/contracts/introspection/ERC165/base/IERC165Base.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "node_modules/@solidstate/contracts/interfaces/IERC165.sol",
+        "node_modules/@solidstate/contracts/interfaces/IERC165Internal.sol",
+        "node_modules/@solidstate/contracts/introspection/ERC165/base/IERC165BaseInternal.sol"
+      ],
+      "versionRequirement": "^0.8.0",
+      "artifacts": {
+        "IERC165Base": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "IERC165Base.sol/IERC165Base.json"
+        }
+      }
+    },
+    "node_modules/@solidstate/contracts/introspection/ERC165/base/IERC165BaseInternal.sol": {
+      "lastModificationDate": 1682276792332,
+      "contentHash": "233756325262fc284a4b1c73cf281df2",
+      "sourceName": "node_modules/@solidstate/contracts/introspection/ERC165/base/IERC165BaseInternal.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "node_modules/@solidstate/contracts/interfaces/IERC165Internal.sol"
+      ],
+      "versionRequirement": "^0.8.0",
+      "artifacts": {
+        "IERC165BaseInternal": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "IERC165BaseInternal.sol/IERC165BaseInternal.json"
+        }
+      }
+    },
+    "node_modules/@solidstate/contracts/proxy/IProxy.sol": {
+      "lastModificationDate": 1682276792342,
+      "contentHash": "d811c7cce73fa850c713b5e57fa4b20c",
+      "sourceName": "node_modules/@solidstate/contracts/proxy/IProxy.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.8",
+      "artifacts": {
+        "IProxy": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "IProxy.sol/IProxy.json"
+        }
+      }
+    },
+    "node_modules/@solidstate/contracts/proxy/Proxy.sol": {
+      "lastModificationDate": 1682276792352,
+      "contentHash": "f82f3475f2a381e0c85446513c6d0cc8",
+      "sourceName": "node_modules/@solidstate/contracts/proxy/Proxy.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "node_modules/@solidstate/contracts/proxy/IProxy.sol",
+        "node_modules/@solidstate/contracts/utils/AddressUtils.sol",
+        "node_modules/@solidstate/contracts/utils/UintUtils.sol"
+      ],
+      "versionRequirement": "^0.8.8",
+      "artifacts": {
+        "Proxy": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "Proxy.sol/Proxy.json"
+        }
+      }
+    },
+    "node_modules/@solidstate/contracts/proxy/diamond/ISolidStateDiamond.sol": {
+      "lastModificationDate": 1682276792342,
+      "contentHash": "b1c2e5ff3ca7994e920ce368fa5c8758",
+      "sourceName": "node_modules/@solidstate/contracts/proxy/diamond/ISolidStateDiamond.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "node_modules/@solidstate/contracts/access/ownable/IOwnable.sol",
+        "node_modules/@solidstate/contracts/access/ownable/IOwnableInternal.sol",
+        "node_modules/@solidstate/contracts/access/ownable/ISafeOwnable.sol",
+        "node_modules/@solidstate/contracts/access/ownable/ISafeOwnableInternal.sol",
+        "node_modules/@solidstate/contracts/interfaces/IERC165.sol",
+        "node_modules/@solidstate/contracts/interfaces/IERC165Internal.sol",
+        "node_modules/@solidstate/contracts/interfaces/IERC173.sol",
+        "node_modules/@solidstate/contracts/interfaces/IERC173Internal.sol",
+        "node_modules/@solidstate/contracts/proxy/IProxy.sol",
+        "node_modules/@solidstate/contracts/proxy/diamond/base/IDiamondBase.sol",
+        "node_modules/@solidstate/contracts/proxy/diamond/fallback/IDiamondFallback.sol",
+        "node_modules/@solidstate/contracts/proxy/diamond/readable/IDiamondReadable.sol",
+        "node_modules/@solidstate/contracts/proxy/diamond/writable/IDiamondWritable.sol",
+        "node_modules/@solidstate/contracts/proxy/diamond/writable/IDiamondWritableInternal.sol"
+      ],
+      "versionRequirement": "^0.8.8",
+      "artifacts": {
+        "ISolidStateDiamond": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "ISolidStateDiamond.sol/ISolidStateDiamond.json"
+        }
+      }
+    },
+    "node_modules/@solidstate/contracts/proxy/diamond/SolidStateDiamond.sol": {
+      "lastModificationDate": 1682276792362,
+      "contentHash": "d87b04c07845737bb9145635517921e1",
+      "sourceName": "node_modules/@solidstate/contracts/proxy/diamond/SolidStateDiamond.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "node_modules/@solidstate/contracts/access/ownable/IOwnable.sol",
+        "node_modules/@solidstate/contracts/access/ownable/IOwnableInternal.sol",
+        "node_modules/@solidstate/contracts/access/ownable/ISafeOwnable.sol",
+        "node_modules/@solidstate/contracts/access/ownable/ISafeOwnableInternal.sol",
+        "node_modules/@solidstate/contracts/access/ownable/Ownable.sol",
+        "node_modules/@solidstate/contracts/access/ownable/OwnableInternal.sol",
+        "node_modules/@solidstate/contracts/access/ownable/OwnableStorage.sol",
+        "node_modules/@solidstate/contracts/access/ownable/SafeOwnable.sol",
+        "node_modules/@solidstate/contracts/access/ownable/SafeOwnableInternal.sol",
+        "node_modules/@solidstate/contracts/access/ownable/SafeOwnableStorage.sol",
+        "node_modules/@solidstate/contracts/interfaces/IERC165.sol",
+        "node_modules/@solidstate/contracts/interfaces/IERC165Internal.sol",
+        "node_modules/@solidstate/contracts/interfaces/IERC173.sol",
+        "node_modules/@solidstate/contracts/interfaces/IERC173Internal.sol",
+        "node_modules/@solidstate/contracts/introspection/ERC165/base/ERC165Base.sol",
+        "node_modules/@solidstate/contracts/introspection/ERC165/base/ERC165BaseInternal.sol",
+        "node_modules/@solidstate/contracts/introspection/ERC165/base/ERC165BaseStorage.sol",
+        "node_modules/@solidstate/contracts/introspection/ERC165/base/IERC165Base.sol",
+        "node_modules/@solidstate/contracts/introspection/ERC165/base/IERC165BaseInternal.sol",
+        "node_modules/@solidstate/contracts/proxy/IProxy.sol",
+        "node_modules/@solidstate/contracts/proxy/Proxy.sol",
+        "node_modules/@solidstate/contracts/proxy/diamond/ISolidStateDiamond.sol",
+        "node_modules/@solidstate/contracts/proxy/diamond/base/DiamondBase.sol",
+        "node_modules/@solidstate/contracts/proxy/diamond/base/DiamondBaseStorage.sol",
+        "node_modules/@solidstate/contracts/proxy/diamond/base/IDiamondBase.sol",
+        "node_modules/@solidstate/contracts/proxy/diamond/fallback/DiamondFallback.sol",
+        "node_modules/@solidstate/contracts/proxy/diamond/fallback/IDiamondFallback.sol",
+        "node_modules/@solidstate/contracts/proxy/diamond/readable/DiamondReadable.sol",
+        "node_modules/@solidstate/contracts/proxy/diamond/readable/IDiamondReadable.sol",
+        "node_modules/@solidstate/contracts/proxy/diamond/writable/DiamondWritable.sol",
+        "node_modules/@solidstate/contracts/proxy/diamond/writable/DiamondWritableInternal.sol",
+        "node_modules/@solidstate/contracts/proxy/diamond/writable/IDiamondWritable.sol",
+        "node_modules/@solidstate/contracts/proxy/diamond/writable/IDiamondWritableInternal.sol",
+        "node_modules/@solidstate/contracts/utils/AddressUtils.sol",
+        "node_modules/@solidstate/contracts/utils/UintUtils.sol",
+        "node_modules/hardhat/console.sol"
+      ],
+      "versionRequirement": "^0.8.8",
+      "artifacts": {
+        "SolidStateDiamond": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "SolidStateDiamond.sol/SolidStateDiamond.json"
+        }
+      }
+    },
+    "node_modules/@solidstate/contracts/proxy/diamond/base/DiamondBase.sol": {
+      "lastModificationDate": 1682276792282,
+      "contentHash": "76e87fce15cc2025a10722eef792e132",
+      "sourceName": "node_modules/@solidstate/contracts/proxy/diamond/base/DiamondBase.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "node_modules/@solidstate/contracts/proxy/IProxy.sol",
+        "node_modules/@solidstate/contracts/proxy/Proxy.sol",
+        "node_modules/@solidstate/contracts/proxy/diamond/base/DiamondBaseStorage.sol",
+        "node_modules/@solidstate/contracts/proxy/diamond/base/IDiamondBase.sol",
+        "node_modules/@solidstate/contracts/utils/AddressUtils.sol",
+        "node_modules/@solidstate/contracts/utils/UintUtils.sol"
+      ],
+      "versionRequirement": "^0.8.8",
+      "artifacts": {
+        "DiamondBase": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "DiamondBase.sol/DiamondBase.json"
+        }
+      }
+    },
+    "node_modules/@solidstate/contracts/proxy/diamond/base/DiamondBaseStorage.sol": {
+      "lastModificationDate": 1682276792282,
+      "contentHash": "2965bd0287e509917f1cd93360f2c97a",
+      "sourceName": "node_modules/@solidstate/contracts/proxy/diamond/base/DiamondBaseStorage.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.8",
+      "artifacts": {
+        "DiamondBaseStorage": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "DiamondBaseStorage.sol/DiamondBaseStorage.json"
+        }
+      }
+    },
+    "node_modules/@solidstate/contracts/proxy/diamond/base/IDiamondBase.sol": {
+      "lastModificationDate": 1682276792322,
+      "contentHash": "717cbaa9c4847141ea15c52715aca52b",
+      "sourceName": "node_modules/@solidstate/contracts/proxy/diamond/base/IDiamondBase.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "node_modules/@solidstate/contracts/proxy/IProxy.sol"
+      ],
+      "versionRequirement": "^0.8.8",
+      "artifacts": {
+        "IDiamondBase": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "IDiamondBase.sol/IDiamondBase.json"
+        }
+      }
+    },
+    "node_modules/@solidstate/contracts/proxy/diamond/fallback/DiamondFallback.sol": {
+      "lastModificationDate": 1682276792282,
+      "contentHash": "934c492f97622483b2cd51226e84cd02",
+      "sourceName": "node_modules/@solidstate/contracts/proxy/diamond/fallback/DiamondFallback.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "node_modules/@solidstate/contracts/access/ownable/IOwnableInternal.sol",
+        "node_modules/@solidstate/contracts/access/ownable/OwnableInternal.sol",
+        "node_modules/@solidstate/contracts/access/ownable/OwnableStorage.sol",
+        "node_modules/@solidstate/contracts/interfaces/IERC173.sol",
+        "node_modules/@solidstate/contracts/interfaces/IERC173Internal.sol",
+        "node_modules/@solidstate/contracts/proxy/IProxy.sol",
+        "node_modules/@solidstate/contracts/proxy/Proxy.sol",
+        "node_modules/@solidstate/contracts/proxy/diamond/base/DiamondBase.sol",
+        "node_modules/@solidstate/contracts/proxy/diamond/base/DiamondBaseStorage.sol",
+        "node_modules/@solidstate/contracts/proxy/diamond/base/IDiamondBase.sol",
+        "node_modules/@solidstate/contracts/proxy/diamond/fallback/IDiamondFallback.sol",
+        "node_modules/@solidstate/contracts/utils/AddressUtils.sol",
+        "node_modules/@solidstate/contracts/utils/UintUtils.sol"
+      ],
+      "versionRequirement": "^0.8.8",
+      "artifacts": {
+        "DiamondFallback": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "DiamondFallback.sol/DiamondFallback.json"
+        }
+      }
+    },
+    "node_modules/@solidstate/contracts/proxy/diamond/fallback/IDiamondFallback.sol": {
+      "lastModificationDate": 1682276792322,
+      "contentHash": "714a0e462223b83bc4db3936e7312d62",
+      "sourceName": "node_modules/@solidstate/contracts/proxy/diamond/fallback/IDiamondFallback.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "node_modules/@solidstate/contracts/proxy/IProxy.sol",
+        "node_modules/@solidstate/contracts/proxy/diamond/base/IDiamondBase.sol"
+      ],
+      "versionRequirement": "^0.8.8",
+      "artifacts": {
+        "IDiamondFallback": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "IDiamondFallback.sol/IDiamondFallback.json"
+        }
+      }
+    },
+    "node_modules/@solidstate/contracts/proxy/diamond/readable/DiamondReadable.sol": {
+      "lastModificationDate": 1682276792292,
+      "contentHash": "9b4b3f2b66407e10f60341046c738f54",
+      "sourceName": "node_modules/@solidstate/contracts/proxy/diamond/readable/DiamondReadable.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "node_modules/@solidstate/contracts/proxy/diamond/base/DiamondBaseStorage.sol",
+        "node_modules/@solidstate/contracts/proxy/diamond/readable/IDiamondReadable.sol"
+      ],
+      "versionRequirement": "^0.8.8",
+      "artifacts": {
+        "DiamondReadable": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "DiamondReadable.sol/DiamondReadable.json"
+        }
+      }
+    },
+    "node_modules/@solidstate/contracts/proxy/diamond/readable/IDiamondReadable.sol": {
+      "lastModificationDate": 1682276792322,
+      "contentHash": "8258ad09b35bf2c2dd7273966bab4194",
+      "sourceName": "node_modules/@solidstate/contracts/proxy/diamond/readable/IDiamondReadable.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.8",
+      "artifacts": {
+        "IDiamondReadable": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "IDiamondReadable.sol/IDiamondReadable.json"
+        }
+      }
+    },
+    "node_modules/@solidstate/contracts/proxy/diamond/writable/DiamondWritable.sol": {
+      "lastModificationDate": 1682438947285,
+      "contentHash": "0d96e13ad9c22b00d0e412caa1938866",
+      "sourceName": "node_modules/@solidstate/contracts/proxy/diamond/writable/DiamondWritable.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "node_modules/@solidstate/contracts/access/ownable/IOwnableInternal.sol",
+        "node_modules/@solidstate/contracts/access/ownable/OwnableInternal.sol",
+        "node_modules/@solidstate/contracts/access/ownable/OwnableStorage.sol",
+        "node_modules/@solidstate/contracts/interfaces/IERC173.sol",
+        "node_modules/@solidstate/contracts/interfaces/IERC173Internal.sol",
+        "node_modules/@solidstate/contracts/proxy/diamond/base/DiamondBaseStorage.sol",
+        "node_modules/@solidstate/contracts/proxy/diamond/writable/DiamondWritableInternal.sol",
+        "node_modules/@solidstate/contracts/proxy/diamond/writable/IDiamondWritable.sol",
+        "node_modules/@solidstate/contracts/proxy/diamond/writable/IDiamondWritableInternal.sol",
+        "node_modules/@solidstate/contracts/utils/AddressUtils.sol",
+        "node_modules/@solidstate/contracts/utils/UintUtils.sol",
+        "node_modules/hardhat/console.sol"
+      ],
+      "versionRequirement": "^0.8.8",
+      "artifacts": {
+        "DiamondWritable": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "DiamondWritable.sol/DiamondWritable.json"
+        }
+      }
+    },
+    "node_modules/@solidstate/contracts/proxy/diamond/writable/DiamondWritableInternal.sol": {
+      "lastModificationDate": 1682440863975,
+      "contentHash": "e946d8db7bedb517e08e2764d1519cbe",
+      "sourceName": "node_modules/@solidstate/contracts/proxy/diamond/writable/DiamondWritableInternal.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "node_modules/@solidstate/contracts/proxy/diamond/base/DiamondBaseStorage.sol",
+        "node_modules/@solidstate/contracts/proxy/diamond/writable/IDiamondWritableInternal.sol",
+        "node_modules/@solidstate/contracts/utils/AddressUtils.sol",
+        "node_modules/@solidstate/contracts/utils/UintUtils.sol",
+        "node_modules/hardhat/console.sol"
+      ],
+      "versionRequirement": "^0.8.0",
+      "artifacts": {
+        "DiamondWritableInternal": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "DiamondWritableInternal.sol/DiamondWritableInternal.json"
+        }
+      }
+    },
+    "node_modules/@solidstate/contracts/proxy/diamond/writable/IDiamondWritable.sol": {
+      "lastModificationDate": 1682276792322,
+      "contentHash": "89b99f434d2490bfe6387f9d59a6be0d",
+      "sourceName": "node_modules/@solidstate/contracts/proxy/diamond/writable/IDiamondWritable.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "node_modules/@solidstate/contracts/proxy/diamond/writable/IDiamondWritableInternal.sol"
+      ],
+      "versionRequirement": "^0.8.8",
+      "artifacts": {
+        "IDiamondWritable": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "IDiamondWritable.sol/IDiamondWritable.json"
+        }
+      }
+    },
+    "node_modules/@solidstate/contracts/proxy/diamond/writable/IDiamondWritableInternal.sol": {
+      "lastModificationDate": 1682276792322,
+      "contentHash": "ca737c6f934337bbd67382f22d6458db",
+      "sourceName": "node_modules/@solidstate/contracts/proxy/diamond/writable/IDiamondWritableInternal.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.8",
+      "artifacts": {
+        "IDiamondWritableInternal": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "IDiamondWritableInternal.sol/IDiamondWritableInternal.json"
+        }
+      }
+    },
+    "node_modules/@solidstate/contracts/token/ERC721/ISolidStateERC721.sol": {
+      "lastModificationDate": 1682276792352,
+      "contentHash": "2c41453ac0b7bb397bac029b1d37cd46",
+      "sourceName": "node_modules/@solidstate/contracts/token/ERC721/ISolidStateERC721.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "node_modules/@solidstate/contracts/interfaces/IERC165.sol",
+        "node_modules/@solidstate/contracts/interfaces/IERC165Internal.sol",
+        "node_modules/@solidstate/contracts/interfaces/IERC721.sol",
+        "node_modules/@solidstate/contracts/interfaces/IERC721Internal.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/base/IERC721Base.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/base/IERC721BaseInternal.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/enumerable/IERC721Enumerable.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/metadata/IERC721Metadata.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/metadata/IERC721MetadataInternal.sol"
+      ],
+      "versionRequirement": "^0.8.8",
+      "artifacts": {
+        "ISolidStateERC721": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "ISolidStateERC721.sol/ISolidStateERC721.json"
+        }
+      }
+    },
+    "node_modules/@solidstate/contracts/token/ERC721/SolidStateERC721.sol": {
+      "lastModificationDate": 1682276792362,
+      "contentHash": "f40bc0fcc783ec0f5a3e9ab9409fcb92",
+      "sourceName": "node_modules/@solidstate/contracts/token/ERC721/SolidStateERC721.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "node_modules/@solidstate/contracts/data/EnumerableMap.sol",
+        "node_modules/@solidstate/contracts/data/EnumerableSet.sol",
+        "node_modules/@solidstate/contracts/interfaces/IERC165.sol",
+        "node_modules/@solidstate/contracts/interfaces/IERC165Internal.sol",
+        "node_modules/@solidstate/contracts/interfaces/IERC721.sol",
+        "node_modules/@solidstate/contracts/interfaces/IERC721Internal.sol",
+        "node_modules/@solidstate/contracts/interfaces/IERC721Receiver.sol",
+        "node_modules/@solidstate/contracts/introspection/ERC165/base/ERC165Base.sol",
+        "node_modules/@solidstate/contracts/introspection/ERC165/base/ERC165BaseInternal.sol",
+        "node_modules/@solidstate/contracts/introspection/ERC165/base/ERC165BaseStorage.sol",
+        "node_modules/@solidstate/contracts/introspection/ERC165/base/IERC165Base.sol",
+        "node_modules/@solidstate/contracts/introspection/ERC165/base/IERC165BaseInternal.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/ISolidStateERC721.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/base/ERC721Base.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/base/ERC721BaseInternal.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/base/ERC721BaseStorage.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/base/IERC721Base.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/base/IERC721BaseInternal.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/enumerable/ERC721Enumerable.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/enumerable/ERC721EnumerableInternal.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/enumerable/IERC721Enumerable.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/metadata/ERC721Metadata.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/metadata/ERC721MetadataInternal.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/metadata/ERC721MetadataStorage.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/metadata/IERC721Metadata.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/metadata/IERC721MetadataInternal.sol",
+        "node_modules/@solidstate/contracts/utils/AddressUtils.sol",
+        "node_modules/@solidstate/contracts/utils/UintUtils.sol"
+      ],
+      "versionRequirement": "^0.8.8",
+      "artifacts": {
+        "SolidStateERC721": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "SolidStateERC721.sol/SolidStateERC721.json"
+        }
+      }
+    },
+    "node_modules/@solidstate/contracts/token/ERC721/base/ERC721Base.sol": {
+      "lastModificationDate": 1682276792312,
+      "contentHash": "3d6939f54b28e4fe1e80c4fdbd0b8048",
+      "sourceName": "node_modules/@solidstate/contracts/token/ERC721/base/ERC721Base.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "node_modules/@solidstate/contracts/data/EnumerableMap.sol",
+        "node_modules/@solidstate/contracts/data/EnumerableSet.sol",
+        "node_modules/@solidstate/contracts/interfaces/IERC165.sol",
+        "node_modules/@solidstate/contracts/interfaces/IERC165Internal.sol",
+        "node_modules/@solidstate/contracts/interfaces/IERC721.sol",
+        "node_modules/@solidstate/contracts/interfaces/IERC721Internal.sol",
+        "node_modules/@solidstate/contracts/interfaces/IERC721Receiver.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/base/ERC721BaseInternal.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/base/ERC721BaseStorage.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/base/IERC721Base.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/base/IERC721BaseInternal.sol",
+        "node_modules/@solidstate/contracts/utils/AddressUtils.sol",
+        "node_modules/@solidstate/contracts/utils/UintUtils.sol"
+      ],
+      "versionRequirement": "^0.8.8",
+      "artifacts": {
+        "ERC721Base": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "ERC721Base.sol/ERC721Base.json"
+        }
+      }
+    },
+    "node_modules/@solidstate/contracts/token/ERC721/base/ERC721BaseInternal.sol": {
+      "lastModificationDate": 1682276792322,
+      "contentHash": "ecef39a8782481f0e7fa292043352bc3",
+      "sourceName": "node_modules/@solidstate/contracts/token/ERC721/base/ERC721BaseInternal.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "node_modules/@solidstate/contracts/data/EnumerableMap.sol",
+        "node_modules/@solidstate/contracts/data/EnumerableSet.sol",
+        "node_modules/@solidstate/contracts/interfaces/IERC721Internal.sol",
+        "node_modules/@solidstate/contracts/interfaces/IERC721Receiver.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/base/ERC721BaseStorage.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/base/IERC721BaseInternal.sol",
+        "node_modules/@solidstate/contracts/utils/AddressUtils.sol",
+        "node_modules/@solidstate/contracts/utils/UintUtils.sol"
+      ],
+      "versionRequirement": "^0.8.8",
+      "artifacts": {
+        "ERC721BaseInternal": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "ERC721BaseInternal.sol/ERC721BaseInternal.json"
+        }
+      }
+    },
+    "node_modules/@solidstate/contracts/token/ERC721/base/ERC721BaseStorage.sol": {
+      "lastModificationDate": 1682276792322,
+      "contentHash": "7908dfb6aec410bcdf9597a1ae0ef804",
+      "sourceName": "node_modules/@solidstate/contracts/token/ERC721/base/ERC721BaseStorage.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "node_modules/@solidstate/contracts/data/EnumerableMap.sol",
+        "node_modules/@solidstate/contracts/data/EnumerableSet.sol"
+      ],
+      "versionRequirement": "^0.8.8",
+      "artifacts": {
+        "ERC721BaseStorage": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "ERC721BaseStorage.sol/ERC721BaseStorage.json"
+        }
+      }
+    },
+    "node_modules/@solidstate/contracts/token/ERC721/base/IERC721Base.sol": {
+      "lastModificationDate": 1682276792342,
+      "contentHash": "b2e14463250793806519fe8c120ae455",
+      "sourceName": "node_modules/@solidstate/contracts/token/ERC721/base/IERC721Base.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "node_modules/@solidstate/contracts/interfaces/IERC165.sol",
+        "node_modules/@solidstate/contracts/interfaces/IERC165Internal.sol",
+        "node_modules/@solidstate/contracts/interfaces/IERC721.sol",
+        "node_modules/@solidstate/contracts/interfaces/IERC721Internal.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/base/IERC721BaseInternal.sol"
+      ],
+      "versionRequirement": "^0.8.8",
+      "artifacts": {
+        "IERC721Base": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "IERC721Base.sol/IERC721Base.json"
+        }
+      }
+    },
+    "node_modules/@solidstate/contracts/token/ERC721/base/IERC721BaseInternal.sol": {
+      "lastModificationDate": 1682276792342,
+      "contentHash": "9935ffdebcbe5c7eab5217b4758de64e",
+      "sourceName": "node_modules/@solidstate/contracts/token/ERC721/base/IERC721BaseInternal.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "node_modules/@solidstate/contracts/interfaces/IERC721Internal.sol"
+      ],
+      "versionRequirement": "^0.8.8",
+      "artifacts": {
+        "IERC721BaseInternal": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "IERC721BaseInternal.sol/IERC721BaseInternal.json"
+        }
+      }
+    },
+    "node_modules/@solidstate/contracts/token/ERC721/enumerable/ERC721Enumerable.sol": {
+      "lastModificationDate": 1682276792322,
+      "contentHash": "62330087098736a0a5317060ef779ee1",
+      "sourceName": "node_modules/@solidstate/contracts/token/ERC721/enumerable/ERC721Enumerable.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "node_modules/@solidstate/contracts/data/EnumerableMap.sol",
+        "node_modules/@solidstate/contracts/data/EnumerableSet.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/base/ERC721BaseStorage.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/enumerable/ERC721EnumerableInternal.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/enumerable/IERC721Enumerable.sol"
+      ],
+      "versionRequirement": "^0.8.8",
+      "artifacts": {
+        "ERC721Enumerable": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "ERC721Enumerable.sol/ERC721Enumerable.json"
+        }
+      }
+    },
+    "node_modules/@solidstate/contracts/token/ERC721/enumerable/ERC721EnumerableInternal.sol": {
+      "lastModificationDate": 1682276792322,
+      "contentHash": "34db87b201afb3f3734bdf2e74ddfbe9",
+      "sourceName": "node_modules/@solidstate/contracts/token/ERC721/enumerable/ERC721EnumerableInternal.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "node_modules/@solidstate/contracts/data/EnumerableMap.sol",
+        "node_modules/@solidstate/contracts/data/EnumerableSet.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/base/ERC721BaseStorage.sol"
+      ],
+      "versionRequirement": "^0.8.8",
+      "artifacts": {
+        "ERC721EnumerableInternal": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "ERC721EnumerableInternal.sol/ERC721EnumerableInternal.json"
+        }
+      }
+    },
+    "node_modules/@solidstate/contracts/token/ERC721/enumerable/IERC721Enumerable.sol": {
+      "lastModificationDate": 1682276792342,
+      "contentHash": "ac69a9a0912c1a34ebec6166151fe834",
+      "sourceName": "node_modules/@solidstate/contracts/token/ERC721/enumerable/IERC721Enumerable.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.8",
+      "artifacts": {
+        "IERC721Enumerable": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "IERC721Enumerable.sol/IERC721Enumerable.json"
+        }
+      }
+    },
+    "node_modules/@solidstate/contracts/token/ERC721/metadata/ERC721Metadata.sol": {
+      "lastModificationDate": 1682276792322,
+      "contentHash": "6c69b6819fe0d8c9d10721acd74d7780",
+      "sourceName": "node_modules/@solidstate/contracts/token/ERC721/metadata/ERC721Metadata.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "node_modules/@solidstate/contracts/data/EnumerableMap.sol",
+        "node_modules/@solidstate/contracts/data/EnumerableSet.sol",
+        "node_modules/@solidstate/contracts/interfaces/IERC165.sol",
+        "node_modules/@solidstate/contracts/interfaces/IERC165Internal.sol",
+        "node_modules/@solidstate/contracts/interfaces/IERC721.sol",
+        "node_modules/@solidstate/contracts/interfaces/IERC721Internal.sol",
+        "node_modules/@solidstate/contracts/interfaces/IERC721Receiver.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/base/ERC721Base.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/base/ERC721BaseInternal.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/base/ERC721BaseStorage.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/base/IERC721Base.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/base/IERC721BaseInternal.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/metadata/ERC721MetadataInternal.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/metadata/ERC721MetadataStorage.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/metadata/IERC721Metadata.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/metadata/IERC721MetadataInternal.sol",
+        "node_modules/@solidstate/contracts/utils/AddressUtils.sol",
+        "node_modules/@solidstate/contracts/utils/UintUtils.sol"
+      ],
+      "versionRequirement": "^0.8.8",
+      "artifacts": {
+        "ERC721Metadata": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "ERC721Metadata.sol/ERC721Metadata.json"
+        }
+      }
+    },
+    "node_modules/@solidstate/contracts/token/ERC721/metadata/ERC721MetadataInternal.sol": {
+      "lastModificationDate": 1682276792322,
+      "contentHash": "cb840f07566a0e67a5bcb7ae737513c3",
+      "sourceName": "node_modules/@solidstate/contracts/token/ERC721/metadata/ERC721MetadataInternal.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "node_modules/@solidstate/contracts/data/EnumerableMap.sol",
+        "node_modules/@solidstate/contracts/data/EnumerableSet.sol",
+        "node_modules/@solidstate/contracts/interfaces/IERC165.sol",
+        "node_modules/@solidstate/contracts/interfaces/IERC165Internal.sol",
+        "node_modules/@solidstate/contracts/interfaces/IERC721.sol",
+        "node_modules/@solidstate/contracts/interfaces/IERC721Internal.sol",
+        "node_modules/@solidstate/contracts/interfaces/IERC721Receiver.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/base/ERC721Base.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/base/ERC721BaseInternal.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/base/ERC721BaseStorage.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/base/IERC721Base.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/base/IERC721BaseInternal.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/metadata/ERC721MetadataStorage.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/metadata/IERC721MetadataInternal.sol",
+        "node_modules/@solidstate/contracts/utils/AddressUtils.sol",
+        "node_modules/@solidstate/contracts/utils/UintUtils.sol"
+      ],
+      "versionRequirement": "^0.8.8",
+      "artifacts": {
+        "ERC721MetadataInternal": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "ERC721MetadataInternal.sol/ERC721MetadataInternal.json"
+        }
+      }
+    },
+    "node_modules/@solidstate/contracts/token/ERC721/metadata/ERC721MetadataStorage.sol": {
+      "lastModificationDate": 1682276792322,
+      "contentHash": "1919c5a6884f27a01eda0e0617b13473",
+      "sourceName": "node_modules/@solidstate/contracts/token/ERC721/metadata/ERC721MetadataStorage.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.8",
+      "artifacts": {
+        "ERC721MetadataStorage": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "ERC721MetadataStorage.sol/ERC721MetadataStorage.json"
+        }
+      }
+    },
+    "node_modules/@solidstate/contracts/token/ERC721/metadata/IERC721Metadata.sol": {
+      "lastModificationDate": 1682276792342,
+      "contentHash": "433f918c27f1081820c4ad3c12cbf98a",
+      "sourceName": "node_modules/@solidstate/contracts/token/ERC721/metadata/IERC721Metadata.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "node_modules/@solidstate/contracts/interfaces/IERC721Internal.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/base/IERC721BaseInternal.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/metadata/IERC721MetadataInternal.sol"
+      ],
+      "versionRequirement": "^0.8.8",
+      "artifacts": {
+        "IERC721Metadata": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "IERC721Metadata.sol/IERC721Metadata.json"
+        }
+      }
+    },
+    "node_modules/@solidstate/contracts/token/ERC721/metadata/IERC721MetadataInternal.sol": {
+      "lastModificationDate": 1682276792342,
+      "contentHash": "67b77c78b8ec0b148a10b1c2c509f2f5",
+      "sourceName": "node_modules/@solidstate/contracts/token/ERC721/metadata/IERC721MetadataInternal.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "node_modules/@solidstate/contracts/interfaces/IERC721Internal.sol",
+        "node_modules/@solidstate/contracts/token/ERC721/base/IERC721BaseInternal.sol"
+      ],
+      "versionRequirement": "^0.8.8",
+      "artifacts": {
+        "IERC721MetadataInternal": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "IERC721MetadataInternal.sol/IERC721MetadataInternal.json"
+        }
+      }
+    },
+    "node_modules/@solidstate/contracts/utils/AddressUtils.sol": {
+      "lastModificationDate": 1682276792282,
+      "contentHash": "ed9ca7d575dcdaac321baa215901dcbd",
+      "sourceName": "node_modules/@solidstate/contracts/utils/AddressUtils.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "node_modules/@solidstate/contracts/utils/UintUtils.sol"
+      ],
+      "versionRequirement": "^0.8.8",
+      "artifacts": {
+        "AddressUtils": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "AddressUtils.sol/AddressUtils.json"
+        }
+      }
+    },
+    "node_modules/@solidstate/contracts/utils/UintUtils.sol": {
+      "lastModificationDate": 1682276792362,
+      "contentHash": "29ed272a1ff94be3a26f39ca7f64d1f9",
+      "sourceName": "node_modules/@solidstate/contracts/utils/UintUtils.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.8",
+      "artifacts": {
+        "UintUtils": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "UintUtils.sol/UintUtils.json"
+        }
+      }
+    },
+    "node_modules/erc721a/contracts/ERC721A.sol": {
+      "lastModificationDate": 1682269720009,
+      "contentHash": "227e9db819fd61602f833edafcda7d4a",
+      "sourceName": "node_modules/erc721a/contracts/ERC721A.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "node_modules/erc721a/contracts/IERC721A.sol"
+      ],
+      "versionRequirement": "^0.8.4",
+      "artifacts": {
+        "ERC721A": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "ERC721A.sol/ERC721A.json"
+        },
+        "ERC721A__IERC721Receiver": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "ERC721A.sol/ERC721A__IERC721Receiver.json"
+        }
+      }
+    },
+    "node_modules/erc721a/contracts/IERC721A.sol": {
+      "lastModificationDate": 1682269720269,
+      "contentHash": "c31a05698ddc2f109ba8723105d854c6",
+      "sourceName": "node_modules/erc721a/contracts/IERC721A.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.4",
+      "artifacts": {
+        "IERC721A": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "IERC721A.sol/IERC721A.json"
+        }
+      }
+    },
+    "node_modules/erc721a/contracts/extensions/ERC721AQueryable.sol": {
+      "lastModificationDate": 1682269720129,
+      "contentHash": "3ef0cd5882c4d9deb6b6348146b2a17b",
+      "sourceName": "node_modules/erc721a/contracts/extensions/ERC721AQueryable.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "node_modules/erc721a/contracts/ERC721A.sol",
+        "node_modules/erc721a/contracts/IERC721A.sol",
+        "node_modules/erc721a/contracts/extensions/IERC721AQueryable.sol"
+      ],
+      "versionRequirement": "^0.8.4",
+      "artifacts": {
+        "ERC721AQueryable": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "ERC721AQueryable.sol/ERC721AQueryable.json"
+        }
+      }
+    },
+    "node_modules/erc721a/contracts/extensions/IERC721AQueryable.sol": {
+      "lastModificationDate": 1682269720399,
+      "contentHash": "e422c9bdd6c1996b422c8d6e2a60a59c",
+      "sourceName": "node_modules/erc721a/contracts/extensions/IERC721AQueryable.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "node_modules/erc721a/contracts/IERC721A.sol"
+      ],
+      "versionRequirement": "^0.8.4",
+      "artifacts": {
+        "IERC721AQueryable": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "IERC721AQueryable.sol/IERC721AQueryable.json"
+        }
+      }
+    },
+    "node_modules/hardhat/console.sol": {
+      "lastModificationDate": 1682269722989,
+      "contentHash": "4ff3cd2f6272c9a6516e9ee4f2b967d3",
+      "sourceName": "node_modules/hardhat/console.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": null,
+      "artifacts": {
+        "console": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "console.sol/console.json"
+        }
+      }
+    },
+    "test/cantomon.t.sol": {
+      "lastModificationDate": 1682930375490,
+      "contentHash": "9ceb04dc754145e22883a61e6c7c310f",
+      "sourceName": "test/cantomon.t.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": null,
+      "artifacts": {
+        "cantomon.t": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "cantomon.t.sol/cantomon.t.json"
+        }
+      }
+    }
+  }
+}
