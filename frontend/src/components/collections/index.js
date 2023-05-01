@@ -1,7 +1,12 @@
+import Link from "next/link";
+import Image from "next/image";
+import EggPlaceholder from "./../../assets/nft-collection/egg-placeholder.png";
+import DemoNFTCollection from "./demo_nft_collection";
+
 export default function NFTCollections() {
     return (
-        <div>
-            NFT Collection
+        <div id="nft-collection" className="container nft-collections">
+            <DemoNFTCollection />
         </div>
     )
 }

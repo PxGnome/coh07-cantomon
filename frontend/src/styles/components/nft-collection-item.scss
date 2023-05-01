@@ -1,0 +1,36 @@
+#nft-collection-item {
+    .list-group {
+        background-color: rgb(151,217,242);
+        width: 500px; 
+        padding: 5px;
+        .row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            a {
+                width: 167px;
+                height: 167px; 
+
+                .item {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    border-style: groove;
+                    border-color: #2D6686;
+                    border-width: 5px;
+                    background-color: rgb(24,131,170);
+                    border-radius: 5px;
+
+                    h5 {
+                        font-size: 18px;
+                    }
+
+                    img {
+                        transform: scale(2);
+                    }
+                }
+            }
+        }
+    }
+}
