@@ -1,0 +1,37 @@
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+
+@font-face {
+  font-family: "VT323";
+  src: url("./../assets/font/VT323-Regular.ttf");
+}
+
+@import "./layout.scss";
+@import "./header.scss";
+@import "./footer.scss";
+@import "./main.scss";
+
+//components
+
+//nft-collection
+@import "./components/nft-collection.scss";
+@import "./components/nft-collection-item.scss";
+
+.modal.show {
+  display: block;
+}
+
+.modal-header {
+  background-color: rgb(102, 102, 102);
+  color: white;
+}
+
+.modal-body {
+  color: black;
+
+  a {
+    color: black;
+    text-decoration: underline;
+  }
+}
