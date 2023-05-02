@@ -4,6 +4,7 @@ import EggPlaceholder from "./../../assets/nft-collection/egg-placeholder.png";
 export default function DemoNFTCollection() {
     return (
         <div className="list-group">
+            
             <Link key={1}
                 className='row'
                 href={{
