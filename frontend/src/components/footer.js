@@ -18,12 +18,12 @@ export default function Footer() {
                         </div>
                     </div>
                     {
-                        current_page == "" && (
+                        current_page != "/collection-item/[slug]"  && (
                             <div className="center">
                                 <div className="row action-menu">
-                                    <Link className='manage' href='/'>Manage</Link>
-                                    <Link className='battle' href='/'>Battle</Link>
-                                    <Link className='shop' href='/'>Shop</Link>
+                                    <Link className='manage' href='/cantomon-management'>Manage</Link>
+                                    <Link className='battle' href='/cantomon-management/battle'>Battle</Link>
+                                    <Link className='shop' href='/cantomon-management'>Shop</Link>
                                 </div>
                             </div>
                         )

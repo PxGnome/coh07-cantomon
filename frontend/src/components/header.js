@@ -13,7 +13,7 @@ export default function Header() {
                         <Link className='info menu-btn' href='#'><i className='bi bi-info'></i></Link>
                     </div>
                     <div className="center">
-                        <Image src={Logo} className="logo" alt="logo cantomon" />
+                        <Link href="/"><Image src={Logo} className="logo" alt="logo cantomon" /></Link>
                     </div>
                     <div className="right">
                         <button className="btn btn-primary">Wallet Connection</button>
