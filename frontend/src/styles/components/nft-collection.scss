@@ -68,5 +68,11 @@
                 /* background-color: rgb(103, 99, 150); */
             }
         }
+        a:hover {
+            background: url("./../../assets/interface/item_panel_passive.png");       
+            background-size: 96%;
+            background-repeat: no-repeat;
+            background-position: -6px -7px;
+        }
     }
 }
