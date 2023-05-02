@@ -292,7 +292,7 @@ export default function DemoNFTItem() {
 
             </div>
 
-            <div className="row">
+            <div className="row last">
                 <Link key={16}
                     className='col-4'
                     href={{

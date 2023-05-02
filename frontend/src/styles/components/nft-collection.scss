@@ -3,7 +3,7 @@
         display: flex;
         align-items: flex-end;
         justify-content: center;
-        width: 100%;
+        width: 97%;
 
         .list-group-header {
 
@@ -28,17 +28,18 @@
         align-items: center;
         justify-content: center;
         overflow-y: scroll;
-        height: 100%;
-        padding-top: 61.8%;
+        height: 100%;  
+        padding-bottom: 50px;
+        padding-top: 55%;
         a {
             display: flex;
             justify-content: center;
             padding-top: 5px;
             padding-bottom: 5px;
-            background-image: url("./../../assets/interface/item_panel_active.png");
-            background-size: 100%;
+            background-image: url("./../../assets/interface/item_panel_active2.png");
+            background-size: 95%;
             background-repeat: no-repeat;
-            background-position: 0px 0px;
+            background-position: 0px -7px;
             height: 123px;
 
             .image-wrapper {
@@ -60,6 +61,10 @@
 
             .text-wrapper {
                 color: white;
+                line-height: 0.8;
+                padding-top: 2px;
+                padding-bottom: 2px;
+                overflow: hidden;
                 /* background-color: rgb(103, 99, 150); */
             }
         }
