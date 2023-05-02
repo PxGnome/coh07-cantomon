@@ -69,7 +69,7 @@
                     justify-content: center; 
                     background-image: url("./../../assets/interface/box_selection.png");
                     background-size: 200%;
-                    background-position: 0px 0px;
+                    background-position: 100% 0%;
                     background-repeat: no-repeat;
                     height: 83%;
                     h5 {
@@ -80,6 +80,25 @@
                     img {
                         transform: scale(2);
                     }
+                }
+            }
+            a:hover {
+                .item {
+                    
+                    background-image: url("./../../assets/interface/box_selection.png");
+                    background-size: 200%;
+                    background-position: 0% 0%;
+                    background-repeat: no-repeat;
+                }
+            }
+            
+            a.active {
+                .item {
+                    
+                    background-image: url("./../../assets/interface/box_selection.png");
+                    background-size: 200%;
+                    background-position: 0% 0%;
+                    background-repeat: no-repeat;
                 }
             }
         }
