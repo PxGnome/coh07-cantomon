@@ -33,7 +33,6 @@ async function deploy(_initArg) {
         'GMFacet',
         'DojoFacet',
         'EvolutionFacet',
-        // 'NPCFacet',
     ]
 
     for (var FacetName of FacetNames) {

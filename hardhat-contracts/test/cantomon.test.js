@@ -72,7 +72,6 @@ const cantomon_Test = function () {
     gmFacet = await ethers.getContractAt("GMFacet", diamondAddress);
     evolutionFacet = await ethers.getContractAt("EvolutionFacet", diamondAddress);
     dojoFacet = await ethers.getContractAt("DojoFacet", diamondAddress);
-    // npcFacet = await ethers.getContractAt("NPCFacet", diamondAddress);    
 
     SolidStateERC721Mock = await ethers.getContractFactory("SolidStateERC721Mock");
     mockNft = await SolidStateERC721Mock.deploy('mock', 'mock', 'MOCK');
