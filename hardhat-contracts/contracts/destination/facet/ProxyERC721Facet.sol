@@ -7,10 +7,12 @@
 
 pragma solidity ^0.8.19;
 
-// import "hardhat/console.sol";
+import "hardhat/console.sol";
 
 import "@hyperlane-xyz/core/contracts/interfaces/IMailbox.sol";
 import "@solidstate/contracts/token/ERC721/SolidStateERC721.sol";
+import { ERC721MetadataStorage } from '@solidstate/contracts/token/ERC721/metadata/ERC721MetadataStorage.sol';
+import { IERC721Metadata } from '@solidstate/contracts/token/ERC721/metadata/IERC721Metadata.sol';
 
 import "../../libraries/LibAppStorage.sol";
 
@@ -43,17 +45,10 @@ contract ProxyERC721Facet is CantomonModifiers, SolidStateERC721 {
             isUnbound: false
         });
 
-        s.cantomon[cantomonId].evoStats[s.gameVersion].evoTime = block.timestamp;
+        s.cantomon[s.gameVersion].evoStats[cantomonId].evoTime = block.timestamp;
         s.nextCantomonId = cantomonId + 1;
         emit ReceivedMessage(_origin, _sender, _message);
     }
-
-    // OWNER FUNCTIONS BELOW
-    ///@dev owner can call any function on this contract
-    // function ownerCalls(bytes memory _abi, string memory _functionSignature) external onlyOwner {
-    //     (bool success, ) = address(this).call(abi.encodeWithSignature(_functionSignature));
-    //     require(success, "Failed to call function");
-    // }
 
     //SOULBOUND BELOW
     event SwitchUnbound(uint256 _tokenId, bool _switch);
@@ -72,12 +67,52 @@ contract ProxyERC721Facet is CantomonModifiers, SolidStateERC721 {
         uint256 _tokenId
     ) internal virtual override(SolidStateERC721) {
         if (!s.proxySbt[_tokenId].isUnbound) {
-            require(
-                _from == address(0) || _to == address(0),
-                "ProxySbtFactory: This a Soulbound token. It cannot be transferred."
-            );
+            if(!s.isApprovedForSbt[_from] && !s.isApprovedForSbt[_to] && _from != address(0) && _to != address(0)) {
+                revert("ProxySbtFactory: This a Soulbound token. It cannot be transferred.");
+            }
         }
         super._beforeTokenTransfer(_from, _to, _tokenId);
     }
 
+    function setApprovedForSbtTransfer(address _address, bool _switch) external onlyOwner {
+        s.isApprovedForSbt[_address] = _switch;
+    }
+    function checkApprovedForSbtTransfer(address _address) external view returns (bool) {
+        return s.isApprovedForSbt[_address];
+    }
+
+    function updateBaseURI(string memory _baseURI) external onlyOwner {
+        ERC721MetadataStorage.layout().baseURI = _baseURI;
+    }
+
+    ///@dev Override tokenURI to use evolutionId to generate standard images, metadata is stored on chain
+    function tokenURI(
+        uint256 tokenId
+    ) public view override(ERC721Metadata, IERC721Metadata) returns (string memory) {
+        if (!_exists(tokenId)) revert ERC721Metadata__NonExistentToken();
+        string memory evolutionIdAsString = _uintToString(s.cantomon[s.gameVersion].evoStats[tokenId].evolutionId);
+        string memory baseURI = ERC721MetadataStorage.layout().baseURI;
+        return string(abi.encodePacked(baseURI, evolutionIdAsString));
+    }
+
+    function _uintToString(uint256 value) internal pure returns (string memory) {
+        if (value == 0) {
+            return "0";
+        }
+        uint256 temp = value;
+        uint256 digits;
+        while (temp != 0) {
+            digits++;
+            temp /= 10;
+        }
+        bytes memory buffer = new bytes(digits);
+        while (value != 0) {
+            digits--;
+            buffer[digits] = bytes1(uint8(48 + (value % 10)));
+            value /= 10;
+        }
+        return string(buffer);
+    }
+
 }
+

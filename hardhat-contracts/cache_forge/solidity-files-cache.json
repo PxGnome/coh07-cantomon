@@ -90,10 +90,10 @@
         }
       }
     },
-    "contracts/destination/facet/BattleFacet.sol": {
+    "contracts/destination/facet/DojoFacet.sol": {
       "lastModificationDate": 1682870108584,
       "contentHash": "7b52cbba1b12a8daf94e1a8914ed74ac",
-      "sourceName": "contracts/destination/facet/BattleFacet.sol",
+      "sourceName": "contracts/destination/facet/DojoFacet.sol",
       "solcConfig": {
         "settings": {
           "optimizer": {
@@ -163,8 +163,8 @@
       ],
       "versionRequirement": "^0.8.19",
       "artifacts": {
-        "BattleFacet": {
-          "0.8.19+commit.7dd6d404.Linux.gcc": "BattleFacet.sol/BattleFacet.json"
+        "DojoFacet": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "DojoFacet.sol/DojoFacet.json"
         }
       }
     },

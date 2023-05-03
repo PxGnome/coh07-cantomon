@@ -27,36 +27,59 @@ contract GMFacet is CantomonModifiers {
     function getGameSeason() external view returns (uint16) {
         return s.gameSeason;
     }
-    function setGameSettings(GameSettings calldata _gameSettings) external onlyOwner {
-        s.gameSettings = _gameSettings;
+    function setFee(string memory _functionName, uint256 _fee) external onlyOwner {
+        s.fees[0].fee[_functionName] = _fee;
+        s.fees[0].functionNames.push(_functionName);
     }
-    function getGameSettings() external view returns (GameSettings memory) {
-        return s.gameSettings;
+    function getFee(string memory _functionName) external view returns (uint256) {
+        return s.fees[0].fee[_functionName];
     }
     //Evolution Settings
     function setEvolutionXpforEvo(uint256 _evoStage, uint256 _xpRequired) external onlyOwner {
-        s.evolutionRule[s.gameSettings.evolutionRule].xpForEvo[_evoStage] = _xpRequired;
+        s.evolutionRule[s.gameVersion].xpForEvo[_evoStage] = _xpRequired;
     }
     function getEvolutionXpforEvo(uint256 _evoStage) external view returns (uint256) {
-        return s.evolutionRule[s.gameSettings.evolutionRule].xpForEvo[_evoStage];
-    }
+        return s.evolutionRule[s.gameVersion].xpForEvo[_evoStage];
+    } 
     function setEvolutionOptions(uint256 _evolutionId, uint256[] calldata _evoOptions) external onlyOwner {
-        s.evolutionRule[s.gameSettings.evolutionRule].evolutionOptions[_evolutionId] = _evoOptions;
+        s.evolutionRule[s.gameVersion].evolutionOptions[_evolutionId] = _evoOptions;
     }
     function getEvolutionOptions(uint256 _evolutionId) external view returns (uint256[] memory) {
-        return s.evolutionRule[s.gameSettings.evolutionRule].evolutionOptions[_evolutionId];
+        return s.evolutionRule[s.gameVersion].evolutionOptions[_evolutionId];
     }
     function setEvolutionRequirements(uint256 _evolutionId, EvolutionRequirements calldata _evoReq) external onlyOwner {
-        s.evolutionRule[s.gameSettings.evolutionRule].evolutionRequirements[_evolutionId] = _evoReq;
+        s.evolutionRule[s.gameVersion].evolutionRequirements[_evolutionId] = _evoReq;
     }
     function getEvolutionRequirements(uint256 _evolutionId) external view returns (EvolutionRequirements memory) {
-        return s.evolutionRule[s.gameSettings.evolutionRule].evolutionRequirements[_evolutionId];
+        return s.evolutionRule[s.gameVersion].evolutionRequirements[_evolutionId];
     }
     function setEvolutionBonus(uint256 _evolutionId, EvolutionBonus calldata _evoBonus) external onlyOwner {
-        s.evolutionRule[s.gameSettings.evolutionRule].evolutionBonus[_evolutionId] = _evoBonus;
+        s.evolutionRule[s.gameVersion].evolutionBonus[_evolutionId] = _evoBonus;
     }
     function getEvolutionBonus(uint256 _evolutionId) external view returns (EvolutionBonus memory) {
-        return s.evolutionRule[s.gameSettings.evolutionRule].evolutionBonus[_evolutionId];
+        return s.evolutionRule[s.gameVersion].evolutionBonus[_evolutionId];
     }
-    
+
+    function getCantomonMetadata(uint256 _cantomonId) external view returns (CantomonMetadata memory) {
+        return s.cantomon[s.gameVersion].metadata[_cantomonId];
+    }
+    function getCantomonBaseStats(uint256 _cantomonId) external view returns (CantomonBaseStats memory) {
+        return s.cantomon[s.gameVersion].baseStats[_cantomonId];
+    }
+    function getCantomonDynamicStats(uint256 _cantomonId) external view returns (CantomonDynamicStats memory) {
+        return s.cantomon[s.gameVersion].dynamicStats[_cantomonId];
+    }
+    function getCantomonEvoStats(uint256 _cantomonId) external view returns (CantomonEvoStats memory) {
+        return s.cantomon[s.gameVersion].evoStats[_cantomonId];
+    }
+    function getCantomonCareerStats(uint256 _cantomonId) external view returns (CantomonCareStats memory) {
+        return s.cantomon[_cantomonId].careStats[s.gameVersion];
+    }
+
+    // function getDojoMetadata(uint256 _dojoId) external view returns (DojoMetadata memory) {
+    //     return s.dojo[s.gameVersion].metadata[_dojoId];
+    // }
+    // function getDojoStats(uint256 _dojoId) external view returns (DojoStats memory) {
+    //     return s.dojo[s.gameVersion].stats[_dojoId];
+    // }
 }

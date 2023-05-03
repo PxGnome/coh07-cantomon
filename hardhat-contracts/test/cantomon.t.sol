@@ -5,7 +5,7 @@
 // // import {Utils} from "./utils/Utils.sol";
 
 // import "../contracts/destination/CantomonDiamond.sol";
-// import "../contracts/destination/facet/BattleFacet.sol";
+// import "../contracts/destination/facet/DojoFacet.sol";
 // import "../contracts/destination/facet/EvolutionFacet.sol";
 // import "../contracts/destination/facet/GMFacet.sol";
 // import "../contracts/destination/facet/ProxyERC721Facet.sol";
@@ -14,7 +14,7 @@
 
 // contract CantomonTest is Test {
 //     CantomonDiamond cantomonDiamond;
-//     BattleFacet battleFacet;
+//     DojoFacet dojoFacet;
 //     EvolutionFacet evolutionFacet;
 //     GMFacet gmFacet;
 //     ProxyERC721Facet proxyERC721Facet;
@@ -26,7 +26,7 @@
 
 //     function setUp() public {
 //         cantomonDiamond = new CantomonDiamond();
-//         battleFacet = new BattleFacet();
+//         dojoFacet = new DojoFacet();
 //         evolutionFacet = new EvolutionFacet();
 //         gmFacet = new GMFacet();
 //         proxyERC721Facet = new ProxyERC721Facet();
@@ -59,8 +59,8 @@
 
 
 //         // cantomon.diamondCut(
-//         //     address(battleFacet),
-//         //     abi.encodeWithSelector(battleFacet.init.selector, "Cantomon", "CANTOMON", "/BASEURI"),
+//         //     address(dojoFacet),
+//         //     abi.encodeWithSelector(dojoFacet.init.selector, "Cantomon", "CANTOMON", "/BASEURI"),
 //         //     new bytes32[](0)
 //         // );
 

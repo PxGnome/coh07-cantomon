@@ -16,25 +16,24 @@ struct AppStorage {
     bytes32 lastSender;
     string lastMessage;
     bytes32 approvedMessenger;
+    mapping(address => bool) isApprovedForSbt;
     mapping(uint256 => ProxySbt) proxySbt;
 
     uint16 gameVersion;
     uint16 gameSeason;
-    GameSettings gameSettings;
+    mapping(uint256 => Fees) fees;
     mapping(uint256 => Cantomon) cantomon;
     uint256 nextCantomonId;
     mapping(uint256 => EvolutionRule) evolutionRule;
-    mapping(uint256 => NPC) npc;
+    mapping(uint256 => Dojo) dojo;
+    mapping(address => Trainer) trainer;
 }
 
-struct Cantomon {
-    mapping(uint256 => CantomonMetaData) metadata;
-    mapping(uint256 => CantomonBaseStats) baseStats;
-    mapping(uint256 => CantomonDynamicStats) dynamicStats;
-    mapping(uint256 => CantomonEvoStats) evoStats;
-    mapping(uint256 => CantomonCareStats) careStats;
-}
 
+struct Fees {
+    mapping(string => uint256) fee;
+    string[] functionNames;
+}
 
 struct ProxySbt {
     address ogNftAddress;
@@ -42,26 +41,42 @@ struct ProxySbt {
     bool isUnbound;
 }
 
-struct GameSettings {
-    uint16 evolutionRule;
+struct Cantomon {
+    mapping(uint256 => CantomonMetadata) metadata;
+    mapping(uint256 => CantomonBaseStats) baseStats;
+    mapping(uint256 => CantomonDynamicStats) dynamicStats;
+    mapping(uint256 => CantomonEvoStats) evoStats;
+    mapping(uint256 => CantomonCareStats) careStats;
 }
+
+struct Trainer {
+    mapping(string => uint256) itemsBalance;
+    mapping(uint256 => TrainerMetadata) metadata;
+}
+
+struct TrainerMetadata {
+    string name;
+}
+
 
 enum CantomonStatus {
     Healthy,
     Sick,
-    Dead
+    Dead,
+    AtDojo
 }
 
 enum CantomonAttr {
     Unknown,
-    Fire,
-    Water,
-    Grass
+    Pyro,
+    Hydro,
+    Bio
 }
 
 
 ///@dev Metadata is assigned at minting
-struct CantomonMetaData {
+struct CantomonMetadata {
+    string name;
     uint256 tokenId;
 }
 
@@ -94,26 +109,38 @@ struct CantomonCareStats {
     uint256 numberFed;
 }
 
-struct NPC {
-    mapping(string => uint256) npcNameToId;
-    mapping(uint256 => string) npcIdToName;
-    mapping(uint256 => NPCStats) npcStats;
-}
-
-struct NPCStats {
-    CantomonAttr attribute;
-    uint256 evolutionId;
-    uint256 battlePower;
-    uint256 npcSkill;
-    uint256 npcBattles;
-    uint256 npcWins;
-}
-
 struct CantomonEvoStats {
     uint256 evoStage;
     uint256 evolutionId;
     uint256 evoTime;
 }
+
+struct Dojo {
+    mapping(uint256 => uint256[]) listofDojos;
+    mapping(uint256 => bool) isRegisteredDojo;
+    // mapping(uint256 => DojoMetadata) metadata;
+    mapping(uint256 => DojoStats) stats;
+    mapping(uint256 => DojoHistory) history;
+}
+
+// struct DojoMetadata {
+//     string name;
+//     address master;
+// }
+
+struct DojoStats {
+    CantomonAttr attribute;
+    uint256 evolutionId;
+    uint256 battlePower;
+    uint256 skill;
+    uint256 battles;
+    uint256 wins;
+}
+
+struct DojoHistory {
+    mapping(uint256 => uint256) lastBattleWith;
+}
+
 
 ///@dev Need to assign this at init
 struct EvolutionRule {
@@ -156,7 +183,7 @@ contract CantomonModifiers is OwnableInternal {
 
     modifier cantomonMaxEvo(uint256 _cantomonId) {
         require(
-            s.evolutionRule[s.gameSettings.evolutionRule].xpForEvo[s.cantomon[_cantomonId].evoStats[s.gameVersion].evoStage] > 0, "Cantomon cannot evolve further at this point"
+            s.evolutionRule[s.gameVersion].xpForEvo[s.cantomon[s.gameVersion].evoStats[_cantomonId].evoStage] > 0, "Cantomon cannot evolve further at this point"
         );
         _;
     }

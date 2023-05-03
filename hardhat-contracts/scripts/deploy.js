@@ -31,8 +31,9 @@ async function deploy(_initArg) {
 
     var FacetNames = [
         'GMFacet',
-        'BattleFacet',
-        'EvolutionFacet'
+        'DojoFacet',
+        'EvolutionFacet',
+        // 'NPCFacet',
     ]
 
     for (var FacetName of FacetNames) {
