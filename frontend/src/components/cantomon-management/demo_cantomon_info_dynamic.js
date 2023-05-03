@@ -17,7 +17,7 @@ export default function DemoCantomonInfoDynamic() {
 
     React.useEffect(() => {
         console.log("selected_cantomon : ", selected_cantomon);
-    }, [selected_cantomon])
+    }, [selected_cantomon]);
     return (
         <>
 
@@ -48,7 +48,7 @@ export default function DemoCantomonInfoDynamic() {
                                         selected_cantomon && "description" in selected_cantomon && selected_cantomon.description instanceof Array && (
                                             selected_cantomon.description.map((el, i, arr) => {
                                                 return (
-                                                    <p>{el}</p>
+                                                    <p key={i}>{el}</p>
                                                 )
                                             })
                                         )

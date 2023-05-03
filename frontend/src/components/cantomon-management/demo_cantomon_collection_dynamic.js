@@ -176,7 +176,7 @@ export default function DemoCantomonCollectionDynamic() {
                                         "description" in element && element.description instanceof Array && (
                                             element.description.map((el, i, arr) => {
                                                 return (
-                                                    <p>{el}</p>
+                                                    <p key={i}>{el}</p>
                                                 )
                                             })
                                         )
