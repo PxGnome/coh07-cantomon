@@ -151,7 +151,6 @@ struct EvolutionRule {
 }
 
 struct EvolutionRequirements {
-    uint256 evolutionId;
     uint256 happiness;
     uint256 wins;
     uint256 battles;
@@ -186,5 +185,65 @@ contract CantomonModifiers is OwnableInternal {
             s.evolutionRule[s.gameVersion].xpForEvo[s.cantomon[s.gameVersion].evoStats[_cantomonId].evoStage] > 0, "Cantomon cannot evolve further at this point"
         );
         _;
+    }
+
+    modifier onlyAvailCantomon(uint256 _cantomonId) {
+        require(
+            s.cantomon[s.gameVersion].dynamicStats[_cantomonId].status == CantomonStatus.Healthy,
+            "Cantomon is not available"
+        );
+        _;
+    }
+
+    function _myXpForEvo(uint256 _cantomonId) internal view returns (uint256) {
+        uint256 evoStage = s.cantomon[s.gameVersion].evoStats[_cantomonId].evoStage;
+        return s.evolutionRule[s.gameVersion].xpForEvo[evoStage];
+    }
+    function _addXp(uint256 _cantomonId, uint256 _add) internal {
+        require(_myXpForEvo(_cantomonId) > 0, "Cantomon cannot evolve");
+        s.cantomon[s.gameVersion].dynamicStats[_cantomonId].xp += _add;
+    }
+
+    function _subXp(uint256 _cantomonId, uint256 _sub) internal {
+        require(_myXpForEvo(_cantomonId) > 0, "Cantomon cannot evolve");
+        CantomonDynamicStats storage c_dynamicStats = s.cantomon[s.gameVersion].dynamicStats[_cantomonId];
+        c_dynamicStats.xp > _sub ? c_dynamicStats.xp -= _sub : c_dynamicStats.xp = 0;
+    }
+
+    function _addHappiness(uint256 _cantomonId, uint256 _add) internal {
+        CantomonDynamicStats storage c_dynamicStats = s.cantomon[s.gameVersion].dynamicStats[_cantomonId];
+        c_dynamicStats.happiness + _add > 100 ? c_dynamicStats.happiness = 100 : c_dynamicStats.happiness += _add;
+    }
+
+    function _subHappiness(uint256 _cantomonId, uint256 _sub) internal {
+        CantomonDynamicStats storage c_dynamicStats = s.cantomon[s.gameVersion].dynamicStats[_cantomonId];
+        c_dynamicStats.happiness > _sub ? c_dynamicStats.happiness -= _sub : c_dynamicStats.happiness = 0;
+    }
+
+    function _addEnergy(uint256 _cantomonId, uint256 _add) internal {
+        s.cantomon[s.gameVersion].dynamicStats[_cantomonId].energy += _add;
+    }
+
+    function _subEnergy(uint256 _cantomonId, uint256 _sub) internal {
+        CantomonDynamicStats storage c_dynamicStats = s.cantomon[s.gameVersion].dynamicStats[_cantomonId];
+        c_dynamicStats.energy > _sub ? c_dynamicStats.energy -= _sub : c_dynamicStats.energy = 0;
+    }
+
+    function _addSkill(uint256 _cantomonId, uint256 _add) internal {
+        s.cantomon[s.gameVersion].dynamicStats[_cantomonId].skill += _add;
+    }
+
+    function _subSkill(uint256 _cantomonId, uint256 _sub) internal {
+        CantomonDynamicStats storage c_dynamicStats = s.cantomon[s.gameVersion].dynamicStats[_cantomonId];
+        c_dynamicStats.skill > _sub ? c_dynamicStats.skill -= _sub : c_dynamicStats.skill = 0;
+    }
+
+    ///@dev Should be a VRF number later on but use keccak for now
+    function _genSeed(uint256 _number) internal view returns (uint256) {
+        return uint256(keccak256(abi.encodePacked(block.timestamp,_number)));
+    }
+
+    function _genSeed(string memory _string) internal view returns (uint256) {
+        return uint256(keccak256(abi.encodePacked(block.timestamp, _string)));
     }
 }

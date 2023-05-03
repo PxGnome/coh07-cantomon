@@ -7,7 +7,7 @@
 
 pragma solidity ^0.8.19;
 
-import "hardhat/console.sol";
+// import "hardhat/console.sol"; // TODO: remove in final
 
 import "@hyperlane-xyz/core/contracts/interfaces/IMailbox.sol";
 import "@solidstate/contracts/token/ERC721/SolidStateERC721.sol";

@@ -7,7 +7,7 @@
 
 pragma solidity ^0.8.19;
 
-// import "hardhat/console.sol";
+// import "hardhat/console.sol"; // TODO: remove in final
 
 import "@solidstate/contracts/access/ownable/OwnableInternal.sol";
 import "@solidstate/contracts/token/ERC721/SolidStateERC721.sol";
@@ -71,11 +71,6 @@ contract DojoFacet is CantomonModifiers {
         }
 
         emit CloseDojo(_cantomonId);
-    }
-
-    ///@dev Should be a VRF number later on but use keccak for now
-    function _genSeed(string memory _functionName) public view returns (uint256) {
-        return uint256(keccak256(abi.encodePacked(block.timestamp, _functionName)));
     }
 
     function dojoSelectSparring(uint256 _cantomonId, uint256 _dojoId) external onlyCantomonOwner(_cantomonId) {

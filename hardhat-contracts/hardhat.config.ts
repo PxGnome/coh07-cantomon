@@ -18,7 +18,9 @@ const chainIds = {
   mainnet: 1,
   rinkeby: 4,
   ropsten: 3,
-  'polygon-mumbai': 80001
+  sepolia: 11155111,
+  cantotestnet: 7701,
+  'polygon-mumbai': 80001,
 };
 
 // Ensure that we have all the environment variables we need.
@@ -44,7 +46,12 @@ if (!initialIndex) {
 }
 
 function getChainConfig(network: keyof typeof chainIds): NetworkUserConfig {
-  const url: string = "https://" + network + ".infura.io/v3/" + infuraApiKey;
+  var url: string;
+  if(network == 'cantotestnet') {
+    url = 'http://canto-testnet.plexnode.wtf';
+  } else {
+    url = "https://" + network + ".infura.io/v3/" + infuraApiKey;
+  }
   return {
     accounts: {
       count: 10,
@@ -83,6 +90,8 @@ const config: HardhatUserConfig = {
     rinkeby: getChainConfig("rinkeby"),
     ropsten: getChainConfig("ropsten"),
     'polygon-mumbai': getChainConfig("polygon-mumbai"),
+    sepolia: getChainConfig("sepolia"),
+    cantotestnet: getChainConfig("cantotestnet")
   },
   etherscan: {
 

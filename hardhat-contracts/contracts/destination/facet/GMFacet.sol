@@ -7,7 +7,7 @@
 
 pragma solidity ^0.8.19;
 
-// import "hardhat/console.sol";
+// import "hardhat/console.sol"; // TODO: remove in final
 
 import "@solidstate/contracts/access/ownable/OwnableInternal.sol";
 import "@solidstate/contracts/token/ERC721/SolidStateERC721.sol";

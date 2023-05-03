@@ -7,8 +7,6 @@
 
 pragma solidity ^0.8.19;
 
-// import "hardhat/console.sol";
-
 import "@solidstate/contracts/proxy/diamond/SolidStateDiamond.sol";
 
 contract CantomonDiamond is SolidStateDiamond {}

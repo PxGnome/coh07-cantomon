@@ -3,7 +3,7 @@
 
 const { getSelectors, FacetCutAction } = require('./libraries/diamond.js')
 
-async function deploy(_initArg) {
+async function deployDiamond(_initArg) {
     console.log('')
     console.log('Deploying Diamond')
 
@@ -21,7 +21,7 @@ async function deploy(_initArg) {
 
     var Facet = await ethers.getContractFactory('ProxyERC721Facet');
     var facet = await Facet.deploy();
-    console.log(`${FacetName} deployed: ${facet.address}`)
+    console.log(`ProxyERC721Facet deployed: ${facet.address}`)
 
     facetCuts.push({
         target: facet.address,
@@ -60,14 +60,14 @@ async function deploy(_initArg) {
         throw Error(`Diamond upgrade failed: ${tx.hash}`)
     }
     console.log('')
-    console.log(`Diamond upgrade succeeded`)
+    console.log(`Diamond upgrade succeeded and completed`)
     return cantomonDiamond.address;
 }
 
 // We recommend this pattern to be able to use async/await everywhere
 // and properly handle errors.
 if (require.main === module) {
-  deploy()
+  deployDiamond()
     .then(() => process.exit(0))
     .catch(error => {
       console.error(error)
@@ -75,4 +75,4 @@ if (require.main === module) {
     })
 }
 
-exports.deploy = deploy
+exports.deployDiamond = deployDiamond

@@ -7,7 +7,7 @@
 
 pragma solidity ^0.8.19;
 
-import "hardhat/console.sol";
+// import "hardhat/console.sol"; // TODO: remove in final
 
 import "@solidstate/contracts/access/ownable/OwnableInternal.sol";
 import "@solidstate/contracts/token/ERC721/SolidStateERC721.sol";
@@ -16,8 +16,7 @@ import "../../libraries/LibAppStorage.sol";
 contract EvolutionFacet is CantomonModifiers {
 
     function myXpForEvo(uint256 _cantomonId) public view returns (uint256) {
-        uint256 evoStage = s.cantomon[s.gameVersion].evoStats[_cantomonId].evoStage;
-        return s.evolutionRule[s.gameVersion].xpForEvo[evoStage];
+        return _myXpForEvo(_cantomonId);
     }
 
     function getEvoStage(uint256 _cantomonId) public view returns (uint256) {
@@ -26,50 +25,6 @@ contract EvolutionFacet is CantomonModifiers {
 
     function getEvolutionId(uint256 _cantomonId) public view returns (uint256) {
         return s.cantomon[s.gameVersion].evoStats[_cantomonId].evolutionId;
-    }
-    
-    function _addXp(uint256 _cantomonId, uint256 _add) internal {
-        require(myXpForEvo(_cantomonId) > 0, "Cantomon cannot evolve");
-        s.cantomon[s.gameVersion].dynamicStats[_cantomonId].xp += _add;
-    }
-
-    function _subXp(uint256 _cantomonId, uint256 _sub) internal {
-        require(myXpForEvo(_cantomonId) > 0, "Cantomon cannot evolve");
-        CantomonDynamicStats storage c_dynamicStats = s.cantomon[s.gameVersion].dynamicStats[_cantomonId];
-        c_dynamicStats.xp > _sub ? c_dynamicStats.xp -= _sub : c_dynamicStats.xp = 0;
-    }
-
-    function _addHappiness(uint256 _cantomonId, uint256 _add) internal {
-        CantomonDynamicStats storage c_dynamicStats = s.cantomon[s.gameVersion].dynamicStats[_cantomonId];
-        c_dynamicStats.happiness + _add > 100 ? c_dynamicStats.happiness = 100 : c_dynamicStats.happiness += _add;
-    }
-
-    function _subHappiness(uint256 _cantomonId, uint256 _sub) internal {
-        CantomonDynamicStats storage c_dynamicStats = s.cantomon[s.gameVersion].dynamicStats[_cantomonId];
-        c_dynamicStats.happiness > _sub ? c_dynamicStats.happiness -= _sub : c_dynamicStats.happiness = 0;
-    }
-
-    function _addEnergy(uint256 _cantomonId, uint256 _add) internal {
-        s.cantomon[s.gameVersion].dynamicStats[_cantomonId].energy += _add;
-    }
-
-    function _subEnergy(uint256 _cantomonId, uint256 _sub) internal {
-        CantomonDynamicStats storage c_dynamicStats = s.cantomon[s.gameVersion].dynamicStats[_cantomonId];
-        c_dynamicStats.energy > _sub ? c_dynamicStats.energy -= _sub : c_dynamicStats.energy = 0;
-    }
-
-    function _addSkill(uint256 _cantomonId, uint256 _add) internal {
-        s.cantomon[s.gameVersion].dynamicStats[_cantomonId].skill += _add;
-    }
-
-    function _subSkill(uint256 _cantomonId, uint256 _sub) internal {
-        CantomonDynamicStats storage c_dynamicStats = s.cantomon[s.gameVersion].dynamicStats[_cantomonId];
-        c_dynamicStats.skill > _sub ? c_dynamicStats.skill -= _sub : c_dynamicStats.skill = 0;
-    }
-
-    ///@dev Should be a VRF number later on but use keccak for now
-    function _genSeed(uint256 _dnaNumber) public view returns (uint256) {
-        return uint256(keccak256(abi.encodePacked(block.timestamp,_dnaNumber)));
     }
 
     function _xpAccrued(uint256 _cantomonId) internal view returns (uint256) {
@@ -138,7 +93,7 @@ contract EvolutionFacet is CantomonModifiers {
 
     event EvolveCantomon(uint256 indexed cantomonId, uint256 indexed evoStage, uint256 indexed evolutionId, uint256 evoTime);
 
-    function evolveCantomon(uint256 _cantomonId) public onlyCantomonOwner(_cantomonId) cantomonMaxEvo(_cantomonId) {
+    function evolveCantomon(uint256 _cantomonId) public onlyCantomonOwner(_cantomonId) onlyAvailCantomon(_cantomonId) cantomonMaxEvo(_cantomonId) {
         CantomonEvoStats storage c_evoStats = s.cantomon[s.gameVersion].evoStats[_cantomonId];
         require(c_evoStats.evoStage > 0, "Cantomon needs to hatch first");
         require(getXp(_cantomonId) >= myXpForEvo(_cantomonId), "Cantomon needs more xp to evolve");
@@ -184,13 +139,13 @@ contract EvolutionFacet is CantomonModifiers {
 
     event TrainCantomon(uint256 indexed trainingId, uint256 indexed cantomonId,uint256 happinessGrowth,  uint256 skillGrowth);
 
-    function trainCantomon_01(uint256 _cantomonId) public onlyCantomonOwner(_cantomonId) training(_cantomonId) {
+    function trainCantomon_01(uint256 _cantomonId) public onlyCantomonOwner(_cantomonId) onlyAvailCantomon(_cantomonId) training(_cantomonId) {
         _addSkill(_cantomonId, 1);
         _addHappiness(_cantomonId, 10);
         emit TrainCantomon(1, _cantomonId, 10, 1);      
     }
     
-    function trainCantomon_02(uint256 _cantomonId) public onlyCantomonOwner(_cantomonId) training (_cantomonId) {
+    function trainCantomon_02(uint256 _cantomonId) public onlyCantomonOwner(_cantomonId) onlyAvailCantomon(_cantomonId) training (_cantomonId) {
         uint256 seed = _genSeed(uint256(s.cantomon[s.gameVersion].baseStats[_cantomonId].dna));
 
         uint256 skillGrowth = seed % 3;
@@ -208,7 +163,7 @@ contract EvolutionFacet is CantomonModifiers {
     event FeedCantomon(uint256 indexed feedingId, uint256 indexed cantomonId, uint256 happinessGrowth,  uint256 energyGrowth);
 
 
-    function feedCantomon_01(uint256 _cantomonId) public onlyCantomonOwner( _cantomonId) feeding(_cantomonId) {
+    function feedCantomon_01(uint256 _cantomonId) public onlyCantomonOwner( _cantomonId) onlyAvailCantomon(_cantomonId) feeding(_cantomonId) {
         _addHappiness(_cantomonId, 10);
         _addEnergy(_cantomonId, 1);
         emit FeedCantomon(1, _cantomonId, 10, 1);

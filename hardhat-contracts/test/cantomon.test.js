@@ -11,7 +11,7 @@ const {
   findAddressPositionInFacets
 } = require('../scripts/libraries/diamond.js')
 
-const { deploy } = require('../scripts/deploy.js')
+const { deployDiamond } = require('../scripts/deployDiamond.js')
 
 
 const cantomon_Test = function () {
@@ -66,7 +66,7 @@ const cantomon_Test = function () {
     nftReader = await NFTReader.deploy(ethers.constants.AddressZero);
 
     initArg = ['Cantomon', "CANTOMON", "/BASEURI/"];
-    diamondAddress = await deploy(initArg);
+    diamondAddress = await deployDiamond(initArg);
 
     proxyERC721Facet = await ethers.getContractAt("ProxyERC721Facet", diamondAddress);
     gmFacet = await ethers.getContractAt("GMFacet", diamondAddress);
@@ -161,9 +161,9 @@ const cantomon_Test = function () {
         
         evoOptions = {
           0: [1, 2, 3],
-          1: [4, 5],
-          2: [6, 7],
-          3: [8, 9]
+          1: [4, 5, 10],
+          2: [6, 7, 10],
+          3: [8, 9, 10]
         }
   
         for(let i = 0; i < evoOptions.length; i++) {
@@ -172,16 +172,17 @@ const cantomon_Test = function () {
         }
   
         evoRequirements = {
-          0: [0, 0, 0, 0],
-          1: [0, 0, 0, 0],
-          2: [0, 0, 0, 0],
-          3: [0, 0, 0, 0],
-          4: [1, 0, 0, 0],
-          5: [1, 50, 0, 0],
-          6: [2, 0, 0, 0],
-          7: [2, 50, 0, 0],  
-          8: [3, 0, 0, 0],
-          9: [3, 50, 0, 0]
+          0: [0, 0, 0],
+          1: [0, 0, 0],
+          2: [0, 0, 0],
+          3: [0, 0, 0],
+          4: [0, 0, 0],
+          5: [50, 0, 0],
+          6: [0, 0, 0],
+          7: [50, 0, 0],  
+          8: [0, 0, 0],
+          9: [50, 0, 0],
+          10: [99, 0, 0],
         }
         
         for(let i = 0; i < evoRequirements.length; i++) {
@@ -199,7 +200,8 @@ const cantomon_Test = function () {
           6: [10, 0],
           7: [20, 0],
           8: [10, 0],
-          9: [20, 0]
+          9: [20, 0],
+          10: [25, 0]
         }
   
         for(let i = 0; i < evoBonus.length; i++) {
