@@ -23,7 +23,8 @@ export default function Footer() {
                                 <div className="row action-menu">
                                     <Link className='manage' href='/cantomon-management'>Manage</Link>
                                     <Link className='battle' href='/cantomon-management/battle'>Battle</Link>
-                                    <Link className='shop' href='/cantomon-management'>Shop</Link>
+                                    <Link className='battle' href='/cantomon-management/hatch'>Hatch</Link>
+                                    <Link className='shop' href='/cantomon-management/dojo'>Dojo</Link>
                                 </div>
                             </div>
                         )

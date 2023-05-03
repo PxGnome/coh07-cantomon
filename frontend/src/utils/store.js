@@ -6,10 +6,12 @@ import logger from "redux-logger";
 
 import collection from "../features/manageCollection";
 import navstate from "../features/manageNavigationState";
+import cantomonSelectionState from "@/features/cantomonSelectionState";
 
 const reducers = combineReducers({ 
     collectionStore: collection,
-    navStore: navstate
+    navStore: navstate,
+    cantomonStore: cantomonSelectionState
 });
 
 export default configureStore({

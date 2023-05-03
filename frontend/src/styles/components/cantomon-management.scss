@@ -50,7 +50,10 @@
             }
 
             .row:hover {
+                background-image: url("./../../assets/interface/item_panel_passive2.png");
+            }
 
+            .row.active {
                 background-image: url("./../../assets/interface/item_panel_passive2.png");
             }
 
@@ -72,9 +75,9 @@
             position: relative;
             left: 5px;
             align-items: center;
-            color: rgb(207,237,250);
+            color: rgb(207, 237, 250);
             font-size: 20px;
-            
+
 
             .left {
                 display: flex;
@@ -93,7 +96,7 @@
             justify-content: space-evenly;
             background-image: url("./../../assets/interface/content_bg_panel.png");
             background-repeat: repeat;
-            background-size: 484px;
+            background-size: 111.5%;
             background-position: -4px 0px;
 
             .container {
@@ -110,11 +113,11 @@
 
                     background-image: url("./../../assets/interface/box_selection_top.png");
                     background-repeat: no-repeat;
-                    background-size: contain;
+                    background-size: 100%;
                     background-position: 0px 0px;
 
                     width: 100%;
-                    height: 32px;
+                    height: 4%;
                 }
 
                 .box-body {
@@ -131,6 +134,9 @@
                     justify-content: space-between;
                     align-items: center;
                     padding-top: 20%;
+                    p.name {
+                        color: whitesmoke;
+                    }
                 }
 
                 .box-footer {
@@ -138,10 +144,10 @@
                     background-image: url("./../../assets/interface/box_selection_bottom.png");
 
                     background-repeat: no-repeat;
-                    background-size: contain;
+                    background-size: 102%;
                     background-position: 0px 0px;
                     width: 100%;
-                    height: 100%;
+                    height: auto;
                 }
 
                 img {
@@ -187,9 +193,18 @@
                     border-style: solid;
                     border-color: #2D6686;
                     border-width: 2px;
-                    color: rgb(145, 200, 229);
+                    color: whitesmoke;
                     background-color: rgb(129, 189, 212);
                     border-radius: 3px;
+
+                    word-wrap: break-word;
+                    line-height: 0.7;
+                    overflow: hidden;
+
+                    p {
+                        padding: 0;
+                        margin: 0;
+                    }
                 }
 
                 .row.loader {
@@ -211,15 +226,15 @@
             background-size: 100%;
             background-repeat: no-repeat;
             background-position: 0px 0px;
-            height: 9%;
+            height: 6%;
             position: relative;
             left: 1%;
             width: 103%;
             display: flex;
             align-items: center;
-            justify-content: space-evenly; 
+            justify-content: space-evenly;
             flex-direction: row;
-        
+
 
 
             .nav {
@@ -233,18 +248,25 @@
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    height: 18px;
+                    height: 30px;
                     background-color: rgb(38, 163, 209);
                     border: solid 2px black;
                     border-radius: 5px;
                     padding: 12px;
                     width: 65px;
+                    box-shadow: inset 0 0 5px black;
 
                     a {
-                        color: white;
-                        font-weight: 700;
-                        font-size: 18px;
+                        color: rgb(199, 255, 255);
+                        font-weight: 300;
+                        font-size: 24px;
                     }
+                }
+            }
+
+            .nav.dojo {
+                li.register {
+                    width: 100px;
                 }
             }
         }
