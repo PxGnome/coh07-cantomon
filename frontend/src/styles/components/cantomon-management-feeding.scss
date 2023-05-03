@@ -1,0 +1,197 @@
+#cantomon-management-feeding {
+
+    .row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .cantomon-detail-panel {
+
+        .list-group-header-wrapper {
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            width: 100%;
+
+            .combination {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+
+                .list-group-header {
+                    background-image: url("./../../assets/interface/item_panel_header.png");
+                    background-size: 100%;
+                    background-repeat: no-repeat;
+                    background-position: 0px 0px;
+                    height: 35px;
+                    width: 100%;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    padding-top: 5px;
+
+
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    color: rgb(207, 237, 250);
+                    font-size: 20px;
+
+                    .left {
+                        display: flex;
+                        justify-content: left;
+                    }
+
+                    .right {
+                        display: flex;
+                        justify-content: right;
+                    }
+                }
+
+                .list-group-subheader {
+                    background-image: url("./../../assets/interface/item_panel_subheader.png");
+                    background-size: 100%;
+                    background-repeat: no-repeat;
+                    background-position: 0px 0px;
+                    height: 80px;
+                    width: 100%;
+                    color: white;
+                    display: flex;
+                    align-items: flex-end;
+                    justify-content: flex-end;
+                    padding-right: 3%;
+
+                }
+            }
+        }
+
+        .panel-body {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            background-image: url("./../../assets/interface/content_bg_panel.png");
+            background-repeat: repeat;
+            background-size: 109.5%;
+            background-position: -4px 0px;
+
+            .container {
+                padding-top: 5px;
+                padding-bottom: 5px;
+                padding-left: 38px;
+            }
+
+            .image-wrapper {
+                height: 250px;
+
+                .box-header {
+
+
+                    background-image: url("./../../assets/interface/box_selection_top.png");
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    background-position: 0px 0px;
+
+                    width: 100%;
+                    height: 32px;
+                }
+
+                .box-body {
+
+                    background-image: url("./../../assets/interface/box_selection_body.png");
+                    background-repeat: repeat;
+
+                    background-size: contain;
+                    background-position: 0px 0px;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    height: 85%;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding-top: 20%;
+                }
+
+                .box-footer {
+
+                    background-image: url("./../../assets/interface/box_selection_bottom.png");
+
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    background-position: 0px 0px;
+                    width: 100%;
+                    height: 100%;
+                }
+
+                img {
+                    display: flex;
+                    justify-content: center;
+                    align-self: center;
+                    transform: scale(3.2);
+                }
+
+                .name {
+                    color: rgb(145, 200, 229);
+                    font-size: 20px;
+                }
+            }
+
+            .text-wrapper {
+                height: 250px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .row {
+                    width: 80%;
+                    padding: 10px;
+
+                }
+
+                .row.action_menu {
+                    height: 80%;
+                    width: 90%;
+                    margin-top: 10%;
+                    border-style: solid;
+                    border-color: #2D6686;
+                    border-width: 2px;
+                    color: rgb(145, 200, 229);
+                    background-color: rgb(129, 189, 212);
+                    border-radius: 3px;
+                    overflow-y: scroll;
+                    overflow-x: hidden;
+
+                    .container-fluid {
+                        width: 100%;
+
+                        .row {
+                            background-color: rgb(132, 127, 202);
+                            border: solid 1px black;
+                            border-radius: 2px;
+                            width: 130%;
+                            font-size: 14px;
+                            margin-top: 5px;
+                            cursor: pointer;
+                        }
+                    }
+                }
+
+                .row.action_button {
+                    height: 20%;
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+        }
+
+        .panel-body-footer {
+            background-image: url("./../../assets/interface/footer_bg_panel.png");
+            background-size: 98%;
+            background-repeat: no-repeat;
+            background-position: 0px 0px;
+
+        }
+    }
+}

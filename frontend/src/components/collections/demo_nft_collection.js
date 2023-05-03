@@ -4,6 +4,7 @@ import EggPlaceholder from "./../../assets/nft-collection/egg-placeholder.png";
 export default function DemoNFTCollection() {
     return (
         <div className="list-group">
+
             <Link key={1}
                 className='row'
                 href={{
@@ -22,8 +23,8 @@ export default function DemoNFTCollection() {
                 <div className='col-8 text-wrapper'>
                     <h4>NFT Demo #1</h4>
                     <div className='description'>
-                        <p>Symbol: Demo1</p>
-                        <p>Token Address: 0x00000000000000000000demo1</p>
+                         Symbol: Demo1 <br />
+                         Token Address: 0x00000000000000000000demo1 
                     </div>
                 </div>
             </Link>
@@ -45,8 +46,8 @@ export default function DemoNFTCollection() {
                 <div className='col-8 text-wrapper'>
                     <h4>NFT Demo #2</h4>
                     <div className='description'>
-                        <p>Symbol: Demo2</p>
-                        <p>Token Address: 0x00000000000000000000demo2</p>
+                         Symbol: Demo1 <br />
+                         Token Address: 0x00000000000000000000demo1 
                     </div>
                 </div>
             </Link>
@@ -68,8 +69,8 @@ export default function DemoNFTCollection() {
                 <div className='col-8 text-wrapper'>
                     <h4>NFT Demo #3</h4>
                     <div className='description'>
-                        <p>Symbol: Demo3</p>
-                        <p>Token Address: 0x00000000000000000000demo3</p>
+                         Symbol: Demo1 <br />
+                         Token Address: 0x00000000000000000000demo1 
                     </div>
                 </div>
             </Link>
@@ -91,8 +92,8 @@ export default function DemoNFTCollection() {
                 <div className='col-8 text-wrapper'>
                     <h4>NFT Demo #4</h4>
                     <div className='description'>
-                        <p>Symbol: Demo4</p>
-                        <p>Token Address: 0x00000000000000000000demo4</p>
+                         Symbol: Demo1 <br />
+                         Token Address: 0x00000000000000000000demo1 
                     </div>
                 </div>
             </Link>
@@ -114,8 +115,8 @@ export default function DemoNFTCollection() {
                 <div className='col-8 text-wrapper'>
                     <h4>NFT Demo #5</h4>
                     <div className='description'>
-                        <p>Symbol: Demo5</p>
-                        <p>Token Address: 0x00000000000000000000demo5</p>
+                         Symbol: Demo1 <br />
+                         Token Address: 0x00000000000000000000demo1 
                     </div>
                 </div>
             </Link>
@@ -137,8 +138,8 @@ export default function DemoNFTCollection() {
                 <div className='col-8 text-wrapper'>
                     <h4>NFT Demo #6</h4>
                     <div className='description'>
-                        <p>Symbol: Demo6</p>
-                        <p>Token Address: 0x00000000000000000000demo6</p>
+                         Symbol: Demo1 <br />
+                         Token Address: 0x00000000000000000000demo1 
                     </div>
                 </div>
             </Link>
@@ -160,8 +161,8 @@ export default function DemoNFTCollection() {
                 <div className='col-8 text-wrapper'>
                     <h4>NFT Demo #7</h4>
                     <div className='description'>
-                        <p>Symbol: Demo7</p>
-                        <p>Token Address: 0x00000000000000000000demo7</p>
+                         Symbol: Demo1 <br />
+                         Token Address: 0x00000000000000000000demo1 
                     </div>
                 </div>
             </Link>
@@ -183,8 +184,8 @@ export default function DemoNFTCollection() {
                 <div className='col-8 text-wrapper'>
                     <h4>NFT Demo #8</h4>
                     <div className='description'>
-                        <p>Symbol: Demo8</p>
-                        <p>Token Address: 0x00000000000000000000demo8</p>
+                         Symbol: Demo1 <br />
+                         Token Address: 0x00000000000000000000demo1 
                     </div>
                 </div>
             </Link>
@@ -206,8 +207,8 @@ export default function DemoNFTCollection() {
                 <div className='col-8 text-wrapper'>
                     <h4>NFT Demo #9</h4>
                     <div className='description'>
-                        <p>Symbol: Demo9</p>
-                        <p>Token Address: 0x00000000000000000000demo9</p>
+                         Symbol: Demo1 <br />
+                         Token Address: 0x00000000000000000000demo1 
                     </div>
                 </div>
             </Link>

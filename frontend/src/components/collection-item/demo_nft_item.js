@@ -1,9 +1,13 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { useRouter } from 'next/router';
+
 import EggPlaceholder from "./../../assets/nft-collection/egg-placeholder.png";
+
 export default function DemoNFTItem() {
     const [isModalVisible, setModalVisibility] = React.useState(false);
+    const router = useRouter();
     const showModal = (e) => {
         e.preventDefault();
         setModalVisibility(true); 
@@ -14,6 +18,7 @@ export default function DemoNFTItem() {
     }
     const gotoCantomon = (e) => {
         e.preventDefault(); 
+        router.push("/cantomon-management");
     }
     return (
         <div className="container list-group">
@@ -287,7 +292,7 @@ export default function DemoNFTItem() {
 
             </div>
 
-            <div className="row">
+            <div className="row last">
                 <Link key={16}
                     className='col-4'
                     href={{

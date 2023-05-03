@@ -1,29 +1,80 @@
 #nft-collection-item {
-    .list-group {
-        background-color: rgb(151,217,242);
-        width: 500px; 
-        padding: 5px;
+    .list-group-header-wrapper {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        width: 100%;
+
+        .combination {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+
+            .list-group-header {
+                background-image: url("./../../assets/interface/item_panel_header.png");
+                background-size: 100%;
+                background-repeat: no-repeat;
+                background-position: 0px 0px;
+                height: 39px;
+                width: 57.5%;
+            }
+
+            .list-group-subheader {
+                background-image: url("./../../assets/interface/item_panel_subheader.png");
+                background-size: 100%;
+                background-repeat: no-repeat;
+                background-position: 0px 0px;
+                height: 96px;
+                width: 57.5%;
+                color: white;
+                display: flex;
+                align-items: flex-end;
+                justify-content: flex-end;
+                padding-right: 3%;
+
+            }
+        }
+    }
+
+    .list-group {  
+        width: 490px;  
+        height: 100%;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        padding-bottom: 150px;
         .row {
             display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: space-evenly;
+            background-image: url("./../../assets/interface/single_body_panel.png");
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: 0px -5px;
+            padding-top: 5px;
+            position: relative;
+            left: 0px;
+            top: -1px;
+            padding-left: 12px;
+
             a {
-                width: 167px;
-                height: 167px; 
+                width: 155px;
+                height: 154px;
 
                 .item {
                     display: flex;
                     flex-direction: column;
                     align-items: center;
-                    justify-content: center;
-                    border-style: groove;
-                    border-color: #2D6686;
-                    border-width: 5px;
-                    background-color: rgb(24,131,170);
-                    border-radius: 5px;
-
+                    justify-content: center; 
+                    background-image: url("./../../assets/interface/box_selection.png");
+                    background-size: 200%;
+                    background-position: 100% 0%;
+                    background-repeat: no-repeat;
+                    height: 83%;
                     h5 {
-                        font-size: 18px;
+                        font-size: 16px;
+                        padding-top: 10px;
                     }
 
                     img {
@@ -31,6 +82,29 @@
                     }
                 }
             }
+            a:hover {
+                .item {
+                    
+                    background-image: url("./../../assets/interface/box_selection.png");
+                    background-size: 200%;
+                    background-position: 0% 0%;
+                    background-repeat: no-repeat;
+                }
+            }
+            
+            a.active {
+                .item {
+                    
+                    background-image: url("./../../assets/interface/box_selection.png");
+                    background-size: 200%;
+                    background-position: 0% 0%;
+                    background-repeat: no-repeat;
+                }
+            }
+        }
+        
+        .row.last {
+            background-position: 0px -15px; 
         }
     }
 }

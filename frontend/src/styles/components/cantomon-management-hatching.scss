@@ -1,0 +1,92 @@
+#cantomon-management-hatching {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .hatching-window {
+        background-image: url("./../../assets//interface/hatching_window.png");
+        background-repeat: no-repeat;
+        background-position: 0px 0px;
+        background-size: 100%;
+        width: 450px;
+        height: 450px;
+
+        .window-header {
+            width: 96%;
+            height: 35px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+
+            a img {
+                transform: scale(1.5);
+            }
+        }
+
+        .window-body {
+            background-color: rgb(151, 217, 242);
+            padding: 10px;
+            width: 94%;
+            height: 72%;
+            position: relative;
+            left: 14px;
+            border-radius: 4px;
+            border-style: groove;
+            border-color: rgb(26, 128, 167);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow: hidden;
+
+            .action-btn-container {
+                margin-top: 10px;
+                width: 100%;
+                height: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                a img {
+                    transform: scale(1.5);
+                }
+            }
+
+            .progress-container {
+                width: 96%;
+                border-radius: 0;
+                margin-top: 10px;
+                .progress {
+                    border-radius: 0px;
+                    text-align: center;
+                    .progress-bar {
+                        
+    text-align: center;
+                        background-color:  #09FF00;
+                    }
+                }
+            }
+
+            .image-container {
+                border: 3px black solid;
+                border-radius: 4px;
+                background-color: rgb(0,185,203);
+                width: 200px;
+                height: 250px;
+                padding: 5px;
+
+                .image-wrapper {
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgb(23,75,84);
+
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    img {
+                        transform: scale(2);
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,38 +1,78 @@
 #nft-collection {
+    .list-group-header-wrapper {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        width: 97%;
+
+        .list-group-header {
+
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: flex-end;
+            align-self: flex-end;
+            background-image: url("./../../assets/interface/item_panel_header.png");
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: 0px 0px;
+            height: 39px;
+            width: 54%;
+            position: relative;
+            left: -10px;
+        }
+    }
+
     .list-group {
         display: flex;
         align-items: center;
         justify-content: center;
-
+        overflow-y: scroll;
+        height: 100%;  
+        padding-bottom: 50px;
+        padding-top: 55%;
         a {
             display: flex;
             justify-content: center;
-            background-color: rgb(24, 55, 80);
             padding-top: 5px;
             padding-bottom: 5px;
+            background-image: url("./../../assets/interface/item_panel_active2.png");
+            background-size: 95%;
+            background-repeat: no-repeat;
+            background-position: 0px -7px;
+            height: 123px;
 
             .image-wrapper {
                 width: 150px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
+
+                /*
                 background-color: rgb(151, 217, 242);
                 border-style: double;
                 border-color: #2D6686;
                 border-width: 5px;
-
+*/
                 .image-placeholder {
 
                     img {
-                        transform: scale(2.5);
+                        transform: scale(2);
                     }
                 }
             }
 
             .text-wrapper {
                 color: white;
-                background-color: rgb(103, 99, 150);
+                line-height: 0.8;
+                padding-top: 2px;
+                padding-bottom: 2px;
+                overflow: hidden;
+                /* background-color: rgb(103, 99, 150); */
             }
+        }
+        a:hover {
+            background: url("./../../assets/interface/item_panel_passive.png");       
+            background-size: 96%;
+            background-repeat: no-repeat;
+            background-position: -6px -7px;
         }
     }
 }
