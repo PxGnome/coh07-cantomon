@@ -10,7 +10,7 @@ async function main() {
   [owner, addr1, addr2, addr3, ...addrs] = await ethers.getSigners();
 
   // PARAMETER TO UPDATE
-  initArg = ['Cantomon', "CANTOMON", "/BASEURI/"];
+  initArg = ['Cantomon', "CANTOMON", "https://pxgnome.mypinata.cloud/ipfs/QmYTPAgd3eAYdLgipvPQehwRdgUgCZwdpLdC9tWbJmi9in/"];
   nftReaderAddress = '0xcF6F356d3195554ebDfE06257791cd22Bc2f4CE7';
   
   if(nftReaderAddress == '') {

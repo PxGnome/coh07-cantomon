@@ -1,4 +1,5 @@
 .vscode/*
+nft_json/*
 
 # directories
 .yarn/*

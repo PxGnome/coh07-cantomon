@@ -13,7 +13,7 @@ async function deployDiamond(_initArg) {
     console.log('')
     console.log('Deploying Facets')
     
-    var facetCuts = []
+    var facetCuts = [];
 
     const CantomonDiamondInit = await ethers.getContractFactory("CantomonDiamondInit");
     cantomonDiamondInit = await CantomonDiamondInit.deploy();
@@ -33,6 +33,7 @@ async function deployDiamond(_initArg) {
         'GMFacet',
         'DojoFacet',
         'EvolutionFacet',
+        'TurnstileFacet'
     ]
 
     for (var FacetName of FacetNames) {
