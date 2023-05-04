@@ -92,11 +92,11 @@
 
                     background-image: url("./../../assets/interface/box_selection_top.png");
                     background-repeat: no-repeat;
-                    background-size: contain;
+                    background-size: 100%;
                     background-position: 0px 0px;
 
                     width: 100%;
-                    height: 32px;
+                    height: 4%;
                 }
 
                 .box-body {
@@ -104,7 +104,7 @@
                     background-image: url("./../../assets/interface/box_selection_body.png");
                     background-repeat: repeat;
 
-                    background-size: contain;
+                    background-size: 100%;
                     background-position: 0px 0px;
                     width: 100%;
                     display: flex;
@@ -120,10 +120,10 @@
                     background-image: url("./../../assets/interface/box_selection_bottom.png");
 
                     background-repeat: no-repeat;
-                    background-size: contain;
+                    background-size: 100%;
                     background-position: 0px 0px;
-                    width: 100%;
-                    height: 100%;
+                    width: 102%;
+                    height: auto;
                 }
 
                 img {
@@ -148,7 +148,7 @@
                 .row {
                     width: 80%;
                     padding: 10px;
- 
+
                 }
 
                 .row.action_menu {
@@ -166,8 +166,9 @@
 
                     .container-fluid {
                         width: 100%;
+
                         .row {
-                            background-color: rgb(132,127,202);
+                            background-color: rgb(132, 127, 202);
                             border: solid 1px black;
                             border-radius: 2px;
                             width: 130%;
@@ -178,10 +179,29 @@
                     }
                 }
 
-                .row.action_button {
+                .action_button {
                     height: 20%;
                     width: 100%;
                     text-align: center;
+
+                    margin-top: 10px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 30px;
+                    background-color: rgb(38, 163, 209);
+                    border: solid 2px black;
+                    border-radius: 5px;
+                    padding: 12px;
+                    width: 65px;
+                    box-shadow: inset 0 0 5px black;
+
+                    a {
+                        color: rgb(199, 255, 255);
+                        font-weight: 300;
+                        font-size: 24px;
+                    }
+
                 }
             }
         }

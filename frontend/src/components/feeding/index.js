@@ -10,7 +10,13 @@ import ChickenFood from "./../../assets/food/chicken.png";
 
 import BackButton from "./../../assets/button/back_button_icon.png";
 import CloseButton from "./../../assets/button/close_button_icon.png";
+import { useSelector } from "react-redux";
 export default function Feeding() {
+    const selected_cantomon = useSelector((state) => state?.cantomonStore.selected_cantomon);
+
+    React.useEffect(() => {
+        console.log("selected_cantomon : ", selected_cantomon);
+    }, [selected_cantomon]);
     return (
         <div id="cantomon-management-feeding" className="container">
             <div className="row">
@@ -35,9 +41,12 @@ export default function Feeding() {
                                 <div className="col-6 image-wrapper">
                                     <div className="box-header">&nbsp;</div>
                                     <div className="box-body">
+                                        <Image src={selected_cantomon && 'image' in selected_cantomon ? (selected_cantomon.image) : (Creatures3)} alt="creatures cantomon" />
+                                        <p className="name">{(
+                                            selected_cantomon &&
+                                            'id' in selected_cantomon &&
+                                            'title' in selected_cantomon) ? (selected_cantomon.title + " #" + selected_cantomon.id) : ("Metamon Name")}</p>
 
-                                        <Image src={Creatures3} alt="creatures cantomon" />
-                                        <p className="name">Metamon Name</p>
                                     </div>
 
                                     <div className="box-footer">&nbsp;</div>
@@ -71,9 +80,9 @@ export default function Feeding() {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="row action_button">
+                                    <div className="action_button">
                                         <Link href={"#"}>
-                                            <Image alt="feed button" src={FeedIcon} width={64} height={28} />
+                                            Feed
                                         </Link>
                                     </div>
                                 </div>

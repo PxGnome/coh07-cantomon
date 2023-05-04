@@ -42,3 +42,42 @@
     text-decoration: underline;
   }
 }
+
+.connect-wallet-wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 0px) and (max-width: 1550px) {
+
+  .cantomon-detail-panel .panel-body .image-wrapper .box-header {
+      background-position: 0px 2px !important;
+  }
+}
+
+
+@media (min-width: 0px) and (max-width: 1200px) {
+
+  .cantomon-detail-panel .panel-body .image-wrapper .box-header {
+      background-position: 0px 4px !important;
+  }
+}
+
+
+@media (min-width: 0px) and (max-width: 1000px) {
+
+  .cantomon-detail-panel .panel-body .image-wrapper .box-header {
+      background-position: 0px 6px !important;
+  }
+}
+
+
+@media (min-width: 0px) and (max-width: 800px) {
+
+  .cantomon-detail-panel .panel-body .image-wrapper .box-header {
+      background-position: 0px 8px !important;
+  }
+}

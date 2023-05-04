@@ -11,8 +11,13 @@ import BackButton from "./../../assets/button/back_button_icon.png";
 import CloseButton from "./../../assets/button/close_button_icon.png";
 
 import { useSelector } from "react-redux";
-export default function DemoCantomonInfo() {
+export default function DemoCantomonInfoDynamic() {
     const current_page = useSelector((state) => state?.navStore.current_page);
+    const selected_cantomon = useSelector((state) => state?.cantomonStore.selected_cantomon);
+
+    React.useEffect(() => {
+        console.log("selected_cantomon : ", selected_cantomon);
+    }, [selected_cantomon]);
     return (
         <>
 
@@ -28,15 +33,26 @@ export default function DemoCantomonInfo() {
                             <div className="box-header">&nbsp;</div>
                             <div className="box-body">
 
-                                <Image src={Creatures3} alt="creatures cantomon" />
-                                <p className="name">Metamon Name</p>
+                                <Image src={selected_cantomon && 'image' in selected_cantomon ? (selected_cantomon.image) : (Creatures3)} alt="creatures cantomon" />
+                                <p className="name">{(
+                                selected_cantomon && 
+                                'id' in selected_cantomon && 
+                                'title' in selected_cantomon ) ? (selected_cantomon.title + " #" + selected_cantomon.id) : ("Metamon Name")}</p>
                             </div>
 
                             <div className="box-footer">&nbsp;</div>
                         </div>
                         <div className="col-6 text-wrapper">
                             <div className="row description">
-                                <p>description ...</p>
+                            {
+                                        selected_cantomon && "description" in selected_cantomon && selected_cantomon.description instanceof Array && (
+                                            selected_cantomon.description.map((el, i, arr) => {
+                                                return (
+                                                    <p key={i}>{el}</p>
+                                                )
+                                            })
+                                        )
+                                }
                             </div>
                             <div className="row loader">
                                 <div className="progress">
