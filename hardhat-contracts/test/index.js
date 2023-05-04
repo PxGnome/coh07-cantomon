@@ -1,7 +1,10 @@
 const {cantomon_Test} = require('./cantomon.test');
+const {cantomonShowcase_Test} = require('./cantomonShowcase.test');
+
 
 module.exports = {
     cantomon_Test,
+    cantomonShowcase_Test,
 };
 
 var currentdate = new Date(); 
@@ -13,8 +16,9 @@ var datetime =  currentdate.getDate() + "/"
                 + currentdate.getSeconds();
 
 describe('Aggregate Testing on: ' + datetime, function () {
-    describe('NFT Mint Test for cantmon_Test', function () {
-        cantomon_Test();
+    describe('NFT Mint Test for cantomon_Test', function () {
+        // cantomon_Test();
+        cantomonShowcase_Test();
     });
 });
 

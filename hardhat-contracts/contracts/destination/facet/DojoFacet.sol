@@ -73,21 +73,31 @@ contract DojoFacet is CantomonModifiers {
         emit CloseDojo(_cantomonId);
     }
 
-    function dojoSelectSparring(uint256 _cantomonId, uint256 _dojoId) external onlyCantomonOwner(_cantomonId) {
+    function dojoSelectSparring(uint256 _cantomonId, uint256 _dojoId) external onlyCantomonOwner(_cantomonId) returns(bool) {
         CantomonDynamicStats storage c_dynamicStats = s.cantomon[s.gameVersion].dynamicStats[_cantomonId];
         require(c_dynamicStats.energy > 0, "Cantomon has no energy");
-        _dojoBattle(_cantomonId, _dojoId);
-        c_dynamicStats.skill += 2;
+        bool  result = _dojoBattle(_cantomonId, _dojoId);
+        if(result) {
+            c_dynamicStats.skill += 2;
+            return true;
+        } else {
+            return false;
+        }
     }
 
-    function dojoRandomSparring(uint256 _cantomonId) external onlyCantomonOwner(_cantomonId) {
+    function dojoRandomSparring(uint256 _cantomonId) external onlyCantomonOwner(_cantomonId) returns (bool) {
         CantomonDynamicStats storage c_dynamicStats = s.cantomon[s.gameVersion].dynamicStats[_cantomonId];
         require(c_dynamicStats.energy > 0, "Cantomon has no energy");
         uint256 seed = _genSeed("dojoRandomSparring");
         uint256 numberOfdojos = s.dojo[s.gameVersion].listofDojos[s.gameVersion].length;
-        _dojoBattle(_cantomonId, seed % numberOfdojos);
-        c_dynamicStats.skill += 3;
-        c_dynamicStats.energy -= 1;
+        bool result = _dojoBattle(_cantomonId, seed % numberOfdojos);
+        if(result) {
+            c_dynamicStats.skill += 3;
+            c_dynamicStats.energy -= 1;
+            return true;
+        } else {
+            return false;
+        }
     }
 
     event DojoBattle(uint256 indexed cantomonId, uint256 indexed dojoId, bool didCantomonWin);
