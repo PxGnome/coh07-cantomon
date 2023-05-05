@@ -347,7 +347,7 @@ export default function DemoNFTItem() {
             </div>
 
 
-            <div className={isModalVisible ? ("modal show"):("modal")} tabindex="-1">
+            <div className={isModalVisible ? ("modal show"):("modal")} tabIndex="-1">
                 <div className="modal-dialog">
                     <div className="modal-content">
                         <div className="modal-header">

@@ -18,8 +18,8 @@ export default function Header() {
                     </div>
                     <div className="right">
                         <div className='connect-wallet-wrapper'>
-                            <Web3Button />
                             <Web3NetworkSwitch />
+                            <Web3Button />
                         </div>
                     </div>
                 </div>

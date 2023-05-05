@@ -1,5 +1,4 @@
 #cantomon-management {
-
     .cantomon-list {
         .list-group {
             display: flex;
@@ -271,4 +270,20 @@
             }
         }
     }
+} 
+
+#cantomon-management .cantomon-list .list-group {
+    overflow-y: scroll;
+    overflow-x: none;
+    -ms-overflow-style: none;   
+    scrollbar-width: none;
+    height: 50%;
+    .row {
+        padding-left: 1%;
+        margin-left: 1%;
+    }
+}
+
+#cantomon-management .cantomon-list .list-group::-webkit-scrollbar  {
+    display: none;
 }

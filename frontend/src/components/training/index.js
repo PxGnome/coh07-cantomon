@@ -11,10 +11,14 @@ import CloseButton from "./../../assets/button/close_button_icon.png";
 import { useSelector } from "react-redux";
 export default function Training() {
     const selected_cantomon = useSelector((state) => state?.cantomonStore.selected_cantomon);
-
+    const [currentTraining, setCurrentTraining] = React.useState("");
     React.useEffect(() => {
         console.log("selected_cantomon : ", selected_cantomon);
     }, [selected_cantomon]);
+
+    const handleTrainingSelection = (training) => {
+        setCurrentTraining(training);
+    }
     return (
         <div id="cantomon-management-training" className="container">
             <div className="row">
@@ -29,7 +33,8 @@ export default function Training() {
 
                             </div>
                             <div className="list-group-subheader">
-                                <h2 className="title">&nbsp;</h2>
+                                <h2 className="title">{currentTraining}
+                                </h2>
                             </div>
                         </div>
                     </div>
@@ -52,23 +57,33 @@ export default function Training() {
                                 <div className="col-6 text-wrapper">
                                     <div className="row action_menu">
                                         <div className="container-fluid">
-                                            <div className="row">
+                                            <div className="row" onClick={() => {
+                                                handleTrainingSelection("Training 1")
+                                            }}>
                                                 <div className="col-4 image_wrapper"></div>
                                                 <div className="col-8 text_wrapper">Training 1</div>
                                             </div>
-                                            <div className="row">
+                                            <div className="row" onClick={() => {
+                                                handleTrainingSelection("Training 2")
+                                            }}>
                                                 <div className="col-4 image_wrapper"></div>
                                                 <div className="col-8 text_wrapper">Training 2</div>
                                             </div>
-                                            <div className="row">
+                                            <div className="row" onClick={() => {
+                                                handleTrainingSelection("Training 3")
+                                            }}>
                                                 <div className="col-4 image_wrapper"></div>
                                                 <div className="col-8 text_wrapper">Training 3</div>
                                             </div>
-                                            <div className="row">
+                                            <div className="row" onClick={() => {
+                                                handleTrainingSelection("Training 4")
+                                            }}>
                                                 <div className="col-4 image_wrapper"></div>
                                                 <div className="col-8 text_wrapper">Training 4</div>
                                             </div>
-                                            <div className="row">
+                                            <div className="row" onClick={() => {
+                                                handleTrainingSelection("Training 5")
+                                            }}>
                                                 <div className="col-4 image_wrapper"></div>
                                                 <div className="col-8 text_wrapper">Training 5</div>
                                             </div>

@@ -24,6 +24,7 @@
 @import "./components/cantomon-management-battling.scss";
 @import "./components/cantomon-management-feeding.scss";
 @import "./components/cantomon-management-hatching.scss";
+@import "./components/cantomon-management-battle-in-progress.scss";
 
 .modal.show {
   display: block;
@@ -49,6 +50,7 @@
   width: 100%;
   align-items: center;
   justify-content: center;
+  gap: 10px;
 }
 
 @media (min-width: 0px) and (max-width: 1550px) {

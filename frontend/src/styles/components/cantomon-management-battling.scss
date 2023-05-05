@@ -1,70 +1,91 @@
 #cantomon-management-battling {
+    .cantomon-list {
+        .list-group {
+            display: flex;
+            flex-direction: column;
 
-    .row {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+            .row {
+
+                background-image: url("./../../assets/interface/item_panel_active.png");
+                background-repeat: no-repeat;
+                background-size: 100%;
+                background-position: 0% 40%;
+                height: 110px;
+                width: 425px;
+
+                .image-wrapper {
+                    width: 100px;
+                    height: 100px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    img {
+                        width: 75px;
+                        height: 75px;
+                        background-color: rgb(151, 217, 242);
+                    }
+                }
+
+                .text-wrapper {
+                    height: 100px;
+                    color: rgb(145, 200, 229);
+                    overflow: hidden;
+                    padding-left: 10%;
+                    padding-top: 3%;
+
+                    h2 {
+                        font-size: 20px;
+                        font-weight: 500;
+                    }
+
+                    .description {
+
+                        font-size: 16px;
+                        line-height: 0;
+
+                    }
+                }
+            }
+
+            .row:hover {
+                background-image: url("./../../assets/interface/item_panel_passive2.png");
+            }
+
+            .row.active {
+                background-image: url("./../../assets/interface/item_panel_passive2.png");
+            }
+
+
+        }
     }
 
     .cantomon-detail-panel {
-
-        .list-group-header-wrapper {
+        .panel-header {
             display: flex;
-            align-items: flex-end;
-            justify-content: center;
-            width: 100%;
+            flex-direction: row;
+            justify-content: space-between;
+            background-image: url("./../../assets/interface/item_panel_header.png");
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-position: 0px 0px;
+            height: 35px;
+            padding: 5px;
+            position: relative;
+            left: 5px;
+            align-items: center;
+            color: rgb(207, 237, 250);
+            font-size: 20px;
 
-            .combination {
+
+            .left {
                 display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                width: 100%;
+                justify-content: left;
+            }
 
-                .list-group-header {
-                    background-image: url("./../../assets/interface/item_panel_header.png");
-                    background-size: 100%;
-                    background-repeat: no-repeat;
-                    background-position: 0px 0px;
-                    height: 35px;
-                    width: 100%;
-                    padding-left: 10px;
-                    padding-right: 10px;
-                    padding-top: 5px;
-
-
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: space-between;
-                    align-items: center;
-                    color: rgb(207, 237, 250);
-                    font-size: 20px;
-
-                    .left {
-                        display: flex;
-                        justify-content: left;
-                    }
-
-                    .right {
-                        display: flex;
-                        justify-content: right;
-                    }
-                }
-
-                .list-group-subheader {
-                    background-image: url("./../../assets/interface/item_panel_subheader.png");
-                    background-size: 100%;
-                    background-repeat: no-repeat;
-                    background-position: 0px 0px;
-                    height: 80px;
-                    width: 100%;
-                    color: white;
-                    display: flex;
-                    align-items: flex-end;
-                    justify-content: flex-end;
-                    padding-right: 3%;
-
-                }
+            .right {
+                display: flex;
+                justify-content: right;
             }
         }
 
@@ -74,7 +95,7 @@
             justify-content: space-evenly;
             background-image: url("./../../assets/interface/content_bg_panel.png");
             background-repeat: repeat;
-            background-size: 109.5%;
+            background-size: 111.5%;
             background-position: -4px 0px;
 
             .container {
@@ -103,7 +124,7 @@
                     background-image: url("./../../assets/interface/box_selection_body.png");
                     background-repeat: repeat;
 
-                    background-size: 100%;
+                    background-size: contain;
                     background-position: 0px 0px;
                     width: 100%;
                     display: flex;
@@ -112,6 +133,9 @@
                     justify-content: space-between;
                     align-items: center;
                     padding-top: 20%;
+                    p.name {
+                        color: whitesmoke;
+                    }
                 }
 
                 .box-footer {
@@ -119,9 +143,9 @@
                     background-image: url("./../../assets/interface/box_selection_bottom.png");
 
                     background-repeat: no-repeat;
-                    background-size: 100%;
+                    background-size: 102%;
                     background-position: 0px 0px;
-                    width: 102%;
+                    width: 100%;
                     height: auto;
                 }
 
@@ -148,42 +172,78 @@
                     width: 80%;
                     padding: 10px;
 
-                }
+                    .progress {
 
-                .row.action_menu {
-                    height: 80%;
-                    width: 90%;
-                    margin-top: 10%;
-                    border-style: solid;
-                    border-color: #2D6686;
-                    border-width: 2px;
-                    color: rgb(145, 200, 229);
-                    background-color: rgb(129, 189, 212);
-                    border-radius: 3px;
-                    overflow-y: scroll;
-                    overflow-x: hidden;
+                        border-style: solid;
+                        border-color: #2D6686;
+                        border-width: 2px;
+                        padding: 0px;
+                        background-color: rgb(129, 189, 212);
 
-                    .container-fluid {
-                        width: 100%;
-
-                        .row {
-                            background-color: rgb(132, 127, 202);
-                            border: solid 1px black;
-                            border-radius: 2px;
-                            width: 130%;
-                            font-size: 14px;
-                            margin-top: 5px;
-                            cursor: pointer;
+                        .progress-bar {
+                            background-color: #09FF00;
                         }
                     }
                 }
 
-                .action_button {
-                    height: 20%;
-                    width: 100%;
-                    text-align: center;
+                .row.description {
+                    height: 80%;
+                    margin-top: 10%;
+                    border-style: solid;
+                    border-color: #2D6686;
+                    border-width: 2px;
+                    color: whitesmoke;
+                    background-color: rgb(129, 189, 212);
+                    border-radius: 3px;
 
-                    margin-top: 10px;
+                    word-wrap: break-word;
+                    line-height: 0.7;
+                    overflow: hidden;
+
+                    p {
+                        padding: 0;
+                        margin: 0;
+                    }
+                }
+
+                .row.loader {
+                    height: 20%;
+                }
+            }
+        }
+
+        .panel-body-footer {
+            background-image: url("./../../assets/interface/footer_bg_panel.png");
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: 0px 0px;
+
+        }
+
+        .panel-footer {
+            background-image: url("./../../assets/interface/item_panel_subheader.png");
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: 0px 0px;
+            height: 6%;
+            position: relative;
+            left: 1%;
+            width: 103%;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-direction: row;
+
+
+
+            .nav {
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                padding: 20px;
+                width: 100%;
+
+                li {
                     display: flex;
                     align-items: center;
                     justify-content: center;
@@ -200,17 +260,30 @@
                         font-weight: 300;
                         font-size: 24px;
                     }
+                }
+            }
 
+            .nav.dojo {
+                li.register {
+                    width: 100px;
                 }
             }
         }
-
-        .panel-body-footer {
-            background-image: url("./../../assets/interface/footer_bg_panel.png");
-            background-size: 98%;
-            background-repeat: no-repeat;
-            background-position: 0px 0px;
-
-        }
     }
+} 
+
+#cantomon-management-battling .cantomon-list .list-group {
+    overflow-y: scroll;
+    overflow-x: none;
+    -ms-overflow-style: none;   
+    scrollbar-width: none;
+    height: 28%;
+    .row {
+        padding-left: 1%;
+        margin-left: 1%;
+    }
+}
+
+#cantomon-management-battling .cantomon-list .list-group::-webkit-scrollbar  {
+    display: none;
 }

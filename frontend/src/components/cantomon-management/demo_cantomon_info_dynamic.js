@@ -23,7 +23,7 @@ export default function DemoCantomonInfoDynamic() {
 
             <div className="panel-header">
                 <Link className="panel-back-button left" href="#" ><Image src={BackButton} alt="back button" /> </Link>
-                <div className="title middle">Upgrade</div>
+                <div className="title middle">Management</div>
                 <Link className="panel-close-button right" href="#" ><Image src={CloseButton} alt="close button" /></Link>
             </div>
             <div className="panel-body">
@@ -56,7 +56,7 @@ export default function DemoCantomonInfoDynamic() {
                             </div>
                             <div className="row loader">
                                 <div className="progress">
-                                    <div className="progress-bar" role="progressbar" aria-label="Basic example" style={{ width: "25%" }} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div className="progress-bar" role="progressbar" aria-label="Basic example" style={{ width: "100%" }} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                             </div>
                         </div>
@@ -75,6 +75,9 @@ export default function DemoCantomonInfoDynamic() {
                             </li>
                             <li className="nav-item">
                                 <Link className="nav-link" href="/cantomon-management/feed">Feed</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link className="nav-link" href="/cantomon-management/hatch">Evolve</Link>
                             </li>
                             <li className="nav-item">
                                 <Link className="nav-link" href="/cantomon-management/battle">Battle</Link>

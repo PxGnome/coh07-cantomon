@@ -2,7 +2,7 @@ import React from 'react';
 import Head from 'next/head';
 import Image from 'next/image'; 
 import 'bootstrap-icons/font/bootstrap-icons.css'; 
-import NFTCollections from '@/components/collections';
+import NFTCollectionItem from '@/components/collection-item';
 
 import { useDispatch, useSelector } from "react-redux";
 import { setCurrentPage } from '@/features/manageNavigationState';
@@ -25,7 +25,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <NFTCollections />
+      <NFTCollectionItem />
     </>
   )
 }

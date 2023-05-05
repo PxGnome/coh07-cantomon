@@ -13,10 +13,14 @@ import CloseButton from "./../../assets/button/close_button_icon.png";
 import { useSelector } from "react-redux";
 export default function Feeding() {
     const selected_cantomon = useSelector((state) => state?.cantomonStore.selected_cantomon);
-
+    const [currentFood, setCurrentFood] = React.useState("");
     React.useEffect(() => {
         console.log("selected_cantomon : ", selected_cantomon);
     }, [selected_cantomon]);
+
+    const handleFoodSelection = (food) => {
+        setCurrentFood(food);
+    }
     return (
         <div id="cantomon-management-feeding" className="container">
             <div className="row">
@@ -31,7 +35,7 @@ export default function Feeding() {
 
                             </div>
                             <div className="list-group-subheader">
-                                <h2 className="title">&nbsp;</h2>
+                                <h2 className="title">{currentFood}</h2>
                             </div>
                         </div>
                     </div>
@@ -45,7 +49,7 @@ export default function Feeding() {
                                         <p className="name">{(
                                             selected_cantomon &&
                                             'id' in selected_cantomon &&
-                                            'title' in selected_cantomon) ? (selected_cantomon.title + " #" + selected_cantomon.id) : ("Metamon Name")}</p>
+                                            'title' in selected_cantomon) ? (selected_cantomon.title + " #" + selected_cantomon.id) : ("Cantomon Name")}</p>
 
                                     </div>
 
@@ -54,27 +58,37 @@ export default function Feeding() {
                                 <div className="col-6 text-wrapper">
                                     <div className="row action_menu">
                                         <div className="container-fluid">
-                                            <div className="row">
+                                            <div className="row" onClick={() => {
+                                                    handleFoodSelection("Food 1")
+                                                }}>
                                                 <div className="col-4 image_wrapper">
                                                     <Image src={CherryFood} width={16} height={16} alt="cherry food" />
                                                 </div>
                                                 <div className="col-8 text_wrapper">Food 1</div>
                                             </div>
-                                            <div className="row">
-                                                <div className="col-4 image_wrapper">
+                                            <div className="row" onClick={() => {
+                                                    handleFoodSelection("Food 2")
+                                                }}>
+                                                <div className="col-4 image_wrapper" >
                                                     <Image src={ChickenFood} width={16} height={16} alt="chicken food" />
                                                 </div>
-                                                <div className="col-8 text_wrapper">Food 2</div>
+                                                <div className="col-8 text_wrapper" >Food 2</div>
                                             </div>
-                                            <div className="row">
+                                            <div className="row" onClick={() => {
+                                                    handleFoodSelection("Food 3")
+                                                }}>
                                                 <div className="col-4 image_wrapper"></div>
                                                 <div className="col-8 text_wrapper">Food 3</div>
                                             </div>
-                                            <div className="row">
+                                            <div className="row" onClick={() => {
+                                                    handleFoodSelection("Food 4")
+                                                }}>
                                                 <div className="col-4 image_wrapper"></div>
                                                 <div className="col-8 text_wrapper">Food 4</div>
                                             </div>
-                                            <div className="row">
+                                            <div className="row" onClick={() => {
+                                                    handleFoodSelection("Food 5")
+                                                }}>
                                                 <div className="col-4 image_wrapper"></div>
                                                 <div className="col-8 text_wrapper">Food 5</div>
                                             </div>

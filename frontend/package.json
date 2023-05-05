@@ -27,6 +27,7 @@
     "redux-thunk": "^2.4.2",
     "@web3modal/ethereum": "^2.3.6",
     "@web3modal/react": "^2.3.6",
-    "wagmi": "^0.12.12"
+    "wagmi": "^0.12.12",
+    "phaser": "3.55.2"
   }
 }
