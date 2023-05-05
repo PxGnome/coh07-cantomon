@@ -56,9 +56,9 @@ export default class Demo3Scene extends Phaser.Scene {
             enemy.setScale(1.8);
 
             this.physics.world.enable(this.playerFighting); 
-            this.playerFighting.body.setCollideWorldBounds(true);
+            //this.playerFighting.body.setCollideWorldBounds(true);
             this.physics.world.enable(this.enemyFighting); 
-            this.enemyFighting.body.setCollideWorldBounds(true);
+            //this.enemyFighting.body.setCollideWorldBounds(true);
            
           
             this.cloud = this.add.sprite(310, 205, 'cloud');
