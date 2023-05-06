@@ -1,6 +1,9 @@
 # CANTOMON - A Canto Online Hackathon Submission [S07]
 
-```By PxGnome & Friends```
+
+`By PxGnome & Friends` -- 
+[:baby_chick:Twitter](https://twitter.com/PxGnome)
+
 
 ### For full details please head over to doc
 
