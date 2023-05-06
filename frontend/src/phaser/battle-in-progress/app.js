@@ -27,7 +27,7 @@ export default function PhaserApp() {
       physics: {
         default: "arcade",
         arcade: {
-          debug: true,
+          debug: false,
 /*
           tileBias: 20,
           gravity: {
