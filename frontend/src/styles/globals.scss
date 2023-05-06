@@ -43,7 +43,9 @@
     text-decoration: underline;
   }
 }
-
+.holder .main-wrapper .modal-footer.center {
+  overflow: hidden;
+} 
 .connect-wallet-wrapper {
   display: flex;
   flex-direction: row;
