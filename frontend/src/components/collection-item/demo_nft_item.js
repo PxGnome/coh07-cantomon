@@ -1,13 +1,12 @@
 import React from "react";
 import Link from "next/link";
-import Image from "next/image";
-import { useRouter } from 'next/router';
+import Image from "next/image"; 
+import Modal from "../utils/modal";
 
 import EggPlaceholder from "./../../assets/nft-collection/egg-placeholder.png";
 
 export default function DemoNFTItem() {
     const [isModalVisible, setModalVisibility] = React.useState(false);
-    const router = useRouter();
     const showModal = (e) => {
         e.preventDefault();
         setModalVisibility(true); 
@@ -16,10 +15,16 @@ export default function DemoNFTItem() {
         e.preventDefault();
         setModalVisibility(false); 
     }
-    const gotoCantomon = (e) => {
-        e.preventDefault(); 
-        router.push("/cantomon-management");
-    }
+
+    const modalContent = (
+        <>
+            <p>Transaction in Progress.</p>
+            <p>
+                <Link className="external-url" href="#" >Link URL</Link>
+            </p>
+        </>
+    );
+
     return (
         <div className="container list-group">
             <div className="row">
@@ -347,29 +352,13 @@ export default function DemoNFTItem() {
             </div>
 
 
-            <div className={isModalVisible ? ("modal show"):("modal")} tabIndex="-1">
-                <div className="modal-dialog">
-                    <div className="modal-content">
-                        <div className="modal-header">
-                            <h5 className="modal-title">Window</h5>
-                            <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"
+            <Modal isModalVisible={isModalVisible} data={{
+                goto: "/cantomon-management",
+                title: "Window",
+                content: modalContent,
+                gotoTitle: "Go to Cantomon"
+            }} closeModal={closeModal} showModal={showModal} />
 
-                                onClick={closeModal}></button>
-                        </div>
-                        <div className="modal-body">
-                            <p>Transaction in Progress.</p>
-                            <p>
-                                <Link className="external-url" href="#" >Link URL</Link>
-                            </p>
-                        </div>
-                        <div className="modal-footer center">
-                            <button type="button" className="btn btn-primary"
-
-                                onClick={gotoCantomon}>Go to Cantomon</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
     )
 }

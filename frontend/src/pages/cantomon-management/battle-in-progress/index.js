@@ -6,6 +6,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { setCurrentPage } from '@/features/manageNavigationState';
 import dynamic from 'next/dynamic';
 import Link from 'next/link';
+import Modal from '@/components/utils/modal';
 
 const DynamicComponentWithNoSSR = dynamic(
     () => import('@/phaser/battle-in-progress/app'),
@@ -13,24 +14,27 @@ const DynamicComponentWithNoSSR = dynamic(
 )
 export default function CantomonManagementBattleInProgress() {
 
-    
+
     const [visible, setVisible] = React.useState(false);
     const [loading, setLoading] = useState(false);
 
- 
-    const closeModal = () => {
-       setVisible(false); 
-    }
-    const goBack = () => {
-        router.push("/cantomon-management/battle");
-    }
     const router = useRouter();
 
     const dispatch = useDispatch();
     const current_page = useSelector((state) => state?.navStore.current_page);
     const showModal = () => {
-        setVisible(true); 
-     }
+        setVisible(true);
+    }
+    const closeModal = () => {
+        setVisible(false);
+    }
+    const modalContent = (
+        <>
+            <p>Battle Result</p>
+        </>
+    );
+
+
     useEffect(() => {
         if (router.isReady) {
 
@@ -60,26 +64,14 @@ export default function CantomonManagementBattleInProgress() {
                 {loading && (<div className='btn result'><button onClick={showModal}>Result</button></div>)}
 
             </div>
-            <div className={visible ? ("modal show") : ("modal")}>
-                <div className="modal-dialog">
-                    <div className="modal-content">
-                        <div className="modal-header">
-                            <h5 className="modal-title">Window</h5>
-                            <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"
-
-                                onClick={closeModal}></button>
-                        </div>
-                        <div className="modal-body">
-                            <p>Battle Result</p>
-                        </div>
-                        <div className="modal-footer center">
-                            <button type="button" className="btn btn-primary"
-
-                                onClick={goBack}>Go Back</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            
+            <Modal isModalVisible={visible} data={{
+                goto: "/cantomon-management/battle",
+                title: "Window",
+                content: modalContent,
+                gotoTitle: "Go Back"
+            }} closeModal={closeModal} showModal={showModal} />
+ 
         </>
     )
 }
