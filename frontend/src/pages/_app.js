@@ -1,5 +1,6 @@
 
 import Layout from '@/components/layout';
+import { ethers, providers } from "ethers";
 import { EthereumClient, w3mConnectors, w3mProvider } from '@web3modal/ethereum';
 import { Web3Modal } from '@web3modal/react';
 import { configureChains, createClient, WagmiConfig } from 'wagmi';
@@ -39,6 +40,7 @@ export default function App({ Component, pageProps }) {
   const projectId = '6756fe16c79f90abecbbe4e697ca0ee0';
 
   const { provider } = configureChains(chains, [w3mProvider({ projectId })]);
+  const ethersProvider = new providers.Web3Provider(provider)
   const wagmiClient = createClient({
     autoConnect: true,
     connectors: w3mConnectors({ projectId, version: 1, chains }),
@@ -51,7 +53,11 @@ export default function App({ Component, pageProps }) {
 
   return (
     <Provider store={store}>
-      <EthereumClientContext.Provider value={ethereumClient}>
+      <EthereumClientContext.Provider value={{
+        ethereumClient,
+        provider,
+        ethersProvider
+      }}>
         <WagmiConfig client={wagmiClient}>
           <Layout>
             <Component {...pageProps} ethereumClient={ethereumClient}/>

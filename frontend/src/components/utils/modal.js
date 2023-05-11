@@ -23,9 +23,13 @@ export default function Modal({isModalVisible, data, closeModal}) {
                         {data.content}
                     </div>
                     <div className="modal-footer center">
-                        <button type="button" className="btn btn-primary"
-
+                        {
+                            data.gotoTitle && (
+                            <button type="button" className="btn btn-primary"
                             onClick={gotoPage}>{data.gotoTitle}</button>
+                            )
+                        }
+                        
                     </div>
                 </div>
             </div>

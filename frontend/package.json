@@ -9,25 +9,26 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "eslint": "8.39.0",
-    "eslint-config-next": "13.3.2",
-    "next": "13.3.2",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "sass": "^1.61.0",
+    "@reduxjs/toolkit": "^1.9.5",
+    "@web3modal/ethereum": "^2.3.6",
+    "@web3modal/react": "^2.3.6",
     "axios": "^1.3.6",
     "bootstrap": "^5.2.3",
     "bootstrap-icons": "^1.10.4",
+    "eslint": "8.39.0",
+    "eslint-config-next": "13.3.2",
+    "ethers": "^5.7.2",
     "feather-icons": "^4.29.0",
+    "next": "13.3.2",
+    "phaser": "3.55.2",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
     "react-icons": "^4.8.0",
-    "@reduxjs/toolkit": "^1.9.5",
     "react-redux": "^8.0.5",
     "redux": "^4.2.1",
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.4.2",
-    "@web3modal/ethereum": "^2.3.6",
-    "@web3modal/react": "^2.3.6",
-    "wagmi": "^0.12.12",
-    "phaser": "3.55.2"
+    "sass": "^1.61.0",
+    "wagmi": "^0.12.12"
   }
 }
