@@ -11,21 +11,22 @@ import { Provider } from "react-redux";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import '../styles/customBootstrap.scss';
 import '@/styles/globals.scss';
-import { Chain } from '@wagmi/core';
+import { Chain } from '@wagmi/core'; 
+import EthereumClientContext from '@/utils/ethereum_client_context';
 
 export const canto_test_net = {
   id: 7701,
   name: 'Canto Testnet',
   network: 'Canto Testnet',
-  nativeCurrency: { 
+  nativeCurrency: {
     name: 'CANTO',
     symbol: 'CANTO',
   },
-  rpcUrls: { 
+  rpcUrls: {
     public: { http: ['https://canto-testnet.plexnode.wtf'] },
     default: { http: ['https://canto-testnet.plexnode.wtf'] }
   },
-  blockExplorers: { 
+  blockExplorers: {
     etherscan: { name: 'Canto Testnet', url: 'https://testnet.tuber.build/' },
     default: { name: 'Canto Testnet', url: 'https://testnet.tuber.build/' },
   }
@@ -43,23 +44,26 @@ export default function App({ Component, pageProps }) {
     connectors: w3mConnectors({ projectId, version: 1, chains }),
     provider
   });
-
+ ;
 
   const ethereumClient = new EthereumClient(wagmiClient, chains);
+ 
+
   return (
     <Provider store={store}>
-      <WagmiConfig client={wagmiClient}>
-        <Layout>
-          <Component {...pageProps} />
-        </Layout>
-      </WagmiConfig>
+      <EthereumClientContext.Provider value={ethereumClient}>
+        <WagmiConfig client={wagmiClient}>
+          <Layout>
+            <Component {...pageProps} ethereumClient={ethereumClient}/>
+          </Layout>
+        </WagmiConfig>
 
-      <Web3Modal
-        projectId={projectId}
-        ethereumClient={ethereumClient}
-        themeMode="light"
-      />
-
+        <Web3Modal
+          projectId={projectId}
+          ethereumClient={ethereumClient}
+          themeMode="light"
+        />
+      </EthereumClientContext.Provider>
     </Provider>
   )
 }

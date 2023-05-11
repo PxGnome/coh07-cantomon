@@ -41,6 +41,26 @@ export const getNFtsByCollectionAddressFromMoralis = createAsyncThunk(
             return rejectWithValue(error);
           }
     }
+);  
+export const getNFtsByWalletAddressFromMoralis = createAsyncThunk(
+    "getNFtsByWalletAddressFromMoralis",
+    async (data, { getState, rejectWithValue }) => {
+        try {
+            const response = await axios.request( {
+              method: 'GET',
+              url: `https://deep-index.moralis.io/api/v2/${data.address}/nft?chain=${data.chain}&format=decimal&media_items=true&normalizeMetadata=true`,
+              headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json',
+                    'X-API-Key': "0X8FKz8cxNsP7SoVIPrHl5ledtxrAmpfFfbblugL2JZvtrz3vJZNMnToDZ4W5OoW"
+                }
+            });
+ 
+            return response.data;
+          } catch (error) {
+            return rejectWithValue(error);
+          }
+    }
 ); 
 
 
@@ -60,6 +80,12 @@ export const collection = createSlice({
             error: false,
             success: false
         }, 
+        walletNfts: {
+            data: [],
+            loading: false,
+            error: false,
+            success: false
+        }
     },
     reducers: { 
         setNFTMetadata: (state, action) => {
@@ -115,6 +141,29 @@ export const collection = createSlice({
             };
         })
 
+
+        builder.addCase(getNFtsByWalletAddressFromMoralis.fulfilled, (state, action) => {
+            state.walletNfts = {
+                loading: false,
+                error: false,
+                success: true,
+                data: action.payload.result
+            };
+        })
+        builder.addCase(getNFtsByWalletAddressFromMoralis.pending, (state, action) => {
+            state.walletNfts = {
+                loading: true,
+                error: false,
+                success: false
+            };
+        })
+        builder.addCase(getNFtsByWalletAddressFromMoralis.rejected, (state, action) => {
+            state.walletNfts = {
+                loading: false,
+                error: true,
+                success: false
+            };
+        })
     }
 }); 
 
