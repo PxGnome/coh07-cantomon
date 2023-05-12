@@ -11,35 +11,61 @@ import { getNFtsByWalletAddressFromMoralis } from "@/features/manageCollection";
 import EthereumClientContext from "@/utils/ethereum_client_context";
 import { chunkArray } from "@/utils/helpers";
 import { ethers } from "ethers";
-import { NFT_READER_ABI, NFT_READER_CONTRACT, NFT_DIAMOND_CONTRACT } from "@/utils/config";
+import { NFT_READER_ABI, NFT_READER_CONTRACT, EXPLORER_ADDRESS } from "@/utils/config";
 
 export default function DemoNFTItem(props) {
     const ethereumClient = React.useContext(EthereumClientContext).ethereumClient;
     //const ethersProvider = React.useContext(EthereumClientContext).ethersProvider;
     //const providerWeb3 = React.useContext(EthereumClientContext).provider;
-
+    console.log("EXPLORER_ADDRESS: ", EXPLORER_ADDRESS);
+    console.log("EXPLORER_ADDRESS: ", EXPLORER_ADDRESS);
+    console.log("EXPLORER_ADDRESS: ", EXPLORER_ADDRESS);
     const [isModalVisible, setModalVisibility] = React.useState(false);
     const [myWalletNfts, setMyWalletNfts] = React.useState("");
     const [nftReader, setNftReader] = React.useState("");
     const [modalContent, setModalContent] = React.useState("");
     const [gotoTitle, setGotoTitle] = React.useState("");
+    const [gotoURL, setgotoURL] = React.useState("");
+    const [isCustomGotoState, setCustomGotoState] = React.useState(false);
+    const [goToCustomFunc, setGoToCustomFunc] = React.useState(undefined);
 
     const dispatch = useDispatch(); 
-    const confirmToPort = async (e, element) => {
+    const confirmToPort = async (e, element) => {  
         e.preventDefault();
         const ported = await nftReader.portNft(7701, element.token_address, element.token_id, {value: 1});
-        console.log("port NFT: ", ported);
+        if(ported && 'hash' in ported) {
+            setModalContent(
+                <>
+                    <p>Transaction in Progress.</p>
+                    <p>
+                        <Link className="external-url" href={`${EXPLORER_ADDRESS}${ported.hash}`} passHref legacyBehavior>
+                            <a target="_blank" rel="noopener noreferrer"> Link URL</a>
+                        </Link>
+                    </p>
+                </>
+            );
+            
+           setGotoTitle("Go To Cantomon");
+           setCustomGotoState(false);
+           setgotoURL("/cantomon-management");
+           setGoToCustomFunc(undefined);
+        };
+        
     }
 
     const showModal = (e, element) => {
-        e.preventDefault();
-        console.log(element);
+        e.preventDefault(); 
         setModalContent(<>
             <p>{`Are you sure porting ${element.normalized_metadata?.name} [#${element.token_id}] ?`}</p>
             <p><Image fill={false} width={85} height={65} src={'image' in element.normalized_metadata && element.normalized_metadata.image != undefined ? element.normalized_metadata.image : EggPlaceholder} alt={`#${element.token_id}-${element.name}`} /></p>
-            <button className="btn btn-primary" onClick={(e) => confirmToPort(e, element)}>Confirm</button>
         </>);
-        setGotoTitle("");
+        setgotoURL("#");
+        setGotoTitle("Confirm");
+        setCustomGotoState(true);
+        setGoToCustomFunc({
+            func: confirmToPort,
+            arg: element
+        });
         setModalVisibility(true);
     }
     const closeModal = (e) => {
@@ -64,12 +90,8 @@ export default function DemoNFTItem(props) {
                 const nftsGroup = chunkArray(getNfts?.payload?.result, 3); 
                 const provider = new ethers.providers.Web3Provider(window.ethereum);
                 const signer = provider.getSigner(); 
-                console.log("NFT_READER_CONTRACT: ", NFT_READER_CONTRACT);
-                console.log("NFT_READER_CONTRACT: ", NFT_READER_CONTRACT);
-                console.log("NFT_READER_CONTRACT: ", NFT_READER_CONTRACT);
                  
                 const nft_contract = new ethers.Contract(NFT_READER_CONTRACT, NFT_READER_ABI, signer); 
-                console.log("nft_contract: ", nft_contract); 
                 setNftReader(nft_contract);
                 setMyWalletNfts(nftsGroup); 
             }
@@ -126,10 +148,12 @@ export default function DemoNFTItem(props) {
             }
 
             <Modal isModalVisible={isModalVisible} data={{
-                goto: "/cantomon-management",
+                goto: gotoURL,
                 title: "Window",
                 content: modalContent,
-                gotoTitle: gotoTitle
+                gotoTitle: gotoTitle,
+                isCustomGoto: isCustomGotoState,
+                goToCustom: goToCustomFunc,
             }} closeModal={closeModal} showModal={showModal} />
 
         </div >

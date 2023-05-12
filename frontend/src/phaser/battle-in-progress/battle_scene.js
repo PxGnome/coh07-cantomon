@@ -42,7 +42,7 @@ export default class Demo3Scene extends Phaser.Scene {
                 x: 305,
                 ease: 'Power0',
                 duration: 2000,
-                flipX: true,
+                flipX: false,
                 yoyo: true,
                 repeat: -1,
             });
@@ -51,7 +51,7 @@ export default class Demo3Scene extends Phaser.Scene {
                 x: 305,
                 ease: 'Power0',
                 duration: 2000,
-                flipX: true,
+                flipX: false,
                 yoyo: true,
                 repeat: -1,
             });

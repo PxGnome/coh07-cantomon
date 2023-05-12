@@ -3,8 +3,13 @@
 @import "../../node_modules/bootstrap/scss/mixins";
 
 @font-face {
-  font-family: "aseprite-remix";
-  src: url("./../assets/font/aseprite-remix.ttf");
+  font-family: "UpheavalPro";
+  src: url("./../assets/font/UpheavalPro.ttf");
+}
+
+@font-face {
+  font-family: "EXEPixelPerfect";
+  src: url("./../assets/font/EXEPixelPerfect.ttf");
 }
 
 @import "./layout.scss";

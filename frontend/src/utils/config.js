@@ -2,6 +2,7 @@ export const APP_MODE = process.env.NEXT_PUBLIC_APP_MODE;
 export const WCM_PROJECT_ID= process.env.NEXT_PUBLIC_WCM_PROJECT_ID;
 export const NFT_READER_CONTRACT = process.env.NEXT_PUBLIC_NFT_READER_CONTRACT;
 export const NFT_DIAMOND_CONTRACT = process.env.NEXT_PUBLIC_NFT_DIAMOND_CONTRACT; 
+export const EXPLORER_ADDRESS = process.env.NEXT_PUBLIC_EXPLORER_ADDRESS;
 export const CANTO_TEST_NETWORK_CHAIN = {
   id: 7701,
   name: 'Canto Testnet',
