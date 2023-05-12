@@ -11,7 +11,7 @@ import { getNFtsByWalletAddressFromMoralis } from "@/features/manageCollection";
 import EthereumClientContext from "@/utils/ethereum_client_context";
 import { chunkArray } from "@/utils/helpers";
 import { ethers } from "ethers";
-import { NFT_READER_ABI, NFT_READER_CONTRACT, NFT_DIAMOND_CONTRACT } from "@/utils/web3config";
+import { NFT_READER_ABI, NFT_READER_CONTRACT, NFT_DIAMOND_CONTRACT } from "@/utils/config";
 
 export default function DemoNFTItem(props) {
     const ethereumClient = React.useContext(EthereumClientContext).ethereumClient;
@@ -64,6 +64,9 @@ export default function DemoNFTItem(props) {
                 const nftsGroup = chunkArray(getNfts?.payload?.result, 3); 
                 const provider = new ethers.providers.Web3Provider(window.ethereum);
                 const signer = provider.getSigner(); 
+                console.log("NFT_READER_CONTRACT: ", NFT_READER_CONTRACT);
+                console.log("NFT_READER_CONTRACT: ", NFT_READER_CONTRACT);
+                console.log("NFT_READER_CONTRACT: ", NFT_READER_CONTRACT);
                  
                 const nft_contract = new ethers.Contract(NFT_READER_CONTRACT, NFT_READER_ABI, signer); 
                 console.log("nft_contract: ", nft_contract); 

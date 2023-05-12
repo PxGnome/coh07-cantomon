@@ -1,5 +1,43 @@
-export const NFT_READER_CONTRACT = "0x2C3B0d8B7819eD3Cf5f76f2feDAE0544971840e7";
-export const NFT_DIAMOND_CONTRACT = "0xcF6F356d3195554ebDfE06257791cd22Bc2f4CE7"; 
+export const APP_MODE = process.env.NEXT_PUBLIC_APP_MODE;
+export const WCM_PROJECT_ID= process.env.NEXT_PUBLIC_WCM_PROJECT_ID;
+export const NFT_READER_CONTRACT = process.env.NEXT_PUBLIC_NFT_READER_CONTRACT;
+export const NFT_DIAMOND_CONTRACT = process.env.NEXT_PUBLIC_NFT_DIAMOND_CONTRACT; 
+export const CANTO_TEST_NETWORK_CHAIN = {
+  id: 7701,
+  name: 'Canto Testnet',
+  network: 'Canto Testnet',
+  nativeCurrency: {
+    name: 'CANTO',
+    symbol: 'CANTO',
+  },
+  rpcUrls: {
+    public: { http: ['https://canto-testnet.plexnode.wtf'] },
+    default: { http: ['https://canto-testnet.plexnode.wtf'] }
+  },
+  blockExplorers: {
+    etherscan: { name: 'Canto Testnet', url: 'https://testnet.tuber.build/' },
+    default: { name: 'Canto Testnet', url: 'https://testnet.tuber.build/' },
+  }
+};
+
+export const CANTO_NETWORK_CHAIN = {
+  id: 7700,
+  name: 'CANTO',
+  network: 'CANTO',
+  nativeCurrency: {
+    name: 'CANTO',
+    symbol: 'CANTO',
+  },
+  rpcUrls: {
+    public: { http: ['https://canto.gravitychain.io'] },
+    default: { http: ['https://canto.gravitychain.io'] }
+  },
+  blockExplorers: {
+    etherscan: { name: 'CANTO', url: 'https://tuber.build/' },
+    default: { name: 'CANTO', url: 'https://tuber.build/' },
+  }
+};
+
 export const NFT_READER_ABI = [
     {
       "inputs": [

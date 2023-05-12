@@ -11,33 +11,18 @@ import { Provider } from "react-redux";
 
 import "bootstrap-icons/font/bootstrap-icons.css";
 import '../styles/customBootstrap.scss';
-import '@/styles/globals.scss';
-import { Chain } from '@wagmi/core'; 
+import '@/styles/globals.scss'; 
 import EthereumClientContext from '@/utils/ethereum_client_context';
+import { WCM_PROJECT_ID } from '@/utils/config';
+import { CANTO_NETWORK_CHAIN, CANTO_TEST_NETWORK_CHAIN, APP_MODE } from '@/utils/config';
 
-export const canto_test_net = {
-  id: 7701,
-  name: 'Canto Testnet',
-  network: 'Canto Testnet',
-  nativeCurrency: {
-    name: 'CANTO',
-    symbol: 'CANTO',
-  },
-  rpcUrls: {
-    public: { http: ['https://canto-testnet.plexnode.wtf'] },
-    default: { http: ['https://canto-testnet.plexnode.wtf'] }
-  },
-  blockExplorers: {
-    etherscan: { name: 'Canto Testnet', url: 'https://testnet.tuber.build/' },
-    default: { name: 'Canto Testnet', url: 'https://testnet.tuber.build/' },
-  }
-};
+export const canto_chain = APP_MODE == "production" ? CANTO_NETWORK_CHAIN : CANTO_TEST_NETWORK_CHAIN;
 
 
 export default function App({ Component, pageProps }) {
   //const chains = [arbitrum, mainnet, polygon];
-  const chains = [sepolia, goerli, canto_test_net];
-  const projectId = '6756fe16c79f90abecbbe4e697ca0ee0';
+  const chains = [sepolia, goerli, canto_chain];
+  const projectId = WCM_PROJECT_ID;
 
   const { provider } = configureChains(chains, [w3mProvider({ projectId })]);
   const ethersProvider = new providers.Web3Provider(provider)
