@@ -1,73 +1,74 @@
 html,
 body {
-    font-family: 'aseprite-remix', arial;
-    font-size: 14px;
-    margin: 0;
-    padding: 0;
+  font-family: "aseprite-remix", arial;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    background-image: url("./../assets/background.png");
-    background-size: 85%;
-    background-repeat: no-repeat;
-    background-position: center;
-    align-items: center;
-    display: flex;
-    background-color: black;
-    color: #09FF00;
+  background-image: url("./../assets/background.png");
+  background-color: black;
+  color: #09ff00;
+  position: relative;
+  background-size: auto 100%; /* Adjusted background size */
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
 }
 
-
 .holder {
-    .main-wrapper {
-        width: 100vw;
-        height: 100vh;
+  position: absolute;
+  top: 50%; /* Position content in the center vertically */
+  left: 50%; /* Position content in the center horizontally */
+  transform: translate(-50%, -50%); /* Center content precisely */
+  width: 100%;
+  .main-wrapper {
+    width: 100vw;
+    height: 100vh;
 
-        header,
-        footer {
-            width: 100%;
-            position: fixed;
-        }
+    header,
+    footer {
+      width: 100%;
+      position: fixed;
     }
+  }
 }
 
 a {
-    text-decoration: none;
-    color: #09FF00;
+  text-decoration: none;
+  color: #09ff00;
 }
 
 a:hover {
-    color: #09FF00;
+  color: #09ff00;
 }
 
 a.menu-btn {
-    padding-top: 15px;
+  padding-top: 15px;
+  align-items: center;
+  width: 45px;
+
+  i {
+    display: flex;
+    justify-content: center;
     align-items: center;
-    width: 45px;
+    font-size: 25px;
+    border: solid white 1px;
+    border-radius: 4px;
+    font-weight: 900;
+    background-color: deepskyblue;
+    color: white;
 
-    i {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 25px;
-        border: solid white 1px;
-        border-radius: 4px;
-        font-weight: 900;
-        background-color: deepskyblue;
-        color: white;
-
-        &.st {
-
-            padding-left: 14px;
-            padding-right: 14px;
-            padding-top: 2px;
-            padding-bottom: 2px;
-        }
+    &.st {
+      padding-left: 14px;
+      padding-right: 14px;
+      padding-top: 2px;
+      padding-bottom: 2px;
     }
-
-
+  }
 }
 
 .btn {
-    color: white;
+  color: white;
 }

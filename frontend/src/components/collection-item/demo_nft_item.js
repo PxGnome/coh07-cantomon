@@ -15,7 +15,9 @@ import { NFT_READER_ABI, NFT_READER_CONTRACT, NFT_DIAMOND_CONTRACT } from "@/uti
 
 export default function DemoNFTItem(props) {
     const ethereumClient = React.useContext(EthereumClientContext).ethereumClient;
-    const ethersProvider = React.useContext(EthereumClientContext).ethersProvider;
+    //const ethersProvider = React.useContext(EthereumClientContext).ethersProvider;
+    //const providerWeb3 = React.useContext(EthereumClientContext).provider;
+
     const [isModalVisible, setModalVisibility] = React.useState(false);
     const [myWalletNfts, setMyWalletNfts] = React.useState("");
     const [nftReader, setNftReader] = React.useState("");
@@ -25,7 +27,8 @@ export default function DemoNFTItem(props) {
     const dispatch = useDispatch(); 
     const confirmToPort = async (e, element) => {
         e.preventDefault();
-        await nftReader.portNftTest(0, element.token_address, element.token_id, NFT_DIAMOND_CONTRACT, {value: 1});
+        const ported = await nftReader.portNft(7701, element.token_address, element.token_id, {value: 1});
+        console.log("port NFT: ", ported);
     }
 
     const showModal = (e, element) => {
@@ -49,7 +52,7 @@ export default function DemoNFTItem(props) {
     }, [myWalletNfts])
 
     const initdata = async () => { 
-        if (ethereumClient && ethersProvider) {
+        if (ethereumClient) {
             const wallet_address = ethereumClient.getAccount();
             const wallet_network = ethereumClient.getNetwork();
 
@@ -59,7 +62,9 @@ export default function DemoNFTItem(props) {
                     chain: wallet_network?.chain?.network
                 }));
                 const nftsGroup = chunkArray(getNfts?.payload?.result, 3); 
-                const signer = ethersProvider.getSigner(); 
+                const provider = new ethers.providers.Web3Provider(window.ethereum);
+                const signer = provider.getSigner(); 
+                 
                 const nft_contract = new ethers.Contract(NFT_READER_CONTRACT, NFT_READER_ABI, signer); 
                 console.log("nft_contract: ", nft_contract); 
                 setNftReader(nft_contract);
