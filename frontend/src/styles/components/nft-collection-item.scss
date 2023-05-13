@@ -60,7 +60,7 @@
 
             a {
                 width: 155px;
-                height: 154px;
+                height: 144px;
 
                 .item {
                     display: flex;
@@ -73,9 +73,13 @@
                     background-repeat: no-repeat;
                     height: 87%;
                     h5 {
-                        font-size: 10px;
+                        font-family: "EXEPixelPerfect";
+                        font-size: 16px;
                         padding-top: 0px;
                         padding-left: 10px;
+                        display: flex;
+                        flex-wrap: wrap;
+                        line-height: 0.6;
                     }
 
                     img {
