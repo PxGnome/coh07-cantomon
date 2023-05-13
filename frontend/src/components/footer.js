@@ -20,9 +20,9 @@ export default function Footer() {
 
                     <div className="center">
                         <div className="row action-menu">
-                            <Link className='portal' href='/portal'>Portal</Link>
-                            <Link className='manage' href='/cantomon-management'>Manage</Link>
-                            <Link className='dojo' href='/cantomon-management/dojo'>Dojo</Link>
+                            <Link className='dojo' href='/cantomon-management/dojo'><label>GYM</label></Link>
+                            <Link className='manage' href='/cantomon-management'><label>MANAGE</label></Link>
+                            <Link className='portal' href='/portal'><label>PORTAL</label></Link>
                         </div>
                     </div>
 
